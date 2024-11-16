@@ -1,3 +1,3 @@
 export function QuemSomos() {
-  return <div>Quem Somos</div>;
+  return <h1>quem somos</h1>;
 }
