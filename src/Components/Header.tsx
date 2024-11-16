@@ -20,7 +20,7 @@ export function Header() {
           <div
             className={
               isOpen === true
-                ? "relative cursor-pointer bg-custom-blue-strong rounded-md text-white py-1 px-4 uppercase"
+                ? "relative cursor-pointer bg-custom-blue rounded-md text-white py-1 px-4 uppercase"
                 : "relative cursor-pointer py-1 px-4 uppercase"
             }
             onClick={() => setIsOpen((prev) => !prev)}
@@ -34,19 +34,19 @@ export function Header() {
                   flex items-center justify-center bg-opacity-30 "
             >
               <div className=" items-center justify-between flex w-7/12 py-3 ">
-                <div className="w-full  px-5 py-2 cursor-pointer uppercase hover:border-b-2 hover:border-custom-blue-strong text-center">
+                <div className="w-full  px-5 py-2 cursor-pointer uppercase hover:border-b-2 hover:border-custom-blue text-center">
                   queijos
                 </div>
-                <div className="w-full  px-5 py-2 cursor-pointer uppercase hover:border-b-2 hover:border-custom-blue-strong text-center">
+                <div className="w-full  px-5 py-2 cursor-pointer uppercase hover:border-b-2 hover:border-custom-blue text-center">
                   leites
                 </div>
-                <div className="w-full  px-5 py-2 cursor-pointer uppercase hover:border-b-2 hover:border-custom-blue-strong text-center">
+                <div className="w-full  px-5 py-2 cursor-pointer uppercase hover:border-b-2 hover:border-custom-blue text-center">
                   bebidas lácteas
                 </div>
-                <div className="w-full  px-5 py-2 cursor-pointer uppercase hover:border-b-2 hover:border-custom-blue-strong text-center">
+                <div className="w-full  px-5 py-2 cursor-pointer uppercase hover:border-b-2 hover:border-custom-blue text-center">
                   queijos processados
                 </div>
-                <div className="w-full  px-5 py-2 cursor-pointer uppercase hover:border-b-2 hover:border-custom-blue-strong text-center">
+                <div className="w-full  px-5 py-2 cursor-pointer uppercase hover:border-b-2 hover:border-custom-blue text-center">
                   soro em pó
                 </div>
               </div>
