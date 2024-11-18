@@ -24,11 +24,11 @@ export function SlidersWelcome() {
           disableOnInteraction: false,
         }}
       >
-        <SwiperSlide className="px-16">
-          <img src={logo} alt="" />
+        <SwiperSlide className="px-16 max-w-7xl ">
+          <img className="w-full" src={logo} alt="" />
         </SwiperSlide>
-        <SwiperSlide className="px-16">
-          <img src={leitesPropaganda} alt="" />
+        <SwiperSlide className="px-16 max-w-7xl ">
+          <img className="w-full" src={leitesPropaganda} alt="" />
         </SwiperSlide>
       </Swiper>
     </div>

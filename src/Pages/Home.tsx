@@ -2,17 +2,18 @@
 import bg1 from "../assets/Home/BG/bg1.svg";
 import bg2 from "../assets/Home/BG/bg2.svg";
 import bg3 from "../assets/Home/BG/bg3.svg";
-import bgFooter from "../assets/Home/BG/bgFooter.svg";
+import bgFooter from "../assets/Footer/bgFooter.svg";
 import leites from "../assets/Home/leites.png";
-import logo from "../assets/Header/logo.png";
+
+import logoF from "../assets/Footer/logoFooter.svg";
 
 //icons
-import { FaYoutube } from "react-icons/fa";
-import { RiFacebookBoxFill } from "react-icons/ri";
-import { FaWhatsappSquare } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-import { FaInstagramSquare } from "react-icons/fa";
-import { FaPhoneVolume } from "react-icons/fa6";
+import { AiOutlineYoutube } from "react-icons/ai";
+import { CiFacebook } from "react-icons/ci";
+import { FaWhatsapp } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa6";
+import { AiOutlineLinkedin } from "react-icons/ai";
+import { FiPhoneForwarded } from "react-icons/fi";
 
 //slider
 import { SlidersWelcome } from "../Tools/SlidersWelcome";
@@ -51,11 +52,11 @@ export function Home() {
           className="h-auto w-screen flex-col items-center
              justify-center 
              m-auto  
-              z-10 absolute -mt-36"
+              z-10 absolute -mt-36 "
         >
           <div
             className="max-w-7xl
-        flex-col items-center justify-center m-auto py-40"
+        flex-col items-center justify-center m-auto pt-40"
           >
             <h1
               className="font-mochari
@@ -106,7 +107,7 @@ export function Home() {
           <div
             style={{ backgroundImage: `url(${bg3})` }}
             className="h-auto flex items-center
-          justify-center m-auto z-20"
+          justify-center m-auto z-20 bg-custom-white"
           >
             <div className="max-w-7xl flex items-center justify-between gap-8 mt-56">
               <div className="w-full">
@@ -169,42 +170,82 @@ export function Home() {
             </div>
           </div>
           {/*INICO BGFOOTER */}
-          <div
+          <footer
             style={{ backgroundImage: `url(${bgFooter})` }}
-            className="w-screen flex items-center
-          justify-center bg-cover z-30 "
+            className="w-full h-auto 
+           bg-cover min-h-96 z-30 bg-custom-blue flex items-center justify-center m-auto"
           >
-            <div className="w-full flex items-center justify-around">
-              <img src={logo} alt="natville" />
-              <div className="flex-col items-center justify-center ">
-                <p className="text-custom-blue-strong text-center font-mochari">
-                  Acompanhe nossas
-                </p>
-                <div className="flex items-center justify-center gap-2">
-                  <FaYoutube />
-                  <RiFacebookBoxFill />
-                  <FaWhatsappSquare />
-                  <FaLinkedin />
-                  <FaInstagramSquare />
+            <div
+              className="w-8/12 
+               flex-col items-center
+            "
+            >
+              <div className="w-full flex justify-between mt-28">
+                <div>
+                  <img className="min-w-56" src={logoF} alt="natville" />
                 </div>
-                <p className="text-custom-blue-strong text-center font-mochari">
-                  redes sociais
-                </p>
+                <div className="flex-col items-center justify-center ">
+                  <p
+                    className="text-custom-blue-strong
+                   text-center font-mochari text-4xl"
+                  >
+                    Acompanhe nossas
+                  </p>
+                  <div className="flex items-center justify-center gap-2">
+                    <AiOutlineYoutube
+                      size={25}
+                      className="cursor-pointer hover:scale-105 transition duration-300"
+                    />
+                    <CiFacebook
+                      size={25}
+                      className="cursor-pointer hover:scale-105 transition duration-300"
+                    />
+                    <FaWhatsapp
+                      size={25}
+                      className="cursor-pointer hover:scale-105 transition duration-300"
+                    />
+                    <FaInstagram
+                      size={25}
+                      className="cursor-pointer hover:scale-105 transition duration-300"
+                    />
+                    <AiOutlineLinkedin
+                      size={25}
+                      className="cursor-pointer hover:scale-105 transition duration-300"
+                    />
+                  </div>
+                  <p
+                    className="text-custom-blue-strong 
+                  text-center font-mochari text-4xl"
+                  >
+                    redes sociais
+                  </p>
+                </div>
+                <div className="font-mochari text-custom-blue-strong flex-col items-center justify-center ">
+                  <p className="text-end text-4xl">fale conosco</p>
+                  <div className="flex items-center justify-between gap-3">
+                    <div>
+                      <FiPhoneForwarded size={37} />
+                    </div>
+                    <div
+                      className="flex-col text-2xl 
+                    items-center justify-center "
+                    >
+                      <p>0800 7213245</p>
+                      <p className="text-xl -mt-3">natville.com.br</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div className="">
-                <p>fale conosco</p>
-                <div className="flex items-center justify-center">
-                  <div>
-                    <FaPhoneVolume />
-                  </div>
-                  <div className="flex-col items-center justify-center">
-                    <p>0800 7213245</p>
-                    <p>natville.com.br</p>
-                  </div>
+              <div className="w-full flex-col">
+                <div className="border border-gray-300 mt-5"></div>
+                <div className="text-gray-400">
+                  <p className="text-end">
+                    &copy; 2024 JSDevelopers and Growth{" "}
+                  </p>
                 </div>
               </div>
             </div>
-          </div>
+          </footer>
           {/**fim bg footer */}
         </div>
         {/*FIM CONHEÇA NOSSA LINHA */}
