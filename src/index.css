@@ -11,3 +11,16 @@
 button:hover span:last-child {
   transform: translateX(0);
 }
+
+.custom-spin {
+  animation: spin 8s linear infinite; /* Altere 2s para o valor desejado */
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

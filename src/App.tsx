@@ -4,6 +4,7 @@ import { createBrowserRouter } from "react-router-dom";
 import { Home } from "./Pages/Home";
 import { QuemSomos } from "./Pages/QuemSomos";
 import { ProdutoDetail } from "./Pages/ProdutosDetail";
+import { LeitesUht } from "./Pages/leiteUht";
 
 //header
 import { Layout } from "./Components/Layout";
@@ -19,6 +20,10 @@ export const router = createBrowserRouter([
       {
         path: "/quemsomos",
         element: <QuemSomos />,
+      },
+      {
+        path: "/leiteuht",
+        element: <LeitesUht />,
       },
       {
         path: "/produtos/:id",
