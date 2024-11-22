@@ -1,5 +1,7 @@
+import { useLayoutEffect } from "react";
+
 // import bgHome from "../assets/Home/bgHome.svg";
-import bg1 from "../assets/Home/BG/bg1.svg";
+import bg1 from "../assets/Produtos/bgProdutos.svg";
 import bg2 from "../assets/Home/BG/bg2.svg";
 import bg3 from "../assets/Home/BG/bg3.svg";
 import bgFooter from "../assets/Footer/bgFooter.svg";
@@ -23,6 +25,9 @@ import { SlidersWelcome } from "../Tools/SlidersWelcome";
 import mussarela from "../assets/Home/mussarelaWelcome2x.png";
 
 export function Home() {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <main
       className="w-full flex items-center
@@ -52,7 +57,7 @@ export function Home() {
           className="h-auto w-screen flex-col items-center
              justify-center 
              m-auto  
-              z-10 absolute -mt-36 overflow-hidden "
+              z-10  -mt-36 overflow-hidden "
         >
           <div
             className="max-w-7xl

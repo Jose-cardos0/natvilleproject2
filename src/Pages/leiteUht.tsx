@@ -1,3 +1,8 @@
+import { useEffect, useState, useLayoutEffect } from "react";
+
+//router dom
+import { Link } from "react-router-dom";
+
 import bg1 from "../assets/Produtos/bgProdutos.svg";
 
 //itens
@@ -10,7 +15,6 @@ import leiteUhtExZero from "../assets/Produtos/Leites/leiteUhtZero.png";
 import logoF from "../assets/Footer/logoFooter.svg";
 
 //icons
-//icons
 import { AiOutlineYoutube } from "react-icons/ai";
 import { CiFacebook } from "react-icons/ci";
 import { FaWhatsapp } from "react-icons/fa";
@@ -18,13 +22,42 @@ import { FaInstagram } from "react-icons/fa6";
 import { AiOutlineLinkedin } from "react-icons/ai";
 import { FiPhoneForwarded } from "react-icons/fi";
 
+interface Produto {
+  id: string;
+  produto: string;
+}
+
 export function LeitesUht() {
+  const [leiteUht, setLeiteUht] = useState<Produto[]>([]);
+
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
+    async function getData() {
+      const response = await fetch(
+        "https://apiprodutosnatville.vercel.app/produtos"
+      );
+      const data = await response.json();
+      setLeiteUht(data);
+    }
+
+    getData();
+  }, []);
+
+  const leiteUhtIntegral = leiteUht.length > 0 ? leiteUht[0] : null;
+  const leiteUhtDesnatado = leiteUht.length > 0 ? leiteUht[1] : null;
+  const leiteUhtZero = leiteUht.length > 0 ? leiteUht[2] : null;
+
+  console.log(leiteUhtIntegral);
+
   return (
     <main
       className="w-full flex items-center
-     justify-center m-auto bg-cover overflow-hidden"
+     justify-center m-auto bg-cover overflow-hidden relative "
     >
-      {/* <section className="hidden"></section> */}
+      {/*section info leite */}
 
       <section className="flex-col items-center justify-center bg-custom-white">
         <div
@@ -39,7 +72,7 @@ export function LeitesUht() {
           >
             <img
               className="max-w-2xl drop-shadow-md max-md:w-72
-               max-md:mt-16"
+               max-md:mt-16 cursor-pointer"
               src={leitesUht}
               alt="leite uht natville"
             />
@@ -78,7 +111,7 @@ export function LeitesUht() {
           <div
             className="max-w-7xl
         flex-col items-center
-        justify-center m-auto mt-40 bg-custom-white"
+        justify-center m-auto mt-20 bg-custom-white"
           >
             {/*inicio leite integral */}
             <div
@@ -87,7 +120,8 @@ export function LeitesUht() {
             >
               <div>
                 <img
-                  className="max-w-7xl object-center drop-shadow-md max-md:w-40"
+                  className="max-w-7xl object-center drop-shadow-md
+                   max-md:w-40 cursor-pointer"
                   src={leiteUhtEx}
                   alt="leite uht integral"
                 />
@@ -111,28 +145,30 @@ export function LeitesUht() {
                   </p>
                 </div>
                 <div className="max-md:w-full max-md:items-center max-md:justify-center">
-                  <button
-                    className="relative 
+                  <Link to={`/produtos/${leiteUhtIntegral?.id}`}>
+                    <button
+                      className="relative 
           overflow-hidden
            flex-shrink-0
     bg-custom-blue-strong
     text-white py-3 
     px-14 rounded-md shadow-sm
     shadow-black font-light 
-     border-none mt-8 max-md:w-full"
-                  >
-                    <span className="relative z-10 flex items-center justify-center">
-                      TABELA NUTRICIONAL +
-                    </span>
-                    <span
-                      className="absolute inset-0
+     border-none mt-8 max-md:w-full cursor-pointer"
+                    >
+                      <span className="relative z-10 flex items-center justify-center">
+                        TABELA NUTRICIONAL +
+                      </span>
+                      <span
+                        className="absolute inset-0
             bg-gradient-to-r from-white
              to-black
            transform translate-x-full
             transition-transform
             duration-300 ease-in-out z-0 opacity-20"
-                    ></span>
-                  </button>
+                      ></span>
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -167,8 +203,9 @@ export function LeitesUht() {
                   </p>
                 </div>
                 <div>
-                  <button
-                    className="relative 
+                  <Link to={`/produtos/${leiteUhtDesnatado?.id}`}>
+                    <button
+                      className="relative 
           overflow-hidden
            flex-shrink-0
     bg-custom-blue-strong
@@ -176,19 +213,20 @@ export function LeitesUht() {
     px-14 rounded-md shadow-sm
     shadow-black font-light 
      border-none mt-8"
-                  >
-                    <span className="relative z-10 flex items-center justify-center">
-                      TABELA NUTRICIONAL +
-                    </span>
-                    <span
-                      className="absolute inset-0
+                    >
+                      <span className="relative z-10 flex items-center justify-center">
+                        TABELA NUTRICIONAL +
+                      </span>
+                      <span
+                        className="absolute inset-0
             bg-gradient-to-r from-white
              to-black
            transform translate-x-full
             transition-transform
             duration-300 ease-in-out z-0 opacity-20"
-                    ></span>
-                  </button>
+                      ></span>
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -223,8 +261,9 @@ export function LeitesUht() {
                   </p>
                 </div>
                 <div>
-                  <button
-                    className="relative 
+                  <Link to={`/produtos/${leiteUhtZero?.id}`}>
+                    <button
+                      className="relative 
           overflow-hidden
            flex-shrink-0
     bg-custom-blue-strong
@@ -232,19 +271,20 @@ export function LeitesUht() {
     px-14 rounded-md shadow-sm
     shadow-black font-light 
      border-none mt-8"
-                  >
-                    <span className="relative z-10 flex items-center justify-center">
-                      TABELA NUTRICIONAL +
-                    </span>
-                    <span
-                      className="absolute inset-0
+                    >
+                      <span className="relative z-10 flex items-center justify-center">
+                        TABELA NUTRICIONAL +
+                      </span>
+                      <span
+                        className="absolute inset-0
             bg-gradient-to-r from-white
              to-black
            transform translate-x-full
             transition-transform
             duration-300 ease-in-out z-0 opacity-20"
-                    ></span>
-                  </button>
+                      ></span>
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
