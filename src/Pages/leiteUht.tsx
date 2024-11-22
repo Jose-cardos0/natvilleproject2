@@ -72,7 +72,7 @@ export function LeitesUht() {
           >
             <img
               className="max-w-2xl drop-shadow-md max-md:w-72
-               max-md:mt-16 cursor-pointer"
+               max-md:mt-16 cursor-pointer hover:scale-105 transition duration-700"
               src={leitesUht}
               alt="leite uht natville"
             />
@@ -87,7 +87,7 @@ export function LeitesUht() {
               </h1>
               <div
                 className="relative flex items-center
-               justify-center mt-20 max-md:hidden"
+               justify-center mt-20 max-md:hidden animate-bounce hover:scale-105 transition duration-700"
               >
                 <div className="mt-8">
                   <img
@@ -116,12 +116,13 @@ export function LeitesUht() {
             {/*inicio leite integral */}
             <div
               className="flex items-center justify-center
-              gap-8 bg-custom-white max-md:flex-col max-md:mx-8 max-md:-mt-20"
+              gap-8 bg-custom-white max-md:flex-col
+               max-md:mx-8 max-md:-mt-30"
             >
               <div>
                 <img
                   className="max-w-7xl object-center drop-shadow-md
-                   max-md:w-40 cursor-pointer"
+                   max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
                   src={leiteUhtEx}
                   alt="leite uht integral"
                 />
@@ -175,11 +176,13 @@ export function LeitesUht() {
             {/*leite desnataod inicio */}
             <div
               className="flex items-center justify-center
-              gap-8 my-40 bg-custom-white"
+              gap-8 bg-custom-white my-32 max-md:flex-col
+               max-md:mx-8 max-md:my-32"
             >
               <div>
                 <img
-                  className="max-w-7xl object-center drop-shadow-md"
+                  className="max-w-7xl object-center drop-shadow-md
+                   max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
                   src={leiteUhtExDes}
                   alt="leite uht integral"
                 />
@@ -187,7 +190,7 @@ export function LeitesUht() {
               <div className="flex-col items-center justify-center">
                 <h1 className="font-mochari text-8xl text-custom-blue-strong">
                   leite uht <br />
-                  desnatado
+                  integral
                 </h1>
                 <div>
                   <p className="text-custom-blue-strong text-justify mt-8">
@@ -202,7 +205,7 @@ export function LeitesUht() {
                     perfil nutricional.
                   </p>
                 </div>
-                <div>
+                <div className="max-md:w-full max-md:items-center max-md:justify-center">
                   <Link to={`/produtos/${leiteUhtDesnatado?.id}`}>
                     <button
                       className="relative 
@@ -212,7 +215,7 @@ export function LeitesUht() {
     text-white py-3 
     px-14 rounded-md shadow-sm
     shadow-black font-light 
-     border-none mt-8"
+     border-none mt-8 max-md:w-full cursor-pointer"
                     >
                       <span className="relative z-10 flex items-center justify-center">
                         TABELA NUTRICIONAL +
@@ -233,11 +236,13 @@ export function LeitesUht() {
             {/*zero lactose */}
             <div
               className="flex items-center justify-center
-              gap-8 my-40 bg-custom-white"
+              gap-8 bg-custom-white max-md:flex-col
+               max-md:mx-8  max-md:mt-32"
             >
               <div>
                 <img
-                  className="max-w-7xl object-center drop-shadow-md"
+                  className="max-w-7xl object-center drop-shadow-md
+                   max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
                   src={leiteUhtExZero}
                   alt="leite uht integral"
                 />
@@ -245,7 +250,7 @@ export function LeitesUht() {
               <div className="flex-col items-center justify-center">
                 <h1 className="font-mochari text-8xl text-custom-blue-strong">
                   leite uht <br />
-                  zero lactose
+                  integral
                 </h1>
                 <div>
                   <p className="text-custom-blue-strong text-justify mt-8">
@@ -260,7 +265,7 @@ export function LeitesUht() {
                     perfil nutricional.
                   </p>
                 </div>
-                <div>
+                <div className="max-md:w-full max-md:items-center max-md:justify-center">
                   <Link to={`/produtos/${leiteUhtZero?.id}`}>
                     <button
                       className="relative 
@@ -270,7 +275,7 @@ export function LeitesUht() {
     text-white py-3 
     px-14 rounded-md shadow-sm
     shadow-black font-light 
-     border-none mt-8"
+     border-none mt-8 max-md:w-full cursor-pointer"
                     >
                       <span className="relative z-10 flex items-center justify-center">
                         TABELA NUTRICIONAL +
@@ -293,16 +298,23 @@ export function LeitesUht() {
           {/*footer inicio */}
           <footer
             className="w-full h-auto mb-5
-            z-30 flex items-center justify-center m-auto"
+            flex items-center justify-center m-auto"
           >
             <div
               className="w-8/12 
                flex-col items-center
             "
             >
-              <div className="w-full flex justify-between mt-28">
+              <div
+                className="w-full flex justify-between mt-28
+               max-md:flex-col  max-md:gap-5"
+              >
                 <div>
-                  <img className="min-w-56" src={logoF} alt="natville" />
+                  <img
+                    className="min-w-56 hover:scale-105 transition duration-700"
+                    src={logoF}
+                    alt="natville"
+                  />
                 </div>
                 <div className="flex-col items-center justify-center ">
                   <p
@@ -340,9 +352,14 @@ export function LeitesUht() {
                     redes sociais
                   </p>
                 </div>
-                <div className="font-mochari text-custom-blue-strong flex-col items-center justify-center ">
-                  <p className="text-end text-4xl">fale conosco</p>
-                  <div className="flex items-center justify-between gap-3">
+                <div
+                  className="font-mochari text-custom-blue-strong
+                 flex-col items-center justify-center "
+                >
+                  <p className="text-end text-4xl max-md:text-center">
+                    fale conosco
+                  </p>
+                  <div className="flex items-center justify-between gap-3 max-md:justify-center">
                     <div>
                       <FiPhoneForwarded size={37} />
                     </div>
@@ -359,7 +376,7 @@ export function LeitesUht() {
               <div className="w-full flex-col">
                 <div className="border border-gray-300 mt-5"></div>
                 <div className="text-gray-400">
-                  <p className="text-end">
+                  <p className="text-end font-light text-sm max-md:text-center">
                     &copy; 2024 JSDevelopers and Growth{" "}
                   </p>
                 </div>

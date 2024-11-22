@@ -113,7 +113,7 @@ export function ProdutoDetail() {
           id="leiteIntegralScroll"
           className="flex items-center justify-center m-auto"
         >
-          <div className=" flex items-center justify-center">
+          <div className=" flex items-center justify-center max-md:flex-col max-md:px-8">
             <div>
               {/*TABELA NUTRICIONAL*/}
               <h1
@@ -131,33 +131,33 @@ export function ProdutoDetail() {
                     {produtosDetail?.porcoes?.porcaototal}
                   </p> */}
                 </div>
-                <table className="min-w-full border-collapse text-left ">
+                <table className="min-w-full border-collapse text-left max-md:text-xs ">
                   <thead className="bg-blue-100">
                     <tr>
-                      <th className="border-b-2 border-gray-300 px-4 py-2 uppercase"></th>
-                      <th className="border-b-2 border-gray-300 px-4 py-2">
+                      <th className="border-b-2 border-gray-300  uppercase"></th>
+                      <th className="border-b-2 border-gray-300  ">
                         {produtosDetail?.porcoes.porcaoMenor}
                       </th>
-                      <th className="border-b-2 border-gray-300 px-4 py-2">
+                      <th className="border-b-2 border-gray-300   ">
                         {produtosDetail?.porcoes.porcaoMiaor}
                       </th>
-                      <th className="border-b-2 border-gray-300 px-4 py-2">
+                      <th className="border-b-2 border-gray-300 px-1 ">
                         % VD (*)
                       </th>
                     </tr>
                   </thead>
-                  <tbody>
+                  <tbody className="">
                     <tr className="bg-white">
                       <td className="border px-4 py-2">
                         Valor energético (kcal)
                       </td>
-                      <td className="border px-4 py-2">
+                      <td className="border px-4 py-2 text-center">
                         {produtosDetail?.nutritional100g.kcal}
                       </td>
-                      <td className="border px-4 py-2">
+                      <td className="border px-4 py-2 text-center">
                         {produtosDetail?.nutritional200g.kcal}
                       </td>
-                      <td className="border px-4 py-2">
+                      <td className="border px-4 py-2 text-center">
                         {produtosDetail?.vd.kcal}
                       </td>
                     </tr>
@@ -165,25 +165,25 @@ export function ProdutoDetail() {
                       <td className="border px-4 py-2">
                         Carboidratos totais (g)
                       </td>
-                      <td className="border px-4 py-2">
+                      <td className="border px-4 py-2 text-center">
                         {produtosDetail?.nutritional100g.carbo}
                       </td>
-                      <td className="border px-4 py-2">
+                      <td className="border px-4 py-2 text-center">
                         {produtosDetail?.nutritional200g.carbo}
                       </td>
-                      <td className="border px-4 py-2">
+                      <td className="border px-4 py-2 text-center">
                         {produtosDetail?.vd.carbo}
                       </td>
                     </tr>
                     <tr className="bg-white">
                       <td className="border px-4 py-2">Açúcares totais (g)</td>
-                      <td className="border px-4 py-2">
+                      <td className="border px-4 py-2 text-center">
                         {produtosDetail?.nutritional100g.acucaresTotais}
                       </td>
-                      <td className="border px-4 py-2">
+                      <td className="border px-4 py-2 text-center">
                         {produtosDetail?.nutritional200g.acucaresTotais}
                       </td>
-                      <td className="border px-4 py-2">
+                      <td className="border px-4 py-2 text-center">
                         {produtosDetail?.vd.acucaresTotais}
                       </td>
                     </tr>
@@ -191,37 +191,37 @@ export function ProdutoDetail() {
                       <td className="border px-4 py-2">
                         Açúcares adicionados (g)
                       </td>
-                      <td className="border px-4 py-2">
+                      <td className="border px-4 py-2 text-center">
                         {produtosDetail?.nutritional100g.acucaresAdicionados}
                       </td>
-                      <td className="border px-4 py-2">
+                      <td className="border px-4 py-2 text-center">
                         {produtosDetail?.nutritional200g.acucaresAdicionados}
                       </td>
-                      <td className="border px-4 py-2">
+                      <td className="border px-4 py-2 text-center">
                         {produtosDetail?.vd.acucaresAdicionados}
                       </td>
                     </tr>
                     <tr className="bg-white">
                       <td className="border px-4 py-2">Proteínas (g)</td>
-                      <td className="border px-4 py-2">
+                      <td className="border px-4 py-2 text-center">
                         {produtosDetail?.nutritional100g.proteinas}
                       </td>
-                      <td className="border px-4 py-2">
+                      <td className="border px-4 py-2 text-center">
                         {produtosDetail?.nutritional200g.proteinas}
                       </td>
-                      <td className="border px-4 py-2">
+                      <td className="border px-4 py-2 text-center">
                         {produtosDetail?.vd.proteinas}
                       </td>
                     </tr>
                     <tr className="bg-blue-100">
                       <td className="border px-4 py-2">Gorduras totais (g)</td>
-                      <td className="border px-4 py-2">
+                      <td className="border px-4 py-2 text-center">
                         {produtosDetail?.nutritional100g.gordurasTotais}
                       </td>
-                      <td className="border px-4 py-2">
+                      <td className="border px-4 py-2 text-center">
                         {produtosDetail?.nutritional200g.gordurasTotais}
                       </td>
-                      <td className="border px-4 py-2">
+                      <td className="border px-4 py-2 text-center">
                         {produtosDetail?.vd.gordurasTotais}
                       </td>
                     </tr>
@@ -229,82 +229,85 @@ export function ProdutoDetail() {
                       <td className="border px-4 py-2">
                         Gorduras saturadas (g)
                       </td>
-                      <td className="border px-4 py-2">
+                      <td className="border px-4 py-2 text-center">
                         {produtosDetail?.nutritional100g.gordurasSaturadas}
                       </td>
-                      <td className="border px-4 py-2">
+                      <td className="border px-4 py-2 text-center">
                         {produtosDetail?.nutritional200g.gordurasSaturadas}
                       </td>
-                      <td className="border px-4 py-2">
+                      <td className="border px-4 py-2 text-center">
                         {produtosDetail?.vd.gordurasSaturadas}
                       </td>
                     </tr>
                     <tr className="bg-blue-100">
                       <td className="border px-4 py-2">Gorduras trans (g)</td>
-                      <td className="border px-4 py-2">
+                      <td className="border px-4 py-2 text-center">
                         {produtosDetail?.nutritional100g.gordurasTrans}
                       </td>
-                      <td className="border px-4 py-2">
+                      <td className="border px-4 py-2 text-center">
                         {produtosDetail?.nutritional200g.gordurasTrans}
                       </td>
-                      <td className="border px-4 py-2">
+                      <td className="border px-4 py-2 text-center">
                         {produtosDetail?.vd.gordurasTrans}
                       </td>
                     </tr>
                     <tr className="bg-white">
                       <td className="border px-4 py-2">Fibra alimentar (g)</td>
-                      <td className="border px-4 py-2">
+                      <td className="border px-4 py-2 text-center">
                         {produtosDetail?.nutritional100g.fibrasAlimentares}
                       </td>
-                      <td className="border px-4 py-2">
+                      <td className="border px-4 py-2 text-center">
                         {produtosDetail?.nutritional200g.fibrasAlimentares}
                       </td>
-                      <td className="border px-4 py-2">
+                      <td className="border px-4 py-2 text-center">
                         {produtosDetail?.vd.fibrasAlimentares}
                       </td>
                     </tr>
                     <tr className="bg-blue-100">
                       <td className="border px-4 py-2">Sódio (mg)</td>
-                      <td className="border px-4 py-2">
+                      <td className="border px-4 py-2 text-center">
                         {produtosDetail?.nutritional100g.sodio}
                       </td>
-                      <td className="border px-4 py-2">
+                      <td className="border px-4 py-2 text-center">
                         {produtosDetail?.nutritional200g.sodio}
                       </td>
-                      <td className="border px-4 py-2">
+                      <td className="border px-4 py-2 text-center">
                         {produtosDetail?.vd.sodio}
                       </td>
                     </tr>
                     <tr className="bg-white">
                       <td className="border px-4 py-2">Cálcio (mg)</td>
-                      <td className="border px-4 py-2">
+                      <td className="border px-4 py-2 text-center">
                         {produtosDetail?.nutritional100g.calcio}
                       </td>
-                      <td className="border px-4 py-2">
+                      <td className="border px-4 py-2 text-center">
                         {produtosDetail?.nutritional200g.calcio}
                       </td>
-                      <td className="border px-4 py-2">
+                      <td className="border px-4 py-2 text-center">
                         {produtosDetail?.vd.calcio}
                       </td>
                     </tr>
                   </tbody>
                 </table>
-                <div className="bg-blue-100 p-2">
+                <div className="bg-blue-100 p-2 max-md:text-xs">
                   <p className="">{produtosDetail?.aviso.avisoTabela}</p>
                 </div>
               </div>
             </div>
 
-            <div className="flex-col w-1/3 items-center justify-center ml-4 mt-10">
+            <div
+              className="flex-col w-1/3 items-center 
+            justify-center ml-4 mt-10 max-md:w-full max-md:text-xs max-md:mb-10"
+            >
               <div>
-                <p className=" uppercase text-sm">
+                <p className=" uppercase text-sm max-md:text-xs">
                   {produtosDetail?.porcoes?.porcao}
                 </p>
-                <p className=" uppercase text-sm">
+                <p className=" uppercase text-sm max-md:text-xs">
                   {produtosDetail?.porcoes?.porcaototal}
                 </p>
-                <h2 className=" font-semibold text-xl uppercase mt-2">
-                  Ingredientes
+                <h2 className=" font-semibold text-xl uppercase mt-2 ">
+                  Ingredientes:
                 </h2>
                 <p className=" uppercase text-sm">
                   {produtosDetail?.informacoes.ingredientes}
@@ -317,7 +320,7 @@ export function ProdutoDetail() {
               </div>
               <div>
                 <h2 className=" font-semibold text-xl uppercase">
-                  conservação
+                  conservação:
                 </h2>
                 <p className="uppercase">
                   {produtosDetail?.informacoes.conservacaoFechado}
@@ -328,7 +331,7 @@ export function ProdutoDetail() {
               </div>
               <div>
                 <h2 className=" font-semibold text-xl uppercase">
-                  dados técnicos
+                  dados técnicos:
                 </h2>
                 <div className="uppercase">
                   <p>GTIN-13: {produtosDetail?.informacoes.gtin13}</p>

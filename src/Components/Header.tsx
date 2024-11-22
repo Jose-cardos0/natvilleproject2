@@ -19,10 +19,13 @@ export function Header() {
             <img src={logo} alt="natville" />
           </div>
         </Link>
+
         <div className="w-full flex items-center justify-center gap-3">
-          <div className="font-roboto uppercase py-1 px-4 cursor-pointer ">
-            quem somos
-          </div>
+          <Link to={"/quemsomos"}>
+            <div className="font-roboto uppercase py-1 px-4 cursor-pointer ">
+              quem somos
+            </div>
+          </Link>
 
           <div
             className={
@@ -41,12 +44,14 @@ export function Header() {
                   flex items-center justify-center bg-opacity-30 "
             >
               <div className=" items-center justify-between flex w-7/12 py-3 ">
-                <div
-                  className="w-full  px-5 py-2 cursor-pointer uppercase hover:border-b-2
+                <Link to={"/queijos"}>
+                  <div
+                    className="w-full px-5 py-2 cursor-pointer uppercase hover:border-b-2
                  hover:border-custom-blue text-center"
-                >
-                  queijos
-                </div>
+                  >
+                    queijos
+                  </div>
+                </Link>
                 <Link to={"/leiteuht"}>
                   <div
                     className="w-full  px-5 py-2 cursor-pointer uppercase hover:border-b-2
@@ -55,24 +60,30 @@ export function Header() {
                     leites
                   </div>
                 </Link>
-                <div
-                  className="w-full  px-5 py-2 cursor-pointer uppercase hover:border-b-2
+                <Link to={"/leiteuht"}>
+                  <div
+                    className="w-full  px-5 py-2 cursor-pointer uppercase hover:border-b-2
                  hover:border-custom-blue text-center"
-                >
-                  bebidas lácteas
-                </div>
-                <div
-                  className="w-full  px-5 py-2 cursor-pointer uppercase hover:border-b-2
+                  >
+                    bebidas lácteas
+                  </div>
+                </Link>
+                <Link to={"/leiteuht"}>
+                  <div
+                    className="w-full  px-5 py-2 cursor-pointer uppercase hover:border-b-2
                  hover:border-custom-blue text-center"
-                >
-                  queijos processados
-                </div>
-                <div
-                  className="w-full  px-5 py-2 cursor-pointer uppercase hover:border-b-2
+                  >
+                    queijos processados
+                  </div>
+                </Link>
+                <Link to={"/leiteuht"}>
+                  <div
+                    className="w-full  px-5 py-2 cursor-pointer uppercase hover:border-b-2
                  hover:border-custom-blue text-center"
-                >
-                  soro em pó
-                </div>
+                  >
+                    soro em pó
+                  </div>
+                </Link>
               </div>
             </div>
           ) : (
