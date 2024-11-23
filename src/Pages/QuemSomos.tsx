@@ -27,35 +27,39 @@ export function QuemSomos() {
           style={{ backgroundImage: `url(${bg})` }}
           className="h-screen w-screen flex items-center
           justify-center bg-cover m-auto
-           bg-no-repeat "
+           bg-no-repeat max-md:bg-center "
         >
           <div className=" items-center justify-center flex-col max-w-7xl">
             <div className="w-full flex items-center justify-center">
               <button
                 className=" bg-custom-blue-strong font-roboto uppercase py-1
-               px-6 rounded-xl text-custom-white drop-shadow-lg"
+               px-6 rounded-xl text-custom-white drop-shadow-lg max-md:mb-10 max-md:text-xs"
               >
                 quem somos?
               </button>
             </div>
-            <img className="drop-shadow-xl" src={logo} alt="natville" />
+            <img
+              className="drop-shadow-xl max-md:max-w-72"
+              src={logo}
+              alt="natville"
+            />
           </div>
         </div>
         <div
           style={{ backgroundImage: `url(${natville})` }}
           className="h-screen w-screen flex items-center
         justify-center m-auto
-         bg-no-repeat bg-contain drop-shadow-xl z-10"
+         bg-no-repeat bg-contain drop-shadow-xl z-10 max-md:bg-center max-md:bg-cover"
         >
           <div className="max-w-4xl">
             <div
               className="items-end justify-end
              text-custom-blue-strong -mt-80"
             >
-              <h1 className="uppercase font-mochari text-6xl text-end">
+              <h1 className="uppercase font-mochari text-6xl text-end max-md:text-center max-md:mt-20">
                 nosso propósito
               </h1>
-              <p className="lowercase font-roboto text-end font-light ">
+              <p className="lowercase font-roboto text-end font-light max-md:mx-8 max-md:text-justify  ">
                 SOMOS O CONVITE PARA UMA JORNADA. ESSE CAMINHO PARTE DO NOSSO
                 DESEJO DE TRANSFORMAR O MUNDO EM UM LUGAR MELHOR DE SE VIVER.
                 SOMOS UMA UNIDA FAMÍLIA DO INTERIOR DE SERGIPE, QUE DEDICA A
@@ -68,7 +72,7 @@ export function QuemSomos() {
         </div>
         <div
           className="max-w-4xl text-center flex-col
-         items-center justify-center m-auto text-custom-blue-strong"
+         items-center justify-center m-auto text-custom-blue-strong max-md:mx-8 max-md:mt-20"
         >
           <h1 className="uppercase font-mochari text-6xl text-center ">
             nossa comunidade e valores
@@ -124,7 +128,7 @@ export function QuemSomos() {
           style={{ backgroundImage: `url(${capela})` }}
           className="h-screen w-screen flex items-center
         justify-center m-auto
-         bg-no-repeat bg-contain drop-shadow-xl z-10"
+         bg-no-repeat bg-contain drop-shadow-xl z-10 max-md:bg-cover max-md:bg-center"
         ></div>
 
         <div
@@ -133,7 +137,7 @@ export function QuemSomos() {
         >
           <p
             className="text-justify text-custom-blue-strong
-          font-light font-roboto mb-20"
+          font-light font-roboto mb-20 max-md:mx-8"
           >
             Essa empresa de laticínios, com São Miguel Arcanjo como seu
             padroeiro, é dedicada não apenas à produção de alimentos de

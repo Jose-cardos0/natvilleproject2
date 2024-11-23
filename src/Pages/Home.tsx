@@ -37,7 +37,7 @@ export function Home() {
         <div
           style={{ backgroundImage: `url(${bg1})` }}
           className="min-h-screen w-screen flex items-center
-       justify-center m-auto bg-cover z-0 relative overflow-hidden"
+       justify-center m-auto bg-cover z-0 relative overflow-hidden mm:max-md:bg-center"
         >
           <div
             className="max-w-7xl 
@@ -115,7 +115,7 @@ export function Home() {
             className="h-auto flex items-center
           justify-center m-auto z-20 bg-custom-white overflow-hidden"
           >
-            <div className="max-w-7xl">
+            <div id="sliderProdutos" className="max-w-7xl ">
               <SliderProdutos />
             </div>
           </div>
