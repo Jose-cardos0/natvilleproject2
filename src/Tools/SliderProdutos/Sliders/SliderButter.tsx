@@ -2,10 +2,14 @@ import manteiga from "../../../assets/Sliders/manteigas.png";
 
 export function SliderButter() {
   return (
-    <div className="max-w-7xl flex items-center justify-between gap-8">
+    <div
+      className="max-w-7xl flex items-center justify-between
+     gap-8 mm:max-md:flex-col "
+    >
       <div className="w-full">
         <img
-          className="drop-shadow-md cursor-pointer hover:scale-105 duration-300 transition"
+          className="drop-shadow-md cursor-pointer
+           hover:scale-105 duration-300 transition"
           src={manteiga}
           alt=""
         />
@@ -15,15 +19,15 @@ export function SliderButter() {
           <h1
             className="font-mochari
      text-9xl text-custom-blue-strong
-      text-end"
+      text-end mm:max-md:text-6xl mm:max-md:text-center mm:max-md:w-full"
           >
             LINHA
             <br />
             MANTEIGAS
           </h1>
         </div>
-        <div className="py-8">
-          <p className="font-roboto text-custom-blue-strong text-end">
+        <div className="py-8 mm:max-md:py-3">
+          <p className="font-roboto text-custom-blue-strong text-end mm:max-md:text-justify">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ea,
             itaque adipisci laudantium dolorum obcaecati illum officiis
             consequuntur aliquid? Magni aspernatur veritatis, officiis enim
@@ -42,7 +46,7 @@ bg-custom-blue-strong
 text-white py-3 
 px-14 rounded-md shadow-sm
 shadow-black font-light 
-border-none mt-8"
+border-none mt-8 mm:max-md:w-full"
           >
             <span className="relative z-10 flex items-center justify-center">
               ESPECIFICAÇÕES &rsaquo;

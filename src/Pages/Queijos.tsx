@@ -311,7 +311,7 @@ export function Queijos() {
               >
                 <div>
                   <img
-                    className="min-w-56 hover:scale-105 transition duration-700"
+                    className="min-w-56 hover:scale-105 transition duration-700 drop-shadow-lg"
                     src={logoF}
                     alt="natville"
                   />

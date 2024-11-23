@@ -36,7 +36,7 @@ export function Header() {
           </button>
           <Link to={"/"}>
             <div className="cursor-pointer relative">
-              <img src={logo} alt="natville" />
+              <img className="drop-shadow-lg" src={logo} alt="natville" />
             </div>
           </Link>
           {isOpen ? (
@@ -91,7 +91,7 @@ export function Header() {
         <section className="max-w-7xl flex items-center justify-center ">
           <Link to={"/"}>
             <div className="mr-8 cursor-pointer">
-              <img src={logo} alt="natville" />
+              <img className="drop-shadow-lg" src={logo} alt="natville" />
             </div>
           </Link>
 

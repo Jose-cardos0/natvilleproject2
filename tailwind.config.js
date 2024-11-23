@@ -25,6 +25,9 @@ export default {
       height: {
         "height-full-96px": "calc(100vh - 96px)",
       },
+      width: {
+        "width-mobile": "30rem",
+      },
     },
     screens: {
       mm: "320px", // 'min-width

@@ -12,8 +12,12 @@ import { FaWhatsapp } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { AiOutlineLinkedin } from "react-icons/ai";
 import { FiPhoneForwarded } from "react-icons/fi";
+import { useLayoutEffect } from "react";
 
 export function QuemSomos() {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <main
       className="bg-custom-white overflow-x-hidden w-full
@@ -183,7 +187,7 @@ export function QuemSomos() {
             >
               <div>
                 <img
-                  className="min-w-56 hover:scale-105 transition duration-700"
+                  className="min-w-56 hover:scale-105 transition duration-700 drop-shadow-lg"
                   src={logoF}
                   alt="natville"
                 />
