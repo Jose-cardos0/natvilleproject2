@@ -9,6 +9,7 @@ import { ImMenu2 } from "react-icons/im";
 
 export function Header() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [isOpenProduct, setIsOpenProduct] = useState<boolean>(false);
   const [isMobile, setIsMobile] = useState<boolean>(false);
 
   useEffect(() => {
@@ -53,12 +54,28 @@ export function Header() {
                     </div>
                   </Link>
                 </ul>
-                <ul>
+                <ul onClick={() => setIsOpenProduct((prev) => !prev)}>
                   <Link to={"#sliderProdutos"}>
                     <div className="font-roboto uppercase py-1 px-4 cursor-pointer ">
                       nossos produtos
                     </div>
                   </Link>
+                  {isOpenProduct ? (
+                    <div>
+                      <Link to={"/leiteuht"}>
+                        <div className="font-roboto uppercase py-1 px-4 cursor-pointer ml-4 ">
+                          Linha leites
+                        </div>
+                      </Link>
+                      <Link to={"/queijos"}>
+                        <div className="font-roboto uppercase py-1 px-4 cursor-pointer ml-4 ">
+                          Linha Queijos
+                        </div>
+                      </Link>
+                    </div>
+                  ) : (
+                    ""
+                  )}
                 </ul>
                 <ul>
                   <Link to={"/"}>
