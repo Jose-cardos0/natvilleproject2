@@ -43,32 +43,39 @@ export function Header() {
           {isOpen ? (
             <div
               className="absolute top-24 left-0 
-             w-2/3 h-screen bg-custom-white 
-             opacity-75 flex flex-col justify-center items-center drop-shadow-lg"
+           w-2/3 h-screen bg-custom-white 
+           bg-opacity-95 flex flex-col justify-center
+            items-center drop-shadow-lg  transition-all 
+            duration-300"
             >
-              <div className="-mt-20">
+              <div className="-mt-20 w-full ">
                 <ul>
                   <Link to={"/quemsomos"}>
-                    <div className="font-roboto uppercase py-1 px-4 cursor-pointer ">
+                    <div
+                      className="font-roboto uppercase py-3 px-5 
+                      cursor-pointer 
+                   text-gray-800 hover:bg-blue-100 transition 
+                   duration-300 rounded-lg flex items-center"
+                    >
                       quem somos
                     </div>
                   </Link>
                 </ul>
                 <ul onClick={() => setIsOpenProduct((prev) => !prev)}>
                   <Link to={"#sliderProdutos"}>
-                    <div className="font-roboto uppercase py-1 px-4 cursor-pointer ">
+                    <div className="font-roboto uppercase py-3 px-5 cursor-pointer text-gray-800 hover:bg-blue-100 transition duration-300 rounded-lg flex items-center">
                       nossos produtos
                     </div>
                   </Link>
                   {isOpenProduct ? (
-                    <div>
+                    <div className="ml-4">
                       <Link to={"/leiteuht"}>
-                        <div className="font-roboto uppercase py-1 px-4 cursor-pointer ml-4 ">
+                        <div className="font-roboto uppercase py-2 px-4 cursor-pointer text-gray-600 hover:bg-blue-50 transition duration-300 rounded-lg">
                           Linha leites
                         </div>
                       </Link>
                       <Link to={"/queijos"}>
-                        <div className="font-roboto uppercase py-1 px-4 cursor-pointer ml-4 ">
+                        <div className="font-roboto uppercase py-2 px-4 cursor-pointer text-gray-600 hover:bg-blue-50 transition duration-300 rounded-lg">
                           Linha Queijos
                         </div>
                       </Link>
@@ -79,21 +86,21 @@ export function Header() {
                 </ul>
                 <ul>
                   <Link to={"/"}>
-                    <div className="font-roboto uppercase py-1 px-4 cursor-pointer ">
+                    <div className="font-roboto uppercase py-3 px-5 cursor-pointer text-gray-800 hover:bg-blue-100 transition duration-300 rounded-lg flex items-center">
                       notícias
                     </div>
                   </Link>
                 </ul>
                 <ul>
                   <Link to={"/"}>
-                    <div className="font-roboto uppercase py-1 px-4 cursor-pointer ">
+                    <div className="font-roboto uppercase py-3 px-5 cursor-pointer text-gray-800 hover:bg-blue-100 transition duration-300 rounded-lg flex items-center">
                       contato
                     </div>
                   </Link>
                 </ul>
                 <ul>
                   <Link to={"/"}>
-                    <div className="font-roboto uppercase py-1 px-4 cursor-pointer ">
+                    <div className="font-roboto uppercase py-3 px-5 cursor-pointer text-gray-800 hover:bg-blue-100 transition duration-300 rounded-lg flex items-center">
                       trabalhe conosco
                     </div>
                   </Link>
