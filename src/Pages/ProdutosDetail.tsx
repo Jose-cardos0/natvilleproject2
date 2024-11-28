@@ -128,7 +128,7 @@ export function ProdutoDetail() {
     <section
       id={id}
       className="w-screen flex-col items-center justify-center
-       h-screen m-auto"
+      m-auto"
     >
       <div className="max-w-7xl flex-col items-center justify-center m-auto">
         <div className="flex items-center justify-center m-auto">
@@ -166,7 +166,7 @@ export function ProdutoDetail() {
                   <img
                     src={images[currentImageIndex]}
                     alt=""
-                    className="w-full drop-shadow-2xl px-9"
+                    className="w-full drop-shadow-2xl px-9 max-w-full"
                   />
                   <button
                     onClick={prevImage}
@@ -423,8 +423,8 @@ export function ProdutoDetail() {
         </div>
       </div>
       {/*inicio div de receitas */}
-      <div className="-mt-52 max-md:-mt-20">
-        <svg viewBox="0 0 950 160 " className="wave-svg max-md:h-52">
+      <div className="-mt-52 max-md:-mt-20 ">
+        <svg viewBox="0 0 950 160 " className="wave-svg max-md:h-52 ">
           <path
             fill="#55BECD"
             d="M0,64L30,74.7C60,85,120,107,180,117.3C240,128,300,128,360,128C420,128,480,128,540,117.3C600,107,660,85,720,80C780,75,840,85,900,101.3C960,117,1020,139,1080,149.3C1140,160,1200,160,1260,160C1320,160,1380,160,1410,160L1440,160L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
@@ -454,7 +454,7 @@ export function ProdutoDetail() {
                 <img
                   src={images[currentImageIndex]}
                   alt=""
-                  className="w-full drop-shadow-2xl px-9"
+                  className="w-full drop-shadow-2xl px-9 max-w-full"
                 />
                 <button
                   onClick={prevImage}
