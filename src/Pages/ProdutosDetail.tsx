@@ -434,7 +434,7 @@ export function ProdutoDetail() {
         </svg>
         <div
           className="bg-custom-blue
- flex items-center justify-center pb-20 max-md:-mt-1 "
+ flex items-center justify-center pb-20 max-md:-mt-10 "
         >
           {isWidth ? (
             ""

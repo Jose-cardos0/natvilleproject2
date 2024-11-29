@@ -7,6 +7,10 @@ import { Link } from "react-router-dom";
 //icons
 import { ImMenu2 } from "react-icons/im";
 
+//animacoes
+import { AnimatedNegative } from "../Tools/Animates/AnimatedNegative";
+import { AnimatedSection } from "../Tools/Animates/AnimatedSections";
+
 export function Header() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [isOpenProduct, setIsOpenProduct] = useState<boolean>(false);
@@ -32,14 +36,19 @@ export function Header() {
     >
       {isMobile ? (
         <section className="w-full flex items-center justify-between mx-8">
-          <button onClick={() => setIsOpen((prev) => !prev)}>
-            <ImMenu2 size={40} color="#003FA5" />
-          </button>
-          <Link to={"/"}>
-            <div className="cursor-pointer relative">
-              <img className="drop-shadow-lg" src={logo} alt="natville" />
-            </div>
-          </Link>
+          <AnimatedSection>
+            <button onClick={() => setIsOpen((prev) => !prev)}>
+              <ImMenu2 size={40} color="#003FA5" />
+            </button>
+          </AnimatedSection>
+          <AnimatedNegative>
+            <Link to={"/"}>
+              <div className="cursor-pointer relative">
+                <img className="drop-shadow-lg" src={logo} alt="natville" />
+              </div>
+            </Link>
+          </AnimatedNegative>
+
           {isOpen ? (
             <div
               className="absolute top-24 left-0 
