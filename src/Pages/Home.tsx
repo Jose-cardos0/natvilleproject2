@@ -126,7 +126,9 @@ export function Home() {
           overflow-hidden mm:max-md:bg-cover mm:max-md:-mt-0"
           >
             <div id="sliderProdutos" className="max-w-7xl  ">
-              <SliderProdutos />
+              <AnimatedSection>
+                <SliderProdutos />
+              </AnimatedSection>
             </div>
           </div>
           {/*INICO BGFOOTER */}
@@ -141,72 +143,74 @@ export function Home() {
                flex-col items-center
             "
             >
-              <div className="w-full flex justify-between mt-28 mm:max-md:flex-col">
-                <div className="mm:max-md:mb-8">
-                  <img
-                    className="min-w-56 drop-shadow-lg"
-                    src={logoF}
-                    alt="natville"
-                  />
-                </div>
-                <div className="flex-col items-center justify-center ">
-                  <p
-                    className="text-custom-blue-strong
-                   text-center font-mochari text-4xl"
-                  >
-                    Acompanhe nossas
-                  </p>
-                  <div className="flex items-center justify-center gap-2">
-                    <AiOutlineYoutube
-                      size={25}
-                      className="cursor-pointer hover:scale-105 transition duration-300"
-                    />
-                    <CiFacebook
-                      size={25}
-                      className="cursor-pointer hover:scale-105 transition duration-300"
-                    />
-                    <FaWhatsapp
-                      size={25}
-                      className="cursor-pointer hover:scale-105 transition duration-300"
-                    />
-                    <FaInstagram
-                      size={25}
-                      className="cursor-pointer hover:scale-105 transition duration-300"
-                    />
-                    <AiOutlineLinkedin
-                      size={25}
-                      className="cursor-pointer hover:scale-105 transition duration-300"
+              <AnimatedY>
+                <div className="w-full flex justify-between mt-28 mm:max-md:flex-col">
+                  <div className="mm:max-md:mb-8">
+                    <img
+                      className="min-w-56 drop-shadow-lg"
+                      src={logoF}
+                      alt="natville"
                     />
                   </div>
-                  <p
-                    className="text-custom-blue-strong 
+                  <div className="flex-col items-center justify-center ">
+                    <p
+                      className="text-custom-blue-strong
+                   text-center font-mochari text-4xl"
+                    >
+                      Acompanhe nossas
+                    </p>
+                    <div className="flex items-center justify-center gap-2">
+                      <AiOutlineYoutube
+                        size={25}
+                        className="cursor-pointer hover:scale-105 transition duration-300"
+                      />
+                      <CiFacebook
+                        size={25}
+                        className="cursor-pointer hover:scale-105 transition duration-300"
+                      />
+                      <FaWhatsapp
+                        size={25}
+                        className="cursor-pointer hover:scale-105 transition duration-300"
+                      />
+                      <FaInstagram
+                        size={25}
+                        className="cursor-pointer hover:scale-105 transition duration-300"
+                      />
+                      <AiOutlineLinkedin
+                        size={25}
+                        className="cursor-pointer hover:scale-105 transition duration-300"
+                      />
+                    </div>
+                    <p
+                      className="text-custom-blue-strong 
                   text-center font-mochari text-4xl"
-                  >
-                    redes sociais
-                  </p>
-                </div>
-                <div
-                  className="font-mochari
+                    >
+                      redes sociais
+                    </p>
+                  </div>
+                  <div
+                    className="font-mochari
                  text-custom-blue-strong flex-col
                   items-center justify-center mm:max-md:mt-8 "
-                >
-                  <p className="text-end text-4xl mm:max-md:text-center">
-                    fale conosco
-                  </p>
-                  <div className="flex items-center justify-between gap-3 mm:max-md:justify-center ">
-                    <div>
-                      <FiPhoneForwarded size={37} />
-                    </div>
-                    <div
-                      className="flex-col text-2xl 
+                  >
+                    <p className="text-end text-4xl mm:max-md:text-center">
+                      fale conosco
+                    </p>
+                    <div className="flex items-center justify-between gap-3 mm:max-md:justify-center ">
+                      <div>
+                        <FiPhoneForwarded size={37} />
+                      </div>
+                      <div
+                        className="flex-col text-2xl 
                     items-center justify-center "
-                    >
-                      <p>0800 7213245</p>
-                      <p className="text-xl -mt-3">natville.com.br</p>
+                      >
+                        <p>0800 7213245</p>
+                        <p className="text-xl -mt-3">natville.com.br</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              </AnimatedY>
               <div className="w-full flex-col">
                 <div className="border border-gray-300 mt-5"></div>
                 <div className="text-gray-400">
