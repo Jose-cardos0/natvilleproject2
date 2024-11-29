@@ -77,13 +77,15 @@ export function ProdutoDetail() {
   const [produtosDetail, setprodutosDetail] =
     useState<ProdutoNutritionalData | null>(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [isWidth, setIsWidth] = useState(false);
+  const [isWidth, setIsWidth] = useState<boolean>(false);
 
   useEffect(() => {
     function handleSize() {
       if (window.innerWidth <= 480) {
         setIsWidth(true);
-      } else setIsWidth(false);
+      } else {
+        setIsWidth(false);
+      }
     }
     handleSize();
     window.addEventListener("resize", handleSize);
