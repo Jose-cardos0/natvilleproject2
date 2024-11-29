@@ -49,11 +49,11 @@ export function Home() {
         flex-col items-center justify-center m-auto 
        "
           >
-            <AnimatedY>
+            <AnimatedNegative>
               <div className="w-full">
                 <SlidersWelcome />
               </div>
-            </AnimatedY>
+            </AnimatedNegative>
           </div>
         </div>
         {/*FIM DO SLIDER */}

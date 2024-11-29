@@ -8,7 +8,6 @@ import { Link } from "react-router-dom";
 import { ImMenu2 } from "react-icons/im";
 
 //animacoes
-import { AnimatedNegative } from "../Tools/Animates/AnimatedNegative";
 import { AnimatedSection } from "../Tools/Animates/AnimatedSections";
 
 export function Header() {
@@ -36,85 +35,88 @@ export function Header() {
     >
       {isMobile ? (
         <section className="w-full flex items-center justify-between mx-8">
-          <AnimatedSection>
+          <div className="w-full flex items-center justify-between ">
             <button onClick={() => setIsOpen((prev) => !prev)}>
               <ImMenu2 size={40} color="#003FA5" />
             </button>
-          </AnimatedSection>
-          <AnimatedNegative>
+
             <Link to={"/"}>
               <div className="cursor-pointer relative">
                 <img className="drop-shadow-lg" src={logo} alt="natville" />
               </div>
             </Link>
-          </AnimatedNegative>
+          </div>
 
           {isOpen ? (
             <div
               className="absolute top-24 left-0 
-           w-2/3 h-screen bg-custom-white 
-           bg-opacity-95 flex flex-col justify-center
-            items-center drop-shadow-lg  transition-all 
-            duration-300"
+              w-2/3 h-screen bg-custom-white 
+              bg-opacity-95 flex flex-col justify-center
+              items-center drop-shadow-lg  transition-all 
+              duration-300"
             >
-              <div className="-mt-20 w-full ">
-                <ul>
-                  <Link to={"/quemsomos"}>
-                    <div
-                      className="font-roboto uppercase py-3 px-5 
+              <AnimatedSection>
+                <div className="-mt-20 w-full ">
+                  <ul>
+                    <Link to={"/quemsomos"}>
+                      <div
+                        className="font-roboto uppercase py-3 px-5 
                       cursor-pointer 
                    text-gray-800 hover:bg-blue-100 transition 
                    duration-300 rounded-lg flex items-center"
-                    >
-                      quem somos
-                    </div>
-                  </Link>
-                </ul>
-                <ul onClick={() => setIsOpenProduct((prev) => !prev)}>
-                  <Link to={"#sliderProdutos"}>
-                    <div className="font-roboto uppercase py-3 px-5 cursor-pointer text-gray-800 hover:bg-blue-100 transition duration-300 rounded-lg flex items-center">
-                      nossos produtos
-                    </div>
-                  </Link>
-                  {isOpenProduct ? (
-                    <div className="ml-4">
-                      <Link to={"/leiteuht"}>
-                        <div className="font-roboto uppercase py-2 px-4 cursor-pointer text-gray-600 hover:bg-blue-50 transition duration-300 rounded-lg">
-                          Linha leites
+                      >
+                        quem somos
+                      </div>
+                    </Link>
+                  </ul>
+                  <ul onClick={() => setIsOpenProduct((prev) => !prev)}>
+                    <Link to={"#sliderProdutos"}>
+                      <div className="font-roboto uppercase py-3 px-5 cursor-pointer text-gray-800 hover:bg-blue-100 transition duration-300 rounded-lg flex items-center">
+                        nossos produtos
+                      </div>
+                    </Link>
+                    {isOpenProduct ? (
+                      <AnimatedSection>
+                        <div className="ml-4">
+                          <Link to={"/leiteuht"}>
+                            <div className="font-roboto uppercase py-2 px-4 cursor-pointer text-gray-600 hover:bg-blue-50 transition duration-300 rounded-lg">
+                              Linha leites
+                            </div>
+                          </Link>
+                          <Link to={"/queijos"}>
+                            <div className="font-roboto uppercase py-2 px-4 cursor-pointer text-gray-600 hover:bg-blue-50 transition duration-300 rounded-lg">
+                              Linha Queijos
+                            </div>
+                          </Link>
                         </div>
-                      </Link>
-                      <Link to={"/queijos"}>
-                        <div className="font-roboto uppercase py-2 px-4 cursor-pointer text-gray-600 hover:bg-blue-50 transition duration-300 rounded-lg">
-                          Linha Queijos
-                        </div>
-                      </Link>
-                    </div>
-                  ) : (
-                    ""
-                  )}
-                </ul>
-                <ul>
-                  <Link to={"/"}>
-                    <div className="font-roboto uppercase py-3 px-5 cursor-pointer text-gray-800 hover:bg-blue-100 transition duration-300 rounded-lg flex items-center">
-                      notícias
-                    </div>
-                  </Link>
-                </ul>
-                <ul>
-                  <Link to={"/"}>
-                    <div className="font-roboto uppercase py-3 px-5 cursor-pointer text-gray-800 hover:bg-blue-100 transition duration-300 rounded-lg flex items-center">
-                      contato
-                    </div>
-                  </Link>
-                </ul>
-                <ul>
-                  <Link to={"/"}>
-                    <div className="font-roboto uppercase py-3 px-5 cursor-pointer text-gray-800 hover:bg-blue-100 transition duration-300 rounded-lg flex items-center">
-                      trabalhe conosco
-                    </div>
-                  </Link>
-                </ul>
-              </div>
+                      </AnimatedSection>
+                    ) : (
+                      ""
+                    )}
+                  </ul>
+                  <ul>
+                    <Link to={"/"}>
+                      <div className="font-roboto uppercase py-3 px-5 cursor-pointer text-gray-800 hover:bg-blue-100 transition duration-300 rounded-lg flex items-center">
+                        notícias
+                      </div>
+                    </Link>
+                  </ul>
+                  <ul>
+                    <Link to={"/"}>
+                      <div className="font-roboto uppercase py-3 px-5 cursor-pointer text-gray-800 hover:bg-blue-100 transition duration-300 rounded-lg flex items-center">
+                        contato
+                      </div>
+                    </Link>
+                  </ul>
+                  <ul>
+                    <Link to={"/"}>
+                      <div className="font-roboto uppercase py-3 px-5 cursor-pointer text-gray-800 hover:bg-blue-100 transition duration-300 rounded-lg flex items-center">
+                        trabalhe conosco
+                      </div>
+                    </Link>
+                  </ul>
+                </div>
+              </AnimatedSection>
             </div>
           ) : (
             ""
