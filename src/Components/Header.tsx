@@ -60,6 +60,7 @@ export function Header() {
                   <ul>
                     <Link to={"/quemsomos"}>
                       <div
+                        onClick={() => setIsOpen((prev) => !prev)}
                         className="font-roboto uppercase py-3 px-5 
                       cursor-pointer 
                    text-gray-800 hover:bg-blue-100 transition 
@@ -79,12 +80,18 @@ export function Header() {
                       <AnimatedSection>
                         <div className="ml-4">
                           <Link to={"/leiteuht"}>
-                            <div className="font-roboto uppercase py-2 px-4 cursor-pointer text-gray-600 hover:bg-blue-50 transition duration-300 rounded-lg">
+                            <div
+                              onClick={() => setIsOpen((prev) => !prev)}
+                              className="font-roboto uppercase py-2 px-4 cursor-pointer text-gray-600 hover:bg-blue-50 transition duration-300 rounded-lg"
+                            >
                               Linha leites
                             </div>
                           </Link>
                           <Link to={"/queijos"}>
-                            <div className="font-roboto uppercase py-2 px-4 cursor-pointer text-gray-600 hover:bg-blue-50 transition duration-300 rounded-lg">
+                            <div
+                              onClick={() => setIsOpen((prev) => !prev)}
+                              className="font-roboto uppercase py-2 px-4 cursor-pointer text-gray-600 hover:bg-blue-50 transition duration-300 rounded-lg"
+                            >
                               Linha Queijos
                             </div>
                           </Link>

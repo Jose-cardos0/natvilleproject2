@@ -22,6 +22,11 @@ import { FaInstagram } from "react-icons/fa6";
 import { AiOutlineLinkedin } from "react-icons/ai";
 import { FiPhoneForwarded } from "react-icons/fi";
 
+import { AnimatedNegative } from "../Tools/Animates/AnimatedNegative";
+import { AnimatedSection } from "../Tools/Animates/AnimatedSections";
+import { AnimatedY } from "../Tools/Animates/AnimatedY";
+import { motion } from "framer-motion";
+
 interface Produto {
   id: string;
   produto: string;
@@ -70,21 +75,25 @@ export function LeitesUht() {
             className="max-w-7xl 
         flex items-center justify-center gap-8 max-md:flex-col "
           >
-            <img
-              className="max-w-2xl drop-shadow-md max-md:w-72
+            <AnimatedSection>
+              <img
+                className="max-w-2xl drop-shadow-md max-md:w-72
                max-md:mt-16 cursor-pointer hover:scale-105 transition duration-700"
-              src={leitesUht}
-              alt="leite uht natville"
-            />
+                src={leitesUht}
+                alt="leite uht natville"
+              />
+            </AnimatedSection>
             <div className="flex-col items-center justify-center ">
-              <h1
-                className="font-mochari text-9xl
+              <AnimatedNegative>
+                <h1
+                  className="font-mochari text-9xl
                text-custom-white text-center max-md:text-7xl"
-              >
-                linha
-                <br />
-                leite uht
-              </h1>
+                >
+                  linha
+                  <br />
+                  leite uht
+                </h1>
+              </AnimatedNegative>
               <div
                 className="relative flex items-center
                justify-center mt-20 max-md:hidden animate-bounce hover:scale-105 transition duration-700"
@@ -119,36 +128,44 @@ export function LeitesUht() {
               gap-8 bg-custom-white max-md:flex-col
                max-md:mx-8 max-md:-mt-30"
             >
-              <div>
-                <img
-                  className="max-w-7xl object-center drop-shadow-md
-                   max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
-                  src={leiteUhtEx}
-                  alt="leite uht integral"
-                />
-              </div>
-              <div className="flex-col items-center justify-center">
-                <h1 className="font-mochari text-8xl text-custom-blue-strong">
-                  leite uht <br />
-                  integral
-                </h1>
+              <AnimatedNegative>
                 <div>
-                  <p className="text-custom-blue-strong text-justify mt-8">
-                    Um leite UHT integral saudável e rico em cálcio é aquele que
-                    mantém boa parte dos nutrientes naturais do leite fresco,
-                    como proteínas, vitaminas (especialmente a vitamina D, que
-                    auxilia na absorção do cálcio) e, claro, o próprio cálcio,
-                    essencial para ossos e dentes fortes. Esse tipo de leite é
-                    submetido a um processo de ultra-pasteurização (UHT), onde é
-                    aquecido a altas temperaturas por poucos segundos,
-                    eliminando bactérias prejudiciais sem alterar muito seu
-                    perfil nutricional.
-                  </p>
+                  <motion.img
+                    whileHover={{
+                      scale: 1.1,
+                      rotate: 3,
+                    }}
+                    transition={{ duration: 0.5 }}
+                    className="max-w-7xl object-center drop-shadow-md
+                   max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
+                    src={leiteUhtEx}
+                    alt="leite uht integral"
+                  />
                 </div>
-                <div className="max-md:w-full max-md:items-center max-md:justify-center">
-                  <Link to={`/produtos/${leiteUhtIntegral?.id}`}>
-                    <button
-                      className="relative 
+              </AnimatedNegative>
+              <AnimatedY>
+                <div className="flex-col items-center justify-center">
+                  <h1 className="font-mochari text-8xl text-custom-blue-strong">
+                    leite uht <br />
+                    integral
+                  </h1>
+                  <div>
+                    <p className="text-custom-blue-strong text-justify mt-8">
+                      Um leite UHT integral saudável e rico em cálcio é aquele
+                      que mantém boa parte dos nutrientes naturais do leite
+                      fresco, como proteínas, vitaminas (especialmente a
+                      vitamina D, que auxilia na absorção do cálcio) e, claro, o
+                      próprio cálcio, essencial para ossos e dentes fortes. Esse
+                      tipo de leite é submetido a um processo de
+                      ultra-pasteurização (UHT), onde é aquecido a altas
+                      temperaturas por poucos segundos, eliminando bactérias
+                      prejudiciais sem alterar muito seu perfil nutricional.
+                    </p>
+                  </div>
+                  <div className="max-md:w-full max-md:items-center max-md:justify-center">
+                    <Link to={`/produtos/${leiteUhtIntegral?.id}`}>
+                      <button
+                        className="relative 
           overflow-hidden
            flex-shrink-0
     bg-custom-blue-strong
@@ -156,22 +173,23 @@ export function LeitesUht() {
     px-14 rounded-md shadow-sm
     shadow-black font-light 
      border-none mt-8 max-md:w-full cursor-pointer"
-                    >
-                      <span className="relative z-10 flex items-center justify-center">
-                        TABELA NUTRICIONAL +
-                      </span>
-                      <span
-                        className="absolute inset-0
+                      >
+                        <span className="relative z-10 flex items-center justify-center">
+                          TABELA NUTRICIONAL +
+                        </span>
+                        <span
+                          className="absolute inset-0
             bg-gradient-to-r from-white
              to-black
            transform translate-x-full
             transition-transform
             duration-300 ease-in-out z-0 opacity-20"
-                      ></span>
-                    </button>
-                  </Link>
+                        ></span>
+                      </button>
+                    </Link>
+                  </div>
                 </div>
-              </div>
+              </AnimatedY>
             </div>
             {/*leite desnataod inicio */}
             <div
@@ -179,36 +197,44 @@ export function LeitesUht() {
               gap-8 bg-custom-white my-32 max-md:flex-col
                max-md:mx-8 max-md:my-32"
             >
-              <div>
-                <img
-                  className="max-w-7xl object-center drop-shadow-md
-                   max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
-                  src={leiteUhtExDes}
-                  alt="leite uht integral"
-                />
-              </div>
-              <div className="flex-col items-center justify-center">
-                <h1 className="font-mochari text-8xl text-custom-blue-strong">
-                  leite uht <br />
-                  integral
-                </h1>
+              <AnimatedNegative>
                 <div>
-                  <p className="text-custom-blue-strong text-justify mt-8">
-                    Um leite UHT integral saudável e rico em cálcio é aquele que
-                    mantém boa parte dos nutrientes naturais do leite fresco,
-                    como proteínas, vitaminas (especialmente a vitamina D, que
-                    auxilia na absorção do cálcio) e, claro, o próprio cálcio,
-                    essencial para ossos e dentes fortes. Esse tipo de leite é
-                    submetido a um processo de ultra-pasteurização (UHT), onde é
-                    aquecido a altas temperaturas por poucos segundos,
-                    eliminando bactérias prejudiciais sem alterar muito seu
-                    perfil nutricional.
-                  </p>
+                  <motion.img
+                    whileHover={{
+                      scale: 1.1,
+                      rotate: 3,
+                    }}
+                    transition={{ duration: 0.5 }}
+                    className="max-w-7xl object-center drop-shadow-md
+                   max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
+                    src={leiteUhtExDes}
+                    alt="leite uht integral"
+                  />
                 </div>
-                <div className="max-md:w-full max-md:items-center max-md:justify-center">
-                  <Link to={`/produtos/${leiteUhtDesnatado?.id}`}>
-                    <button
-                      className="relative 
+              </AnimatedNegative>
+              <AnimatedY>
+                <div className="flex-col items-center justify-center">
+                  <h1 className="font-mochari text-8xl text-custom-blue-strong">
+                    leite uht <br />
+                    desnatado
+                  </h1>
+                  <div>
+                    <p className="text-custom-blue-strong text-justify mt-8">
+                      Um leite UHT integral saudável e rico em cálcio é aquele
+                      que mantém boa parte dos nutrientes naturais do leite
+                      fresco, como proteínas, vitaminas (especialmente a
+                      vitamina D, que auxilia na absorção do cálcio) e, claro, o
+                      próprio cálcio, essencial para ossos e dentes fortes. Esse
+                      tipo de leite é submetido a um processo de
+                      ultra-pasteurização (UHT), onde é aquecido a altas
+                      temperaturas por poucos segundos, eliminando bactérias
+                      prejudiciais sem alterar muito seu perfil nutricional.
+                    </p>
+                  </div>
+                  <div className="max-md:w-full max-md:items-center max-md:justify-center">
+                    <Link to={`/produtos/${leiteUhtDesnatado?.id}`}>
+                      <button
+                        className="relative 
           overflow-hidden
            flex-shrink-0
     bg-custom-blue-strong
@@ -216,22 +242,23 @@ export function LeitesUht() {
     px-14 rounded-md shadow-sm
     shadow-black font-light 
      border-none mt-8 max-md:w-full cursor-pointer"
-                    >
-                      <span className="relative z-10 flex items-center justify-center">
-                        TABELA NUTRICIONAL +
-                      </span>
-                      <span
-                        className="absolute inset-0
+                      >
+                        <span className="relative z-10 flex items-center justify-center">
+                          TABELA NUTRICIONAL +
+                        </span>
+                        <span
+                          className="absolute inset-0
             bg-gradient-to-r from-white
              to-black
            transform translate-x-full
             transition-transform
             duration-300 ease-in-out z-0 opacity-20"
-                      ></span>
-                    </button>
-                  </Link>
+                        ></span>
+                      </button>
+                    </Link>
+                  </div>
                 </div>
-              </div>
+              </AnimatedY>
             </div>
             {/*zero lactose */}
             <div
@@ -239,36 +266,44 @@ export function LeitesUht() {
               gap-8 bg-custom-white max-md:flex-col
                max-md:mx-8  max-md:mt-32"
             >
-              <div>
-                <img
-                  className="max-w-7xl object-center drop-shadow-md
-                   max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
-                  src={leiteUhtExZero}
-                  alt="leite uht integral"
-                />
-              </div>
-              <div className="flex-col items-center justify-center">
-                <h1 className="font-mochari text-8xl text-custom-blue-strong">
-                  leite uht <br />
-                  integral
-                </h1>
+              <AnimatedNegative>
                 <div>
-                  <p className="text-custom-blue-strong text-justify mt-8">
-                    Um leite UHT integral saudável e rico em cálcio é aquele que
-                    mantém boa parte dos nutrientes naturais do leite fresco,
-                    como proteínas, vitaminas (especialmente a vitamina D, que
-                    auxilia na absorção do cálcio) e, claro, o próprio cálcio,
-                    essencial para ossos e dentes fortes. Esse tipo de leite é
-                    submetido a um processo de ultra-pasteurização (UHT), onde é
-                    aquecido a altas temperaturas por poucos segundos,
-                    eliminando bactérias prejudiciais sem alterar muito seu
-                    perfil nutricional.
-                  </p>
+                  <motion.img
+                    whileHover={{
+                      scale: 1.1,
+                      rotate: 3,
+                    }}
+                    transition={{ duration: 0.5 }}
+                    className="max-w-7xl object-center drop-shadow-md
+                   max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
+                    src={leiteUhtExZero}
+                    alt="leite uht integral"
+                  />
                 </div>
-                <div className="max-md:w-full max-md:items-center max-md:justify-center">
-                  <Link to={`/produtos/${leiteUhtZero?.id}`}>
-                    <button
-                      className="relative 
+              </AnimatedNegative>
+              <AnimatedY>
+                <div className="flex-col items-center justify-center">
+                  <h1 className="font-mochari text-8xl text-custom-blue-strong">
+                    leite uht <br />
+                    zero lactose
+                  </h1>
+                  <div>
+                    <p className="text-custom-blue-strong text-justify mt-8">
+                      Um leite UHT integral saudável e rico em cálcio é aquele
+                      que mantém boa parte dos nutrientes naturais do leite
+                      fresco, como proteínas, vitaminas (especialmente a
+                      vitamina D, que auxilia na absorção do cálcio) e, claro, o
+                      próprio cálcio, essencial para ossos e dentes fortes. Esse
+                      tipo de leite é submetido a um processo de
+                      ultra-pasteurização (UHT), onde é aquecido a altas
+                      temperaturas por poucos segundos, eliminando bactérias
+                      prejudiciais sem alterar muito seu perfil nutricional.
+                    </p>
+                  </div>
+                  <div className="max-md:w-full max-md:items-center max-md:justify-center">
+                    <Link to={`/produtos/${leiteUhtZero?.id}`}>
+                      <button
+                        className="relative 
           overflow-hidden
            flex-shrink-0
     bg-custom-blue-strong
@@ -276,22 +311,23 @@ export function LeitesUht() {
     px-14 rounded-md shadow-sm
     shadow-black font-light 
      border-none mt-8 max-md:w-full cursor-pointer"
-                    >
-                      <span className="relative z-10 flex items-center justify-center">
-                        TABELA NUTRICIONAL +
-                      </span>
-                      <span
-                        className="absolute inset-0
+                      >
+                        <span className="relative z-10 flex items-center justify-center">
+                          TABELA NUTRICIONAL +
+                        </span>
+                        <span
+                          className="absolute inset-0
             bg-gradient-to-r from-white
              to-black
            transform translate-x-full
             transition-transform
             duration-300 ease-in-out z-0 opacity-20"
-                      ></span>
-                    </button>
-                  </Link>
+                        ></span>
+                      </button>
+                    </Link>
+                  </div>
                 </div>
-              </div>
+              </AnimatedY>
             </div>
           </div>
 
