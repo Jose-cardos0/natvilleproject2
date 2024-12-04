@@ -6,6 +6,8 @@ import { QuemSomos } from "./Pages/QuemSomos";
 import { ProdutoDetail } from "./Pages/ProdutosDetail";
 import { LeitesUht } from "./Pages/leiteUht";
 import { Queijos } from "./Pages/Queijos";
+import { Manteigas } from "./Pages/Manteigas";
+import { Noticias } from "./Pages/Noticias";
 
 //header
 import { Layout } from "./Components/Layout";
@@ -33,6 +35,14 @@ export const router = createBrowserRouter([
       {
         path: "/produtos/:id",
         element: <ProdutoDetail />,
+      },
+      {
+        path: "/manteigas",
+        element: <Manteigas />,
+      },
+      {
+        path: "/noticias",
+        element: <Noticias />,
       },
     ],
   },

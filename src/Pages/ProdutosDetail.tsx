@@ -119,14 +119,12 @@ export function ProdutoDetail() {
     return (
       <div
         className="h-screen w-screen
-       bg-custom-blue flex items-center justify-center"
+       bg-custom-blue flex items-center justify-center flex-col"
       >
+        <button className="bg-custom-white p-5 drop-shadow-lg rounded-full animate-bounce border"></button>
         <h1 className="text-custom-blue-strong font-mochari text-4xl">
-          Produto não encontrado
+          Carregando..
         </h1>
-        <button className="bg-custom-white py-2 px-6 text-custom-blue-strong drop-shadow-lg rounded-md">
-          Retornar ao início
-        </button>
       </div>
     );
   }
