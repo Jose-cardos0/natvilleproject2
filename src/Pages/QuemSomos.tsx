@@ -4,6 +4,7 @@ import capela from "../assets/QuemSomos/capela.svg";
 import bg from "../assets/QuemSomos/bgProdutos.svg";
 
 import logoF from "../assets/Footer/logoFooter.svg";
+import valores from "../assets/QuemSomos/Valores.png";
 
 //icons
 import { AiOutlineYoutube } from "react-icons/ai";
@@ -35,9 +36,9 @@ export function QuemSomos() {
           style={{ backgroundImage: `url(${bg})` }}
           className="h-screen w-screen flex items-center
           justify-center bg-cover m-auto
-           bg-no-repeat max-md:bg-center "
+           bg-no-repeat max-md:bg-center  "
         >
-          <div className=" items-center justify-center flex-col max-w-7xl">
+          <div className=" items-center justify-center flex-col max-w-7xl mm:max-md:-mt-28">
             <div className="w-full flex items-center justify-center">
               <AnimatedNegative>
                 <button
@@ -49,11 +50,23 @@ export function QuemSomos() {
               </AnimatedNegative>
             </div>
             <AnimatedSection>
-              <img
-                className="drop-shadow-xl max-md:max-w-72"
-                src={logo}
-                alt="natville"
-              />
+              <div className="flex items-center mm:max-md:flex-col">
+                <img
+                  className="mm:max-md:w-36 mm:max-md:hidden"
+                  src={valores}
+                  alt=""
+                />
+                <img
+                  className="drop-shadow-xl max-md:max-w-72"
+                  src={logo}
+                  alt="natville"
+                />
+                <img
+                  className="mm:max-md:w-36 mm:max-md:block hidden"
+                  src={valores}
+                  alt=""
+                />
+              </div>
             </AnimatedSection>
           </div>
         </div>
@@ -72,7 +85,10 @@ export function QuemSomos() {
                 <h1 className="uppercase font-mochari text-6xl text-end max-md:text-center max-md:mt-20">
                   nosso propósito
                 </h1>
-                <p className="lowercase font-roboto text-end font-light max-md:mx-8 max-md:text-justify  ">
+                <p
+                  className="lowercase font-roboto text-end 
+                max-md:mx-8 max-md:text-justify font-light  "
+                >
                   SOMOS O CONVITE PARA UMA JORNADA. ESSE CAMINHO PARTE DO NOSSO
                   DESEJO DE TRANSFORMAR O MUNDO EM UM LUGAR MELHOR DE SE VIVER.
                   SOMOS UMA UNIDA FAMÍLIA DO INTERIOR DE SERGIPE, QUE DEDICA A

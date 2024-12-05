@@ -260,16 +260,16 @@ export function Header() {
             )}
 
             <Link to={"/noticias"}>
-              <div className="font-roboto uppercase py-1 px-4 cursor-pointer">
+              <div className="font-roboto uppercase py-1 px-4 cursor-pointer font-medium">
                 notícias
               </div>
             </Link>
 
-            <div className="font-roboto uppercase py-1 px-4 cursor-pointer">
+            <div className="font-roboto uppercase py-1 px-4 cursor-pointer font-medium">
               contato
             </div>
 
-            <div className="font-roboto uppercase py-1 px-4 cursor-pointer">
+            <div className="font-roboto uppercase py-1 px-4 cursor-pointer font-medium">
               trabalhe conosco
             </div>
           </div>

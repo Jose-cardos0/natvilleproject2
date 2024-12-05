@@ -24,7 +24,7 @@ export function Noticias() {
     >
       <div
         className=" max-w-7xl flex-col items-center 
-      justify-center m-auto w-full h-full mt-44"
+      justify-center m-auto w-full h-full mt-24 mm:max-md:mt-20"
       >
         <div className=" items-center justify-center flex-col">
           <div className="w-full flex items-center justify-center">
