@@ -121,7 +121,7 @@ export function ProdutoDetail() {
         className="h-screen w-screen
        bg-custom-blue flex items-center justify-center flex-col"
       >
-        <button className="bg-custom-white p-5 drop-shadow-lg rounded-full animate-bounce border"></button>
+        <button className="bg-custom-blue p-5 drop-shadow-lg rounded-full animate-bounce border border-white"></button>
         <h1 className="text-custom-blue-strong font-mochari text-4xl">
           Carregando..
         </h1>
@@ -151,7 +151,7 @@ export function ProdutoDetail() {
           <AnimatedNegative>
             <h1
               style={{ fontFamily: "Mocha Mattari W01 Regular" }}
-              className="text-8xl text-center w-full text-blue-800 mt-36 mb-10 "
+              className="text-8xl text-center w-full text-blue-800 mt-36 mb-10 max-md:mt-10 max-md:text-6xl max-md:px-8 "
             >
               {produtosDetail?.produto}
             </h1>

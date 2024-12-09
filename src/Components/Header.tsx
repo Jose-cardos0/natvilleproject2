@@ -133,6 +133,14 @@ export function Header() {
                               Linha Manteigas
                             </div>
                           </Link>
+                          <Link to={"/choconat"}>
+                            <div
+                              onClick={() => setIsOpen((prev) => !prev)}
+                              className="font-roboto uppercase py-2 px-4 cursor-pointer text-gray-600 hover:bg-blue-50 transition duration-300 rounded-lg"
+                            >
+                              Linha Achocolatados
+                            </div>
+                          </Link>
                         </div>
                       </AnimatedSection>
                     ) : (
@@ -244,13 +252,13 @@ export function Header() {
                       Manteigas
                     </div>
                   </Link>
-                  <Link to={"/leiteuht"}>
+                  <Link to={"/choconat"}>
                     <div
                       onClick={() => setIsOpen((prev) => !prev)}
                       className="w-full  px-5 py-2 cursor-pointer uppercase hover:border-b-2
                  hover:border-custom-blue text-center font-medium  hover:text-custom-blue"
                     >
-                      soro em pó
+                      Achocolatado
                     </div>
                   </Link>
                 </div>

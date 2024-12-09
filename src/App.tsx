@@ -8,6 +8,7 @@ import { LeitesUht } from "./Pages/leiteUht";
 import { Queijos } from "./Pages/Queijos";
 import { Manteigas } from "./Pages/Manteigas";
 import { Noticias } from "./Pages/Noticias";
+import { Choconat } from "./Pages/Choconat";
 
 //header
 import { Layout } from "./Components/Layout";
@@ -43,6 +44,10 @@ export const router = createBrowserRouter([
       {
         path: "/noticias",
         element: <Noticias />,
+      },
+      {
+        path: "/choconat",
+        element: <Choconat />,
       },
     ],
   },

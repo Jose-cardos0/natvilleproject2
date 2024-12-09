@@ -6,11 +6,18 @@ import { Link } from "react-router-dom";
 import bg1 from "../assets/Produtos/bgProdutos.svg";
 
 //itens
-import manteigas from "../assets/Produtos/Manteigas/manteigaFront.png";
-import menteigaMaior from "../assets/Produtos/Manteigas/500topo.png";
-import manteigaMenor from "../assets/Produtos/Manteigas/200topo.png";
-
+import leitesUht from "../assets/Produtos/Leites/leitesUht.png";
+import spinerCile from "../assets/Produtos/Leites/spinerCicle.png";
+import spinnerWord from "../assets/Produtos/Leites/spinerWord.png";
+import leiteUhtEx from "../assets/Produtos/Leites/leiteUhtExemplo.png";
+import leiteUhtExDes from "../assets/Produtos/Leites/leiteUhtDesn.png";
+import leiteUhtExZero from "../assets/Produtos/Leites/leiteUhtZero.png";
 import logoF from "../assets/Footer/logoFooter.svg";
+
+//choconat itens
+import achocolatados from "../assets/Produtos/Achocolatado/bg1.png";
+import chocolat1L from "../assets/Produtos/Achocolatado/choconat1lFrente.png";
+import chocolat200ml from "../assets/Produtos/Achocolatado/choconat200mlLateral.png";
 
 //icons
 import { AiOutlineYoutube } from "react-icons/ai";
@@ -30,12 +37,12 @@ interface Produto {
   produto: string;
 }
 
-export function Manteigas() {
+export function Choconat() {
   const [leiteUht, setLeiteUht] = useState<Produto[]>([]);
 
-  useLayoutEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  // useLayoutEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
 
   useEffect(() => {
     async function getData() {
@@ -49,9 +56,11 @@ export function Manteigas() {
     getData();
   }, []);
 
-  const manteigaPrimeiraQualidade = leiteUht.length > 0 ? leiteUht[6] : null;
+  const leiteUhtIntegral = leiteUht.length > 0 ? leiteUht[0] : null;
+  const leiteUhtDesnatado = leiteUht.length > 0 ? leiteUht[1] : null;
+  const leiteUhtZero = leiteUht.length > 0 ? leiteUht[2] : null;
 
-  console.log(manteigaPrimeiraQualidade);
+  console.log(leiteUhtIntegral);
 
   return (
     <main
@@ -73,10 +82,9 @@ export function Manteigas() {
           >
             <AnimatedSection>
               <img
-                className=" drop-shadow-md max-md:w-72
-               max-md:-mt-32 cursor-pointer max-w-2xl
-               hover:scale-105 transition duration-700 -rotate-6"
-                src={manteigas}
+                className="max-w-2xl drop-shadow-md max-md:w-72
+               max-md:-mt-32 cursor-pointer hover:scale-105 transition duration-700"
+                src={achocolatados}
                 alt="leite uht natville"
               />
             </AnimatedSection>
@@ -84,14 +92,14 @@ export function Manteigas() {
               <AnimatedNegative>
                 <h1
                   className="font-mochari text-9xl
-               text-custom-white text-center max-md:text-7xl"
+               text-custom-white text-center max-md:text-7xl max-md:px-8"
                 >
-                  Linha
+                  linha
                   <br />
-                  de manteigas
+                  Achocolatados
                 </h1>
               </AnimatedNegative>
-              {/* <div
+              <div
                 className="relative flex items-center
                justify-center mt-20 max-md:hidden animate-bounce hover:scale-105 transition duration-700"
               >
@@ -105,7 +113,7 @@ export function Manteigas() {
                 <div className="absolute custom-spin top-0 ">
                   <img className="" src={spinnerWord} alt="spiner word" />
                 </div>
-              </div> */}
+              </div>
             </div>
           </div>
         </div>
@@ -133,18 +141,17 @@ export function Manteigas() {
                       rotate: 3,
                     }}
                     transition={{ duration: 0.5 }}
-                    className="max-w-7xl object-center drop-shadow-md w-96
+                    className="max-w-7xl object-center drop-shadow-md
                    max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
-                    src={menteigaMaior}
+                    src={chocolat1L}
                     alt="leite uht integral"
                   />
                 </div>
               </AnimatedNegative>
               <AnimatedY>
                 <div className="flex-col items-center justify-center">
-                  <h1 className="font-mochari text-5xl text-custom-blue-strong">
-                    Manteiga de <br />
-                    Primeira qualidade 500g
+                  <h1 className="font-mochari text-8xl text-custom-blue-strong max-md:text-7xl">
+                    Choconat 1L
                   </h1>
                   <div>
                     <p className="text-custom-blue-strong text-justify mt-8">
@@ -160,7 +167,7 @@ export function Manteigas() {
                     </p>
                   </div>
                   <div className="max-md:w-full max-md:items-center max-md:justify-center">
-                    <Link to={`/produtos/${manteigaPrimeiraQualidade?.id}`}>
+                    <Link to={`/produtos/${leiteUhtIntegral?.id}`}>
                       <button
                         className="relative 
           overflow-hidden
@@ -190,7 +197,7 @@ export function Manteigas() {
             </div>
             {/*leite desnataod inicio */}
             <div
-              className="flex items-center justify-center 
+              className="flex items-center justify-center
               gap-8 bg-custom-white my-32 max-md:flex-col
                max-md:mx-8 max-md:my-32"
             >
@@ -202,18 +209,20 @@ export function Manteigas() {
                       rotate: 3,
                     }}
                     transition={{ duration: 0.5 }}
-                    className="max-w-7xl object-center drop-shadow-md w-96
+                    className="max-w-7xl object-center drop-shadow-md
                    max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
-                    src={manteigaMenor}
+                    src={chocolat200ml}
                     alt="leite uht integral"
                   />
                 </div>
               </AnimatedNegative>
               <AnimatedY>
-                <div className="flex-col items-center justify-center">
-                  <h1 className="font-mochari text-5xl text-custom-blue-strong">
-                    Manteiga de <br />
-                    Primeira qualidade 200g
+                <div className="flex-col items-center justify-center ">
+                  <h1
+                    className="font-mochari text-8xl max-md:text-6xl
+                   text-custom-blue-strong"
+                  >
+                    Choconat 200ml
                   </h1>
                   <div>
                     <p className="text-custom-blue-strong text-justify mt-8">
@@ -229,7 +238,7 @@ export function Manteigas() {
                     </p>
                   </div>
                   <div className="max-md:w-full max-md:items-center max-md:justify-center">
-                    <Link to={`/produtos/${manteigaPrimeiraQualidade?.id}`}>
+                    <Link to={`/produtos/${leiteUhtDesnatado?.id}`}>
                       <button
                         className="relative 
           overflow-hidden
@@ -261,7 +270,7 @@ export function Manteigas() {
 
           {/*footer inicio */}
           <footer
-            className="w-full h-auto mb-5 max-md:-mt-32
+            className="w-full h-auto mb-5
             flex items-center justify-center m-auto"
           >
             <div
