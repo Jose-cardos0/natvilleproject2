@@ -74,8 +74,8 @@ export function Manteigas() {
             <AnimatedSection>
               <img
                 className=" drop-shadow-md max-md:w-72
-               max-md:mt-16 cursor-pointer 
-               hover:scale-105 transition duration-700"
+               max-md:-mt-32 cursor-pointer max-w-2xl
+               hover:scale-105 transition duration-700 -rotate-6"
                 src={manteigas}
                 alt="leite uht natville"
               />
@@ -86,9 +86,9 @@ export function Manteigas() {
                   className="font-mochari text-9xl
                text-custom-white text-center max-md:text-7xl"
                 >
-                  linha Manteiga
+                  Linha
                   <br />
-                  de primeira qualidade
+                  de manteigas
                 </h1>
               </AnimatedNegative>
               {/* <div
@@ -142,9 +142,9 @@ export function Manteigas() {
               </AnimatedNegative>
               <AnimatedY>
                 <div className="flex-col items-center justify-center">
-                  <h1 className="font-mochari text-8xl text-custom-blue-strong">
+                  <h1 className="font-mochari text-5xl text-custom-blue-strong">
                     Manteiga de <br />
-                    Primeira qualidade
+                    Primeira qualidade 500g
                   </h1>
                   <div>
                     <p className="text-custom-blue-strong text-justify mt-8">
@@ -211,7 +211,7 @@ export function Manteigas() {
               </AnimatedNegative>
               <AnimatedY>
                 <div className="flex-col items-center justify-center">
-                  <h1 className="font-mochari text-8xl text-custom-blue-strong">
+                  <h1 className="font-mochari text-5xl text-custom-blue-strong">
                     Manteiga de <br />
                     Primeira qualidade
                   </h1>
@@ -261,7 +261,7 @@ export function Manteigas() {
 
           {/*footer inicio */}
           <footer
-            className="w-full h-auto mb-5
+            className="w-full h-auto mb-5 max-md:-mt-32
             flex items-center justify-center m-auto"
           >
             <div

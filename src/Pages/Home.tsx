@@ -50,7 +50,7 @@ export function Home() {
        "
           >
             <AnimatedNegative>
-              <div className="w-full">
+              <div className="w-full max-md:-mt-44">
                 <SlidersWelcome />
               </div>
             </AnimatedNegative>

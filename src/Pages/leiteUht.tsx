@@ -35,9 +35,9 @@ interface Produto {
 export function LeitesUht() {
   const [leiteUht, setLeiteUht] = useState<Produto[]>([]);
 
-  useLayoutEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  // useLayoutEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
 
   useEffect(() => {
     async function getData() {
@@ -78,7 +78,7 @@ export function LeitesUht() {
             <AnimatedSection>
               <img
                 className="max-w-2xl drop-shadow-md max-md:w-72
-               max-md:mt-16 cursor-pointer hover:scale-105 transition duration-700"
+               max-md:-mt-32 cursor-pointer hover:scale-105 transition duration-700"
                 src={leitesUht}
                 alt="leite uht natville"
               />
@@ -213,9 +213,13 @@ export function LeitesUht() {
                 </div>
               </AnimatedNegative>
               <AnimatedY>
-                <div className="flex-col items-center justify-center">
-                  <h1 className="font-mochari text-8xl text-custom-blue-strong">
-                    leite uht <br />
+                <div className="flex-col items-center justify-center ">
+                  <h1
+                    className="font-mochari text-8xl max-md:text-7xl
+                   text-custom-blue-strong"
+                  >
+                    leite uht
+                    <br />
                     desnatado
                   </h1>
                   <div>

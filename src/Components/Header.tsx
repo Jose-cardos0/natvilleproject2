@@ -186,7 +186,7 @@ export function Header() {
 
           <div className="w-full flex items-center justify-center gap-3">
             <Link to={"/quemsomos"}>
-              <div className="font-roboto uppercase py-1 px-4 cursor-pointer font-medium">
+              <div className="font-roboto uppercase py-1 px-4 cursor-pointer font-medium hover:text-custom-blue">
                 quem somos
               </div>
             </Link>
@@ -194,8 +194,8 @@ export function Header() {
             <div
               className={
                 isOpen === true
-                  ? "relative cursor-pointer font-medium bg-custom-blue rounded-md text-white py-1 px-4 uppercase"
-                  : "relative cursor-pointer font-medium py-1 px-4 uppercase"
+                  ? "relative cursor-pointer font-medium bg-custom-blue rounded-md text-white py-1 px-4 hover:text-custom-blue uppercase"
+                  : "relative cursor-pointer font-medium py-1 px-4 uppercase hover:text-custom-blue"
               }
               onClick={() => setIsOpen((prev) => !prev)}
             >
@@ -212,7 +212,7 @@ export function Header() {
                     <div
                       onClick={() => setIsOpen((prev) => !prev)}
                       className="w-full px-5 py-2 cursor-pointer uppercase hover:border-b-2
-                 hover:border-custom-blue text-center font-medium"
+                 hover:border-custom-blue text-center font-medium hover:text-custom-blue"
                     >
                       queijos
                     </div>
@@ -221,7 +221,7 @@ export function Header() {
                     <div
                       onClick={() => setIsOpen((prev) => !prev)}
                       className="w-full  px-5 py-2 cursor-pointer uppercase hover:border-b-2
-                   hover:border-custom-blue text-center font-medium"
+                   hover:border-custom-blue text-center font-medium hover:text-custom-blue"
                     >
                       leites
                     </div>
@@ -230,7 +230,7 @@ export function Header() {
                     <div
                       onClick={() => setIsOpen((prev) => !prev)}
                       className="w-full  px-5 py-2 cursor-pointer uppercase hover:border-b-2
-                 hover:border-custom-blue text-center font-medium  "
+                 hover:border-custom-blue text-center font-medium  hover:text-custom-blue "
                     >
                       bebidas lácteas
                     </div>
@@ -239,7 +239,7 @@ export function Header() {
                     <div
                       onClick={() => setIsOpen((prev) => !prev)}
                       className="w-full  px-5 py-2 cursor-pointer uppercase hover:border-b-2
-                 hover:border-custom-blue text-center font-medium "
+                 hover:border-custom-blue text-center font-medium  hover:text-custom-blue"
                     >
                       Manteigas
                     </div>
@@ -248,7 +248,7 @@ export function Header() {
                     <div
                       onClick={() => setIsOpen((prev) => !prev)}
                       className="w-full  px-5 py-2 cursor-pointer uppercase hover:border-b-2
-                 hover:border-custom-blue text-center font-medium "
+                 hover:border-custom-blue text-center font-medium  hover:text-custom-blue"
                     >
                       soro em pó
                     </div>
@@ -260,16 +260,16 @@ export function Header() {
             )}
 
             <Link to={"/noticias"}>
-              <div className="font-roboto uppercase py-1 px-4 cursor-pointer font-medium">
+              <div className="font-roboto uppercase py-1 px-4 cursor-pointer font-medium hover:text-custom-blue">
                 notícias
               </div>
             </Link>
 
-            <div className="font-roboto uppercase py-1 px-4 cursor-pointer font-medium">
+            <div className="font-roboto uppercase py-1 px-4 cursor-pointer font-medium hover:text-custom-blue">
               contato
             </div>
 
-            <div className="font-roboto uppercase py-1 px-4 cursor-pointer font-medium">
+            <div className="font-roboto uppercase py-1 px-4 cursor-pointer font-medium hover:text-custom-blue">
               trabalhe conosco
             </div>
           </div>

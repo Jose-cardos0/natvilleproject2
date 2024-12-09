@@ -157,7 +157,7 @@ export function QuemSomos() {
         <AnimatedSection>
           <p
             className="text-center text-custom-blue-strong
-         font-roboto font-extralight text-2xl"
+         font-mochari font-extralight text-6xl mm:max-md:px-8"
           >
             O pilar espiritual
           </p>

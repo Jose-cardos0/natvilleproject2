@@ -71,15 +71,16 @@ export function Queijos() {
         flex items-center justify-center gap-8 max-md:flex-col "
           >
             <img
-              className="max-w-4xl drop-shadow-md max-md:w-72
-               max-md:mt-16 cursor-pointer hover:scale-105 transition duration-700 "
+              className="max-w-4xl drop-shadow-md max-md:w-80
+               max-md:-mt-44 cursor-pointer hover:scale-105
+                transition duration-700 "
               src={queijosEx}
               alt="queijo natville natville"
             />
             <div className="flex-col items-center justify-center ">
               <h1
                 className="font-mochari text-9xl
-               text-custom-white text-center max-md:text-7xl"
+               text-custom-white text-center max-md:text-7xl max-md:-mt-16"
               >
                 linha
                 <br />
