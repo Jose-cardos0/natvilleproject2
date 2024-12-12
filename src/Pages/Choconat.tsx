@@ -7,7 +7,7 @@ import bg1 from "../assets/Produtos/bgProdutos.png";
 
 //itens
 
-import logoF from "../assets/Footer/logoFooter.svg";
+import logoF from "../assets/Footer/logoFooterWhite.png";
 
 //choconat itens
 import achocolatados from "../assets/Produtos/Achocolatado/bg1.png";
@@ -63,7 +63,7 @@ export function Choconat() {
     >
       {/*section info leite */}
 
-      <section className="flex-col items-center justify-center bg-custom-white">
+      <section className="flex-col items-center justify-center bg-custom-choco">
         <div
           style={{ backgroundImage: `url(${bg1})` }}
           className="h-screen w-screen flex items-center
@@ -72,21 +72,23 @@ export function Choconat() {
         >
           <div
             className="max-w-7xl 
-        flex items-center justify-center gap-8 max-md:flex-col "
+        flex items-center justify-center  max-md:flex-col "
           >
             <AnimatedSection>
               <img
-                className="max-w-2xl drop-shadow-md max-md:w-72
-               max-md:-mt-32 cursor-pointer hover:scale-105 transition duration-700"
+                className="max-w-2xl max-md:w-72
+               max-md:-mt-32 cursor-pointer hover:scale-105 
+               transition duration-700"
                 src={achocolatados}
-                alt="leite uht natville"
+                alt="achocolatado choconat uht natville"
               />
             </AnimatedSection>
             <div className="flex-col items-center justify-center ">
               <AnimatedNegative>
                 <h1
                   className="font-mochari text-9xl
-               text-custom-white text-center max-md:text-7xl max-md:px-8"
+               text-custom-white text-center
+                max-md:text-7xl max-md:px-8 text-shadow  "
                 >
                   linha
                   <br />
@@ -104,13 +106,13 @@ export function Choconat() {
           <div
             className="max-w-7xl
         flex-col items-center
-        justify-center m-auto mt-20 bg-custom-white"
+        justify-center m-auto mt-20  bg-custom-choco"
           >
             {/*inicio leite integral */}
             <div
               className="flex items-center justify-center
-              gap-8 bg-custom-white max-md:flex-col
-               max-md:mx-8 max-md:-mt-30"
+              gap-8  max-md:flex-col
+               max-md:mx-8 max-md:-mt-30 bg-custom-choco "
             >
               <AnimatedNegative>
                 <div>
@@ -129,11 +131,11 @@ export function Choconat() {
               </AnimatedNegative>
               <AnimatedY>
                 <div className="flex-col items-center justify-center">
-                  <h1 className="font-mochari text-8xl text-custom-blue-strong max-md:text-7xl">
+                  <h1 className="font-mochari text-8xl text-white max-md:text-7xl">
                     Choconat 1L
                   </h1>
                   <div>
-                    <p className="text-custom-blue-strong text-justify mt-8">
+                    <p className="text-white text-justify mt-8">
                       Um leite UHT integral saudável e rico em cálcio é aquele
                       que mantém boa parte dos nutrientes naturais do leite
                       fresco, como proteínas, vitaminas (especialmente a
@@ -151,8 +153,8 @@ export function Choconat() {
                         className="relative 
           overflow-hidden
            flex-shrink-0
-    bg-custom-blue-strong
-    text-white py-3 
+    bg-white
+    text-custom-choco py-3 
     px-14 rounded-md shadow-sm
     shadow-black font-light 
      border-none mt-8 max-md:w-full cursor-pointer"
@@ -177,7 +179,7 @@ export function Choconat() {
             {/*leite desnataod inicio */}
             <div
               className="flex items-center justify-center
-              gap-8 bg-custom-white my-32 max-md:flex-col
+              gap-8 bg-custom-choco  my-32 max-md:flex-col
                max-md:mx-8 max-md:my-32"
             >
               <AnimatedNegative>
@@ -199,12 +201,12 @@ export function Choconat() {
                 <div className="flex-col items-center justify-center ">
                   <h1
                     className="font-mochari text-8xl max-md:text-6xl
-                   text-custom-blue-strong"
+                   text-white"
                   >
                     Choconat 200ml
                   </h1>
                   <div>
-                    <p className="text-custom-blue-strong text-justify mt-8">
+                    <p className="text-white text-justify mt-8">
                       Um leite UHT integral saudável e rico em cálcio é aquele
                       que mantém boa parte dos nutrientes naturais do leite
                       fresco, como proteínas, vitaminas (especialmente a
@@ -222,8 +224,8 @@ export function Choconat() {
                         className="relative 
           overflow-hidden
            flex-shrink-0
-    bg-custom-blue-strong
-    text-white py-3 
+    bg-white
+    text-custom-choco py-3 
     px-14 rounded-md shadow-sm
     shadow-black font-light 
      border-none mt-8 max-md:w-full cursor-pointer"
@@ -270,7 +272,7 @@ export function Choconat() {
                 </div>
                 <div className="flex-col items-center justify-center ">
                   <p
-                    className="text-custom-blue-strong
+                    className="text-white
                    text-center font-mochari text-4xl"
                   >
                     Acompanhe nossas
@@ -298,14 +300,14 @@ export function Choconat() {
                     />
                   </div>
                   <p
-                    className="text-custom-blue-strong 
+                    className="text-white
                   text-center font-mochari text-4xl"
                   >
                     redes sociais
                   </p>
                 </div>
                 <div
-                  className="font-mochari text-custom-blue-strong
+                  className="font-mochari text-white
                  flex-col items-center justify-center "
                 >
                   <p className="text-end text-4xl max-md:text-center">

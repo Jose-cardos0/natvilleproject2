@@ -24,3 +24,9 @@ button:hover span:last-child {
     transform: rotate(360deg);
   }
 }
+
+.text-shadow {
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.7),
+    /* contorno preto */ -1px -1px 0px rgba(0, 0, 0, 0.7),
+    1px -1px 0px rgba(0, 0, 0, 0.7), -1px 1px 0px rgba(0, 0, 0, 0.7);
+}
