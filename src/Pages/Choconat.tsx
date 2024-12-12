@@ -3,15 +3,10 @@ import { useEffect, useState, useLayoutEffect } from "react";
 //router dom
 import { Link } from "react-router-dom";
 
-import bg1 from "../assets/Produtos/bgProdutos.svg";
+import bg1 from "../assets/Produtos/bgProdutos.png";
 
 //itens
-import leitesUht from "../assets/Produtos/Leites/leitesUht.png";
-import spinerCile from "../assets/Produtos/Leites/spinerCicle.png";
-import spinnerWord from "../assets/Produtos/Leites/spinerWord.png";
-import leiteUhtEx from "../assets/Produtos/Leites/leiteUhtExemplo.png";
-import leiteUhtExDes from "../assets/Produtos/Leites/leiteUhtDesn.png";
-import leiteUhtExZero from "../assets/Produtos/Leites/leiteUhtZero.png";
+
 import logoF from "../assets/Footer/logoFooter.svg";
 
 //choconat itens
@@ -58,7 +53,6 @@ export function Choconat() {
 
   const leiteUhtIntegral = leiteUht.length > 0 ? leiteUht[0] : null;
   const leiteUhtDesnatado = leiteUht.length > 0 ? leiteUht[1] : null;
-  const leiteUhtZero = leiteUht.length > 0 ? leiteUht[2] : null;
 
   console.log(leiteUhtIntegral);
 
@@ -99,21 +93,6 @@ export function Choconat() {
                   Achocolatados
                 </h1>
               </AnimatedNegative>
-              <div
-                className="relative flex items-center
-               justify-center mt-20 max-md:hidden animate-bounce hover:scale-105 transition duration-700"
-              >
-                <div className="mt-8">
-                  <img
-                    className="drop-shadow-md"
-                    src={spinerCile}
-                    alt="spiner cicle "
-                  />
-                </div>
-                <div className="absolute custom-spin top-0 ">
-                  <img className="" src={spinnerWord} alt="spiner word" />
-                </div>
-              </div>
             </div>
           </div>
         </div>

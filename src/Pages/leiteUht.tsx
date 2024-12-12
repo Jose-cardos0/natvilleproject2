@@ -35,9 +35,9 @@ interface Produto {
 export function LeitesUht() {
   const [leiteUht, setLeiteUht] = useState<Produto[]>([]);
 
-  // useLayoutEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   useEffect(() => {
     async function getData() {
