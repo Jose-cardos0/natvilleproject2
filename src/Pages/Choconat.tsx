@@ -4,6 +4,7 @@ import { useEffect, useState, useLayoutEffect } from "react";
 import { Link } from "react-router-dom";
 
 import bg1 from "../assets/Produtos/bgProdutos.png";
+import nomeLinha from "../assets/Produtos/nomeLinha.png";
 
 //itens
 
@@ -63,7 +64,7 @@ export function Choconat() {
     >
       {/*section info leite */}
 
-      <section className="flex-col items-center justify-center bg-custom-choco">
+      <section className="flex-col items-center justify-center bg-gradient-to-tl from-custom-choco via-amber-700 to-custom-choco ">
         <div
           style={{ backgroundImage: `url(${bg1})` }}
           className="h-screen w-screen flex items-center
@@ -72,28 +73,29 @@ export function Choconat() {
         >
           <div
             className="max-w-7xl 
-        flex items-center justify-center  max-md:flex-col "
+        flex items-center justify-center  max-md:flex-col relative "
           >
             <AnimatedSection>
               <img
-                className="max-w-2xl max-md:w-72
+                className=" max-md:w-72 -mt-28
                max-md:-mt-32 cursor-pointer hover:scale-105 
                transition duration-700"
                 src={achocolatados}
                 alt="achocolatado choconat uht natville"
               />
             </AnimatedSection>
-            <div className="flex-col items-center justify-center ">
+            <div className="flex-col items-center justify-center absolute top-0 ">
               <AnimatedNegative>
-                <h1
+                {/* <img src={nomeLinha} alt="" /> */}
+                {/* <h1
                   className="font-mochari text-9xl
                text-custom-white text-center
-                max-md:text-7xl max-md:px-8 text-shadow  "
+                max-md:text-7xl max-md:px-8 text-shadow   "
                 >
                   linha
                   <br />
                   Achocolatados
-                </h1>
+                </h1> */}
               </AnimatedNegative>
             </div>
           </div>
@@ -106,13 +108,13 @@ export function Choconat() {
           <div
             className="max-w-7xl
         flex-col items-center
-        justify-center m-auto mt-20  bg-custom-choco"
+        justify-center m-auto mt-20"
           >
             {/*inicio leite integral */}
             <div
               className="flex items-center justify-center
               gap-8  max-md:flex-col
-               max-md:mx-8 max-md:-mt-30 bg-custom-choco "
+               max-md:mx-8 max-md:-mt-30"
             >
               <AnimatedNegative>
                 <div>
@@ -179,7 +181,7 @@ export function Choconat() {
             {/*leite desnataod inicio */}
             <div
               className="flex items-center justify-center
-              gap-8 bg-custom-choco  my-32 max-md:flex-col
+              gap-8   my-32 max-md:flex-col
                max-md:mx-8 max-md:my-32"
             >
               <AnimatedNegative>
@@ -190,7 +192,7 @@ export function Choconat() {
                       rotate: 3,
                     }}
                     transition={{ duration: 0.5 }}
-                    className="max-w-7xl object-center drop-shadow-md
+                    className=" object-center drop-shadow-md max-w-72
                    max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
                     src={chocolat200ml}
                     alt="leite uht integral"
@@ -265,7 +267,7 @@ export function Choconat() {
               >
                 <div>
                   <img
-                    className="min-w-56 hover:scale-105 transition duration-700 drop-shadow-lg"
+                    className="min-w-56 max-w-10 hover:scale-105 transition duration-700 drop-shadow-lg"
                     src={logoF}
                     alt="natville"
                   />
