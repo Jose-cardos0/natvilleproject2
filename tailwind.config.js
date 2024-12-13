@@ -19,6 +19,7 @@ export default {
         "custom-blue": "#55BECD",
         "custom-blue-strong": "#003FA5",
         "custom-choco": "#3a180e",
+        "custom-bg-leiteIHT": "#79b6c9",
       },
       minHeight: {
         "height-full-96px": "calc(100vh - 96px)",

@@ -3,7 +3,7 @@ import { useEffect, useState, useLayoutEffect } from "react";
 //router dom
 import { Link } from "react-router-dom";
 
-import bg1 from "../assets/Produtos/bgProdutos.svg";
+import bg1 from "../assets/Produtos/Leites/bgUht.png";
 
 //itens
 import leitesUht from "../assets/Produtos/Leites/leitesUht.png";
@@ -35,9 +35,9 @@ interface Produto {
 export function LeitesUht() {
   const [leiteUht, setLeiteUht] = useState<Produto[]>([]);
 
-  useLayoutEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  // useLayoutEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
 
   useEffect(() => {
     async function getData() {
@@ -64,11 +64,11 @@ export function LeitesUht() {
     >
       {/*section info leite */}
 
-      <section className="flex-col items-center justify-center bg-custom-white">
+      <section className="flex-col items-center justify-center ">
         <div
           style={{ backgroundImage: `url(${bg1})` }}
           className="h-screen w-screen flex items-center
-         justify-center m-auto bg-cover bg-center
+         justify-center m-auto -mt-8 bg-cover bg-center
           bg-no-repeat z-10"
         >
           <div
@@ -77,13 +77,13 @@ export function LeitesUht() {
           >
             <AnimatedSection>
               <img
-                className="max-w-2xl drop-shadow-md max-md:w-72
+                className=" drop-shadow-md max-md:w-72
                max-md:-mt-32 cursor-pointer hover:scale-105 transition duration-700"
                 src={leitesUht}
                 alt="leite uht natville"
               />
             </AnimatedSection>
-            <div className="flex-col items-center justify-center ">
+            {/* <div className="flex-col items-center justify-center ">
               <AnimatedNegative>
                 <h1
                   className="font-mochari text-9xl
@@ -109,23 +109,23 @@ export function LeitesUht() {
                   <img className="" src={spinnerWord} alt="spiner word" />
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
         {/*inicio leites */}
         <div
           className="h-auto w-screen flex-col items-center
-             justify-center m-auto z-0"
+             justify-center m-auto z-0 "
         >
           <div
             className="max-w-7xl
         flex-col items-center
-        justify-center m-auto mt-20 bg-custom-white"
+        justify-center m-auto mt-20 "
           >
             {/*inicio leite integral */}
             <div
               className="flex items-center justify-center
-              gap-8 bg-custom-white max-md:flex-col
+              gap-8  max-md:flex-col
                max-md:mx-8 max-md:-mt-30"
             >
               <AnimatedNegative>
@@ -194,7 +194,7 @@ export function LeitesUht() {
             {/*leite desnataod inicio */}
             <div
               className="flex items-center justify-center
-              gap-8 bg-custom-white my-32 max-md:flex-col
+              gap-8  my-32 max-md:flex-col
                max-md:mx-8 max-md:my-32"
             >
               <AnimatedNegative>
@@ -267,7 +267,7 @@ export function LeitesUht() {
             {/*zero lactose */}
             <div
               className="flex items-center justify-center
-              gap-8 bg-custom-white max-md:flex-col
+              gap-8  max-md:flex-col
                max-md:mx-8  max-md:mt-32"
             >
               <AnimatedNegative>
@@ -351,7 +351,8 @@ export function LeitesUht() {
               >
                 <div>
                   <img
-                    className="min-w-56 hover:scale-105 transition duration-700 drop-shadow-lg"
+                    className="min-w-56 hover:scale-105
+                     transition duration-700 drop-shadow-lg"
                     src={logoF}
                     alt="natville"
                   />
@@ -386,7 +387,7 @@ export function LeitesUht() {
                     />
                   </div>
                   <p
-                    className="text-custom-blue-strong 
+                    className="text-custom-blue-strong
                   text-center font-mochari text-4xl"
                   >
                     redes sociais

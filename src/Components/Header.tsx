@@ -57,7 +57,7 @@ export function Header() {
           className="absolute bg-custom-white p-10 rounded-full w-36 h-36"
           style={{
             position: "absolute",
-            top: "-30%",
+            top: "-40%",
             left: mouseX - 70, // Ajusta a posição horizontal com base na posição do mouse
             zIndex: -1,
           }}

@@ -36,9 +36,9 @@ interface Produto {
 export function Choconat() {
   const [leiteUht, setLeiteUht] = useState<Produto[]>([]);
 
-  // useLayoutEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   useEffect(() => {
     async function getData() {
@@ -84,10 +84,10 @@ export function Choconat() {
                 alt="achocolatado choconat uht natville"
               />
             </AnimatedSection>
-            <div className="flex-col items-center justify-center absolute top-0 ">
-              <AnimatedNegative>
-                {/* <img src={nomeLinha} alt="" /> */}
-                {/* <h1
+            {/* <div className="flex-col items-center justify-center absolute top-0 "> */}
+            {/* <AnimatedNegative> */}
+            {/* <img src={nomeLinha} alt="" /> */}
+            {/* <h1
                   className="font-mochari text-9xl
                text-custom-white text-center
                 max-md:text-7xl max-md:px-8 text-shadow   "
@@ -96,8 +96,8 @@ export function Choconat() {
                   <br />
                   Achocolatados
                 </h1> */}
-              </AnimatedNegative>
-            </div>
+            {/* </AnimatedNegative> */}
+            {/* </div> */}
           </div>
         </div>
         {/*inicio leites */}
