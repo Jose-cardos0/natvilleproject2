@@ -3,7 +3,7 @@ import { useEffect, useState, useLayoutEffect } from "react";
 //router dom
 import { Link } from "react-router-dom";
 
-import bg1 from "../assets/Produtos/bgProdutos.svg";
+import bg1 from "../assets/QuemSomos/bgProdutos.svg";
 
 //itens
 import queijosEx from "../assets/Sliders/queijos.png";
@@ -62,9 +62,8 @@ export function Queijos() {
       <section className="flex-col items-center justify-center bg-custom-white">
         <div
           style={{ backgroundImage: `url(${bg1})` }}
-          className="h-screen w-screen flex items-center
-         justify-center m-auto bg-cover bg-center
-          bg-no-repeat z-10"
+          className="h-screen w-screen flex items-center 
+          justify-center m-auto -mt-8 bg-cover bg-center bg-fixed z-10"
         >
           <div
             className="max-w-7xl 
@@ -80,7 +79,7 @@ export function Queijos() {
             <div className="flex-col items-center justify-center ">
               <h1
                 className="font-mochari text-9xl
-               text-custom-white text-center max-md:text-7xl max-md:-mt-16"
+               text-custom-blue-strong text-center max-md:text-7xl max-md:-mt-16"
               >
                 linha
                 <br />

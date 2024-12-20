@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useLayoutEffect } from "react";
 import { useParams } from "react-router-dom";
 
 //icons
@@ -6,7 +6,15 @@ import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowBack } from "react-icons/io";
 import { GoDesktopDownload } from "react-icons/go";
 
-import leit from "../assets/Produtos/Leites/leitedoce.jpg";
+import logoF from "../assets/Footer/logoFooter.svg";
+
+//icons
+import { AiOutlineYoutube } from "react-icons/ai";
+import { CiFacebook } from "react-icons/ci";
+import { FaWhatsapp } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa6";
+import { AiOutlineLinkedin } from "react-icons/ai";
+import { FiPhoneForwarded } from "react-icons/fi";
 
 import { AnimatedNegative } from "../Tools/Animates/AnimatedNegative";
 import { AnimatedSection } from "../Tools/Animates/AnimatedSections";
@@ -83,6 +91,10 @@ export function ProdutoDetail() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isWidth, setIsWidth] = useState<boolean>(false);
 
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   useEffect(() => {
     function handleSize() {
       if (window.innerWidth <= 480) {
@@ -118,11 +130,10 @@ export function ProdutoDetail() {
   if (!produtosDetail) {
     return (
       <div
-        className="h-screen w-screen
-       bg-custom-blue flex items-center justify-center flex-col"
+        className="h-screen 
+     bg-custom-white flex items-center justify-center flex-col"
       >
-        <button className="bg-custom-blue p-5 drop-shadow-lg rounded-full animate-bounce border border-white"></button>
-        <h1 className="text-custom-blue-strong font-mochari text-4xl">
+        <h1 className="text-custom-blue-strong font-mochari text-2xl mt-4">
           Carregando..
         </h1>
       </div>
@@ -143,7 +154,7 @@ export function ProdutoDetail() {
   return (
     <section
       id={id}
-      className="w-screen flex-col items-center justify-center
+      className=" flex-col items-center justify-center
       m-auto"
     >
       <div className="max-w-7xl flex-col items-center justify-center m-auto">
@@ -151,7 +162,7 @@ export function ProdutoDetail() {
           <AnimatedNegative>
             <h1
               style={{ fontFamily: "Mocha Mattari W01 Regular" }}
-              className="text-8xl text-center w-full text-blue-800 mt-36 mb-10 max-md:mt-10 max-md:text-6xl max-md:px-8 "
+              className="text-8xl text-center w-full text-blue-800 mt-10 mb-10 max-md:mt-10 max-md:text-6xl max-md:px-8 "
             >
               {produtosDetail?.produto}
             </h1>
@@ -211,7 +222,49 @@ export function ProdutoDetail() {
                 ""
               )}
             </AnimatedSection>
-
+            <AnimatedSection>
+              <div className="mm:max-md:hidden">
+                <div
+                  className="max-w-96
+            flex flex-col items-center mr-8 mm:max-md:mr-0 max-md:mb-10"
+                >
+                  <div className="relative">
+                    <div
+                      className="absolute z-10
+                  cursor-pointer
+                 transition duration-300
+                  hover:scale-150
+                "
+                    >
+                      <GoDesktopDownload color="indigo" />
+                    </div>
+                    <img
+                      src={images[currentImageIndex]}
+                      alt=""
+                      className="w-full drop-shadow-2xl px-9 max-w-full"
+                    />
+                    <button
+                      onClick={prevImage}
+                      className="absolute left-0 top-1/2
+                   transform -translate-y-1/2 bg-custom-blue
+                    text-white p-2 rounded-full cursor-pointer 
+                    shadow-lg hover:bg-custom-blue-strong"
+                    >
+                      <IoIosArrowBack />
+                    </button>
+                    <button
+                      onClick={nextImage}
+                      className="absolute right-0 top-1/2 transform
+                   -translate-y-1/2 bg-custom-blue
+                    text-white p-2 rounded-full cursor-pointer 
+                    shadow-lg hover:bg-custom-blue-strong"
+                    >
+                      <IoIosArrowForward />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </AnimatedSection>
             <div>
               <AnimatedY>
                 {/*TABELA NUTRICIONAL*/}
@@ -454,246 +507,95 @@ export function ProdutoDetail() {
           </div>
         </div>
       </div>
-      {/*inicio div de receitas */}
-      <div className="-mt-52 max-md:-mt-20 ">
-        <svg viewBox="0 0 950 160" className="wave-svg max-md:h-52 w-full">
-          <path
-            fill="#55BECD"
-            d="M0,64L30,74.7C60,85,120,107,180,117.3C240,128,300,128,360,128C420,128,480,128,540,117.3C600,107,660,85,720,80C780,75,840,85,900,101.3C960,117,1020,139,1080,149.3C1140,160,1200,160,1260,160C1320,160,1380,160,1410,160L1440,160L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
-          />
-        </svg>
+      {/*footer inicio */}
+      <footer
+        className="w-full h-auto mb-5 max-md:-mt-32
+            flex items-center justify-center m-auto"
+      >
         <div
-          className="bg-custom-blue
- flex items-center justify-center pb-20 max-md:-mt-10 "
+          className="w-8/12 
+               flex-col items-center
+            "
         >
-          {isWidth ? (
-            ""
-          ) : (
-            <div
-              className="max-w-96
-    flex flex-col items-center mr-8 mt-20 mm:max-md:mr-0 mm:max-md:mt-0"
-            >
-              <div className="relative">
-                <div
-                  className="absolute z-10
-          cursor-pointer
-         transition duration-300
-          hover:scale-150
-        "
-                >
-                  <GoDesktopDownload color="indigo" />
-                </div>
-                <img
-                  src={images[currentImageIndex]}
-                  alt=""
-                  className="w-full drop-shadow-2xl px-9 max-w-full"
+          <div
+            className="w-full flex justify-between mt-28
+               max-md:flex-col  max-md:gap-5"
+          >
+            <div>
+              <img
+                className="min-w-56 hover:scale-105 transition duration-700 drop-shadow-lg"
+                src={logoF}
+                alt="natville"
+              />
+            </div>
+            <div className="flex-col items-center justify-center ">
+              <p
+                className="text-custom-blue-strong
+                   text-center font-mochari text-4xl"
+              >
+                Acompanhe nossas
+              </p>
+              <div className="flex items-center justify-center gap-2">
+                <AiOutlineYoutube
+                  size={25}
+                  className="cursor-pointer hover:scale-105 transition duration-300"
                 />
-                <button
-                  onClick={prevImage}
-                  className="absolute left-0 top-1/2
-           transform -translate-y-1/2 bg-custom-blue-strong
-            text-white p-2 rounded-full cursor-pointer 
-            shadow-lg  hover:bg-custom-white hover:text-black"
-                >
-                  <IoIosArrowBack />
-                </button>
-                <button
-                  onClick={nextImage}
-                  className="absolute right-0 top-1/2 transform
-           -translate-y-1/2 bg-custom-blue-strong
-            text-white p-2 rounded-full cursor-pointer 
-            shadow-lg hover:bg-custom-white hover:text-black"
-                >
-                  <IoIosArrowForward className="" />
-                </button>
+                <CiFacebook
+                  size={25}
+                  className="cursor-pointer hover:scale-105 transition duration-300"
+                />
+                <FaWhatsapp
+                  size={25}
+                  className="cursor-pointer hover:scale-105 transition duration-300"
+                />
+                <FaInstagram
+                  size={25}
+                  className="cursor-pointer hover:scale-105 transition duration-300"
+                />
+                <AiOutlineLinkedin
+                  size={25}
+                  className="cursor-pointer hover:scale-105 transition duration-300"
+                />
               </div>
+              <p
+                className="text-custom-blue-strong 
+                  text-center font-mochari text-4xl"
+              >
+                redes sociais
+              </p>
             </div>
-          )}
-          <div className="flex-col items-center justify-center">
-            <div className="text-center  max-md:mt-0">
-              <AnimatedSection>
-                <h1
-                  className="font-mochari text-custom-blue-strong
-       text-7xl drop-shadow-md text-center"
-                >
-                  RECEITAS
-                </h1>
-                <p className="font-roboto text-white mb-10">
-                  Aproveite com toda sua família!
-                </p>
-              </AnimatedSection>
-            </div>
-
-            {/*card1 */}
             <div
-              className="w-full flex items-center
-     justify-center gap-8 max-md:flex-col "
+              className="font-mochari text-custom-blue-strong
+                 flex-col items-center justify-center "
             >
-              <AnimatedNegative>
-                <div className="w-full flex justify-center">
-                  <div
-                    className="bg-custom-blue h-96 rounded-xl 
-        shadow-xl w-64 flex flex-col items-center 
-        justify-center relative overflow-hidden max-md:w-80"
-                  >
-                    <div className="h-4/6">
-                      <img
-                        className="object-cover rounded-t-lg w-full h-full"
-                        src={leit}
-                        alt="Imagem do Card"
-                      />
-                    </div>
-
-                    <div className="bg-custom-blue w-full flex flex-col items-start p-4">
-                      <h2 className="text-xl text-white font-bold mb-2">
-                        Título do Card
-                      </h2>
-                      <p className="text-white text-sm mb-4">
-                        Uma breve descrição do conteúdo que será apresentado.
-                      </p>
-                      <div className="w-full flex items-end justify-end">
-                        <button
-                          className="relative overflow-hidden flex-shrink-0
-               bg-custom-blue-strong text-white py-3
-                px-6 rounded-md shadow-sm shadow-black
-                 font-light border-none mt-4 mm:max-md:w-full max-md:mb-10"
-                        >
-                          <span className="relative z-10 flex items-center justify-center">
-                            VER MAIS &rsaquo;
-                          </span>
-                          <span className="absolute inset-0 bg-gradient-to-r from-white to-black transform translate-x-full transition-transform duration-300 ease-in-out z-0 opacity-20"></span>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
+              <p className="text-end text-4xl max-md:text-center">
+                fale conosco
+              </p>
+              <div className="flex items-center justify-between gap-3 max-md:justify-center">
+                <div>
+                  <FiPhoneForwarded size={37} />
                 </div>
-              </AnimatedNegative>
-              {/*card 2*/}
-              <div className="w-full flex justify-center">
-                <AnimatedSection>
-                  <div
-                    className="bg-custom-blue h-96 rounded-xl 
-        shadow-xl w-64 flex flex-col items-center 
-        justify-center relative overflow-hidden max-md:w-80"
-                  >
-                    <div className="h-4/6">
-                      <img
-                        className="object-cover rounded-t-lg w-full h-full"
-                        src={leit}
-                        alt="Imagem do Card"
-                      />
-                    </div>
-
-                    <div className="bg-custom-blue w-full flex flex-col items-start p-4">
-                      <h2 className="text-xl text-white font-bold mb-2">
-                        Título do Card
-                      </h2>
-                      <p className="text-white text-sm mb-4">
-                        Uma breve descrição do conteúdo que será apresentado.
-                      </p>
-                      <div className="w-full flex items-end justify-end">
-                        <button
-                          className="relative overflow-hidden flex-shrink-0
-               bg-custom-blue-strong text-white py-3
-                px-6 rounded-md shadow-sm shadow-black
-                 font-light border-none mt-4 mm:max-md:w-full max-md:mb-10"
-                        >
-                          <span className="relative z-10 flex items-center justify-center">
-                            VER MAIS &rsaquo;
-                          </span>
-                          <span className="absolute inset-0 bg-gradient-to-r from-white to-black transform translate-x-full transition-transform duration-300 ease-in-out z-0 opacity-20"></span>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </AnimatedSection>
+                <div
+                  className="flex-col text-2xl 
+                    items-center justify-center "
+                >
+                  <p>0800 7213245</p>
+                  <p className="text-xl -mt-3">natville.com.br</p>
+                </div>
               </div>
-              {/*card 3 */}
-              <div className="w-full flex justify-center">
-                <AnimatedNegative>
-                  <div
-                    className="bg-custom-blue h-96 rounded-xl 
-        shadow-xl w-64 flex flex-col items-center 
-        justify-center relative overflow-hidden max-md:w-80"
-                  >
-                    <div className="h-4/6">
-                      <img
-                        className="object-cover rounded-t-lg w-full h-full"
-                        src={leit}
-                        alt="Imagem do Card"
-                      />
-                    </div>
-
-                    <div className="bg-custom-blue w-full flex flex-col items-start p-4">
-                      <h2 className="text-xl text-white font-bold mb-2">
-                        Título do Card
-                      </h2>
-                      <p className="text-white text-sm mb-4">
-                        Uma breve descrição do conteúdo que será apresentado.
-                      </p>
-                      <div className="w-full flex items-end justify-end">
-                        <button
-                          className="relative overflow-hidden flex-shrink-0
-               bg-custom-blue-strong text-white py-3
-                px-6 rounded-md shadow-sm shadow-black
-                 font-light border-none mt-4 mm:max-md:w-full max-md:mb-10"
-                        >
-                          <span className="relative z-10 flex items-center justify-center">
-                            VER MAIS &rsaquo;
-                          </span>
-                          <span className="absolute inset-0 bg-gradient-to-r from-white to-black transform translate-x-full transition-transform duration-300 ease-in-out z-0 opacity-20"></span>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </AnimatedNegative>
-              </div>
-              {/*card 4 */}
-              <div className="w-full flex justify-center">
-                <AnimatedSection>
-                  <div
-                    className="bg-custom-blue h-96 rounded-xl 
-        shadow-xl w-64 flex flex-col items-center 
-        justify-center relative overflow-hidden max-md:w-80"
-                  >
-                    <div className="h-4/6">
-                      <img
-                        className="object-cover rounded-t-lg w-full h-full"
-                        src={leit}
-                        alt="Imagem do Card"
-                      />
-                    </div>
-
-                    <div className="bg-custom-blue w-full flex flex-col items-start p-4">
-                      <h2 className="text-xl text-white font-bold mb-2">
-                        Título do Card
-                      </h2>
-                      <p className="text-white text-sm mb-4">
-                        Uma breve descrição do conteúdo que será apresentado.
-                      </p>
-                      <div className="w-full flex items-end justify-end">
-                        <button
-                          className="relative overflow-hidden flex-shrink-0
-               bg-custom-blue-strong text-white py-3
-                px-6 rounded-md shadow-sm shadow-black
-                 font-light border-none mt-4 mm:max-md:w-full max-md:mb-10"
-                        >
-                          <span className="relative z-10 flex items-center justify-center">
-                            VER MAIS &rsaquo;
-                          </span>
-                          <span className="absolute inset-0 bg-gradient-to-r from-white to-black transform translate-x-full transition-transform duration-300 ease-in-out z-0 opacity-20"></span>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </AnimatedSection>
-              </div>
-              {/*card 5 */}
-              {/**fim cards */}
+            </div>
+          </div>
+          <div className="w-full flex-col">
+            <div className="border border-gray-300 mt-5"></div>
+            <div className="text-gray-400">
+              <p className="text-end font-light text-sm max-md:text-center">
+                &copy; 2024 JSDevelopers and Growth{" "}
+              </p>
             </div>
           </div>
         </div>
-      </div>
+      </footer>
+      {/*fim footer */}
     </section>
   );
 }

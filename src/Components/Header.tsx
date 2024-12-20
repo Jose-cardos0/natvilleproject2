@@ -15,20 +15,20 @@ export function Header() {
   const [isOpenProduct, setIsOpenProduct] = useState<boolean>(false);
   const [isMobile, setIsMobile] = useState<boolean>(false);
 
-  const [isVisibleQuemSomos, setIsVisibleQuemSomos] = useState(false);
-  const [mouseX, setMouseX] = useState(0);
+  // const [isVisibleQuemSomos, setIsVisibleQuemSomos] = useState(false);
+  // const [mouseX, setMouseX] = useState(0);
 
-  const handleMouseEnter = () => {
-    setIsVisibleQuemSomos(true);
-  };
+  // const handleMouseEnter = () => {
+  //   setIsVisibleQuemSomos(true);
+  // };
 
-  const handleMouseLeave = () => {
-    setIsVisibleQuemSomos(false);
-  };
+  // const handleMouseLeave = () => {
+  //   setIsVisibleQuemSomos(false);
+  // };
 
-  const handleMouseMove = (event: React.MouseEvent<HTMLElement>) => {
-    setMouseX(event.clientX); // Atualiza a posição X do mouse
-  };
+  // const handleMouseMove = (event: React.MouseEvent<HTMLElement>) => {
+  //   setMouseX(event.clientX); // Atualiza a posição X do mouse
+  // };
 
   useEffect(() => {
     function handleSize() {
@@ -44,15 +44,15 @@ export function Header() {
 
   return (
     <header
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-      onMouseMove={handleMouseMove}
+      // onMouseEnter={handleMouseEnter}
+      // onMouseLeave={handleMouseLeave}
+      // onMouseMove={handleMouseMove}
       style={{ position: "relative" }}
       className="w-full h-24
      bg-custom-white flex items-center justify-center
       drop-shadow-xl shadow-black fixed z-20   "
     >
-      {isVisibleQuemSomos && (
+      {/* {isVisibleQuemSomos && (
         <div
           className="absolute bg-custom-white p-10 rounded-full w-36 h-36"
           style={{
@@ -62,7 +62,7 @@ export function Header() {
             zIndex: -1,
           }}
         ></div>
-      )}
+      )} */}
       {isMobile ? (
         <section className="w-full flex items-center justify-between mx-8">
           <div className="w-full flex items-center justify-between ">
@@ -211,16 +211,16 @@ export function Header() {
             </div>
             {isOpen === true ? (
               <div
-                className="absolute top-full w-full left-0
+                className="absolute top-full mr-72
                   bg-custom-white shadow-lg 
-                  flex items-center justify-center bg-opacity-30 "
+                  flex items-center justify-center bg-opacity-70 rounded-b-xl"
               >
-                <div className=" items-center justify-between flex w-7/12 py-3 ">
+                <div className=" items-center justify-between flex-col  py-3 ">
                   <Link to={"/queijos"}>
                     <div
                       onClick={() => setIsOpen((prev) => !prev)}
-                      className="w-full px-5 py-2 cursor-pointer uppercase hover:border-b-2
-                 hover:border-custom-blue text-center font-medium hover:text-custom-blue"
+                      className="w-full px-5 py-2 cursor-pointer uppercase 
+               text-center font-medium hover:bg-custom-bg-leiteIHT"
                     >
                       queijos
                     </div>
@@ -228,17 +228,17 @@ export function Header() {
                   <Link to={"/leiteuht"}>
                     <div
                       onClick={() => setIsOpen((prev) => !prev)}
-                      className="w-full  px-5 py-2 cursor-pointer uppercase hover:border-b-2
-                   hover:border-custom-blue text-center font-medium hover:text-custom-blue"
+                      className="w-full  px-5 py-2 cursor-pointer uppercase 
+                  text-center font-medium hover:bg-custom-bg-leiteIHT"
                     >
                       leites
                     </div>
                   </Link>
-                  <Link to={"/leiteuht"}>
+                  <Link to={"/Bebidas"}>
                     <div
                       onClick={() => setIsOpen((prev) => !prev)}
-                      className="w-full  px-5 py-2 cursor-pointer uppercase hover:border-b-2
-                 hover:border-custom-blue text-center font-medium  hover:text-custom-blue "
+                      className="w-full  px-5 py-2 cursor-pointer uppercase 
+           text-center font-medium  hover:bg-custom-bg-leiteIHT "
                     >
                       bebidas lácteas
                     </div>
@@ -246,8 +246,8 @@ export function Header() {
                   <Link to={"/manteigas"}>
                     <div
                       onClick={() => setIsOpen((prev) => !prev)}
-                      className="w-full  px-5 py-2 cursor-pointer uppercase hover:border-b-2
-                 hover:border-custom-blue text-center font-medium  hover:text-custom-blue"
+                      className="w-full  px-5 py-2 cursor-pointer uppercase
+                  text-center font-medium  hover:bg-custom-bg-leiteIHT"
                     >
                       Manteigas
                     </div>
@@ -255,8 +255,8 @@ export function Header() {
                   <Link to={"/choconat"}>
                     <div
                       onClick={() => setIsOpen((prev) => !prev)}
-                      className="w-full  px-5 py-2 cursor-pointer uppercase hover:border-b-2
-                 hover:border-custom-blue text-center font-medium  hover:text-custom-blue"
+                      className="w-full  px-5 py-2 cursor-pointer uppercase 
+                text-center font-medium  hover:bg-custom-bg-leiteIHT"
                     >
                       Achocolatado
                     </div>

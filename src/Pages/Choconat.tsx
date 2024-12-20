@@ -3,8 +3,7 @@ import { useEffect, useState, useLayoutEffect } from "react";
 //router dom
 import { Link } from "react-router-dom";
 
-import bg1 from "../assets/Produtos/bgProdutos.png";
-import nomeLinha from "../assets/Produtos/nomeLinha.png";
+import bg1 from "../assets/Produtos/bgChoconat.png";
 
 //itens
 

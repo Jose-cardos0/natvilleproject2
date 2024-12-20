@@ -3,12 +3,11 @@ import { useEffect, useState, useLayoutEffect } from "react";
 //router dom
 import { Link } from "react-router-dom";
 
-import bg1 from "../assets/Produtos/Leites/bgUht.png";
+import bg1 from "../assets/QuemSomos/bgProdutos.svg";
 
 //itens
 import leitesUht from "../assets/Produtos/Leites/leitesUht.png";
-import spinerCile from "../assets/Produtos/Leites/spinerCicle.png";
-import spinnerWord from "../assets/Produtos/Leites/spinerWord.png";
+
 import leiteUhtEx from "../assets/Produtos/Leites/leiteUhtExemplo.png";
 import leiteUhtExDes from "../assets/Produtos/Leites/leiteUhtDesn.png";
 import leiteUhtExZero from "../assets/Produtos/Leites/leiteUhtZero.png";
@@ -35,9 +34,9 @@ interface Produto {
 export function LeitesUht() {
   const [leiteUht, setLeiteUht] = useState<Produto[]>([]);
 
-  // useLayoutEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   useEffect(() => {
     async function getData() {
@@ -64,12 +63,11 @@ export function LeitesUht() {
     >
       {/*section info leite */}
 
-      <section className="flex-col items-center justify-center ">
+      <section className="flex-col items-center justify-center bg-custom-white">
         <div
           style={{ backgroundImage: `url(${bg1})` }}
-          className="h-screen w-screen flex items-center
-         justify-center m-auto -mt-8 bg-cover bg-center
-          bg-no-repeat z-10"
+          className="h-screen w-screen flex items-center 
+          justify-center m-auto -mt-8 bg-cover bg-center bg-fixed z-10"
         >
           <div
             className="max-w-7xl 
@@ -83,18 +81,18 @@ export function LeitesUht() {
                 alt="leite uht natville"
               />
             </AnimatedSection>
-            {/* <div className="flex-col items-center justify-center ">
+            <div className="flex-col items-center justify-center ">
               <AnimatedNegative>
                 <h1
                   className="font-mochari text-9xl
-               text-custom-white text-center max-md:text-7xl"
+               text-custom-blue-strong text-center max-md:text-7xl"
                 >
                   linha
                   <br />
                   leite uht
                 </h1>
               </AnimatedNegative>
-              <div
+              {/* <div
                 className="relative flex items-center
                justify-center mt-20 max-md:hidden animate-bounce hover:scale-105 transition duration-700"
               >
@@ -108,8 +106,8 @@ export function LeitesUht() {
                 <div className="absolute custom-spin top-0 ">
                   <img className="" src={spinnerWord} alt="spiner word" />
                 </div>
-              </div>
-            </div> */}
+              </div> */}
+            </div>
           </div>
         </div>
         {/*inicio leites */}

@@ -9,6 +9,7 @@ import { Queijos } from "./Pages/Queijos";
 import { Manteigas } from "./Pages/Manteigas";
 import { Noticias } from "./Pages/Noticias";
 import { Choconat } from "./Pages/Choconat";
+import { Bebidas } from "./Pages/Bebidas";
 
 //header
 import { Layout } from "./Components/Layout";
@@ -48,6 +49,10 @@ export const router = createBrowserRouter([
       {
         path: "/choconat",
         element: <Choconat />,
+      },
+      {
+        path: "/bebidas",
+        element: <Bebidas />,
       },
     ],
   },
