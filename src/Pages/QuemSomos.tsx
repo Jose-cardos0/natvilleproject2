@@ -23,6 +23,7 @@ export function QuemSomos() {
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   return (
     <main
       className="bg-custom-white overflow-x-hidden w-full
@@ -74,7 +75,7 @@ export function QuemSomos() {
           style={{ backgroundImage: `url(${natville})` }}
           className="h-screen w-screen flex items-center
         justify-center m-auto
-         bg-no-repeat bg-contain drop-shadow-xl z-10 max-md:bg-center max-md:bg-cover"
+         bg-no-repeat bg-contain drop-shadow-2xl z-10 max-md:bg-center max-md:bg-cover  "
         >
           <div className="max-w-4xl">
             <div

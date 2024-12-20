@@ -11,6 +11,7 @@ import bebidaMorango from "../assets/Produtos/Bebidas/morsngo2.png";
 import bebidaAmeixa from "../assets/Produtos/Bebidas/ameixa2.png";
 import BebidaCoco from "../assets/Produtos/Bebidas/coco2.png";
 import graviola from "../assets/Produtos/Bebidas/graviola2.png";
+import bandeja from "../assets/Produtos/Bebidas/bandeija.png";
 import logoF from "../assets/Footer/logoFooter.svg";
 
 //icons
@@ -50,11 +51,13 @@ export function Bebidas() {
     getData();
   }, []);
 
-  const leiteUhtIntegral = leiteUht.length > 0 ? leiteUht[0] : null;
-  const leiteUhtDesnatado = leiteUht.length > 0 ? leiteUht[1] : null;
-  const leiteUhtZero = leiteUht.length > 0 ? leiteUht[2] : null;
+  const morango = leiteUht.length > 0 ? leiteUht[7] : null;
+  const ameixa = leiteUht.length > 0 ? leiteUht[8] : null;
+  const coco = leiteUht.length > 0 ? leiteUht[9] : null;
+  const graviolaInfo = leiteUht.length > 0 ? leiteUht[10] : null;
+  const bandejaInfo = leiteUht.length > 0 ? leiteUht[11] : null;
 
-  console.log(leiteUhtIntegral);
+  console.log(morango);
 
   return (
     <main
@@ -161,7 +164,7 @@ export function Bebidas() {
                     </p>
                   </div>
                   <div className="max-md:w-full max-md:items-center max-md:justify-center">
-                    <Link to={`/produtos/${leiteUhtIntegral?.id}`}>
+                    <Link to={`/produtos/${morango?.id}`}>
                       <button
                         className="relative 
           overflow-hidden
@@ -234,7 +237,7 @@ export function Bebidas() {
                     </p>
                   </div>
                   <div className="max-md:w-full max-md:items-center max-md:justify-center">
-                    <Link to={`/produtos/${leiteUhtDesnatado?.id}`}>
+                    <Link to={`/produtos/${ameixa?.id}`}>
                       <button
                         className="relative 
           overflow-hidden
@@ -303,7 +306,7 @@ export function Bebidas() {
                     </p>
                   </div>
                   <div className="max-md:w-full max-md:items-center max-md:justify-center">
-                    <Link to={`/produtos/${leiteUhtZero?.id}`}>
+                    <Link to={`/produtos/${coco?.id}`}>
                       <button
                         className="relative 
           overflow-hidden
@@ -375,7 +378,80 @@ export function Bebidas() {
                     </p>
                   </div>
                   <div className="max-md:w-full max-md:items-center max-md:justify-center">
-                    <Link to={`/produtos/${leiteUhtDesnatado?.id}`}>
+                    <Link to={`/produtos/${graviolaInfo?.id}`}>
+                      <button
+                        className="relative 
+          overflow-hidden
+           flex-shrink-0
+    bg-custom-blue-strong
+    text-white py-3 
+    px-14 rounded-md shadow-sm
+    shadow-black font-light 
+     border-none mt-8 max-md:w-full cursor-pointer"
+                      >
+                        <span className="relative z-10 flex items-center justify-center">
+                          TABELA NUTRICIONAL +
+                        </span>
+                        <span
+                          className="absolute inset-0
+            bg-gradient-to-r from-white
+             to-black
+           transform translate-x-full
+            transition-transform
+            duration-300 ease-in-out z-0 opacity-20"
+                        ></span>
+                      </button>
+                    </Link>
+                  </div>
+                </div>
+              </AnimatedY>
+            </div>
+            {/*bandeja */}
+            <div
+              className=" max-w-6xl flex items-center justify-center
+              gap-8  my-32 max-md:flex-col
+               max-md:mx-8 max-md:my-32"
+            >
+              <AnimatedNegative>
+                <div>
+                  <motion.img
+                    whileHover={{
+                      scale: 1.1,
+                      rotate: 3,
+                    }}
+                    transition={{ duration: 0.5 }}
+                    className=" object-center drop-shadow-md max-w-md
+                   max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
+                    src={bandeja}
+                    alt="leite uht integral"
+                  />
+                </div>
+              </AnimatedNegative>
+              <AnimatedY>
+                <div className="flex-col items-center justify-center ">
+                  <h1
+                    className="font-mochari text-8xl max-md:text-7xl
+                   text-custom-blue-strong"
+                  >
+                    bebida sabor
+                    <br />
+                    morango 540g
+                  </h1>
+                  <div>
+                    <p className="text-custom-blue-strong text-justify mt-8">
+                      Um leite UHT integral saudável e rico em cálcio é aquele
+                      que mantém boa parte dos nutrientes naturais do leite
+                      fresco, como proteínas, vitaminas (especialmente a
+                      vitamina D, que auxilia na absorção do cálcio) e, claro, o
+                      próprio cálcio, essencial para ossos e dentes fortes. Esse
+                      tipo de leite é submetido a um processo de
+                      ultra-pasteurização (UHT), onde é aquecido a altas
+                      temperaturas por poucos segundos, eliminando bactérias
+                      prejudiciais sem alterar muito seu perfil nutricional.
+                    </p>
+                  </div>
+                  <div className="max-md:w-full max-md:items-center max-md:justify-center">
+                    <Link to={`/produtos/${bandejaInfo?.id}`}>
                       <button
                         className="relative 
           overflow-hidden

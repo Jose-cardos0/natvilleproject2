@@ -223,7 +223,7 @@ export function ProdutoDetail() {
               )}
             </AnimatedSection>
             <AnimatedSection>
-              <div className="mm:max-md:hidden">
+              <div className="mm:max-md:hidden overflow-hidden">
                 <div
                   className="max-w-96
             flex flex-col items-center mr-8 mm:max-md:mr-0 max-md:mb-10"
