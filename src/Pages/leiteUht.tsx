@@ -85,7 +85,7 @@ export function LeitesUht() {
               <AnimatedNegative>
                 <h1
                   className="font-mochari text-9xl
-               text-custom-blue-strong text-center max-md:text-7xl"
+               text-custom-blue-strong text-center max-md:text-7xl max-md:-mt-6"
                 >
                   linha
                   <br />
