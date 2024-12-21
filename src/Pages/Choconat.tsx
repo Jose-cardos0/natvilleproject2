@@ -76,7 +76,7 @@ export function Choconat() {
           >
             <AnimatedSection>
               <img
-                className=" max-md:w-72 -mt-28
+                className=" max-md:w-96 -mt-28
                max-md:-mt-32 cursor-pointer hover:scale-105 
                transition duration-700"
                 src={achocolatados}

@@ -71,7 +71,7 @@ export function Queijos() {
           >
             <img
               className="max-w-4xl drop-shadow-md max-md:w-80
-               max-md:-mt-44 cursor-pointer hover:scale-105
+               max-md:-mt-20 cursor-pointer hover:scale-105
                 transition duration-700 "
               src={queijosEx}
               alt="queijo natville natville"
@@ -128,7 +128,7 @@ export function Queijos() {
                 />
               </div>
               <div className="flex-col items-center justify-center  ">
-                <h1 className="font-mochari text-7xl text-custom-blue-strong ">
+                <h1 className="font-mochari text-7xl text-custom-blue-strong max-md:text-7xl ">
                   queijo <br />
                   mussarela
                 </h1>
@@ -188,9 +188,8 @@ export function Queijos() {
                 />
               </div>
               <div className="flex-col items-center justify-center">
-                <h1 className="font-mochari text-8xl text-custom-blue-strong">
-                  queijo <br />
-                  prato
+                <h1 className="font-mochari text-8xl text-custom-blue-strong max-md:text-7xl">
+                  queijo prato
                 </h1>
                 <div>
                   <p className="text-custom-blue-strong text-justify mt-8">
@@ -248,9 +247,8 @@ export function Queijos() {
                 />
               </div>
               <div className="flex-col items-center justify-center">
-                <h1 className="font-mochari text-8xl text-custom-blue-strong">
-                  queijo de <br />
-                  coalho
+                <h1 className="font-mochari text-8xl text-custom-blue-strong max-md:text-7xl">
+                  queijo de coalho
                 </h1>
                 <div>
                   <p className="text-custom-blue-strong text-justify mt-8">

@@ -73,7 +73,7 @@ export function Manteigas() {
             <AnimatedSection>
               <img
                 className=" drop-shadow-md max-md:w-72
-               max-md:-mt-32 cursor-pointer max-w-2xl
+                cursor-pointer max-w-2xl
                hover:scale-105 transition duration-700 -rotate-6"
                 src={manteigas}
                 alt="leite uht natville"
@@ -83,7 +83,7 @@ export function Manteigas() {
               <AnimatedNegative>
                 <h1
                   className="font-mochari text-9xl
-               text-custom-white text-center max-md:text-7xl"
+               text-custom-blue-strong text-center max-md:text-7xl max-md:-mt-8 "
                 >
                   Linha
                   <br />

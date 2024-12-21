@@ -141,6 +141,14 @@ export function Header() {
                               Linha Achocolatados
                             </div>
                           </Link>
+                          <Link to={"/bebidas"}>
+                            <div
+                              onClick={() => setIsOpen((prev) => !prev)}
+                              className="font-roboto uppercase py-2 px-4 cursor-pointer text-gray-600 hover:bg-blue-50 transition duration-300 rounded-lg"
+                            >
+                              Linha Bebidas
+                            </div>
+                          </Link>
                         </div>
                       </AnimatedSection>
                     ) : (

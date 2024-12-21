@@ -79,7 +79,7 @@ export function Bebidas() {
             <AnimatedSection>
               <img
                 className=" drop-shadow-md max-md:w-72
-               max-md:-mt-32 cursor-pointer hover:scale-105 transition duration-700"
+               max-md:-mt-20 cursor-pointer hover:scale-105 transition duration-700"
                 src={bebidasBanner}
                 alt="leite uht natville"
               />
@@ -87,7 +87,7 @@ export function Bebidas() {
             <div className="flex-col items-center justify-center ">
               <AnimatedNegative>
                 <h1
-                  className="font-mochari text-9xl
+                  className="font-mochari text-9xl max-md:-mt-6 
                text-custom-blue-strong text-center max-md:text-7xl"
                 >
                   linha
@@ -146,7 +146,7 @@ export function Bebidas() {
               </AnimatedNegative>
               <AnimatedY>
                 <div className="flex-col items-center justify-center">
-                  <h1 className="font-mochari text-8xl text-custom-blue-strong">
+                  <h1 className="font-mochari text-8xl text-custom-blue-strong max-md:text-7xl">
                     Bebida sabor <br />
                     Morango
                   </h1>
@@ -288,7 +288,7 @@ export function Bebidas() {
               </AnimatedNegative>
               <AnimatedY>
                 <div className="flex-col items-center justify-center">
-                  <h1 className="font-mochari text-8xl text-custom-blue-strong">
+                  <h1 className="font-mochari text-8xl text-custom-blue-strong max-md:text-7xl">
                     bebida sabor <br />
                     coco
                   </h1>
@@ -421,7 +421,7 @@ export function Bebidas() {
                     }}
                     transition={{ duration: 0.5 }}
                     className=" object-center drop-shadow-md max-w-md
-                   max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
+                   max-md:w-72 cursor-pointer hover:scale-105 transition duration-700 "
                     src={bandeja}
                     alt="leite uht integral"
                   />

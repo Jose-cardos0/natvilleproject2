@@ -76,7 +76,7 @@ export function LeitesUht() {
             <AnimatedSection>
               <img
                 className=" drop-shadow-md max-md:w-72
-               max-md:-mt-32 cursor-pointer hover:scale-105 transition duration-700"
+                cursor-pointer hover:scale-105 transition duration-700"
                 src={leitesUht}
                 alt="leite uht natville"
               />
@@ -143,7 +143,7 @@ export function LeitesUht() {
               </AnimatedNegative>
               <AnimatedY>
                 <div className="flex-col items-center justify-center">
-                  <h1 className="font-mochari text-8xl text-custom-blue-strong">
+                  <h1 className="font-mochari text-8xl text-custom-blue-strong max-md:text-7xl">
                     leite uht <br />
                     integral
                   </h1>
@@ -285,7 +285,7 @@ export function LeitesUht() {
               </AnimatedNegative>
               <AnimatedY>
                 <div className="flex-col items-center justify-center">
-                  <h1 className="font-mochari text-8xl text-custom-blue-strong">
+                  <h1 className="font-mochari text-8xl text-custom-blue-strong max-md:text-7xl">
                     leite uht <br />
                     zero lactose
                   </h1>
