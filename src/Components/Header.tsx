@@ -91,19 +91,19 @@ export function Header() {
                     <Link to={"/quemsomos"}>
                       <div
                         onClick={() => setIsOpen((prev) => !prev)}
-                        className="font-roboto uppercase py-3 px-5 
+                        className="font-roboto  py-3 px-5 
                       cursor-pointer 
                    text-gray-800 hover:bg-blue-100 transition 
-                   duration-300 rounded-lg flex items-center"
+                   duration-300 rounded-lg flex items-center font-light"
                       >
-                        quem somos
+                        Quem Somos
                       </div>
                     </Link>
                   </ul>
                   <ul onClick={() => setIsOpenProduct((prev) => !prev)}>
                     <Link to={"#sliderProdutos"}>
-                      <div className="font-roboto uppercase py-3 px-5 cursor-pointer text-gray-800 hover:bg-blue-100 transition duration-300 rounded-lg flex items-center">
-                        nossos produtos
+                      <div className="font-roboto  py-3 px-5 cursor-pointer text-gray-800 hover:bg-blue-100 transition duration-300 rounded-lg flex items-center font-light">
+                        Nossos Produtos
                       </div>
                     </Link>
                     {isOpenProduct ? (
@@ -112,15 +112,15 @@ export function Header() {
                           <Link to={"/leiteuht"}>
                             <div
                               onClick={() => setIsOpen((prev) => !prev)}
-                              className="font-roboto uppercase py-2 px-4 cursor-pointer text-gray-600 hover:bg-blue-50 transition duration-300 rounded-lg"
+                              className="font-roboto  py-2 px-4 cursor-pointer text-gray-600 hover:bg-blue-50 transition duration-300 rounded-lg font-light"
                             >
-                              Linha leites
+                              Linha Leites
                             </div>
                           </Link>
                           <Link to={"/queijos"}>
                             <div
                               onClick={() => setIsOpen((prev) => !prev)}
-                              className="font-roboto uppercase py-2 px-4 cursor-pointer text-gray-600 hover:bg-blue-50 transition duration-300 rounded-lg"
+                              className="font-roboto  py-2 px-4 cursor-pointer text-gray-600 hover:bg-blue-50 transition duration-300 rounded-lg font-light"
                             >
                               Linha Queijos
                             </div>
@@ -128,7 +128,7 @@ export function Header() {
                           <Link to={"/manteigas"}>
                             <div
                               onClick={() => setIsOpen((prev) => !prev)}
-                              className="font-roboto uppercase py-2 px-4 cursor-pointer text-gray-600 hover:bg-blue-50 transition duration-300 rounded-lg"
+                              className="font-roboto  py-2 px-4 cursor-pointer text-gray-600 hover:bg-blue-50 transition duration-300 rounded-lg font-light"
                             >
                               Linha Manteigas
                             </div>
@@ -136,7 +136,7 @@ export function Header() {
                           <Link to={"/choconat"}>
                             <div
                               onClick={() => setIsOpen((prev) => !prev)}
-                              className="font-roboto uppercase py-2 px-4 cursor-pointer text-gray-600 hover:bg-blue-50 transition duration-300 rounded-lg"
+                              className="font-roboto  py-2 px-4 cursor-pointer text-gray-600 hover:bg-blue-50 transition duration-300 rounded-lg font-light"
                             >
                               Linha Achocolatados
                             </div>
@@ -144,7 +144,7 @@ export function Header() {
                           <Link to={"/bebidas"}>
                             <div
                               onClick={() => setIsOpen((prev) => !prev)}
-                              className="font-roboto uppercase py-2 px-4 cursor-pointer text-gray-600 hover:bg-blue-50 transition duration-300 rounded-lg"
+                              className="font-roboto  py-2 px-4 cursor-pointer text-gray-600 hover:bg-blue-50 transition duration-300 rounded-lg font-light"
                             >
                               Linha Bebidas
                             </div>
@@ -159,9 +159,9 @@ export function Header() {
                     <Link to={"/noticias"}>
                       <div
                         onClick={() => setIsOpen((prev) => !prev)}
-                        className="font-roboto uppercase py-3 px-5 cursor-pointer text-gray-800 hover:bg-blue-100 transition duration-300 rounded-lg flex items-center"
+                        className="font-roboto  py-3 px-5 cursor-pointer text-gray-800 hover:bg-blue-100 transition duration-300 rounded-lg flex items-center font-light"
                       >
-                        notícias
+                        Notícias
                       </div>
                     </Link>
                   </ul>
@@ -169,9 +169,9 @@ export function Header() {
                     <Link to={"/"}>
                       <div
                         onClick={() => setIsOpen((prev) => !prev)}
-                        className="font-roboto uppercase py-3 px-5 cursor-pointer text-gray-800 hover:bg-blue-100 transition duration-300 rounded-lg flex items-center"
+                        className="font-roboto  py-3 px-5 cursor-pointer text-gray-800 hover:bg-blue-100 transition duration-300 rounded-lg flex items-center font-light"
                       >
-                        contato
+                        Contato
                       </div>
                     </Link>
                   </ul>
@@ -179,9 +179,9 @@ export function Header() {
                     <Link to={"/"}>
                       <div
                         onClick={() => setIsOpen((prev) => !prev)}
-                        className="font-roboto uppercase py-3 px-5 cursor-pointer text-gray-800 hover:bg-blue-100 transition duration-300 rounded-lg flex items-center"
+                        className="font-roboto  py-3 px-5 cursor-pointer text-gray-800 hover:bg-blue-100 transition duration-300 rounded-lg flex items-center font-light"
                       >
-                        trabalhe conosco
+                        Trabalhe Conosco
                       </div>
                     </Link>
                   </ul>
@@ -202,7 +202,10 @@ export function Header() {
 
           <div className="w-full flex items-center justify-center gap-3">
             <Link to={"/quemsomos"}>
-              <div className="font-roboto uppercase py-1 px-4 cursor-pointer font-medium hover:text-custom-blue">
+              <div
+                className=" uppercase py-1 px-4
+               cursor-pointer font-light hover:text-custom-blue"
+              >
                 quem somos
               </div>
             </Link>
@@ -210,8 +213,8 @@ export function Header() {
             <div
               className={
                 isOpen === true
-                  ? "relative cursor-pointer font-medium bg-custom-blue rounded-md text-white py-1 px-4 hover:text-custom-blue uppercase"
-                  : "relative cursor-pointer font-medium py-1 px-4 uppercase hover:text-custom-blue"
+                  ? "relative cursor-pointer font-light bg-custom-blue rounded-md text-white py-1 px-4 uppercase"
+                  : "relative cursor-pointer font-light py-1 px-4 uppercase hover:text-custom-blue"
               }
               onClick={() => setIsOpen((prev) => !prev)}
             >
@@ -219,54 +222,54 @@ export function Header() {
             </div>
             {isOpen === true ? (
               <div
-                className="absolute top-full mr-72
+                className="absolute top-full mr-56
                   bg-custom-white shadow-lg 
                   flex items-center justify-center bg-opacity-70 rounded-b-xl"
               >
-                <div className=" items-center justify-between flex-col  py-3 ">
+                <div className=" justify-between flex-col  py-3 ">
                   <Link to={"/queijos"}>
                     <div
                       onClick={() => setIsOpen((prev) => !prev)}
                       className="w-full px-5 py-2 cursor-pointer uppercase 
-               text-center font-medium hover:bg-custom-bg-leiteIHT"
+                font-light hover:bg-custom-bg-leiteIHT hover:text-white"
                     >
-                      queijos
+                      Liha de queijos
                     </div>
                   </Link>
                   <Link to={"/leiteuht"}>
                     <div
                       onClick={() => setIsOpen((prev) => !prev)}
                       className="w-full  px-5 py-2 cursor-pointer uppercase 
-                  text-center font-medium hover:bg-custom-bg-leiteIHT"
+                   font-light hover:bg-custom-bg-leiteIHT hover:text-white"
                     >
-                      leites
+                      Linha de leites
                     </div>
                   </Link>
                   <Link to={"/Bebidas"}>
                     <div
                       onClick={() => setIsOpen((prev) => !prev)}
                       className="w-full  px-5 py-2 cursor-pointer uppercase 
-           text-center font-medium  hover:bg-custom-bg-leiteIHT "
+            font-light  hover:bg-custom-bg-leiteIHT  hover:text-white"
                     >
-                      bebidas lácteas
+                      Linha de bebidas lácteas
                     </div>
                   </Link>
                   <Link to={"/manteigas"}>
                     <div
                       onClick={() => setIsOpen((prev) => !prev)}
                       className="w-full  px-5 py-2 cursor-pointer uppercase
-                  text-center font-medium  hover:bg-custom-bg-leiteIHT"
+                   font-light  hover:bg-custom-bg-leiteIHT hover:text-white"
                     >
-                      Manteigas
+                      Linha de Manteigas
                     </div>
                   </Link>
                   <Link to={"/choconat"}>
                     <div
                       onClick={() => setIsOpen((prev) => !prev)}
                       className="w-full  px-5 py-2 cursor-pointer uppercase 
-                text-center font-medium  hover:bg-custom-bg-leiteIHT"
+                 font-light  hover:bg-custom-bg-leiteIHT hover:text-white"
                     >
-                      Achocolatado
+                      Linha Achocolatado
                     </div>
                   </Link>
                 </div>
@@ -276,16 +279,16 @@ export function Header() {
             )}
 
             <Link to={"/noticias"}>
-              <div className="font-roboto uppercase py-1 px-4 cursor-pointer font-medium hover:text-custom-blue">
+              <div className="font-roboto uppercase py-1 px-4 cursor-pointer font-light hover:text-custom-blue ">
                 notícias
               </div>
             </Link>
 
-            <div className="font-roboto uppercase py-1 px-4 cursor-pointer font-medium hover:text-custom-blue">
+            <div className="font-roboto uppercase py-1 px-4 cursor-pointer  hover:text-custom-blue font-light">
               contato
             </div>
 
-            <div className="font-roboto uppercase py-1 px-4 cursor-pointer font-medium hover:text-custom-blue">
+            <div className="font-roboto uppercase py-1 px-4 cursor-pointer hover:text-custom-blue font-light">
               trabalhe conosco
             </div>
           </div>
