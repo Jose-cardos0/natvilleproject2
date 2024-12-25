@@ -10,6 +10,7 @@ import { Manteigas } from "./Pages/Manteigas";
 import { Noticias } from "./Pages/Noticias";
 import { Choconat } from "./Pages/Choconat";
 import { Bebidas } from "./Pages/Bebidas";
+import { ReqCremoso } from "./Pages/ReqCremoso";
 
 //header
 import { Layout } from "./Components/Layout";
@@ -53,6 +54,10 @@ export const router = createBrowserRouter([
       {
         path: "/bebidas",
         element: <Bebidas />,
+      },
+      {
+        path: "/reqcremoso",
+        element: <ReqCremoso />,
       },
     ],
   },

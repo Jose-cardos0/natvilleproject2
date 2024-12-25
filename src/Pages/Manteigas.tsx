@@ -10,6 +10,7 @@ import manteigas from "../assets/Produtos/Manteigas/manteigaFront.png";
 import menteigaMaior from "../assets/Produtos/Manteigas/500topo.png";
 import manteigaMenor from "../assets/Produtos/Manteigas/200topo.png";
 import manteiga5kg from "../assets/Produtos/Manteigas/manteiga5kg.png";
+import manteiga20kg from "../assets/Produtos/Manteigas/manteiga20kg.png";
 
 import logoF from "../assets/Footer/logoFooter.svg";
 
@@ -283,6 +284,75 @@ export function Manteigas() {
                   <h1 className="font-mochari text-5xl text-custom-blue-strong">
                     Manteiga de <br />
                     Primeira qualidade 5kg
+                  </h1>
+                  <div>
+                    <p className="text-custom-blue-strong text-justify mt-8">
+                      Um leite UHT integral saudável e rico em cálcio é aquele
+                      que mantém boa parte dos nutrientes naturais do leite
+                      fresco, como proteínas, vitaminas (especialmente a
+                      vitamina D, que auxilia na absorção do cálcio) e, claro, o
+                      próprio cálcio, essencial para ossos e dentes fortes. Esse
+                      tipo de leite é submetido a um processo de
+                      ultra-pasteurização (UHT), onde é aquecido a altas
+                      temperaturas por poucos segundos, eliminando bactérias
+                      prejudiciais sem alterar muito seu perfil nutricional.
+                    </p>
+                  </div>
+                  <div className="max-md:w-full max-md:items-center max-md:justify-center">
+                    <Link to={`/produtos/${manteigaPrimeiraQualidade?.id}`}>
+                      <button
+                        className="relative 
+          overflow-hidden
+           flex-shrink-0
+    bg-custom-blue-strong
+    text-white py-3 
+    px-14 rounded-md shadow-sm
+    shadow-black font-light 
+     border-none mt-8 max-md:w-full cursor-pointer"
+                      >
+                        <span className="relative z-10 flex items-center justify-center">
+                          TABELA NUTRICIONAL +
+                        </span>
+                        <span
+                          className="absolute inset-0
+            bg-gradient-to-r from-white
+             to-black
+           transform translate-x-full
+            transition-transform
+            duration-300 ease-in-out z-0 opacity-20"
+                        ></span>
+                      </button>
+                    </Link>
+                  </div>
+                </div>
+              </AnimatedY>
+            </div>
+            {/*manteiga 20kg */}
+            <div
+              className="flex items-center justify-center 
+              gap-8 bg-custom-white my-32 max-md:flex-col
+               max-md:mx-8 max-md:my-32"
+            >
+              <AnimatedNegative>
+                <div>
+                  <motion.img
+                    whileHover={{
+                      scale: 1.1,
+                      rotate: 3,
+                    }}
+                    transition={{ duration: 0.5 }}
+                    className="max-w-7xl object-center drop-shadow-md w-96
+                   max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
+                    src={manteiga20kg}
+                    alt="leite uht integral"
+                  />
+                </div>
+              </AnimatedNegative>
+              <AnimatedY>
+                <div className="flex-col items-center justify-center">
+                  <h1 className="font-mochari text-5xl text-custom-blue-strong">
+                    Manteiga de <br />
+                    Primeira qualidade 20kg
                   </h1>
                   <div>
                     <p className="text-custom-blue-strong text-justify mt-8">
