@@ -6,14 +6,10 @@ import { Link } from "react-router-dom";
 import bg1 from "../assets/QuemSomos/bgProdutos.svg";
 
 //itens
+import leitesUht from "../assets/Produtos/leiteCondensado/bgCondensado.png";
 
-import reqCremoso from "../assets/Produtos/ReqCremoso/bgReqCremoso.png";
+import condensado from "../assets/Produtos/leiteCondensado/condensadoLado.png";
 
-import reqTrad from "../assets/Produtos/ReqCremoso/reqTradicional.png";
-import reqCebola from "../assets/Produtos/ReqCremoso/REQUEIJÃO_C&S_TOPO_SM.png";
-import reqCheddar from "../assets/Produtos/ReqCremoso/REQUEIJÃO_CHEDDAR_TOPO_SM.png";
-import reqZero from "../assets/Produtos/ReqCremoso/REQUEIJÃO_LACTOSE_TOPO_SM.png";
-import reqReduzido from "../assets/Produtos/ReqCremoso/REQUEIJÃO_REDUZIDO_TOPO_SM.png";
 import logoF from "../assets/Footer/logoFooter.svg";
 
 //icons
@@ -34,7 +30,7 @@ interface Produto {
   produto: string;
 }
 
-export function ReqCremoso() {
+export function Condensados() {
   const [leiteUht, setLeiteUht] = useState<Produto[]>([]);
 
   useLayoutEffect(() => {
@@ -80,7 +76,7 @@ export function ReqCremoso() {
               <img
                 className=" drop-shadow-md max-md:w-72
                 cursor-pointer hover:scale-105 transition duration-700"
-                src={reqCremoso}
+                src={leitesUht}
                 alt="leite uht natville"
               />
             </AnimatedSection>
@@ -92,7 +88,7 @@ export function ReqCremoso() {
                 >
                   linha
                   <br />
-                  Cremosos
+                  condensado
                 </h1>
               </AnimatedNegative>
               {/* <div
@@ -137,9 +133,9 @@ export function ReqCremoso() {
                       rotate: 3,
                     }}
                     transition={{ duration: 0.5 }}
-                    className="max-w-1xl object-center drop-shadow-md
+                    className="max-w-xs object-center drop-shadow-md
                    max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
-                    src={reqTrad}
+                    src={condensado}
                     alt="leite uht integral"
                   />
                 </div>
@@ -147,8 +143,8 @@ export function ReqCremoso() {
               <AnimatedY>
                 <div className="flex-col items-center justify-center">
                   <h1 className="font-mochari text-8xl text-custom-blue-strong max-md:text-7xl">
-                    Queijo Prcoessado <br />
-                    tradicional
+                    leite condensado <br />
+                    semidesntado
                   </h1>
                   <div>
                     <p className="text-custom-blue-strong text-justify mt-8">
@@ -193,7 +189,7 @@ export function ReqCremoso() {
               </AnimatedY>
             </div>
             {/*leite desnataod inicio */}
-            <div
+            {/* <div
               className="flex items-center justify-center
               gap-8  my-32 max-md:flex-col
                max-md:mx-8 max-md:my-32"
@@ -206,9 +202,9 @@ export function ReqCremoso() {
                       rotate: 3,
                     }}
                     transition={{ duration: 0.5 }}
-                    className=" object-center drop-shadow-md
+                    className="max-w-7xl object-center drop-shadow-md
                    max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
-                    src={reqCebola}
+                    src={leiteUhtExDes}
                     alt="leite uht integral"
                   />
                 </div>
@@ -219,9 +215,9 @@ export function ReqCremoso() {
                     className="font-mochari text-8xl max-md:text-7xl
                    text-custom-blue-strong"
                   >
-                    Queijo Prcoessado
+                    leite uht
                     <br />
-                    Cebola e Salsa
+                    desnatado
                   </h1>
                   <div>
                     <p className="text-custom-blue-strong text-justify mt-8">
@@ -264,9 +260,9 @@ export function ReqCremoso() {
                   </div>
                 </div>
               </AnimatedY>
-            </div>
+            </div> */}
             {/*zero lactose */}
-            <div
+            {/* <div
               className="flex items-center justify-center
               gap-8  max-md:flex-col
                max-md:mx-8  max-md:mt-32"
@@ -279,9 +275,9 @@ export function ReqCremoso() {
                       rotate: 3,
                     }}
                     transition={{ duration: 0.5 }}
-                    className=" object-center drop-shadow-md
+                    className="max-w-7xl object-center drop-shadow-md
                    max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
-                    src={reqCheddar}
+                    src={leiteUhtExZero}
                     alt="leite uht integral"
                   />
                 </div>
@@ -289,8 +285,8 @@ export function ReqCremoso() {
               <AnimatedY>
                 <div className="flex-col items-center justify-center">
                   <h1 className="font-mochari text-8xl text-custom-blue-strong max-md:text-7xl">
-                    Queijo Prcoessado <br />
-                    cheddar
+                    leite uht <br />
+                    zero lactose
                   </h1>
                   <div>
                     <p className="text-custom-blue-strong text-justify mt-8">
@@ -333,153 +329,7 @@ export function ReqCremoso() {
                   </div>
                 </div>
               </AnimatedY>
-            </div>
-            {/*REQ ZERO */}
-            <div
-              className="flex items-center justify-center
-              gap-8  my-32 max-md:flex-col
-               max-md:mx-8 max-md:my-32"
-            >
-              <AnimatedNegative>
-                <div>
-                  <motion.img
-                    whileHover={{
-                      scale: 1.1,
-                      rotate: 3,
-                    }}
-                    transition={{ duration: 0.5 }}
-                    className=" object-center drop-shadow-md
-                   max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
-                    src={reqReduzido}
-                    alt="leite uht integral"
-                  />
-                </div>
-              </AnimatedNegative>
-              <AnimatedY>
-                <div className="flex-col items-center justify-center ">
-                  <h1
-                    className="font-mochari text-8xl max-md:text-7xl
-                   text-custom-blue-strong"
-                  >
-                    Queijo Prcoessado
-                    <br />
-                    light
-                  </h1>
-                  <div>
-                    <p className="text-custom-blue-strong text-justify mt-8">
-                      Um leite UHT integral saudável e rico em cálcio é aquele
-                      que mantém boa parte dos nutrientes naturais do leite
-                      fresco, como proteínas, vitaminas (especialmente a
-                      vitamina D, que auxilia na absorção do cálcio) e, claro, o
-                      próprio cálcio, essencial para ossos e dentes fortes. Esse
-                      tipo de leite é submetido a um processo de
-                      ultra-pasteurização (UHT), onde é aquecido a altas
-                      temperaturas por poucos segundos, eliminando bactérias
-                      prejudiciais sem alterar muito seu perfil nutricional.
-                    </p>
-                  </div>
-                  <div className="max-md:w-full max-md:items-center max-md:justify-center">
-                    <Link to={`/produtos/${leiteUhtDesnatado?.id}`}>
-                      <button
-                        className="relative 
-          overflow-hidden
-           flex-shrink-0
-    bg-custom-blue-strong
-    text-white py-3 
-    px-14 rounded-md shadow-sm
-    shadow-black font-light 
-     border-none mt-8 max-md:w-full cursor-pointer"
-                      >
-                        <span className="relative z-10 flex items-center justify-center">
-                          TABELA NUTRICIONAL +
-                        </span>
-                        <span
-                          className="absolute inset-0
-            bg-gradient-to-r from-white
-             to-black
-           transform translate-x-full
-            transition-transform
-            duration-300 ease-in-out z-0 opacity-20"
-                        ></span>
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </AnimatedY>
-            </div>
-            {/*REQ REDUZIDO */}
-            <div
-              className="flex items-center justify-center
-              gap-8  my-32 max-md:flex-col
-               max-md:mx-8 max-md:my-32"
-            >
-              <AnimatedNegative>
-                <div>
-                  <motion.img
-                    whileHover={{
-                      scale: 1.1,
-                      rotate: 3,
-                    }}
-                    transition={{ duration: 0.5 }}
-                    className=" object-center drop-shadow-md
-                   max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
-                    src={reqZero}
-                    alt="leite uht integral"
-                  />
-                </div>
-              </AnimatedNegative>
-              <AnimatedY>
-                <div className="flex-col items-center justify-center ">
-                  <h1
-                    className="font-mochari text-8xl max-md:text-7xl
-                   text-custom-blue-strong"
-                  >
-                    Queijo Prcoessado
-                    <br />
-                    zero lactose
-                  </h1>
-                  <div>
-                    <p className="text-custom-blue-strong text-justify mt-8">
-                      Um leite UHT integral saudável e rico em cálcio é aquele
-                      que mantém boa parte dos nutrientes naturais do leite
-                      fresco, como proteínas, vitaminas (especialmente a
-                      vitamina D, que auxilia na absorção do cálcio) e, claro, o
-                      próprio cálcio, essencial para ossos e dentes fortes. Esse
-                      tipo de leite é submetido a um processo de
-                      ultra-pasteurização (UHT), onde é aquecido a altas
-                      temperaturas por poucos segundos, eliminando bactérias
-                      prejudiciais sem alterar muito seu perfil nutricional.
-                    </p>
-                  </div>
-                  <div className="max-md:w-full max-md:items-center max-md:justify-center">
-                    <Link to={`/produtos/${leiteUhtDesnatado?.id}`}>
-                      <button
-                        className="relative 
-          overflow-hidden
-           flex-shrink-0
-    bg-custom-blue-strong
-    text-white py-3 
-    px-14 rounded-md shadow-sm
-    shadow-black font-light 
-     border-none mt-8 max-md:w-full cursor-pointer"
-                      >
-                        <span className="relative z-10 flex items-center justify-center">
-                          TABELA NUTRICIONAL +
-                        </span>
-                        <span
-                          className="absolute inset-0
-            bg-gradient-to-r from-white
-             to-black
-           transform translate-x-full
-            transition-transform
-            duration-300 ease-in-out z-0 opacity-20"
-                        ></span>
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </AnimatedY>
-            </div>
+            </div> */}
           </div>
 
           {/*footer inicio */}

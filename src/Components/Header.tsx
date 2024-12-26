@@ -157,6 +157,14 @@ export function Header() {
                               Linha Cremosos
                             </div>
                           </Link>
+                          <Link to={"/condensados"}>
+                            <div
+                              onClick={() => setIsOpen((prev) => !prev)}
+                              className="font-roboto  py-2 px-4 cursor-pointer text-gray-600 hover:bg-blue-50 transition duration-300 rounded-lg font-light"
+                            >
+                              Linha Condensado
+                            </div>
+                          </Link>
                         </div>
                       </AnimatedSection>
                     ) : (
@@ -232,7 +240,7 @@ export function Header() {
               <div
                 className="absolute top-full mr-56
                   bg-custom-white shadow-lg 
-                  flex items-center justify-center bg-opacity-70 rounded-b-xl"
+                  flex items-center justify-center bg-opacity-90 rounded-b-xl"
               >
                 <div className=" justify-between flex-col  py-3 ">
                   <Link to={"/queijos"}>
@@ -287,6 +295,15 @@ export function Header() {
                  font-light  hover:bg-custom-bg-leiteIHT hover:text-white"
                     >
                       Linha Cremosos
+                    </div>
+                  </Link>
+                  <Link to={"/condensados"}>
+                    <div
+                      onClick={() => setIsOpen((prev) => !prev)}
+                      className="w-full  px-5 py-2 cursor-pointer uppercase 
+                 font-light  hover:bg-custom-bg-leiteIHT hover:text-white"
+                    >
+                      Linha Condensado
                     </div>
                   </Link>
                 </div>

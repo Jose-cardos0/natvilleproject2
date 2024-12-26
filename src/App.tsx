@@ -11,6 +11,7 @@ import { Noticias } from "./Pages/Noticias";
 import { Choconat } from "./Pages/Choconat";
 import { Bebidas } from "./Pages/Bebidas";
 import { ReqCremoso } from "./Pages/ReqCremoso";
+import { Condensados } from "./Pages/Condensado";
 
 //header
 import { Layout } from "./Components/Layout";
@@ -58,6 +59,10 @@ export const router = createBrowserRouter([
       {
         path: "/reqcremoso",
         element: <ReqCremoso />,
+      },
+      {
+        path: "/condensados",
+        element: <Condensados />,
       },
     ],
   },

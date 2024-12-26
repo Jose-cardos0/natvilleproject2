@@ -232,11 +232,13 @@ export function ProdutoDetail() {
                     <div
                       className="absolute z-10
                   cursor-pointer
-                 transition duration-300
-                  hover:scale-150
+                 transition duration-300 left-2 top-2
+                  hover:scale-150 
                 "
                     >
-                      <GoDesktopDownload color="indigo" />
+                      <a href={`${produtosDetail.imagem}`} target="_blank">
+                        <GoDesktopDownload color="indigo" />
+                      </a>
                     </div>
                     <img
                       src={images[currentImageIndex]}
