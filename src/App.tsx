@@ -12,6 +12,7 @@ import { Choconat } from "./Pages/Choconat";
 import { Bebidas } from "./Pages/Bebidas";
 import { ReqCremoso } from "./Pages/ReqCremoso";
 import { Condensados } from "./Pages/Condensado";
+import { NossosProdutos } from "./Pages/NossosProdutos";
 
 //header
 import { Layout } from "./Components/Layout";
@@ -63,6 +64,10 @@ export const router = createBrowserRouter([
       {
         path: "/condensados",
         element: <Condensados />,
+      },
+      {
+        path: "/nossosprodutos",
+        element: <NossosProdutos />,
       },
     ],
   },

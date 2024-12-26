@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import queijos from "../../../assets/Sliders/queijos.png";
 
 export function SliderChess() {
@@ -38,8 +39,9 @@ export function SliderChess() {
           </p>
         </div>
         <div className="w-full flex items-end justify-end">
-          <button
-            className="relative 
+          <Link to={"/queijos"}>
+            <button
+              className="relative 
   overflow-hidden
    flex-shrink-0
 bg-custom-blue-strong
@@ -47,19 +49,20 @@ text-white py-3
 px-14 rounded-md shadow-sm
 shadow-black font-light 
 border-none mt-8 mm:max-md:w-full"
-          >
-            <span className="relative z-10 flex items-center justify-center">
-              ESPECIFICAÇÕES &rsaquo;
-            </span>
-            <span
-              className="absolute inset-0
+            >
+              <span className="relative z-10 flex items-center justify-center">
+                ESPECIFICAÇÕES &rsaquo;
+              </span>
+              <span
+                className="absolute inset-0
     bg-gradient-to-r from-white
      to-black
    transform translate-x-full
     transition-transform
     duration-300 ease-in-out z-0 opacity-20"
-            ></span>
-          </button>
+              ></span>
+            </button>
+          </Link>
         </div>
       </div>
     </div>

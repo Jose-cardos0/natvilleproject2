@@ -1,5 +1,7 @@
 import { useLayoutEffect } from "react";
 
+import { Link } from "react-router-dom";
+
 // import bgHome from "../assets/Home/bgHome.svg";
 import bg1 from "../assets/Produtos/bgProdutos.svg";
 import bg2 from "../assets/Home/BG/bg2.svg";
@@ -92,8 +94,9 @@ export function Home() {
                     é o queijo. E o queijo Natville conquista o paladar e o
                     coração de quem experimenta. Conheça a linha completa!
                   </p>
-                  <button
-                    className="relative 
+                  <Link to={"/nossosprodutos"}>
+                    <button
+                      className="relative 
           overflow-hidden
            flex-shrink-0
     bg-custom-blue-strong
@@ -101,19 +104,20 @@ export function Home() {
     px-14 rounded-md shadow-sm
     shadow-black font-light 
      border-none mt-8 mm:max-md:w-full"
-                  >
-                    <span className="relative z-10 flex items-center justify-center">
-                      VEJA MAIS &rsaquo;
-                    </span>
-                    <span
-                      className="absolute inset-0
+                    >
+                      <span className="relative z-10 flex items-center justify-center">
+                        VEJA MAIS &rsaquo;
+                      </span>
+                      <span
+                        className="absolute inset-0
             bg-gradient-to-r from-white
              to-black
            transform translate-x-full
             transition-transform
             duration-300 ease-in-out z-0 opacity-20"
-                    ></span>
-                  </button>
+                      ></span>
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>

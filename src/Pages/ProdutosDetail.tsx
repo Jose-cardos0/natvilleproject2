@@ -233,11 +233,18 @@ export function ProdutoDetail() {
                       className="absolute z-10
                   cursor-pointer
                  transition duration-300 left-2 top-2
-                  hover:scale-150 
+                  hover:scale-110 drop-shadow-md 
                 "
                     >
-                      <a href={`${produtosDetail.imagem}`} target="_blank">
-                        <GoDesktopDownload color="indigo" />
+                      <a
+                        href={`${produtosDetail.imagem}`}
+                        target="_blank"
+                        className="flex gap-2 items-center bg-custom-blue px-2 rounded-lg py-0.5 hover:bg-custom-blue-strong duration-700 transition"
+                      >
+                        <GoDesktopDownload color="white" />
+                        <p className="text-sm font-light text-white">
+                          Download
+                        </p>
                       </a>
                     </div>
                     <img
@@ -276,7 +283,7 @@ export function ProdutoDetail() {
                 >
                   tabela nutricional
                 </h1>
-                <div className="overflow-x-auto shadow-2xl">
+                <div className="overflow-x-auto shadow-2xl rounded-lg">
                   <div className="bg-blue-100 p-2">
                     {/* <p className=" uppercase text-sm">
                     {produtosDetail?.porcoes?.porcao}
@@ -462,40 +469,40 @@ export function ProdutoDetail() {
             >
               <AnimatedY>
                 <div>
-                  <p className=" uppercase text-sm max-md:text-xs">
+                  <p className=" uppercase text-sm max-md:text-xs text-blue-800">
                     {produtosDetail?.porcoes?.porcao}
                   </p>
-                  <p className=" uppercase text-sm max-md:text-xs">
+                  <p className=" uppercase text-sm max-md:text-xs text-blue-800">
                     {produtosDetail?.porcoes?.porcaototal}
                   </p>
-                  <h2 className=" font-semibold text-xl uppercase mt-2 ">
+                  <h2 className=" font-semibold text-xl uppercase mt-2 text-blue-800 ">
                     Ingredientes:
                   </h2>
-                  <p className=" uppercase text-sm">
+                  <p className=" uppercase text-sm text-blue-800">
                     {produtosDetail?.informacoes.ingredientes}
                   </p>
                 </div>
                 <div>
-                  <h2 className="font-semibold uppercase my-2">
+                  <h2 className="font-semibold uppercase my-2 text-blue-800">
                     {produtosDetail?.informacoes.alergenicos}
                   </h2>
                 </div>
                 <div>
-                  <h2 className=" font-semibold text-xl uppercase">
+                  <h2 className=" font-semibold text-xl uppercase text-blue-800">
                     conservação:
                   </h2>
-                  <p className="uppercase">
+                  <p className="uppercase text-blue-800">
                     {produtosDetail?.informacoes.conservacaoFechado}
                   </p>
-                  <p className="uppercase mb-2">
+                  <p className="uppercase mb-2 text-blue-800">
                     {produtosDetail?.informacoes.conservacaoAberto}
                   </p>
                 </div>
                 <div>
-                  <h2 className=" font-semibold text-xl uppercase">
+                  <h2 className=" font-semibold text-xl uppercase text-blue-800">
                     dados técnicos:
                   </h2>
-                  <div className="uppercase">
+                  <div className="uppercase text-blue-800">
                     <p>GTIN-13: {produtosDetail?.informacoes.gtin13}</p>
                     <p>GTIN-14: {produtosDetail?.informacoes.gtin14}</p>
                     <p>
