@@ -27,7 +27,7 @@ export function SliderButter() {
             MANTEIGAS
           </h1>
         </div>
-        <div className="py-8 mm:max-md:py-3">
+        {/* <div className="py-8 mm:max-md:py-3">
           <p className="font-roboto text-custom-blue-strong text-end mm:max-md:text-justify">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ea,
             itaque adipisci laudantium dolorum obcaecati illum officiis
@@ -37,7 +37,7 @@ export function SliderButter() {
             dolor illum voluptatum tempora voluptates eum natus est vero quos
             id, consequuntur ullam accusamus quia, culpa sequi sint. Quae, ad?
           </p>
-        </div>
+        </div> */}
         <div className="w-full flex items-end justify-end">
           <Link to={"/manteigas"}>
             <button

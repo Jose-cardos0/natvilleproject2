@@ -13,8 +13,9 @@ import { SliderChoconat } from "./Sliders/SliderChoconat";
 export function SliderProdutos() {
   return (
     <div
-      className="flex items-center justify-center w-full  overflow-hidden
-    mm:max-md:px-0 mm:max-md:h-auto mt-56 mm:max-md:mt-20 mm:max-md:pb-10  "
+      className="flex items-center justify-center w-full overflow-hidden
+    mm:max-md:px-0 mm:max-md:h-auto mm:max-md:mt-20
+     mm:max-md:pb-10  "
     >
       <Swiper
         modules={[Pagination, Navigation, Scrollbar, Autoplay]}
