@@ -1,37 +1,37 @@
-import { useLayoutEffect } from "react";
+// import { useLayoutEffect } from "react";
 
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 // import bgHome from "../assets/Home/bgHome.svg";
-import bg1 from "../assets/Produtos/bgProdutos.svg";
-import bg2 from "../assets/Home/BG/bg2.svg";
-import bg3 from "../assets/Home/BG/bg3.svg";
-import bgFooter from "../assets/Footer/bgFooter.svg";
+// import bg1 from "../assets/Produtos/bgProdutos.svg";
+// import bg2 from "../assets/Home/BG/bg2.svg";
+// import bg3 from "../assets/Home/BG/bg3.svg";
+// import bgFooter from "../assets/Footer/bgFooter.svg";
 import camp from "../assets/Home/camp.svg";
 
 import { SliderProdutos } from "../Tools/SliderProdutos/SliderProdutos";
 
-import logoF from "../assets/Footer/logoFooter.svg";
+// import logoF from "../assets/Footer/logoFooter.svg";
 
 //icons
-import { AiOutlineYoutube } from "react-icons/ai";
-import { CiFacebook } from "react-icons/ci";
-import { FaWhatsapp } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa6";
-import { AiOutlineLinkedin } from "react-icons/ai";
-import { FiPhoneForwarded } from "react-icons/fi";
+// import { AiOutlineYoutube } from "react-icons/ai";
+// import { CiFacebook } from "react-icons/ci";
+// import { FaWhatsapp } from "react-icons/fa";
+// import { FaInstagram } from "react-icons/fa6";
+// import { AiOutlineLinkedin } from "react-icons/ai";
+// import { FiPhoneForwarded } from "react-icons/fi";
 
 //slider
 import { SlidersWelcome } from "../Tools/SlidersWelcome";
-import { SliderNoticias } from "../Tools/SliderNoticias/SliderNoticias";
+// import { SliderNoticias } from "../Tools/SliderNoticias/SliderNoticias";
 
 //imgs
-import mussarela from "../assets/Home/mussarelaWelcome2x.png";
+// import mussarela from "../assets/Home/mussarelaWelcome2x.png";
 
 //animacoes
-import { AnimatedNegative } from "../Tools/Animates/AnimatedNegative";
-import { AnimatedSection } from "../Tools/Animates/AnimatedSections";
-import { AnimatedY } from "../Tools/Animates/AnimatedY";
+// import { AnimatedNegative } from "../Tools/Animates/AnimatedNegative";
+// import { AnimatedSection } from "../Tools/Animates/AnimatedSections";
+// import { AnimatedY } from "../Tools/Animates/AnimatedY";
 
 export function Home() {
   // useLayoutEffect(() => {
