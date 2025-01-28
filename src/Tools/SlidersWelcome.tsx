@@ -78,9 +78,9 @@ export function SlidersWelcome() {
           <SwiperSlide className="px-16 max-w-7xl mm:max-md:pb-10">
             <img
               className="w-full 
-          drop-shadow-lg"
+          drop-shadow-lg max-w-4xl m-auto"
               src={logo}
-              alt=""
+              alt="natville"
             />
           </SwiperSlide>
           <SwiperSlide className="px-16 max-w-7xl ">

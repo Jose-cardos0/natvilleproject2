@@ -27,6 +27,9 @@ import { SlidersWelcome } from "../Tools/SlidersWelcome";
 
 //imgs
 // import mussarela from "../assets/Home/mussarelaWelcome2x.png";
+import logo from "../assets/Header/logo.png";
+import noticia from "../assets/Home/retanuglo.png";
+import leiteZero from "../assets/Home/FamiliaZero.svg";
 
 //animacoes
 // import { AnimatedNegative } from "../Tools/Animates/AnimatedNegative";
@@ -40,7 +43,7 @@ export function Home() {
   return (
     <main
       className="w-full flex-col items-center 
-       justify-center m-auto bg-cover overflow-hidden bg-custom-white"
+       justify-center m-auto bg-cover  bg-custom-white"
     >
       {/*1 PAINEL - QUEM SOMOS*/}
       <section className="w-full bg-custom-blue">
@@ -100,17 +103,130 @@ export function Home() {
         </svg>
       </section>
       {/*FIM SVG */}
-      <section className="relative z-10 -mt-32 h-height-full-96px bg-custom-blue ">
-        <div className="max-w-7xl flex items-center justify-center m-auto">
-          <div>
-            <h1
-              className="text-sm font-light text-center
-             bg-blue-900 px-4 py-1 rounded-md text-white shadow-md shadow-black "
-            >
-              NOTÍCIAS
-            </h1>
+      <section className="relative -mt-32 bg-custom-blue pb-20 z-0 ">
+        <div
+          className="max-w-7xl flex items-center justify-center
+         m-auto gap-20"
+        >
+          <div className="flex-col w-full">
+            <div className="flex-col items-start mb-5">
+              <h1 className="font-mochari text-white text-3xl">DE OLHO NA</h1>
+              <img src={logo} alt="" />
+            </div>
+
+            <div className="flex gap-8">
+              <img className="rounded-md max-w-72" src={noticia} alt="" />
+              <div className="max-w-96 text-custom-blue-strong">
+                <p className="mt-8">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
+                  vel praesentium ducimus nam, alias nesciunt cumque illo natus
+                  voluptates, quod consequuntur error aliquid deleniti facilis
+                  quas! Quibusdam iste maiores esse?
+                </p>
+
+                <button
+                  className="relative 
+    overflow-hidden
+     flex-shrink-0
+bg-custom-blue-strong
+text-white py-2
+px-8 rounded-md shadow-sm
+shadow-black font-light 
+border-none mt-8 mm:max-md:w-full"
+                >
+                  <span className="relative z-10 flex items-center justify-center">
+                    ver mais &rsaquo;
+                  </span>
+                  <span
+                    className="absolute inset-0
+      bg-gradient-to-r from-white
+       to-black
+     transform translate-x-full
+      transition-transform
+      duration-300 ease-in-out z-0 opacity-20"
+                  ></span>
+                </button>
+              </div>
+            </div>
+
+            <div className="flex gap-8 mt-8 ">
+              <div className="max-w-96 text-custom-blue-strong">
+                <p className="mt-8 text-end">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
+                  vel praesentium ducimus nam, alias nesciunt cumque illo natus
+                  voluptates, quod consequuntur error aliquid deleniti facilis
+                  quas! Quibusdam iste maiores esse?
+                </p>
+                <div className="w-full flex justify-end">
+                  <button
+                    className="relative 
+    overflow-hidden
+     flex-shrink-0
+bg-custom-blue-strong
+text-white py-2
+px-8 rounded-md shadow-sm
+shadow-black font-light 
+border-none mt-8 mm:max-md:w-full"
+                  >
+                    <span className="relative z-10 flex items-center justify-center">
+                      ver mais &rsaquo;
+                    </span>
+                    <span
+                      className="absolute inset-0
+      bg-gradient-to-r from-white
+       to-black
+     transform translate-x-full
+      transition-transform
+      duration-300 ease-in-out z-0 opacity-20"
+                    ></span>
+                  </button>
+                </div>
+              </div>
+              <img className="rounded-md max-w-72" src={noticia} alt="" />
+            </div>
+
+            <div className="flex gap-8 mt-8">
+              <img className="rounded-md max-w-72" src={noticia} alt="" />
+              <div className="max-w-96 text-custom-blue-strong">
+                <p className="mt-8">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
+                  vel praesentium ducimus nam, alias nesciunt cumque illo natus
+                  voluptates, quod consequuntur error aliquid deleniti facilis
+                  quas! Quibusdam iste maiores esse?
+                </p>
+
+                <button
+                  className="relative 
+    overflow-hidden
+     flex-shrink-0
+bg-custom-blue-strong
+text-white py-2
+px-8 rounded-md shadow-sm
+shadow-black font-light 
+border-none mt-8 mm:max-md:w-full"
+                >
+                  <span className="relative z-10 flex items-center justify-center">
+                    ver mais &rsaquo;
+                  </span>
+                  <span
+                    className="absolute inset-0
+      bg-gradient-to-r from-white
+       to-black
+     transform translate-x-full
+      transition-transform
+      duration-300 ease-in-out z-0 opacity-20"
+                  ></span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className="">
+            <img src={leiteZero} alt="" className="" />
           </div>
         </div>
+      </section>
+      <section>
+        <section className="max-w-7xl h-screen z-10 bg-orange-500"></section>
       </section>
     </main>
   );
