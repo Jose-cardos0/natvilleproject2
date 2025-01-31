@@ -30,3 +30,29 @@ button:hover span:last-child {
     /* contorno preto */ -1px -1px 0px rgba(0, 0, 0, 0.7),
     1px -1px 0px rgba(0, 0, 0, 0.7), -1px 1px 0px rgba(0, 0, 0, 0.7);
 }
+
+.light-sweep {
+  font-size: 48px; /* Tamanho da fonte */
+  font-weight: bold; /* Texto em negrito */
+  color: #007bff; /* Cor azul */
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #ffffff,
+    /* Cor da linha de luz */ transparent
+  ); /* Gradiente para o efeito de luz */
+  background-size: 200% 100%; /* Tamanho do gradiente */
+  -webkit-background-clip: text; /* Aplica o gradiente ao texto */
+  background-clip: text;
+  color: transparent; /* Torna o texto transparente para mostrar o gradiente */
+  animation: sweep 3s linear infinite; /* Animação */
+}
+
+@keyframes sweep {
+  0% {
+    background-position: -100% 0; /* Começa à esquerda */
+  }
+  100% {
+    background-position: 100% 0; /* Termina à direita */
+  }
+}

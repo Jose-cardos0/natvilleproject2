@@ -182,7 +182,7 @@ export function Header() {
                     </Link>
                   </ul>
                   <ul>
-                    <Link to={"/"}>
+                    <Link to={"/contato"}>
                       <div
                         onClick={() => setIsOpen((prev) => !prev)}
                         className="font-roboto  py-3 px-5 cursor-pointer text-gray-800 hover:bg-blue-100 transition duration-300 rounded-lg flex items-center font-light"
@@ -192,14 +192,17 @@ export function Header() {
                     </Link>
                   </ul>
                   <ul>
-                    <Link to={"/"}>
+                    <a
+                      href="https://natville.vagas.solides.com.br/"
+                      target="_blanck"
+                    >
                       <div
                         onClick={() => setIsOpen((prev) => !prev)}
                         className="font-roboto  py-3 px-5 cursor-pointer text-gray-800 hover:bg-blue-100 transition duration-300 rounded-lg flex items-center font-light"
                       >
                         Trabalhe Conosco
                       </div>
-                    </Link>
+                    </a>
                   </ul>
                 </div>
               </AnimatedSection>
@@ -318,13 +321,17 @@ export function Header() {
               </div>
             </Link>
 
-            <div className="font-roboto uppercase py-1 px-4 cursor-pointer  hover:text-custom-blue font-light">
-              contato
-            </div>
+            <Link to={"/contato"}>
+              <div className="font-roboto uppercase py-1 px-4 cursor-pointer  hover:text-custom-blue font-light">
+                contato
+              </div>
+            </Link>
 
-            <div className="font-roboto uppercase py-1 px-4 cursor-pointer hover:text-custom-blue font-light">
-              trabalhe conosco
-            </div>
+            <a href="https://natville.vagas.solides.com.br/" target="_blanck">
+              <div className="font-roboto uppercase py-1 px-4 cursor-pointer hover:text-custom-blue font-light">
+                trabalhe conosco
+              </div>
+            </a>
           </div>
         </section>
       )}

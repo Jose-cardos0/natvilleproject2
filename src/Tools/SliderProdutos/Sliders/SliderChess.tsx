@@ -10,7 +10,7 @@ export function SliderChess() {
       <div className="w-full">
         <img
           className="drop-shadow-md cursor-pointer
-         hover:scale-105 duration-300 transition"
+         hover:scale-105 duration-300 transition "
           src={queijos}
           alt=""
         />

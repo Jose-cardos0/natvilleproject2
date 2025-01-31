@@ -13,6 +13,7 @@ import { Bebidas } from "./Pages/Bebidas";
 import { ReqCremoso } from "./Pages/ReqCremoso";
 import { Condensados } from "./Pages/Condensado";
 import { NossosProdutos } from "./Pages/NossosProdutos";
+import { Contato } from "./Pages/Contato";
 
 //header
 import { Layout } from "./Components/Layout";
@@ -68,6 +69,10 @@ export const router = createBrowserRouter([
       {
         path: "/nossosprodutos",
         element: <NossosProdutos />,
+      },
+      {
+        path: "/contato",
+        element: <Contato />,
       },
     ],
   },

@@ -22,7 +22,7 @@ import { SliderProdutos } from "../Tools/SliderProdutos/SliderProdutos";
 // import { FiPhoneForwarded } from "react-icons/fi";
 
 //slider
-import { SlidersWelcome } from "../Tools/SlidersWelcome";
+// import { SlidersWelcome } from "../Tools/SlidersWelcome";
 // import { SliderNoticias } from "../Tools/SliderNoticias/SliderNoticias";
 
 //imgs
@@ -30,6 +30,8 @@ import { SlidersWelcome } from "../Tools/SlidersWelcome";
 import logo from "../assets/Header/logo.png";
 import noticia from "../assets/Home/retanuglo.png";
 import leiteZero from "../assets/Home/FamiliaZero.svg";
+import logoHome from "../assets/Home/logoHome.svg";
+import videoLogo from "../assets/Home/logoanimate.mp4";
 
 //animacoes
 // import { AnimatedNegative } from "../Tools/Animates/AnimatedNegative";
@@ -49,9 +51,11 @@ export function Home() {
       <section className="w-full bg-custom-blue">
         <div
           className="max-w-7xl flex items-center
-      justify-center m-auto  h-height-full-96px  "
+      justify-center m-auto  h-height-full-96px   "
         >
-          <SlidersWelcome />
+          {/* <img src={logoHome} alt="" className="max-w-3xl" /> */}
+          {/* <span className="light-sweep text-7xl font-bold">Palavra Azul</span> */}
+          <video src={videoLogo} autoPlay muted loop className="w-8/12"></video>
         </div>
         <div className="-mt-40 relative z-10 ">
           <img className="z-10" src={camp} alt="" />
@@ -60,7 +64,7 @@ export function Home() {
       {/*SVG1 */}
       <section className="-mb-44 -mt-20 ">
         <svg
-          className="drop-shadow-xl"
+          className=""
           width="100%"
           height="100%"
           viewBox="0 0 1952 321"
@@ -89,7 +93,7 @@ export function Home() {
       {/*SVG2 */}
       <section className="-mt-28 ">
         <svg
-          className="drop-shadow-xl rotate-180"
+          className="rotate-180"
           width="100%"
           height="100%"
           viewBox="0 0 1952 321"
@@ -221,11 +225,32 @@ border-none mt-8 mm:max-md:w-full"
             </div>
           </div>
           <div className="">
-            <img src={leiteZero} alt="" className="" />
+            <img
+              src={leiteZero}
+              alt="leite zero lactose"
+              className="hover:scale-105 transition 
+              duration-300 hover:cursor-pointer"
+            />
           </div>
         </div>
       </section>
-      <section>
+      {/*SVG3 */}
+      <section className="-mb-44 -mt-16 ">
+        <svg
+          className=""
+          width="100%"
+          height="100%"
+          viewBox="0 0 1952 321"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0.5 0H1951.5V218.5V218.5C1707.85 318.961 1440.1 345.827 1181.35 295.776L634.5 190L483.896 159.026C319.101 125.133 147.617 151.376 0.5 233V233V0Z"
+            fill="#55BECD"
+          />
+        </svg>
+      </section>
+      <section className="flex m-auto w-full items-center justify-center">
         <section className="max-w-7xl h-screen z-10 bg-orange-500"></section>
       </section>
     </main>
