@@ -31,7 +31,8 @@ import logo from "../assets/Header/logo.png";
 import noticia from "../assets/Home/retanuglo.png";
 import leiteZero from "../assets/Home/FamiliaZero.svg";
 import logoHome from "../assets/Home/logoHome.svg";
-import videoLogo from "../assets/Home/logoanimate.mp4";
+import videoLogo from "../assets/Home/logoanimate.webm";
+import messagem1 from "../assets/Sliders/carroussel/mensagens (1).svg";
 
 //produtos
 import queijos from "../assets/Produtos/Queijos/mussarela.png";
@@ -51,6 +52,7 @@ export function Home() {
   // useLayoutEffect(() => {
   //   window.scrollTo(0, 0);
   // }, []);
+
   return (
     <main
       className="w-full flex-col items-center 
@@ -59,12 +61,20 @@ export function Home() {
       {/*1 PAINEL - QUEM SOMOS*/}
       <section className="w-full bg-custom-blue">
         <div
-          className="max-w-7xl flex items-center
+          className="max-w-7xl flex flex-col items-center
       justify-center m-auto  h-height-full-96px   "
         >
           {/* <img src={logoHome} alt="" className="max-w-3xl" /> */}
           {/* <span className="light-sweep text-7xl font-bold">Palavra Azul</span> */}
-          <video src={videoLogo} autoPlay muted loop className="w-8/12"></video>
+          <div className="flex w-full justify-center m-auto">
+            <video
+              src={videoLogo}
+              autoPlay
+              muted
+              loop
+              className="w-8/12 mb-6 relative z-10"
+            ></video>
+          </div>
         </div>
         <div className="-mt-40 relative z-10 ">
           <img className="z-10" src={camp} alt="" />
@@ -260,155 +270,8 @@ border-none mt-8 mm:max-md:w-full"
           />
         </svg>
       </section>
-      <section className="flex m-auto w-full items-center justify-center mt-52">
-        <section
-          className="max-w-7xl z-10
-         grid grid-cols-4 max-md:grid-cols-1 gap-8 "
-        >
-          {/*CARD 1 */}
-          <div
-            style={{ backgroundImage: `url(${bgProdutosGrid})` }}
-            className="max-h-80 rounded-md
-             bg-custom-blue shadow-sm shadow-black
-               bg-cover bg-center"
-          >
-            <img src={queijos} alt="" className="p-6 mt-3" />
-
-            <div className="max-w-full flex items-end justify-end mr-8 mt-8">
-              <button
-                className="relative 
-    overflow-hidden
-     flex-shrink-0
-bg-custom-blue-strong
-text-white py-2
-px-8 rounded-md shadow-sm
-shadow-black font-light 
-border-none mt-8 mm:max-md:w-full"
-              >
-                <span className="relative z-10 flex items-center justify-center">
-                  ver mais &rsaquo;
-                </span>
-                <span
-                  className="absolute inset-0
-      bg-gradient-to-r from-white
-       to-blue-300
-     transform translate-x-full
-      transition-transform
-      duration-300 ease-in-out z-0 opacity-20"
-                ></span>
-              </button>
-            </div>
-          </div>
-          {/*FIM CARD 1 */}
-          {/*CARD 2 */}
-          <div
-            style={{ backgroundImage: `url(${bgProdutosGrid})` }}
-            className="max-h-80 rounded-md
-             bg-custom-blue shadow-sm shadow-black
-               bg-cover bg-center"
-          >
-            <img src={leiteUht} alt="" className=" ml-14 max-w-52" />
-
-            <div className="max-w-full flex items-end justify-end mr-8 -mt-1">
-              <button
-                className="relative 
-    overflow-hidden
-     flex-shrink-0
-bg-custom-blue-strong
-text-white py-2
-px-8 rounded-md shadow-sm
-shadow-black font-light 
-border-none mt-8 mm:max-md:w-full"
-              >
-                <span className="relative z-10 flex items-center justify-center">
-                  ver mais &rsaquo;
-                </span>
-                <span
-                  className="absolute inset-0
-      bg-gradient-to-r from-white
-       to-blue-300
-     transform translate-x-full
-      transition-transform
-      duration-300 ease-in-out z-0 opacity-20"
-                ></span>
-              </button>
-            </div>
-          </div>
-          {/*FIM CARD 2 */}
-          {/*CARD 3 */}
-          <div
-            style={{ backgroundImage: `url(${bgProdutosGrid})` }}
-            className="max-h-80 rounded-md
-             bg-custom-blue shadow-sm shadow-black
-               bg-cover bg-center"
-          >
-            <img src={manteigaspng} alt="" className="max-w-44 m-auto -mt-8" />
-
-            <div className="max-w-full flex items-end justify-end mr-8 -mt-11">
-              <button
-                className="relative 
-    overflow-hidden
-     flex-shrink-0
-bg-custom-blue-strong
-text-white py-2
-px-8 rounded-md shadow-sm
-shadow-black font-light 
-border-none mt-8 mm:max-md:w-full"
-              >
-                <span className="relative z-10 flex items-center justify-center">
-                  ver mais &rsaquo;
-                </span>
-                <span
-                  className="absolute inset-0
-      bg-gradient-to-r from-white
-       to-blue-300
-     transform translate-x-full
-      transition-transform
-      duration-300 ease-in-out z-0 opacity-20"
-                ></span>
-              </button>
-            </div>
-          </div>
-          {/*FIM CARD 3 */}
-          {/*CARD 4 */}
-          <div
-            style={{ backgroundImage: `url(${bgProdutosGrid})` }}
-            className="max-h-80 rounded-md
-             bg-custom-blue shadow-sm shadow-black
-               bg-cover bg-center"
-          >
-            <img src={condensado} alt="" className="max-w-52 m-auto mt-8" />
-
-            <div className="max-w-full flex items-end justify-end mr-8 -mt-1">
-              <button
-                className="relative 
-    overflow-hidden
-     flex-shrink-0
-bg-custom-blue-strong
-text-white py-2
-px-8 rounded-md shadow-sm
-shadow-black font-light 
-border-none mt-8 mm:max-md:w-full"
-              >
-                <span className="relative z-10 flex items-center justify-center">
-                  ver mais &rsaquo;
-                </span>
-                <span
-                  className="absolute inset-0
-      bg-gradient-to-r from-white
-       to-blue-300
-     transform translate-x-full
-      transition-transform
-      duration-300 ease-in-out z-0 opacity-20"
-                ></span>
-              </button>
-            </div>
-          </div>
-          {/*FIM CARD 4 */}
-        </section>
-      </section>
-      <section className="max-w-7xl flex mt-20  m-auto">
-        <div className="w-full bg-custom-blue bg-opacity-20 m-auto p-8 rounded-xl shadow-md">
+      <section className="max-w-7xl flex mt-44  m-auto">
+        <div className="w-full bg-custom-blue bg-opacity-55 m-auto p-8 rounded-xl shadow-md">
           <p>receitas</p>
         </div>
       </section>
