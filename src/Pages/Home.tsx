@@ -1,12 +1,5 @@
-// import { useLayoutEffect } from "react";
+import { useLayoutEffect } from "react";
 
-// import { Link } from "react-router-dom";
-
-// import bgHome from "../assets/Home/bgHome.svg";
-// import bg1 from "../assets/Produtos/bgProdutos.svg";
-// import bg2 from "../assets/Home/BG/bg2.svg";
-// import bg3 from "../assets/Home/BG/bg3.svg";
-// import bgFooter from "../assets/Footer/bgFooter.svg";
 import camp from "../assets/Home/camp.svg";
 
 import { SliderProdutos } from "../Tools/SliderProdutos/SliderProdutos";
@@ -42,7 +35,7 @@ import pratoGrid from "../assets/Home/grid/prato.svg";
 
 //valores
 // import valoresMensagem from "../assets/Home/valores/valores.svg";
-import condensadoValores from "../assets/Home/valores/condensadoValores.svg";
+import caranova from "../assets/Home/valores/caranova.svg";
 import Fafe from "../assets/Home/valores/fe.png";
 import Facasa from "../assets/Home/valores/casa.png";
 import Facasal from "../assets/Home/valores/casal.png";
@@ -51,14 +44,13 @@ import Fatarefa from "../assets/Home/valores/tarefa.png";
 import Fafamilia from "../assets/Home/valores/familia.png";
 
 //animacoes
-import { AnimatedNegative } from "../Tools/Animates/AnimatedNegative";
 import { AnimatedSection } from "../Tools/Animates/AnimatedSections";
 import { AnimatedY } from "../Tools/Animates/AnimatedY";
 
 export function Home() {
-  // useLayoutEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <main
@@ -66,7 +58,7 @@ export function Home() {
        justify-center m-auto bg-cover  bg-custom-white"
     >
       {/*1 PAINEL - QUEM SOMOS*/}
-      <section className="w-full bg-custom-blue max-md:h-screen">
+      <section className="w-full bg-custom-blue max-md:h-height-full-96px">
         <div
           className="max-w-7xl flex flex-col items-center
       justify-center m-auto  h-height-full-96px   "
@@ -85,12 +77,12 @@ export function Home() {
             </div>
           </AnimatedY>
         </div>
-        <div className="-mt-40 relative z-10  max-md:items-end max-md:flex max-md:mt-0 ">
+        <div className="-mt-40 relative z-10  max-md:items-end max-md:flex max-md:-mt-20 ">
           <img className="z-10" src={camp} alt="natville" />
         </div>
       </section>
       {/*SVG1 */}
-      <section className="-mb-44 -mt-20 max-md:-mt-2 max-md:mb-0 ">
+      <section className="-mb-44 -mt-20 max-md:-mt-2 max-md:mb-1 ">
         <svg
           className=""
           width="100%"
@@ -109,7 +101,7 @@ export function Home() {
       {/*1 PAINEL - FIM */}
       <section
         className="w-full 
-        bg-custom-white "
+        bg-custom-white max-md:-mt-16 "
       >
         <AnimatedSection>
           <div
@@ -137,7 +129,7 @@ export function Home() {
         </svg>
       </section>
       {/*FIM SVG */}
-      <section className="relative -mt-32 bg-custom-blue pb-20 z-0 max-md:-mt-2 max-md:px-8">
+      <section className="relative -mt-32 bg-custom-blue pb-20 z-0 max-md:-mt-2 max-md:px-8 ">
         <div
           className="max-w-7xl flex items-center justify-center
          m-auto gap-20 max-md:flex-col"
@@ -302,7 +294,7 @@ border-none mt-8 mm:max-md:w-full max-md:mt-2"
       </section>
       {/*SVG3 */}
 
-      <section className="-mt-32 max-md:-mt-2 ">
+      <section className="-mt-32 max-md:-mt-4 ">
         <svg
           className=""
           width="100%"
@@ -319,7 +311,7 @@ border-none mt-8 mm:max-md:w-full max-md:mt-2"
       </section>
       <section className="max-w-7xl flex-col mt-10  m-auto max-md:px-8">
         <AnimatedY>
-          <h2 className="font-mochari text-6xl text-custom-blue-strong mb-2">
+          <h2 className="font-mochari text-6xl text-custom-blue-strong mb-2 max-md:text-center">
             conheça
             <br /> nossos produtos
           </h2>
@@ -451,60 +443,88 @@ border-none mt-8 mm:max-md:w-full"
           />
         </svg>
       </section>
-      <section className="bg-custom-blue w-full mb-20">
+      <section className="bg-custom-blue w-full mb-20 max-md:mb-0">
         <section className="max-w-7xl flex items-center justify-center -mt-32 m-auto relative z-10 max-md:-mt-2 ">
           <div className="w-full flex items-center justify-center m-auto gap-8 max-mm:flex-col max-md:flex-col max-md:px-8">
             <AnimatedSection>
               <div className="w-96 max-md:w-full flex-col items-center justify-center m-auto">
-                <h2 className="font-mochari text-white text-2xl mb-2">
+                <h2 className="font-mochari text-white text-2xl mb-2 max-md:text-lg max-md:text-center">
                   quem somos
                 </h2>
                 <div className="w-full flex justify-center">
-                  <img src={logoF} alt="natville" className="w-full" />
+                  <img
+                    src={logoF}
+                    alt="natville"
+                    className="w-full max-md:w-60"
+                  />
                 </div>
 
                 <div className="flex w-full items-center gap-5 mt-8">
-                  <img src={Facasal} alt="natville" className="max-w-20" />
-                  <p className="font-DKLeomn text-custom-blue-strong uppercase text-2xl">
+                  <img
+                    src={Facasal}
+                    alt="natville"
+                    className="max-w-20 max-md:w-14"
+                  />
+                  <p className="font-DKLeomn text-custom-blue-strong uppercase text-2xl max-md:text-lg">
                     Somos uma família SERTANEJA trabalhadora, guiada pela fé que
                     permeia o nosso coração.
                   </p>
                 </div>
                 <div className="flex w-full items-center gap-5 mt-4">
-                  <p className="font-DKLeomn text-custom-blue-strong uppercase text-2xl text-end">
+                  <p className="font-DKLeomn text-custom-blue-strong uppercase text-2xl text-end max-md:text-lg">
                     Acreditamos na dedicação e responsabilidade em cada etapa do
                     nosso processo.
                   </p>
-                  <img src={Fatarefa} alt="natville" className="max-w-14" />
+                  <img
+                    src={Fatarefa}
+                    alt="natville"
+                    className="max-w-14 max-md:w-10"
+                  />
                 </div>
 
                 <div className="flex w-full items-center gap-5 mt-4">
-                  <img src={Fafe} alt="natville" className="max-w-28" />
-                  <p className="font-DKLeomn text-custom-blue-strong uppercase text-2xl">
+                  <img
+                    src={Fafe}
+                    alt="natville"
+                    className="max-w-28 max-md:w-20"
+                  />
+                  <p className="font-DKLeomn text-custom-blue-strong uppercase text-2xl max-md:text-lg">
                     A fé nos guia desde a coleta do leite, ATÉ A CHEGADA DO
                     PRODUTO EM SUA CASA.
                   </p>
                 </div>
                 <div className="flex w-full items-center gap-5 mt-6">
-                  <p className="font-DKLeomn text-custom-blue-strong uppercase text-2xl text-end">
+                  <p className="font-DKLeomn text-custom-blue-strong uppercase text-2xl text-end max-md:text-lg">
                     Investimos em ações sociais com a comunidade, contribuindo
                     para momentos de amor e união.
                   </p>
-                  <img src={Facasa} alt="natville" className="max-w-28" />
+                  <img
+                    src={Facasa}
+                    alt="natville"
+                    className="max-w-28 max-md:w-24"
+                  />
                 </div>
                 <div className="flex w-full items-center gap-5 mt-3">
-                  <img src={Facoracao} alt="natville" className="max-w-20" />
-                  <p className="font-DKLeomn text-custom-blue-strong uppercase text-2xl">
+                  <img
+                    src={Facoracao}
+                    alt="natville"
+                    className="max-w-20 max-md:w-14"
+                  />
+                  <p className="font-DKLeomn text-custom-blue-strong uppercase text-2xl max-md:text-lg">
                     É como um amor de mãe, cheio de fé no futuro, de crença na
                     importância do que fazemos.
                   </p>
                 </div>
 
                 <div className="flex w-full items-center gap-5 mt-3">
-                  <p className="font-DKLeomn text-custom-blue-strong uppercase text-2xl text-end">
+                  <p className="font-DKLeomn text-custom-blue-strong uppercase text-2xl text-end max-md:text-lg">
                     Nutrimos laços. Celebramos famílias. Como amor de mãe.
                   </p>
-                  <img src={Fafamilia} alt="natville" className="max-w-28" />
+                  <img
+                    src={Fafamilia}
+                    alt="natville"
+                    className="max-w-28 max-md:w-24"
+                  />
                 </div>
               </div>
             </AnimatedSection>
@@ -530,6 +550,9 @@ border-none mt-8 mm:max-md:w-full"
                 <img src={condensadoValores} alt="" className="" />
               </div>
             </AnimatedNegative> */}
+            <div>
+              <img src={caranova} alt="" />
+            </div>
           </div>
         </section>
       </section>
@@ -550,7 +573,7 @@ border-none mt-8 mm:max-md:w-full"
       </section>
       <footer
         className="w-full h-auto mt-20
-            flex items-center justify-center m-auto max-md:mt-0 "
+            flex items-center justify-center m-auto max-md:-mt-16 "
       >
         <div
           className="w-8/12 
