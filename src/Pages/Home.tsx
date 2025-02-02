@@ -42,9 +42,9 @@ import valoresMensagem from "../assets/Home/valores/valores.svg";
 import condensadoValores from "../assets/Home/valores/condensadoValores.svg";
 
 //animacoes
-// import { AnimatedNegative } from "../Tools/Animates/AnimatedNegative";
-// import { AnimatedSection } from "../Tools/Animates/AnimatedSections";
-// import { AnimatedY } from "../Tools/Animates/AnimatedY";
+import { AnimatedNegative } from "../Tools/Animates/AnimatedNegative";
+import { AnimatedSection } from "../Tools/Animates/AnimatedSections";
+import { AnimatedY } from "../Tools/Animates/AnimatedY";
 
 export function Home() {
   // useLayoutEffect(() => {
@@ -57,29 +57,31 @@ export function Home() {
        justify-center m-auto bg-cover  bg-custom-white"
     >
       {/*1 PAINEL - QUEM SOMOS*/}
-      <section className="w-full bg-custom-blue">
+      <section className="w-full bg-custom-blue max-md:h-screen">
         <div
           className="max-w-7xl flex flex-col items-center
       justify-center m-auto  h-height-full-96px   "
         >
           {/* <img src={logoHome} alt="" className="max-w-3xl" /> */}
           {/* <span className="light-sweep text-7xl font-bold">Palavra Azul</span> */}
-          <div className="flex w-full justify-center m-auto">
-            <video
-              src={videoLogo}
-              autoPlay
-              muted
-              loop
-              className="w-8/12 mb-6 relative z-10"
-            ></video>
-          </div>
+          <AnimatedY>
+            <div className="flex w-full justify-center m-auto">
+              <video
+                src={videoLogo}
+                autoPlay
+                muted
+                loop
+                className="w-8/12 mb-6 relative z-10"
+              ></video>
+            </div>
+          </AnimatedY>
         </div>
-        <div className="-mt-40 relative z-10 ">
-          <img className="z-10" src={camp} alt="" />
+        <div className="-mt-40 relative z-10  max-md:items-end max-md:flex max-md:mt-0 ">
+          <img className="z-10" src={camp} alt="natville" />
         </div>
       </section>
       {/*SVG1 */}
-      <section className="-mb-44 -mt-20 ">
+      <section className="-mb-44 -mt-20 max-md:-mt-2 max-md:mb-0 ">
         <svg
           className=""
           width="100%"
@@ -100,20 +102,22 @@ export function Home() {
         className="w-full 
         bg-custom-white "
       >
-        <div
-          className="max-w-7xl h-screen
+        <AnimatedSection>
+          <div
+            className="max-w-7xl h-screen
          flex items-center justify-center m-auto"
-        >
-          <SliderProdutos />
-        </div>
+          >
+            <SliderProdutos />
+          </div>
+        </AnimatedSection>
       </section>
       {/*SVG2 */}
-      <section className="-mt-28 ">
+      <section className="-mt-32 max-md:mt-0">
         <svg
           className="rotate-180"
           width="100%"
           height="100%"
-          viewBox="0 0 1952 321"
+          viewBox="0 0 1863 321"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -124,61 +128,30 @@ export function Home() {
         </svg>
       </section>
       {/*FIM SVG */}
-      <section className="relative -mt-32 bg-custom-blue pb-20 z-0 ">
+      <section className="relative -mt-32 bg-custom-blue pb-20 z-0 max-md:-mt-2 max-md:px-8">
         <div
           className="max-w-7xl flex items-center justify-center
-         m-auto gap-20"
+         m-auto gap-20 max-md:flex-col"
         >
           <div className="flex-col w-full">
-            <div className="flex-col items-start mb-5">
-              <h1 className="font-mochari text-white text-3xl">DE OLHO NA</h1>
-              <img src={logo} alt="" />
-            </div>
-
-            <div className="flex gap-8">
-              <img className="rounded-md max-w-72" src={noticia} alt="" />
-              <div className="max-w-96 text-custom-blue-strong">
-                <p className="mt-8">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
-                  vel praesentium ducimus nam, alias nesciunt cumque illo natus
-                  voluptates, quod consequuntur error aliquid deleniti facilis
-                  quas! Quibusdam iste maiores esse?
-                </p>
-
-                <button
-                  className="relative 
-    overflow-hidden
-     flex-shrink-0
-bg-custom-blue-strong
-text-white py-2
-px-8 rounded-md shadow-sm
-shadow-black font-light 
-border-none mt-8 mm:max-md:w-full"
-                >
-                  <span className="relative z-10 flex items-center justify-center">
-                    ver mais &rsaquo;
-                  </span>
-                  <span
-                    className="absolute inset-0
-      bg-gradient-to-r from-white
-       to-black
-     transform translate-x-full
-      transition-transform
-      duration-300 ease-in-out z-0 opacity-20"
-                  ></span>
-                </button>
+            <AnimatedSection>
+              <div className="flex-col items-start mb-5 max-md:items-center">
+                <h1 className="font-mochari text-white text-3xl">DE OLHO NA</h1>
+                <img src={logo} alt="" />
               </div>
-            </div>
+            </AnimatedSection>
 
-            <div className="flex gap-8 mt-8 ">
-              <div className="max-w-96 text-custom-blue-strong">
-                <p className="mt-8 text-end">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
-                  vel praesentium ducimus nam, alias nesciunt cumque illo natus
-                  voluptates, quod consequuntur error aliquid deleniti facilis
-                  quas! Quibusdam iste maiores esse?
-                </p>
-                <div className="w-full flex justify-end">
+            <AnimatedNegative>
+              <div className="flex gap-8 overflow-hidden max-md:flex-col max-md:items-center max-md:m-auto max-md:gap-0">
+                <img className="rounded-md max-w-72" src={noticia} alt="" />
+                <div className="max-w-96 text-custom-blue-strong">
+                  <p className="mt-8 max-md:">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Sunt vel praesentium ducimus nam, alias nesciunt cumque illo
+                    natus voluptates, quod consequuntur error aliquid deleniti
+                    facilis quas! Quibusdam iste maiores esse?
+                  </p>
+
                   <button
                     className="relative 
     overflow-hidden
@@ -187,7 +160,7 @@ bg-custom-blue-strong
 text-white py-2
 px-8 rounded-md shadow-sm
 shadow-black font-light 
-border-none mt-8 mm:max-md:w-full"
+border-none mt-8 mm:max-md:w-full max-md:mt-2"
                   >
                     <span className="relative z-10 flex items-center justify-center">
                       ver mais &rsaquo;
@@ -203,19 +176,129 @@ border-none mt-8 mm:max-md:w-full"
                   </button>
                 </div>
               </div>
-              <img className="rounded-md max-w-72" src={noticia} alt="" />
+            </AnimatedNegative>
+
+            <AnimatedSection>
+              <div className="flex gap-8 mt-8 max-md:flex-col max-md:items-center max-md:m-auto max-md:hidden ">
+                <div className="max-w-96 text-custom-blue-strong">
+                  <p className="mt-8 text-end">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Sunt vel praesentium ducimus nam, alias nesciunt cumque illo
+                    natus voluptates, quod consequuntur error aliquid deleniti
+                    facilis quas! Quibusdam iste maiores esse?
+                  </p>
+                  <div className="w-full flex justify-end">
+                    <button
+                      className="relative 
+    overflow-hidden
+     flex-shrink-0
+bg-custom-blue-strong
+text-white py-2
+px-8 rounded-md shadow-sm
+shadow-black font-light 
+border-none mt-8 mm:max-md:w-full"
+                    >
+                      <span className="relative z-10 flex items-center justify-center">
+                        ver mais &rsaquo;
+                      </span>
+                      <span
+                        className="absolute inset-0
+      bg-gradient-to-r from-white
+       to-black
+     transform translate-x-full
+      transition-transform
+      duration-300 ease-in-out z-0 opacity-20"
+                      ></span>
+                    </button>
+                  </div>
+                </div>
+                <img className="rounded-md max-w-72" src={noticia} alt="" />
+              </div>
+            </AnimatedSection>
+
+            <AnimatedNegative>
+              <div className="flex gap-8 mt-8 overflow-hidden max-md:flex-col max-md:items-center max-md:m-auto max-md:mt-20">
+                <img className="rounded-md max-w-72" src={noticia} alt="" />
+                <div className="max-w-96 text-custom-blue-strong">
+                  <p className="mt-8 max-md:mt-0">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Sunt vel praesentium ducimus nam, alias nesciunt cumque illo
+                    natus voluptates, quod consequuntur error aliquid deleniti
+                    facilis quas! Quibusdam iste maiores esse?
+                  </p>
+
+                  <button
+                    className="relative 
+    overflow-hidden
+     flex-shrink-0
+bg-custom-blue-strong
+text-white py-2
+px-8 rounded-md shadow-sm
+shadow-black font-light 
+border-none mt-8 mm:max-md:w-full max-md:mt-2"
+                  >
+                    <span className="relative z-10 flex items-center justify-center">
+                      ver mais &rsaquo;
+                    </span>
+                    <span
+                      className="absolute inset-0
+      bg-gradient-to-r from-white
+       to-black
+     transform translate-x-full
+      transition-transform
+      duration-300 ease-in-out z-0 opacity-20"
+                    ></span>
+                  </button>
+                </div>
+              </div>
+            </AnimatedNegative>
+          </div>
+
+          <AnimatedNegative>
+            <div className="overflow-hidden">
+              <img
+                src={leiteZero}
+                alt="leite zero lactose"
+                className="hover:scale-105 transition 
+              duration-300 hover:cursor-pointer"
+              />
             </div>
+          </AnimatedNegative>
+        </div>
+      </section>
+      {/*SVG3 */}
 
-            <div className="flex gap-8 mt-8">
-              <img className="rounded-md max-w-72" src={noticia} alt="" />
-              <div className="max-w-96 text-custom-blue-strong">
-                <p className="mt-8">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
-                  vel praesentium ducimus nam, alias nesciunt cumque illo natus
-                  voluptates, quod consequuntur error aliquid deleniti facilis
-                  quas! Quibusdam iste maiores esse?
+      <section className="-mt-32 max-md:-mt-2 ">
+        <svg
+          className=""
+          width="100%"
+          height="100%"
+          viewBox="0 0 1952 321"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0.5 0H1951.5V218.5V218.5C1707.85 318.961 1440.1 345.827 1181.35 295.776L634.5 190L483.896 159.026C319.101 125.133 147.617 151.376 0.5 233V233V0Z"
+            fill="#55BECD"
+          />
+        </svg>
+      </section>
+      <section className="max-w-7xl flex mt-36  m-auto max-md:px-8">
+        <div
+          className="w-full   m-auto 
+          grid-cols-3 max-md:grid-cols-1 grid max-md:gap-8"
+        >
+          <AnimatedSection>
+            <div className="relative">
+              <img
+                src={mussGrid}
+                alt=""
+                className="drop-shadow-md shadow-black"
+              />
+              <div className="absolute bottom-8 left-8 ">
+                <p className="font-mochari text-white text-2xl -mb-8">
+                  mussarela
                 </p>
-
                 <button
                   className="relative 
     overflow-hidden
@@ -240,20 +323,128 @@ border-none mt-8 mm:max-md:w-full"
                 </button>
               </div>
             </div>
-          </div>
-          <div className="">
-            <img
-              src={leiteZero}
-              alt="leite zero lactose"
-              className="hover:scale-105 transition 
-              duration-300 hover:cursor-pointer"
-            />
-          </div>
+          </AnimatedSection>
+          <AnimatedY>
+            <div className="relative">
+              <img
+                src={manteigaGrid}
+                alt=""
+                className="drop-shadow-md shadow-black"
+              />
+              <div className="absolute bottom-8 left-8 ">
+                <p className="font-mochari text-white text-2xl -mb-8">
+                  manteiga
+                </p>
+                <button
+                  className="relative 
+    overflow-hidden
+     flex-shrink-0
+bg-custom-blue-strong
+text-white py-2
+px-8 rounded-md shadow-sm
+shadow-black font-light 
+border-none mt-8 mm:max-md:w-full"
+                >
+                  <span className="relative z-10 flex items-center justify-center">
+                    ver mais &rsaquo;
+                  </span>
+                  <span
+                    className="absolute inset-0
+      bg-gradient-to-r from-white
+       to-black
+     transform translate-x-full
+      transition-transform
+      duration-300 ease-in-out z-0 opacity-20"
+                  ></span>
+                </button>
+              </div>
+            </div>
+          </AnimatedY>
+          <AnimatedNegative>
+            <div className="relative overflow-hidden">
+              <img
+                src={pratoGrid}
+                alt=""
+                className="drop-shadow-md shadow-black"
+              />
+              <div className="absolute bottom-8 left-8 ">
+                <p className="font-mochari text-white text-2xl -mb-8">prato</p>
+                <button
+                  className="relative 
+    overflow-hidden
+     flex-shrink-0
+bg-custom-blue-strong
+text-white py-2
+px-8 rounded-md shadow-sm
+shadow-black font-light 
+border-none mt-8 mm:max-md:w-full"
+                >
+                  <span className="relative z-10 flex items-center justify-center">
+                    ver mais &rsaquo;
+                  </span>
+                  <span
+                    className="absolute inset-0
+      bg-gradient-to-r from-white
+       to-black
+     transform translate-x-full
+      transition-transform
+      duration-300 ease-in-out z-0 opacity-20"
+                  ></span>
+                </button>
+              </div>
+            </div>
+          </AnimatedNegative>
         </div>
       </section>
-      {/*SVG3 */}
-
-      <section className="-mb-44 -mt-16 ">
+      <section className="mt-32 ">
+        <svg
+          className="rotate-180"
+          width="100%"
+          height="100%"
+          viewBox="0 0 1952 321"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0.5 0H1951.5V218.5V218.5C1707.85 318.961 1440.1 345.827 1181.35 295.776L634.5 190L483.896 159.026C319.101 125.133 147.617 151.376 0.5 233V233V0Z"
+            fill="#55BECD"
+          />
+        </svg>
+      </section>
+      <section className="bg-custom-blue w-full">
+        <section className="max-w-7xl flex -mt-32 m-auto relative z-10 max-md:-mt-2 ">
+          <div className="w-full flex items-center justify-center m-auto gap-8 max-mm:flex-col max-md:flex-col max-md:px-8">
+            <AnimatedSection>
+              <div className="w-96 max-md:w-full">
+                <img src={valoresMensagem} alt="" className="" />
+              </div>
+            </AnimatedSection>
+            <AnimatedY>
+              <div className="max-w-96  max-md:pl-0">
+                <h2 className="font-mochari text-4xl text-custom-blue-strong max-md:text-center">
+                  o pilar espiritual <br /> e o pilar material
+                </h2>
+                <p className="text-custom-blue-strong font-roboto mt-8 max-md:text-center max-md:mb-8">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed
+                  nisi, voluptatum, maiores impedit dolore beatae adipisci iste
+                  delectus voluptatibus recusandae a dolorum culpa quidem, nobis
+                  facilis error dolores molestias. Sit! Recusandae, beatae
+                  aspernatur, dicta magnam dolores repellendus porro ipsam
+                  explicabo atque dolorem enim ex repellat officia quo corporis,
+                  neque numquam adipisci blanditiis quidem dolorum velit. Quidem
+                  est consequuntur laboriosam culpa.
+                </p>
+              </div>
+            </AnimatedY>
+            <AnimatedNegative>
+              <div className="overflow-hidden">
+                <img src={condensadoValores} alt="" className="" />
+              </div>
+            </AnimatedNegative>
+          </div>
+        </section>
+      </section>
+      <section className="-mt-32 max-md:-mt-2 ">
         <svg
           className=""
           width="100%"
@@ -268,139 +459,9 @@ border-none mt-8 mm:max-md:w-full"
           />
         </svg>
       </section>
-      <section className="max-w-7xl flex mt-56  m-auto">
-        <div
-          className="w-full   m-auto 
-          grid-cols-3 max-md:grid-cols-1 grid"
-        >
-          <div className="relative">
-            <img
-              src={mussGrid}
-              alt=""
-              className="drop-shadow-md shadow-black"
-            />
-            <div className="absolute bottom-8 left-8 ">
-              <p className="font-mochari text-white text-2xl -mb-8">
-                mussarela
-              </p>
-              <button
-                className="relative 
-    overflow-hidden
-     flex-shrink-0
-bg-custom-blue-strong
-text-white py-2
-px-8 rounded-md shadow-sm
-shadow-black font-light 
-border-none mt-8 mm:max-md:w-full"
-              >
-                <span className="relative z-10 flex items-center justify-center">
-                  ver mais &rsaquo;
-                </span>
-                <span
-                  className="absolute inset-0
-      bg-gradient-to-r from-white
-       to-black
-     transform translate-x-full
-      transition-transform
-      duration-300 ease-in-out z-0 opacity-20"
-                ></span>
-              </button>
-            </div>
-          </div>
-          <div className="relative">
-            <img
-              src={manteigaGrid}
-              alt=""
-              className="drop-shadow-md shadow-black"
-            />
-            <div className="absolute bottom-8 left-8 ">
-              <p className="font-mochari text-white text-2xl -mb-8">manteiga</p>
-              <button
-                className="relative 
-    overflow-hidden
-     flex-shrink-0
-bg-custom-blue-strong
-text-white py-2
-px-8 rounded-md shadow-sm
-shadow-black font-light 
-border-none mt-8 mm:max-md:w-full"
-              >
-                <span className="relative z-10 flex items-center justify-center">
-                  ver mais &rsaquo;
-                </span>
-                <span
-                  className="absolute inset-0
-      bg-gradient-to-r from-white
-       to-black
-     transform translate-x-full
-      transition-transform
-      duration-300 ease-in-out z-0 opacity-20"
-                ></span>
-              </button>
-            </div>
-          </div>
-          <div className="relative">
-            <img
-              src={pratoGrid}
-              alt=""
-              className="drop-shadow-md shadow-black"
-            />
-            <div className="absolute bottom-8 left-8 ">
-              <p className="font-mochari text-white text-2xl -mb-8">prato</p>
-              <button
-                className="relative 
-    overflow-hidden
-     flex-shrink-0
-bg-custom-blue-strong
-text-white py-2
-px-8 rounded-md shadow-sm
-shadow-black font-light 
-border-none mt-8 mm:max-md:w-full"
-              >
-                <span className="relative z-10 flex items-center justify-center">
-                  ver mais &rsaquo;
-                </span>
-                <span
-                  className="absolute inset-0
-      bg-gradient-to-r from-white
-       to-black
-     transform translate-x-full
-      transition-transform
-      duration-300 ease-in-out z-0 opacity-20"
-                ></span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="max-w-7xl flex mt-32 m-auto">
-        <div className="w-full flex items-center justify-center m-auto gap-8 max-mm:flex-col">
-          <div>
-            <img src={valoresMensagem} alt="" className="" />
-          </div>
-          <div className="max-w-96">
-            <h2 className="font-mochari text-4xl text-custom-blue-strong">
-              o pilar espiritual <br /> e o pilar material
-            </h2>
-            <p className="text-custom-blue-strong font-roboto mt-8">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed
-              nisi, voluptatum, maiores impedit dolore beatae adipisci iste
-              delectus voluptatibus recusandae a dolorum culpa quidem, nobis
-              facilis error dolores molestias. Sit! Recusandae, beatae
-              aspernatur, dicta magnam dolores repellendus porro ipsam explicabo
-              atque dolorem enim ex repellat officia quo corporis, neque numquam
-              adipisci blanditiis quidem dolorum velit. Quidem est consequuntur
-              laboriosam culpa.
-            </p>
-          </div>
-          <div>
-            <img src={condensadoValores} alt="" className="" />
-          </div>
-        </div>
-      </section>
       <footer
         className="w-full h-auto mt-20
-            flex items-center justify-center m-auto max-md:mt-11 "
+            flex items-center justify-center m-auto max-md:mt-0 "
       >
         <div
           className="w-8/12 
