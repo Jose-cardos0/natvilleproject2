@@ -28,7 +28,10 @@ import { FiPhoneForwarded } from "react-icons/fi";
 //imgs
 // import mussarela from "../assets/Home/mussarelaWelcome2x.png";
 import logo from "../assets/Header/logo.png";
-import noticia from "../assets/Home/retanuglo.png";
+import noticia from "../assets/Home/noticias/noticia1.png";
+import noticia2 from "../assets/Home/noticias/noticia2.png";
+import noticia3 from "../assets/Home/noticias/noticia3.png";
+
 import leiteZero from "../assets/Home/FamiliaZero.svg";
 import videoLogo from "../assets/Home/logoanimate.webm";
 
@@ -38,8 +41,14 @@ import manteigaGrid from "../assets/Home/grid/manteiga.svg";
 import pratoGrid from "../assets/Home/grid/prato.svg";
 
 //valores
-import valoresMensagem from "../assets/Home/valores/valores.svg";
+// import valoresMensagem from "../assets/Home/valores/valores.svg";
 import condensadoValores from "../assets/Home/valores/condensadoValores.svg";
+import Fafe from "../assets/Home/valores/fe.png";
+import Facasa from "../assets/Home/valores/casa.png";
+import Facasal from "../assets/Home/valores/casal.png";
+import Facoracao from "../assets/Home/valores/corcao.png";
+import Fatarefa from "../assets/Home/valores/tarefa.png";
+import Fafamilia from "../assets/Home/valores/familia.png";
 
 //animacoes
 import { AnimatedNegative } from "../Tools/Animates/AnimatedNegative";
@@ -71,7 +80,7 @@ export function Home() {
                 autoPlay
                 muted
                 loop
-                className="w-8/12 mb-6 relative z-10"
+                className="w-8/12 mb-6 relative z-10 max-md:w-11/12"
               ></video>
             </div>
           </AnimatedY>
@@ -141,53 +150,24 @@ export function Home() {
               </div>
             </AnimatedSection>
 
-            <AnimatedNegative>
+            <AnimatedY>
               <div className="flex gap-8 overflow-hidden max-md:flex-col max-md:items-center max-md:m-auto max-md:gap-0">
-                <img className="rounded-md max-w-72" src={noticia} alt="" />
+                <img
+                  className="rounded-md max-w-72 max-md:max-w-full drop-shadow-xl shadow-black"
+                  src={noticia}
+                  alt=""
+                />
                 <div className="max-w-96 text-custom-blue-strong">
-                  <p className="mt-8 max-md:">
+                  <p className="mt-8 max-md:mt-2">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Sunt vel praesentium ducimus nam, alias nesciunt cumque illo
                     natus voluptates, quod consequuntur error aliquid deleniti
                     facilis quas! Quibusdam iste maiores esse?
                   </p>
-
-                  <button
-                    className="relative 
-    overflow-hidden
-     flex-shrink-0
-bg-custom-blue-strong
-text-white py-2
-px-8 rounded-md shadow-sm
-shadow-black font-light 
-border-none mt-8 mm:max-md:w-full max-md:mt-2"
+                  <a
+                    href="https://www.instagram.com/natville.br/"
+                    target="_blanck"
                   >
-                    <span className="relative z-10 flex items-center justify-center">
-                      ver mais &rsaquo;
-                    </span>
-                    <span
-                      className="absolute inset-0
-      bg-gradient-to-r from-white
-       to-black
-     transform translate-x-full
-      transition-transform
-      duration-300 ease-in-out z-0 opacity-20"
-                    ></span>
-                  </button>
-                </div>
-              </div>
-            </AnimatedNegative>
-
-            <AnimatedSection>
-              <div className="flex gap-8 mt-8 max-md:flex-col max-md:items-center max-md:m-auto max-md:hidden ">
-                <div className="max-w-96 text-custom-blue-strong">
-                  <p className="mt-8 text-end">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Sunt vel praesentium ducimus nam, alias nesciunt cumque illo
-                    natus voluptates, quod consequuntur error aliquid deleniti
-                    facilis quas! Quibusdam iste maiores esse?
-                  </p>
-                  <div className="w-full flex justify-end">
                     <button
                       className="relative 
     overflow-hidden
@@ -196,7 +176,7 @@ bg-custom-blue-strong
 text-white py-2
 px-8 rounded-md shadow-sm
 shadow-black font-light 
-border-none mt-8 mm:max-md:w-full"
+border-none mt-8 mm:max-md:w-full max-md:mt-2"
                     >
                       <span className="relative z-10 flex items-center justify-center">
                         ver mais &rsaquo;
@@ -210,25 +190,27 @@ border-none mt-8 mm:max-md:w-full"
       duration-300 ease-in-out z-0 opacity-20"
                       ></span>
                     </button>
-                  </div>
+                  </a>
                 </div>
-                <img className="rounded-md max-w-72" src={noticia} alt="" />
               </div>
-            </AnimatedSection>
+            </AnimatedY>
 
-            <AnimatedNegative>
-              <div className="flex gap-8 mt-8 overflow-hidden max-md:flex-col max-md:items-center max-md:m-auto max-md:mt-20">
-                <img className="rounded-md max-w-72" src={noticia} alt="" />
+            <AnimatedSection>
+              <div className="flex gap-8 mt-8 max-md:flex-col max-md:items-center max-md:m-auto max-md:hidden ">
                 <div className="max-w-96 text-custom-blue-strong">
-                  <p className="mt-8 max-md:mt-0">
+                  <p className="mt-8 text-end">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Sunt vel praesentium ducimus nam, alias nesciunt cumque illo
                     natus voluptates, quod consequuntur error aliquid deleniti
                     facilis quas! Quibusdam iste maiores esse?
                   </p>
-
-                  <button
-                    className="relative 
+                  <div className="w-full flex justify-end">
+                    <a
+                      href="https://www.instagram.com/natville.br/"
+                      target="_blanck"
+                    >
+                      <button
+                        className="relative 
     overflow-hidden
      flex-shrink-0
 bg-custom-blue-strong
@@ -236,34 +218,86 @@ text-white py-2
 px-8 rounded-md shadow-sm
 shadow-black font-light 
 border-none mt-8 mm:max-md:w-full max-md:mt-2"
-                  >
-                    <span className="relative z-10 flex items-center justify-center">
-                      ver mais &rsaquo;
-                    </span>
-                    <span
-                      className="absolute inset-0
+                      >
+                        <span className="relative z-10 flex items-center justify-center">
+                          ver mais &rsaquo;
+                        </span>
+                        <span
+                          className="absolute inset-0
       bg-gradient-to-r from-white
        to-black
      transform translate-x-full
       transition-transform
       duration-300 ease-in-out z-0 opacity-20"
-                    ></span>
-                  </button>
+                        ></span>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+                <img
+                  className="rounded-md max-w-72 drop-shadow-xl shadow-black"
+                  src={noticia2}
+                  alt=""
+                />
+              </div>
+            </AnimatedSection>
+
+            <AnimatedY>
+              <div className="flex gap-8 mt-8 overflow-hidden max-md:flex-col max-md:items-center max-md:m-auto max-md:mt-20 max-md:gap-0">
+                <img
+                  className="rounded-md max-w-72 max-md:max-w-full drop-shadow-xl shadow-black "
+                  src={noticia3}
+                  alt=""
+                />
+                <div className="max-w-96 text-custom-blue-strong max-md:max-w-full">
+                  <p className="mt-8 max-md:mt-2">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Sunt vel praesentium ducimus nam, alias nesciunt cumque illo
+                    natus voluptates, quod consequuntur error aliquid deleniti
+                    facilis quas! Quibusdam iste maiores esse?
+                  </p>
+
+                  <a
+                    href="https://www.instagram.com/natville.br/"
+                    target="_blanck"
+                  >
+                    <button
+                      className="relative 
+    overflow-hidden
+     flex-shrink-0
+bg-custom-blue-strong
+text-white py-2
+px-8 rounded-md shadow-sm
+shadow-black font-light 
+border-none mt-8 mm:max-md:w-full max-md:mt-2"
+                    >
+                      <span className="relative z-10 flex items-center justify-center">
+                        ver mais &rsaquo;
+                      </span>
+                      <span
+                        className="absolute inset-0
+      bg-gradient-to-r from-white
+       to-black
+     transform translate-x-full
+      transition-transform
+      duration-300 ease-in-out z-0 opacity-20"
+                      ></span>
+                    </button>
+                  </a>
                 </div>
               </div>
-            </AnimatedNegative>
+            </AnimatedY>
           </div>
 
-          <AnimatedNegative>
-            <div className="overflow-hidden">
+          <AnimatedY>
+            <div className="overflow-hidden ">
               <img
                 src={leiteZero}
                 alt="leite zero lactose"
-                className="hover:scale-105 transition 
-              duration-300 hover:cursor-pointer"
+                className="drop-shadow shadow-black "
               />
             </div>
-          </AnimatedNegative>
+          </AnimatedY>
         </div>
       </section>
       {/*SVG3 */}
@@ -283,7 +317,13 @@ border-none mt-8 mm:max-md:w-full max-md:mt-2"
           />
         </svg>
       </section>
-      <section className="max-w-7xl flex mt-36  m-auto max-md:px-8">
+      <section className="max-w-7xl flex-col mt-10  m-auto max-md:px-8">
+        <AnimatedY>
+          <h2 className="font-mochari text-6xl text-custom-blue-strong mb-2">
+            conheça
+            <br /> nossos produtos
+          </h2>
+        </AnimatedY>
         <div
           className="w-full   m-auto 
           grid-cols-3 max-md:grid-cols-1 grid max-md:gap-8"
@@ -293,7 +333,7 @@ border-none mt-8 mm:max-md:w-full max-md:mt-2"
               <img
                 src={mussGrid}
                 alt=""
-                className="drop-shadow-md shadow-black"
+                className="drop-shadow shadow-black "
               />
               <div className="absolute bottom-8 left-8 ">
                 <p className="font-mochari text-white text-2xl -mb-8">
@@ -329,7 +369,7 @@ border-none mt-8 mm:max-md:w-full"
               <img
                 src={manteigaGrid}
                 alt=""
-                className="drop-shadow-md shadow-black"
+                className="drop-shadow shadow-black"
               />
               <div className="absolute bottom-8 left-8 ">
                 <p className="font-mochari text-white text-2xl -mb-8">
@@ -360,12 +400,12 @@ border-none mt-8 mm:max-md:w-full"
               </div>
             </div>
           </AnimatedY>
-          <AnimatedNegative>
+          <AnimatedY>
             <div className="relative overflow-hidden">
               <img
                 src={pratoGrid}
                 alt=""
-                className="drop-shadow-md shadow-black"
+                className="drop-shadow shadow-black"
               />
               <div className="absolute bottom-8 left-8 ">
                 <p className="font-mochari text-white text-2xl -mb-8">prato</p>
@@ -393,7 +433,7 @@ border-none mt-8 mm:max-md:w-full"
                 </button>
               </div>
             </div>
-          </AnimatedNegative>
+          </AnimatedY>
         </div>
       </section>
       <section className="mt-32 ">
@@ -411,15 +451,64 @@ border-none mt-8 mm:max-md:w-full"
           />
         </svg>
       </section>
-      <section className="bg-custom-blue w-full">
-        <section className="max-w-7xl flex -mt-32 m-auto relative z-10 max-md:-mt-2 ">
+      <section className="bg-custom-blue w-full mb-20">
+        <section className="max-w-7xl flex items-center justify-center -mt-32 m-auto relative z-10 max-md:-mt-2 ">
           <div className="w-full flex items-center justify-center m-auto gap-8 max-mm:flex-col max-md:flex-col max-md:px-8">
             <AnimatedSection>
-              <div className="w-96 max-md:w-full">
-                <img src={valoresMensagem} alt="" className="" />
+              <div className="w-96 max-md:w-full flex-col items-center justify-center m-auto">
+                <h2 className="font-mochari text-white text-2xl mb-2">
+                  quem somos
+                </h2>
+                <div className="w-full flex justify-center">
+                  <img src={logoF} alt="natville" className="w-full" />
+                </div>
+
+                <div className="flex w-full items-center gap-5 mt-8">
+                  <img src={Facasal} alt="natville" className="max-w-20" />
+                  <p className="font-DKLeomn text-custom-blue-strong uppercase text-2xl">
+                    Somos uma família SERTANEJA trabalhadora, guiada pela fé que
+                    permeia o nosso coração.
+                  </p>
+                </div>
+                <div className="flex w-full items-center gap-5 mt-4">
+                  <p className="font-DKLeomn text-custom-blue-strong uppercase text-2xl text-end">
+                    Acreditamos na dedicação e responsabilidade em cada etapa do
+                    nosso processo.
+                  </p>
+                  <img src={Fatarefa} alt="natville" className="max-w-14" />
+                </div>
+
+                <div className="flex w-full items-center gap-5 mt-4">
+                  <img src={Fafe} alt="natville" className="max-w-28" />
+                  <p className="font-DKLeomn text-custom-blue-strong uppercase text-2xl">
+                    A fé nos guia desde a coleta do leite, ATÉ A CHEGADA DO
+                    PRODUTO EM SUA CASA.
+                  </p>
+                </div>
+                <div className="flex w-full items-center gap-5 mt-6">
+                  <p className="font-DKLeomn text-custom-blue-strong uppercase text-2xl text-end">
+                    Investimos em ações sociais com a comunidade, contribuindo
+                    para momentos de amor e união.
+                  </p>
+                  <img src={Facasa} alt="natville" className="max-w-28" />
+                </div>
+                <div className="flex w-full items-center gap-5 mt-3">
+                  <img src={Facoracao} alt="natville" className="max-w-20" />
+                  <p className="font-DKLeomn text-custom-blue-strong uppercase text-2xl">
+                    É como um amor de mãe, cheio de fé no futuro, de crença na
+                    importância do que fazemos.
+                  </p>
+                </div>
+
+                <div className="flex w-full items-center gap-5 mt-3">
+                  <p className="font-DKLeomn text-custom-blue-strong uppercase text-2xl text-end">
+                    Nutrimos laços. Celebramos famílias. Como amor de mãe.
+                  </p>
+                  <img src={Fafamilia} alt="natville" className="max-w-28" />
+                </div>
               </div>
             </AnimatedSection>
-            <AnimatedY>
+            {/* <AnimatedY>
               <div className="max-w-96  max-md:pl-0">
                 <h2 className="font-mochari text-4xl text-custom-blue-strong max-md:text-center">
                   o pilar espiritual <br /> e o pilar material
@@ -435,12 +524,12 @@ border-none mt-8 mm:max-md:w-full"
                   est consequuntur laboriosam culpa.
                 </p>
               </div>
-            </AnimatedY>
-            <AnimatedNegative>
-              <div className="overflow-hidden">
+            </AnimatedY> */}
+            {/* <AnimatedNegative>
+              <div className="overflow-hidden max-w-7xl">
                 <img src={condensadoValores} alt="" className="" />
               </div>
-            </AnimatedNegative>
+            </AnimatedNegative> */}
           </div>
         </section>
       </section>

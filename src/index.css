@@ -8,6 +8,8 @@
   box-sizing: border-box;
 }
 
+@import url("https://fonts.cdnfonts.com/css/dk-lemon-yellow-sun");
+
 button:hover span:last-child {
   transform: translateX(0);
 }

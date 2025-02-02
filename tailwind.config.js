@@ -12,6 +12,7 @@ export default {
     fontFamily: {
       roboto: ["Roboto", "sans-serif"],
       mochari: ["Mocha Mattari W01 Regular", "sans-serif"],
+      DKLeomn: ["DK Lemon Yellow Sun", "sans-serif"],
     },
     extend: {
       colors: {
