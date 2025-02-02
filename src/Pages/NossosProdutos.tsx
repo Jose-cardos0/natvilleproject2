@@ -11,7 +11,6 @@ import bgCondensado from "../assets/Produtos/BgProdutos/leiteCondens.png";
 import bgReqCremoso from "../assets/Produtos/BgProdutos/queijoProcess.png";
 import bgQuijos from "../assets/Produtos/BgProdutos/queijos.png";
 import manteigas from "../assets/Produtos/BgProdutos/manteigas.png";
-import vaaca from "../assets/Produtos/BgProdutos/vaca1.png";
 
 import desntBg from "../assets/Produtos/BgProdutos/desnBg_1.png";
 import inteBg from "../assets/Produtos/BgProdutos/integralBg2.png";
