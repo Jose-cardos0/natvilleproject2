@@ -30,18 +30,16 @@ import { FiPhoneForwarded } from "react-icons/fi";
 import logo from "../assets/Header/logo.png";
 import noticia from "../assets/Home/retanuglo.png";
 import leiteZero from "../assets/Home/FamiliaZero.svg";
-import logoHome from "../assets/Home/logoHome.svg";
 import videoLogo from "../assets/Home/logoanimate.webm";
-import messagem1 from "../assets/Sliders/carroussel/mensagens (1).svg";
 
 //produtos
-import queijos from "../assets/Produtos/Queijos/mussarela.png";
-import leiteUht from "../assets/Produtos/Leites/leitesUht.png";
-import manteigaspng from "../assets/Produtos/BgProdutos/manteigas.png";
-import condensado from "../assets/Produtos/leiteCondensado/bgCondensado.png";
+import mussGrid from "../assets/Home/grid/mussarela.svg";
+import manteigaGrid from "../assets/Home/grid/manteiga.svg";
+import pratoGrid from "../assets/Home/grid/prato.svg";
 
-//bgGrid
-import bgProdutosGrid from "../assets/Produtos/BgProdutos/integralBg2.png";
+//valores
+import valoresMensagem from "../assets/Home/valores/valores.svg";
+import condensadoValores from "../assets/Home/valores/condensadoValores.svg";
 
 //animacoes
 // import { AnimatedNegative } from "../Tools/Animates/AnimatedNegative";
@@ -270,19 +268,143 @@ border-none mt-8 mm:max-md:w-full"
           />
         </svg>
       </section>
-      <section className="max-w-7xl flex mt-44  m-auto">
-        <div className="w-full bg-custom-blue bg-opacity-55 m-auto p-8 rounded-xl shadow-md">
-          <p>receitas</p>
+      <section className="max-w-7xl flex mt-56  m-auto">
+        <div
+          className="w-full   m-auto 
+          grid-cols-3 max-md:grid-cols-1 grid"
+        >
+          <div className="relative">
+            <img
+              src={mussGrid}
+              alt=""
+              className="drop-shadow-md shadow-black"
+            />
+            <div className="absolute bottom-8 left-8 ">
+              <p className="font-mochari text-white text-2xl -mb-8">
+                mussarela
+              </p>
+              <button
+                className="relative 
+    overflow-hidden
+     flex-shrink-0
+bg-custom-blue-strong
+text-white py-2
+px-8 rounded-md shadow-sm
+shadow-black font-light 
+border-none mt-8 mm:max-md:w-full"
+              >
+                <span className="relative z-10 flex items-center justify-center">
+                  ver mais &rsaquo;
+                </span>
+                <span
+                  className="absolute inset-0
+      bg-gradient-to-r from-white
+       to-black
+     transform translate-x-full
+      transition-transform
+      duration-300 ease-in-out z-0 opacity-20"
+                ></span>
+              </button>
+            </div>
+          </div>
+          <div className="relative">
+            <img
+              src={manteigaGrid}
+              alt=""
+              className="drop-shadow-md shadow-black"
+            />
+            <div className="absolute bottom-8 left-8 ">
+              <p className="font-mochari text-white text-2xl -mb-8">manteiga</p>
+              <button
+                className="relative 
+    overflow-hidden
+     flex-shrink-0
+bg-custom-blue-strong
+text-white py-2
+px-8 rounded-md shadow-sm
+shadow-black font-light 
+border-none mt-8 mm:max-md:w-full"
+              >
+                <span className="relative z-10 flex items-center justify-center">
+                  ver mais &rsaquo;
+                </span>
+                <span
+                  className="absolute inset-0
+      bg-gradient-to-r from-white
+       to-black
+     transform translate-x-full
+      transition-transform
+      duration-300 ease-in-out z-0 opacity-20"
+                ></span>
+              </button>
+            </div>
+          </div>
+          <div className="relative">
+            <img
+              src={pratoGrid}
+              alt=""
+              className="drop-shadow-md shadow-black"
+            />
+            <div className="absolute bottom-8 left-8 ">
+              <p className="font-mochari text-white text-2xl -mb-8">prato</p>
+              <button
+                className="relative 
+    overflow-hidden
+     flex-shrink-0
+bg-custom-blue-strong
+text-white py-2
+px-8 rounded-md shadow-sm
+shadow-black font-light 
+border-none mt-8 mm:max-md:w-full"
+              >
+                <span className="relative z-10 flex items-center justify-center">
+                  ver mais &rsaquo;
+                </span>
+                <span
+                  className="absolute inset-0
+      bg-gradient-to-r from-white
+       to-black
+     transform translate-x-full
+      transition-transform
+      duration-300 ease-in-out z-0 opacity-20"
+                ></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="max-w-7xl flex mt-32 m-auto">
+        <div className="w-full flex items-center justify-center m-auto gap-8 max-mm:flex-col">
+          <div>
+            <img src={valoresMensagem} alt="" className="" />
+          </div>
+          <div className="max-w-96">
+            <h2 className="font-mochari text-4xl text-custom-blue-strong">
+              o pilar espiritual <br /> e o pilar material
+            </h2>
+            <p className="text-custom-blue-strong font-roboto mt-8">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed
+              nisi, voluptatum, maiores impedit dolore beatae adipisci iste
+              delectus voluptatibus recusandae a dolorum culpa quidem, nobis
+              facilis error dolores molestias. Sit! Recusandae, beatae
+              aspernatur, dicta magnam dolores repellendus porro ipsam explicabo
+              atque dolorem enim ex repellat officia quo corporis, neque numquam
+              adipisci blanditiis quidem dolorum velit. Quidem est consequuntur
+              laboriosam culpa.
+            </p>
+          </div>
+          <div>
+            <img src={condensadoValores} alt="" className="" />
+          </div>
         </div>
       </section>
       <footer
-        className="w-full h-auto 
-            flex items-center justify-center m-auto max-md:mt-11"
+        className="w-full h-auto mt-20
+            flex items-center justify-center m-auto max-md:mt-11 "
       >
         <div
           className="w-8/12 
-               flex-col items-center
-            "
+               flex-col items-center   "
         >
           <div
             className="w-full flex justify-between mt-28
