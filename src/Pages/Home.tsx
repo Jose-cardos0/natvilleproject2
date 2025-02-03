@@ -294,7 +294,7 @@ border-none mt-8 mm:max-md:w-full max-md:mt-2"
               <img
                 src={leiteZero}
                 alt="leite zero lactose"
-                className="drop-shadow shadow-black "
+                className="drop-shadow shadow-black"
               />
             </div>
           </AnimatedY>
