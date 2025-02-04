@@ -1,4 +1,4 @@
-import camp from "../assets/Home/camp.svg";
+import camp from "../assets/Home/camp.webp";
 import naty from "../assets/Contato/naty.svg";
 import qrCode from "../assets/Contato/qrCodeWhats.svg";
 

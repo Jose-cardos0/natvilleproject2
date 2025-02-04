@@ -1,6 +1,6 @@
 import { useLayoutEffect } from "react";
 
-import camp from "../assets/Home/camp.svg";
+import camp from "../assets/Home/camp.webp";
 
 import { SliderProdutos } from "../Tools/SliderProdutos/SliderProdutos";
 
@@ -25,7 +25,7 @@ import noticia from "../assets/Home/noticias/noticia1.png";
 import noticia2 from "../assets/Home/noticias/noticia2.png";
 import noticia3 from "../assets/Home/noticias/noticia3.png";
 
-import leiteZero from "../assets/Home/FamiliaZero.svg";
+import leiteZero from "../assets/Home/FamiliaZero.webp";
 import videoLogo from "../assets/Home/logoanimate.webm";
 
 //produtos
@@ -37,7 +37,7 @@ import splashCondensado from "../assets/Home/grid/splashCondensado.webp";
 
 //valores
 // import valoresMensagem from "../assets/Home/valores/valores.svg";
-import caranova from "../assets/Home/valores/caranova.svg";
+import caranova from "../assets/Home/valores/caranova.webp";
 import Fafe from "../assets/Home/valores/fe.png";
 import Facasa from "../assets/Home/valores/casa.png";
 import Facasal from "../assets/Home/valores/casal.png";
@@ -51,9 +51,9 @@ import { AnimatedY } from "../Tools/Animates/AnimatedY";
 import { Link } from "react-router-dom";
 
 export function Home() {
-  useLayoutEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  // useLayoutEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
 
   return (
     <main
@@ -292,7 +292,7 @@ border-none mt-8 mm:max-md:w-full max-md:mt-2"
               <img
                 src={leiteZero}
                 alt="leite zero lactose"
-                className="drop-shadow shadow-black"
+                className="drop-shadow shadow-black max-w-xl"
               />
             </div>
           </AnimatedY>
