@@ -517,7 +517,10 @@ border-none mt-8 mm:max-md:w-full"
           />
         </svg>
       </section>
-      <section className="bg-custom-blue w-full mb-20 max-md:mb-0 relative z-10">
+      <section
+        className="bg-custom-blue w-full mb-20 pb-16 max-md:mb-0 
+      relative z-10"
+      >
         <section className="max-w-7xl flex items-center justify-center -mt-32 m-auto relative z-10 max-md:-mt-2 ">
           <div className="w-full flex items-center justify-center m-auto gap-8 max-mm:flex-col max-md:flex-col max-md:px-8">
             <AnimatedSection>
@@ -639,7 +642,7 @@ border-none mt-8 mm:max-md:w-full"
           </div>
         </section>
       </section>
-      <section className=" -mt-64 max-md:-mt-2 relative z-0 ">
+      <section className=" -mt-64 max-md:-mt-2 relative z-0  ">
         <svg
           className="drop-shadow-md rotate-180"
           width="100%"
