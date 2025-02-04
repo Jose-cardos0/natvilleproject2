@@ -29,9 +29,11 @@ import leiteZero from "../assets/Home/FamiliaZero.svg";
 import videoLogo from "../assets/Home/logoanimate.webm";
 
 //produtos
-import mussGrid from "../assets/Home/grid/mussarela.svg";
-import manteigaGrid from "../assets/Home/grid/manteiga.svg";
-import pratoGrid from "../assets/Home/grid/prato.svg";
+// import mussGrid from "../assets/Home/grid/mussarela.svg";
+// import manteigaGrid from "../assets/Home/grid/manteiga.svg";
+// import pratoGrid from "../assets/Home/grid/prato.svg";
+import condensado from "../assets/Home/grid/condensado.webp";
+import splashCondensado from "../assets/Home/grid/splashCondensado.webp";
 
 //valores
 // import valoresMensagem from "../assets/Home/valores/valores.svg";
@@ -46,11 +48,12 @@ import Fafamilia from "../assets/Home/valores/familia.png";
 //animacoes
 import { AnimatedSection } from "../Tools/Animates/AnimatedSections";
 import { AnimatedY } from "../Tools/Animates/AnimatedY";
+import { Link } from "react-router-dom";
 
 export function Home() {
-  useLayoutEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  // useLayoutEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
 
   return (
     <main
@@ -58,7 +61,7 @@ export function Home() {
        justify-center m-auto bg-cover  bg-custom-white"
     >
       {/*1 PAINEL - QUEM SOMOS*/}
-      <section className="w-full bg-custom-blue max-md:h-height-full-96px">
+      <section className="w-full bg-custom-blue max-md:h-height-full-96px relative z-10 ">
         <div
           className="max-w-7xl flex flex-col items-center
       justify-center m-auto  h-height-full-96px   "
@@ -82,17 +85,17 @@ export function Home() {
         </div>
       </section>
       {/*SVG1 */}
-      <section className="-mb-44 -mt-20 max-md:-mt-2 max-md:mb-1 ">
+      <section className=" -mt-44 max-md:-mt-2 max-md:mb-1 relative z-0 ">
         <svg
-          className=""
+          className="drop-shadow-md rotate-180"
           width="100%"
           height="100%"
-          viewBox="0 0 1952 321"
+          viewBox="0 0 1920 321"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M0.5 0H1951.5V218.5V218.5C1707.85 318.961 1440.1 345.827 1181.35 295.776L634.5 190L483.896 159.026C319.101 125.133 147.617 151.376 0.5 233V233V0Z"
+            d="M0 39.7647L16.385 36.1419C210.847 -6.85543 411.925 -10.697 607.888 24.8414L1021.05 99.7683C1190.42 130.484 1363.81 131.818 1533.64 103.711L1920 39.7647V146.186H0V39.7647Z"
             fill="#55BECD"
           />
         </svg>
@@ -100,7 +103,7 @@ export function Home() {
       {/*FIM SVG */}
       {/*1 PAINEL - FIM */}
       <section
-        className="w-full 
+        className="w-full -mt-52
         bg-custom-white max-md:-mt-16 "
       >
         <AnimatedSection>
@@ -115,7 +118,7 @@ export function Home() {
       {/*SVG2 */}
       <section className="-mt-32 max-md:mt-0">
         <svg
-          className="rotate-180"
+          className="rotate-180 drop-shadow-md"
           width="100%"
           height="100%"
           viewBox="0 0 1863 321"
@@ -129,7 +132,10 @@ export function Home() {
         </svg>
       </section>
       {/*FIM SVG */}
-      <section className="relative -mt-32 bg-custom-blue pb-20 z-0 max-md:-mt-2 max-md:px-8 ">
+      <section
+        className="relative -mt-32
+       bg-custom-blue pb-20 z-10 max-md:-mt-2 max-md:px-8  "
+      >
         <div
           className="max-w-7xl flex items-center justify-center
          m-auto gap-20 max-md:flex-col"
@@ -191,7 +197,7 @@ border-none mt-8 mm:max-md:w-full max-md:mt-2"
               <div className="flex gap-8 mt-8 max-md:flex-col max-md:items-center max-md:m-auto max-md:hidden ">
                 <div className="max-w-96 text-custom-blue-strong">
                   <p className="mt-8 text-end">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elite
                     Sunt vel praesentium ducimus nam, alias nesciunt cumque illo
                     natus voluptates, quod consequuntur error aliquid deleniti
                     facilis quas! Quibusdam iste maiores esse?
@@ -294,40 +300,82 @@ border-none mt-8 mm:max-md:w-full max-md:mt-2"
       </section>
       {/*SVG3 */}
 
-      <section className="-mt-32 max-md:-mt-4 ">
+      <section className="-mt-44 max-md:-mt-4 ">
         <svg
-          className=""
+          className="drop-shadow-md rotate-180"
           width="100%"
           height="100%"
-          viewBox="0 0 1952 321"
+          viewBox="0 0 1920 321"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M0.5 0H1951.5V218.5V218.5C1707.85 318.961 1440.1 345.827 1181.35 295.776L634.5 190L483.896 159.026C319.101 125.133 147.617 151.376 0.5 233V233V0Z"
+            d="M0 39.7647L16.385 36.1419C210.847 -6.85543 411.925 -10.697 607.888 24.8414L1021.05 99.7683C1190.42 130.484 1363.81 131.818 1533.64 103.711L1920 39.7647V146.186H0V39.7647Z"
             fill="#55BECD"
           />
         </svg>
       </section>
-      <section className="max-w-7xl flex-col mt-10  m-auto max-md:px-8">
+      <section className="max-w-7xl flex-col -mt-32  m-auto max-md:px-8 ">
         <AnimatedY>
+          <div className="w-full flex items-center justify-center m-auto mt-40">
+            <div className="relative">
+              <img
+                src={splashCondensado}
+                alt="leite condensado natville"
+                className="absolute -top-32 right-96 max-w-72"
+              />
+              <img
+                src={condensado}
+                alt="leite condensado natville"
+                className="max-w-xl"
+              />
+            </div>
+            <div>
+              <div>
+                <h1 className="font-mochari text-7xl text-custom-blue-strong text-end">
+                  Leite condensado <br /> semidesnatado{" "}
+                </h1>
+              </div>
+              <div className="w-full flex items-end justify-end">
+                <Link to={"/manteigas"}>
+                  <button
+                    className="relative 
+               overflow-hidden
+                flex-shrink-0
+           bg-custom-blue-strong
+           text-white py-3 
+           px-14 rounded-md shadow-sm
+           shadow-black font-light 
+           border-none mt-8 mm:max-md:w-full"
+                  >
+                    <span className="relative z-10 flex items-center justify-center">
+                      ESPECIFICAÇÕES &rsaquo;
+                    </span>
+                    <span
+                      className="absolute inset-0
+                 bg-gradient-to-r from-white
+                  to-black
+                transform translate-x-full
+                 transition-transform
+                 duration-300 ease-in-out z-0 opacity-20"
+                    ></span>
+                  </button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </AnimatedY>
+        {/* <AnimatedY>
           <h2 className="font-mochari text-6xl text-custom-blue-strong mb-2 max-md:text-center">
             conheça
             <br /> nossos produtos
           </h2>
         </AnimatedY>
-        <div
-          className="w-full   m-auto 
-          grid-cols-3 max-md:grid-cols-1 grid max-md:gap-8"
-        >
+        <div className="w-full m-auto grid-cols-4 max-md:grid-cols-1 grid max-md:gap-8">
           <AnimatedSection>
             <div className="relative">
-              <img
-                src={mussGrid}
-                alt=""
-                className="drop-shadow shadow-black "
-              />
-              <div className="absolute bottom-8 left-8 ">
+              <img src={mussGrid} alt="" className=" max-h-96 " />
+              <div className="absolute bottom-4 left-4 ">
                 <p className="font-mochari text-white text-2xl -mb-8">
                   mussarela
                 </p>
@@ -358,12 +406,8 @@ border-none mt-8 mm:max-md:w-full"
           </AnimatedSection>
           <AnimatedY>
             <div className="relative">
-              <img
-                src={manteigaGrid}
-                alt=""
-                className="drop-shadow shadow-black"
-              />
-              <div className="absolute bottom-8 left-8 ">
+              <img src={manteigaGrid} alt="" className=" max-h-96 " />
+              <div className="absolute  bottom-4 left-4 ">
                 <p className="font-mochari text-white text-2xl -mb-8">
                   manteiga
                 </p>
@@ -394,12 +438,8 @@ border-none mt-8 mm:max-md:w-full"
           </AnimatedY>
           <AnimatedY>
             <div className="relative overflow-hidden">
-              <img
-                src={pratoGrid}
-                alt=""
-                className="drop-shadow shadow-black"
-              />
-              <div className="absolute bottom-8 left-8 ">
+              <img src={pratoGrid} alt="" className="max-h-96 " />
+              <div className="absolute  bottom-4 left-4 ">
                 <p className="font-mochari text-white text-2xl -mb-8">prato</p>
                 <button
                   className="relative 
@@ -426,11 +466,43 @@ border-none mt-8 mm:max-md:w-full"
               </div>
             </div>
           </AnimatedY>
-        </div>
+          <AnimatedSection>
+            <div className="relative">
+              <img src={mussGrid} alt="" className=" max-h-96 " />
+              <div className="absolute  bottom-4 left-4 ">
+                <p className="font-mochari text-white text-2xl -mb-8">
+                  mussarela
+                </p>
+                <button
+                  className="relative 
+    overflow-hidden
+     flex-shrink-0
+bg-custom-blue-strong
+text-white py-2
+px-8 rounded-md shadow-sm
+shadow-black font-light 
+border-none mt-8 mm:max-md:w-full"
+                >
+                  <span className="relative z-10 flex items-center justify-center">
+                    ver mais &rsaquo;
+                  </span>
+                  <span
+                    className="absolute inset-0
+      bg-gradient-to-r from-white
+       to-black
+     transform translate-x-full
+      transition-transform
+      duration-300 ease-in-out z-0 opacity-20"
+                  ></span>
+                </button>
+              </div>
+            </div>
+          </AnimatedSection>
+        </div> */}
       </section>
-      <section className="mt-32 ">
+      <section className=" ">
         <svg
-          className="rotate-180"
+          className="rotate-180 drop-shadow-md"
           width="100%"
           height="100%"
           viewBox="0 0 1952 321"
@@ -438,16 +510,18 @@ border-none mt-8 mm:max-md:w-full"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M0.5 0H1951.5V218.5V218.5C1707.85 318.961 1440.1 345.827 1181.35 295.776L634.5 190L483.896 159.026C319.101 125.133 147.617 151.376 0.5 233V233V0Z"
+            d="M0.5 0H1951.5V218.5V218.5C1707.85 318.961 1440.1 
+                     345.827 1181.35 295.776L634.5 190L483.896 159.026C319.101 
+                     125.133 147.617 151.376 0.5 233V233V0Z"
             fill="#55BECD"
           />
         </svg>
       </section>
-      <section className="bg-custom-blue w-full mb-20 max-md:mb-0">
+      <section className="bg-custom-blue w-full mb-20 max-md:mb-0 relative z-10">
         <section className="max-w-7xl flex items-center justify-center -mt-32 m-auto relative z-10 max-md:-mt-2 ">
           <div className="w-full flex items-center justify-center m-auto gap-8 max-mm:flex-col max-md:flex-col max-md:px-8">
             <AnimatedSection>
-              <div className="w-96 max-md:w-full flex-col items-center justify-center m-auto">
+              <div className="w-72 max-md:w-full flex-col items-center justify-center m-auto">
                 <h2 className="font-mochari text-white text-2xl mb-2 max-md:text-lg max-md:text-center">
                   quem somos
                 </h2>
@@ -463,22 +537,25 @@ border-none mt-8 mm:max-md:w-full"
                   <img
                     src={Facasal}
                     alt="natville"
-                    className="max-w-20 max-md:w-14"
+                    className="max-w-16 max-md:w-14"
                   />
-                  <p className="font-DKLeomn text-custom-blue-strong uppercase text-2xl max-md:text-lg">
+                  <p
+                    className="font-DKLeomn text-custom-blue-strong uppercase 
+                  text-lg max-md:text-lg"
+                  >
                     Somos uma família SERTANEJA trabalhadora, guiada pela fé que
                     permeia o nosso coração.
                   </p>
                 </div>
                 <div className="flex w-full items-center gap-5 mt-4">
-                  <p className="font-DKLeomn text-custom-blue-strong uppercase text-2xl text-end max-md:text-lg">
+                  <p className="font-DKLeomn text-custom-blue-strong uppercase text-lg text-end max-md:text-lg">
                     Acreditamos na dedicação e responsabilidade em cada etapa do
                     nosso processo.
                   </p>
                   <img
                     src={Fatarefa}
                     alt="natville"
-                    className="max-w-14 max-md:w-10"
+                    className="max-w-10 max-md:w-10"
                   />
                 </div>
 
@@ -486,44 +563,44 @@ border-none mt-8 mm:max-md:w-full"
                   <img
                     src={Fafe}
                     alt="natville"
-                    className="max-w-28 max-md:w-20"
+                    className="max-w-16 max-md:w-20"
                   />
-                  <p className="font-DKLeomn text-custom-blue-strong uppercase text-2xl max-md:text-lg">
+                  <p className="font-DKLeomn text-custom-blue-strong uppercase text-lgmax-md:text-lg">
                     A fé nos guia desde a coleta do leite, ATÉ A CHEGADA DO
                     PRODUTO EM SUA CASA.
                   </p>
                 </div>
                 <div className="flex w-full items-center gap-5 mt-6">
-                  <p className="font-DKLeomn text-custom-blue-strong uppercase text-2xl text-end max-md:text-lg">
+                  <p className="font-DKLeomn text-custom-blue-strong uppercase text-lg text-end max-md:text-lg">
                     Investimos em ações sociais com a comunidade, contribuindo
                     para momentos de amor e união.
                   </p>
                   <img
                     src={Facasa}
                     alt="natville"
-                    className="max-w-28 max-md:w-24"
+                    className="max-w-16 max-md:w-24"
                   />
                 </div>
                 <div className="flex w-full items-center gap-5 mt-3">
                   <img
                     src={Facoracao}
                     alt="natville"
-                    className="max-w-20 max-md:w-14"
+                    className="max-w-16 max-md:w-14"
                   />
-                  <p className="font-DKLeomn text-custom-blue-strong uppercase text-2xl max-md:text-lg">
+                  <p className="font-DKLeomn text-custom-blue-strong uppercase text-lg max-md:text-lg">
                     É como um amor de mãe, cheio de fé no futuro, de crença na
                     importância do que fazemos.
                   </p>
                 </div>
 
                 <div className="flex w-full items-center gap-5 mt-3">
-                  <p className="font-DKLeomn text-custom-blue-strong uppercase text-2xl text-end max-md:text-lg">
+                  <p className="font-DKLeomn text-custom-blue-strong uppercase text-lg text-end max-md:text-lg">
                     Nutrimos laços. Celebramos famílias. Como amor de mãe.
                   </p>
                   <img
                     src={Fafamilia}
                     alt="natville"
-                    className="max-w-28 max-md:w-24"
+                    className="max-w-24 max-md:w-24"
                   />
                 </div>
               </div>
@@ -550,23 +627,29 @@ border-none mt-8 mm:max-md:w-full"
                 <img src={condensadoValores} alt="" className="" />
               </div>
             </AnimatedNegative> */}
-            <div>
-              <img src={caranova} alt="" />
-            </div>
+            <AnimatedY>
+              <div>
+                <img
+                  src={caranova}
+                  alt=""
+                  className="max-w-2xl max-md:w-72 drop-shadow-md"
+                />
+              </div>
+            </AnimatedY>
           </div>
         </section>
       </section>
-      <section className="-mt-32 max-md:-mt-2 ">
+      <section className=" -mt-64 max-md:-mt-2 relative z-0 ">
         <svg
-          className=""
+          className="drop-shadow-md rotate-180"
           width="100%"
           height="100%"
-          viewBox="0 0 1952 321"
+          viewBox="0 0 1920 321"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M0.5 0H1951.5V218.5V218.5C1707.85 318.961 1440.1 345.827 1181.35 295.776L634.5 190L483.896 159.026C319.101 125.133 147.617 151.376 0.5 233V233V0Z"
+            d="M0 39.7647L16.385 36.1419C210.847 -6.85543 411.925 -10.697 607.888 24.8414L1021.05 99.7683C1190.42 130.484 1363.81 131.818 1533.64 103.711L1920 39.7647V146.186H0V39.7647Z"
             fill="#55BECD"
           />
         </svg>
@@ -580,7 +663,7 @@ border-none mt-8 mm:max-md:w-full"
                flex-col items-center   "
         >
           <div
-            className="w-full flex justify-between mt-28
+            className="w-full flex justify-between -mt-10
                max-md:flex-col  max-md:gap-5"
           >
             <div>

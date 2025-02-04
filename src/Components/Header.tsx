@@ -15,24 +15,24 @@ export function Header() {
   const [isOpenProduct, setIsOpenProduct] = useState<boolean>(false);
   const [isMobile, setIsMobile] = useState<boolean>(false);
 
-  // const [isVisibleQuemSomos, setIsVisibleQuemSomos] = useState(false);
-  // const [mouseX, setMouseX] = useState(0);
+  const [isVisibleQuemSomos, setIsVisibleQuemSomos] = useState(false);
+  const [mouseX, setMouseX] = useState(0);
 
-  // const handleMouseEnter = () => {
-  //   setIsVisibleQuemSomos(true);
-  // };
+  const handleMouseEnter = () => {
+    setIsVisibleQuemSomos(true);
+  };
 
-  // const handleMouseLeave = () => {
-  //   setIsVisibleQuemSomos(false);
-  // };
+  const handleMouseLeave = () => {
+    setIsVisibleQuemSomos(false);
+  };
 
-  // const handleMouseMove = (event: React.MouseEvent<HTMLElement>) => {
-  //   setMouseX(event.clientX); // Atualiza a posição X do mouse
-  // };
+  const handleMouseMove = (event: React.MouseEvent<HTMLElement>) => {
+    setMouseX(event.clientX); // Atualiza a posição X do mouse
+  };
 
   useEffect(() => {
     function handleSize() {
-      if (innerWidth < 480) {
+      if (innerWidth <= 820) {
         setIsMobile(true);
       } else setIsMobile(false);
     }
@@ -44,15 +44,15 @@ export function Header() {
 
   return (
     <header
-      // onMouseEnter={handleMouseEnter}
-      // onMouseLeave={handleMouseLeave}
-      // onMouseMove={handleMouseMove}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      onMouseMove={handleMouseMove}
       style={{ position: "relative" }}
       className="w-full h-24
      bg-custom-white flex items-center justify-center
       drop-shadow-xl shadow-black fixed z-20   "
     >
-      {/* {isVisibleQuemSomos && (
+      {isVisibleQuemSomos && (
         <div
           className="absolute bg-custom-white p-10 rounded-full w-36 h-36"
           style={{
@@ -62,7 +62,7 @@ export function Header() {
             zIndex: -1,
           }}
         ></div>
-      )} */}
+      )}
       {isMobile ? (
         <section className="w-full flex items-center justify-between mx-8">
           <div className="w-full flex items-center justify-between ">

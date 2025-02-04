@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import leites from "../../../assets/Sliders/leites.png";
+import leites from "../../../assets/Sliders/leites.webp";
 
 export function SliderUHT() {
   return (

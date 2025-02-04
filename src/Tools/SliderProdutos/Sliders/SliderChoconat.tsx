@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import choconat from "../../../assets/Sliders/choconat.png";
+import choconat from "../../../assets/Sliders/choconat.webp";
 
 export function SliderChoconat() {
   return (

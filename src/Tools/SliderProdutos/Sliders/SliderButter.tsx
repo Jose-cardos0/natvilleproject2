@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import manteiga from "../../../assets/Sliders/manteigas.png";
+import manteiga from "../../../assets/Sliders/manteigas.webp";
 
 export function SliderButter() {
   return (

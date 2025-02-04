@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import queijos from "../../../assets/Sliders/queijos.png";
+import queijos from "../../../assets/Sliders/queijos.webp";
 
 export function SliderChess() {
   return (

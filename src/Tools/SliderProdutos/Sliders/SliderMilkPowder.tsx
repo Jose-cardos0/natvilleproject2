@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import emPo from "../../../assets/Sliders/empo.png";
+import emPo from "../../../assets/Sliders/empo.webp";
 
 export function SliderMilkPowder() {
   return (
