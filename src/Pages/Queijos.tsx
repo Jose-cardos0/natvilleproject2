@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import bg1 from "../assets/QuemSomos/bgProdutos.svg";
 
 //itens
-import queijosEx from "../assets/Sliders/queijos.png";
+import queijosEx from "../assets/Produtos/Queijos/queijos.webp";
 // import spinerCile from "../assets/Produtos/Leites/spinerCicle.png";
 // import spinnerWord from "../assets/Produtos/Leites/spinerWord.png";
 import mussarelaEx from "../assets/Produtos/Queijos/mussarela.png";

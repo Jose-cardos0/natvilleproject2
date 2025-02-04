@@ -6,11 +6,11 @@ import { Link } from "react-router-dom";
 import bg1 from "../assets/QuemSomos/bgProdutos.svg";
 
 //itens
-import leitesUht from "../assets/Produtos/Leites/leitesUht.png";
+import leitesUht from "../assets/Produtos/Leites/leitesUht.webp";
 
-import leiteUhtEx from "../assets/Produtos/Leites/leiteUhtExemplo.png";
-import leiteUhtExDes from "../assets/Produtos/Leites/leiteUhtDesn.png";
-import leiteUhtExZero from "../assets/Produtos/Leites/leiteUhtZero.png";
+import leiteUhtEx from "../assets/Produtos/Leites/leiteUhtExemplo.webp";
+import leiteUhtExDes from "../assets/Produtos/Leites/leiteUhtDesn.webp";
+import leiteUhtExZero from "../assets/Produtos/Leites/leiteUhtZero.webp";
 import logoF from "../assets/Footer/logoFooter.svg";
 
 //icons

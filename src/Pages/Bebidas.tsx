@@ -6,12 +6,12 @@ import { Link } from "react-router-dom";
 import bg1 from "../assets/QuemSomos/bgProdutos.svg";
 
 //itens
-import bebidasBanner from "../assets/Produtos/Bebidas/bg1.png";
-import bebidaMorango from "../assets/Produtos/Bebidas/morsngo2.png";
-import bebidaAmeixa from "../assets/Produtos/Bebidas/ameixa2.png";
-import BebidaCoco from "../assets/Produtos/Bebidas/coco2.png";
-import graviola from "../assets/Produtos/Bebidas/graviola2.png";
-import bandeja from "../assets/Produtos/Bebidas/bandeija.png";
+import bebidasBanner from "../assets/Produtos/Bebidas/bg1.webp";
+import bebidaMorango from "../assets/Produtos/Bebidas/morsngo2.webp";
+import bebidaAmeixa from "../assets/Produtos/Bebidas/ameixa2.webp";
+import BebidaCoco from "../assets/Produtos/Bebidas/coco2.webp";
+import graviola from "../assets/Produtos/Bebidas/graviola2.webp";
+import bandeja from "../assets/Produtos/Bebidas/bandeija.webp";
 import logoF from "../assets/Footer/logoFooter.svg";
 
 //icons

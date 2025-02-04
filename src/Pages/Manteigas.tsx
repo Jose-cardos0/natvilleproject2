@@ -6,11 +6,11 @@ import { Link } from "react-router-dom";
 import bg1 from "../assets/QuemSomos/bgProdutos.svg";
 
 //itens
-import manteigas from "../assets/Produtos/Manteigas/manteigaFront.png";
-import menteigaMaior from "../assets/Produtos/Manteigas/500topo.png";
-import manteigaMenor from "../assets/Produtos/Manteigas/200topo.png";
-import manteiga5kg from "../assets/Produtos/Manteigas/manteiga5kg.png";
-import manteiga20kg from "../assets/Produtos/Manteigas/manteiga20kg.png";
+import manteigas from "../assets/Produtos/Manteigas/manteigaFront.webp";
+import menteigaMaior from "../assets/Produtos/Manteigas/500topo.webp";
+import manteigaMenor from "../assets/Produtos/Manteigas/200topo.webp";
+import manteiga5kg from "../assets/Produtos/Manteigas/manteiga5kg.webp";
+import manteiga20kg from "../assets/Produtos/Manteigas/manteiga20kg.webp";
 
 import logoF from "../assets/Footer/logoFooter.svg";
 
