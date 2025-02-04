@@ -51,9 +51,9 @@ import { AnimatedY } from "../Tools/Animates/AnimatedY";
 import { Link } from "react-router-dom";
 
 export function Home() {
-  // useLayoutEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <main
@@ -85,7 +85,7 @@ export function Home() {
         </div>
       </section>
       {/*SVG1 */}
-      <section className=" -mt-44 max-md:-mt-2 max-md:mb-1 relative z-0 ">
+      <section className=" -mt-44 max-md:-mt-10 max-md:mb-1 relative z-0 ">
         <svg
           className="drop-shadow-md rotate-180"
           width="100%"
@@ -104,7 +104,7 @@ export function Home() {
       {/*1 PAINEL - FIM */}
       <section
         className="w-full -mt-52
-        bg-custom-white max-md:-mt-16 "
+        bg-custom-white max-md:mt-0 "
       >
         <AnimatedSection>
           <div
@@ -116,9 +116,9 @@ export function Home() {
         </AnimatedSection>
       </section>
       {/*SVG2 */}
-      <section className="-mt-32 max-md:mt-0">
+      <section className="-mt-32 max-md:-mt-0">
         <svg
-          className="rotate-180 drop-shadow-md"
+          className="rotate-180 "
           width="100%"
           height="100%"
           viewBox="0 0 1863 321"
@@ -134,7 +134,7 @@ export function Home() {
       {/*FIM SVG */}
       <section
         className="relative -mt-32
-       bg-custom-blue pb-20 z-10 max-md:-mt-2 max-md:px-8  "
+       bg-custom-blue pb-20 z-10 max-md:-mt-2 max-md:px-8"
       >
         <div
           className="max-w-7xl flex items-center justify-center
@@ -300,7 +300,7 @@ border-none mt-8 mm:max-md:w-full max-md:mt-2"
       </section>
       {/*SVG3 */}
 
-      <section className="-mt-44 max-md:-mt-4 ">
+      <section className="-mt-44 max-md:-mt-10 ">
         <svg
           className="drop-shadow-md rotate-180"
           width="100%"
@@ -317,27 +317,34 @@ border-none mt-8 mm:max-md:w-full max-md:mt-2"
       </section>
       <section className="max-w-7xl flex-col -mt-32  m-auto max-md:px-8 ">
         <AnimatedY>
-          <div className="w-full flex items-center justify-center m-auto mt-40">
+          <div
+            className="w-full flex items-center justify-center
+           m-auto mt-40 max-md:flex-col max-md:mt-48"
+          >
             <div className="relative">
               <img
                 src={splashCondensado}
                 alt="leite condensado natville"
-                className="absolute -top-32 right-96 max-w-72"
+                className="absolute -top-32 right-96 max-w-72 
+                max-md:w-40 max-md:right-44 max-md:-top-14"
               />
               <img
                 src={condensado}
                 alt="leite condensado natville"
-                className="max-w-xl"
+                className="max-w-xl max-md:w-80"
               />
             </div>
             <div>
               <div>
-                <h1 className="font-mochari text-7xl text-custom-blue-strong text-end">
+                <h1
+                  className="font-mochari text-7xl
+                 text-custom-blue-strong text-end max-md:text-center max-md:text-4xl max-md:mt-8"
+                >
                   Leite condensado <br /> semidesnatado{" "}
                 </h1>
               </div>
-              <div className="w-full flex items-end justify-end">
-                <Link to={"/manteigas"}>
+              <div className="w-full flex items-end justify-end max-md:-mt-4 max-md:mb-8">
+                <Link to={"/condensados"}>
                   <button
                     className="relative 
                overflow-hidden
@@ -502,7 +509,7 @@ border-none mt-8 mm:max-md:w-full"
       </section>
       <section className=" ">
         <svg
-          className="rotate-180 drop-shadow-md"
+          className="rotate-180 "
           width="100%"
           height="100%"
           viewBox="0 0 1952 321"
@@ -642,7 +649,7 @@ border-none mt-8 mm:max-md:w-full"
           </div>
         </section>
       </section>
-      <section className=" -mt-64 max-md:-mt-2 relative z-0  ">
+      <section className=" -mt-64 max-md:-mt-10 relative z-0  ">
         <svg
           className="drop-shadow-md rotate-180"
           width="100%"
@@ -659,7 +666,7 @@ border-none mt-8 mm:max-md:w-full"
       </section>
       <footer
         className="w-full h-auto mt-20
-            flex items-center justify-center m-auto max-md:-mt-16 "
+            flex items-center justify-center m-auto "
       >
         <div
           className="w-8/12 

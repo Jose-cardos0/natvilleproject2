@@ -38,7 +38,7 @@ export function SliderUHT() {
             id, consequuntur ullam accusamus quia, culpa sequi sint. Quae, ad?
           </p>
         </div> */}
-        <div className="w-full flex items-end justify-end">
+        <div className="w-full flex items-end justify-end max-md:justify-center">
           <Link to={"/leiteuht"}>
             <button
               className="relative 

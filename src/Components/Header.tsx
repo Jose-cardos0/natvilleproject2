@@ -54,6 +54,7 @@ export function Header() {
     >
       {isVisibleQuemSomos && (
         <div
+          id="moving-shape"
           className="absolute bg-custom-white p-10 rounded-full w-36 h-36"
           style={{
             position: "absolute",

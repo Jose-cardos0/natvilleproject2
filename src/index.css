@@ -58,3 +58,21 @@ button:hover span:last-child {
     background-position: 100% 0; /* Termina à direita */
   }
 }
+
+/* #moving-shape {
+  border-radius: 50% 50% 50% 50%; 
+  transition: all 0.3s ease-in-out;
+} */
+
+/* #moving-shape:hover {
+  border-radius: 60% 50% 40% 50%;
+  transform: scale(1.1);
+} */
+
+/* #moving-shape {
+  width: 150px;
+  height: 150px;
+  background-color: #55becd;
+  clip-path: path("M0 0C224.707 180.698 360.028 187.273 621 0H0Z");
+  transition: all 0.3s ease-in-out;
+} */
