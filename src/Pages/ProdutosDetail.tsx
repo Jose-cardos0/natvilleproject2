@@ -16,7 +16,6 @@ import { FaInstagram } from "react-icons/fa6";
 import { AiOutlineLinkedin } from "react-icons/ai";
 import { FiPhoneForwarded } from "react-icons/fi";
 
-import { AnimatedNegative } from "../Tools/Animates/AnimatedNegative";
 import { AnimatedSection } from "../Tools/Animates/AnimatedSections";
 import { AnimatedY } from "../Tools/Animates/AnimatedY";
 
@@ -159,14 +158,14 @@ export function ProdutoDetail() {
     >
       <div className="max-w-7xl flex-col items-center justify-center m-auto">
         <div className="flex items-center justify-center m-auto">
-          <AnimatedNegative>
+          <AnimatedY>
             <h1
               style={{ fontFamily: "Mocha Mattari W01 Regular" }}
               className="text-8xl text-center w-full text-blue-800 mt-10 mb-10 max-md:mt-10 max-md:text-6xl max-md:px-8 "
             >
               {produtosDetail?.produto}
             </h1>
-          </AnimatedNegative>
+          </AnimatedY>
         </div>
         <div
           id="leiteIntegralScroll"
