@@ -51,9 +51,9 @@ import { AnimatedY } from "../Tools/Animates/AnimatedY";
 import { Link } from "react-router-dom";
 
 export function Home() {
-  // useLayoutEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <main
