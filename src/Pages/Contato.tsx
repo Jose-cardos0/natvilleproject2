@@ -1,5 +1,5 @@
 import camp from "../assets/Home/camp.webp";
-import naty from "../assets/Contato/naty.svg";
+import naty from "../assets/Contato/naty.webp";
 import qrCode from "../assets/Contato/qrCodeWhats.svg";
 
 import { AiOutlineYoutube } from "react-icons/ai";
