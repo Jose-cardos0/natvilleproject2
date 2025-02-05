@@ -75,13 +75,16 @@ export function Home() {
                 autoPlay
                 muted
                 loop
+                playsInline
                 className="w-8/12 mb-6 relative z-10 max-md:w-11/12"
               ></video>
             </div>
           </AnimatedY>
         </div>
         <div className="-mt-40 relative z-10  max-md:items-end max-md:flex max-md:-mt-20 ">
-          <img className="z-10" src={camp} alt="natville" />
+          <AnimatedY>
+            <img className="z-10" src={camp} alt="natville" />
+          </AnimatedY>
         </div>
       </section>
       {/*SVG1 */}
