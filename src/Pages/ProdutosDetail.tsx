@@ -195,7 +195,7 @@ export function ProdutoDetail() {
                     <img
                       src={images[currentImageIndex]}
                       alt=""
-                      className="w-full drop-shadow-2xl px-9 max-w-full"
+                      className="w-full px-9 max-w-full"
                     />
                     <button
                       onClick={prevImage}
@@ -238,7 +238,9 @@ export function ProdutoDetail() {
                       <a
                         href={`${produtosDetail.imagem}`}
                         target="_blank"
-                        className="flex gap-2 items-center bg-custom-blue px-2 rounded-lg py-0.5 hover:bg-custom-blue-strong duration-700 transition"
+                        className="flex gap-2 items-center
+                         bg-custom-blue px-2 rounded-lg py-0.5
+                          hover:bg-custom-blue-strong duration-700 transition"
                       >
                         <GoDesktopDownload color="white" />
                         <p className="text-sm font-light text-white">
@@ -249,7 +251,7 @@ export function ProdutoDetail() {
                     <img
                       src={images[currentImageIndex]}
                       alt=""
-                      className="w-full drop-shadow-2xl px-9 max-w-full"
+                      className="w-full px-9 max-w-full"
                     />
                     <button
                       onClick={prevImage}
