@@ -7,13 +7,13 @@ import bg1 from "../assets/QuemSomos/bgProdutos.svg";
 
 //itens
 
-import reqCremoso from "../assets/Produtos/ReqCremoso/bgReqCremoso.png";
+import reqCremoso from "../assets/Produtos/ReqCremoso/bgReqCremoso.webp";
 
-import reqTrad from "../assets/Produtos/ReqCremoso/reqTradicional.png";
-import reqCebola from "../assets/Produtos/ReqCremoso/REQUEIJÃO_C&S_TOPO_SM.png";
-import reqCheddar from "../assets/Produtos/ReqCremoso/REQUEIJÃO_CHEDDAR_TOPO_SM.png";
-import reqZero from "../assets/Produtos/ReqCremoso/REQUEIJÃO_LACTOSE_TOPO_SM.png";
-import reqReduzido from "../assets/Produtos/ReqCremoso/REQUEIJÃO_REDUZIDO_TOPO_SM.png";
+import reqTrad from "../assets/Produtos/ReqCremoso/reqTradicional.webp";
+import reqCebola from "../assets/Produtos/ReqCremoso/REQUEIJÃO_C&S_TOPO_SM.webp";
+import reqCheddar from "../assets/Produtos/ReqCremoso/REQUEIJÃO_CHEDDAR_TOPO_SM.webp";
+import reqZero from "../assets/Produtos/ReqCremoso/REQUEIJÃO_LACTOSE_TOPO_SM.webp";
+import reqReduzido from "../assets/Produtos/ReqCremoso/REQUEIJÃO_REDUZIDO_TOPO_SM.webp";
 import logoF from "../assets/Footer/logoFooter.svg";
 
 //icons

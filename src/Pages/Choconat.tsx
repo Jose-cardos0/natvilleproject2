@@ -3,16 +3,15 @@ import { useEffect, useState, useLayoutEffect } from "react";
 //router dom
 import { Link } from "react-router-dom";
 
-import bg1 from "../assets/Produtos/bgChoconat.png";
-
+import bg1 from "../assets/Produtos/Achocolatado/bgChoconat.webp";
 //itens
 
 import logoF from "../assets/Footer/logoFooterWhite.png";
 
 //choconat itens
-import achocolatados from "../assets/Produtos/Achocolatado/bg1.png";
-import chocolat1L from "../assets/Produtos/Achocolatado/choconat1lFrente.png";
-import chocolat200ml from "../assets/Produtos/Achocolatado/choconat200mlLateral.png";
+import achocolatados from "../assets/Produtos/Achocolatado/bg1.webp";
+import chocolat1L from "../assets/Produtos/Achocolatado/choconat1lFrente.webp";
+import chocolat200ml from "../assets/Produtos/Achocolatado/choconat200mlLateral.webp";
 
 //icons
 import { AiOutlineYoutube } from "react-icons/ai";
