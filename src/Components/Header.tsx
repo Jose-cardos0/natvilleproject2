@@ -166,6 +166,14 @@ export function Header() {
                               Linha Condensado
                             </div>
                           </Link>
+                          <Link to={"/empo"}>
+                            <div
+                              onClick={() => setIsOpen((prev) => !prev)}
+                              className="font-roboto  py-2 px-4 cursor-pointer text-gray-600 hover:bg-blue-50 transition duration-300 rounded-lg font-light"
+                            >
+                              Linha em Pó
+                            </div>
+                          </Link>
                         </div>
                       </AnimatedSection>
                     ) : (
@@ -308,6 +316,15 @@ export function Header() {
                  font-light  hover:bg-custom-bg-leiteIHT hover:text-white"
                     >
                       Linha Condensado
+                    </div>
+                  </Link>
+                  <Link to={"/empo"}>
+                    <div
+                      onClick={() => setIsOpen((prev) => !prev)}
+                      className="w-full  px-5 py-2 cursor-pointer uppercase 
+                 font-light  hover:bg-custom-bg-leiteIHT hover:text-white"
+                    >
+                      Linha em Pó
                     </div>
                   </Link>
                 </div>
