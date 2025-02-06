@@ -4,7 +4,7 @@ import manteiga from "../../../assets/Sliders/manteigas.webp";
 export function SliderButter() {
   return (
     <div
-      className="max-w-7xl flex items-center justify-between
+      className="max-w-7xl flex items-center justify-center
      gap-8 mm:max-md:flex-col "
     >
       <div className="w-full">
@@ -27,17 +27,14 @@ export function SliderButter() {
             MANTEIGAS
           </h1>
         </div>
-        {/* <div className="py-8 mm:max-md:py-3">
+        <div className="py-8 mm:max-md:py-3">
           <p className="font-roboto text-custom-blue-strong text-end mm:max-md:text-justify">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ea,
             itaque adipisci laudantium dolorum obcaecati illum officiis
             consequuntur aliquid? Magni aspernatur veritatis, officiis enim
             veniam nisi quaerat sapiente vitae qui! Porro repudiandae deserunt
-            voluptatem ad eius? Perspiciatis eveniet consequatur cupiditate
-            dolor illum voluptatum tempora voluptates eum natus est vero quos
-            id, consequuntur ullam accusamus quia, culpa sequi sint. Quae, ad?
           </p>
-        </div> */}
+        </div>
         <div className="w-full flex items-end justify-end max-md:justify-center">
           <Link to={"/manteigas"}>
             <button
