@@ -50,8 +50,8 @@ export function Choconat() {
     getData();
   }, []);
 
-  const leiteUhtIntegral = leiteUht.length > 0 ? leiteUht[0] : null;
-  const leiteUhtDesnatado = leiteUht.length > 0 ? leiteUht[1] : null;
+  const leiteUhtIntegral = leiteUht.length > 0 ? leiteUht[13] : null;
+  const leiteUhtDesnatado = leiteUht.length > 0 ? leiteUht[13] : null;
 
   console.log(leiteUhtIntegral);
 

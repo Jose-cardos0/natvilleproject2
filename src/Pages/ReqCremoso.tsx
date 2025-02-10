@@ -53,11 +53,13 @@ export function ReqCremoso() {
     getData();
   }, []);
 
-  const leiteUhtIntegral = leiteUht.length > 0 ? leiteUht[0] : null;
-  const leiteUhtDesnatado = leiteUht.length > 0 ? leiteUht[1] : null;
-  const leiteUhtZero = leiteUht.length > 0 ? leiteUht[2] : null;
+  const queijoPrcoessadoTradicional = leiteUht.length > 0 ? leiteUht[14] : null;
+  const queiijoProcessadoCS = leiteUht.length > 0 ? leiteUht[15] : null;
+  const queijoProcessadoCheddar = leiteUht.length > 0 ? leiteUht[16] : null;
+  const queijoProcessadoReduzido = leiteUht.length > 0 ? leiteUht[18] : null;
+  const queijoProcessadoZeroLact = leiteUht.length > 0 ? leiteUht[17] : null;
 
-  console.log(leiteUhtIntegral);
+  console.log(queijoPrcoessadoTradicional);
 
   return (
     <main
@@ -164,7 +166,7 @@ export function ReqCremoso() {
                     </p>
                   </div>
                   <div className="max-md:w-full max-md:items-center max-md:justify-center">
-                    <Link to={`/produtos/${leiteUhtIntegral?.id}`}>
+                    <Link to={`/produtos/${queijoPrcoessadoTradicional?.id}`}>
                       <button
                         className="relative 
           overflow-hidden
@@ -237,7 +239,7 @@ export function ReqCremoso() {
                     </p>
                   </div>
                   <div className="max-md:w-full max-md:items-center max-md:justify-center">
-                    <Link to={`/produtos/${leiteUhtDesnatado?.id}`}>
+                    <Link to={`/produtos/${queiijoProcessadoCS?.id}`}>
                       <button
                         className="relative 
           overflow-hidden
@@ -306,7 +308,7 @@ export function ReqCremoso() {
                     </p>
                   </div>
                   <div className="max-md:w-full max-md:items-center max-md:justify-center">
-                    <Link to={`/produtos/${leiteUhtZero?.id}`}>
+                    <Link to={`/produtos/${queijoProcessadoCheddar?.id}`}>
                       <button
                         className="relative 
           overflow-hidden
@@ -379,7 +381,7 @@ export function ReqCremoso() {
                     </p>
                   </div>
                   <div className="max-md:w-full max-md:items-center max-md:justify-center">
-                    <Link to={`/produtos/${leiteUhtDesnatado?.id}`}>
+                    <Link to={`/produtos/${queijoProcessadoReduzido?.id}`}>
                       <button
                         className="relative 
           overflow-hidden
@@ -452,7 +454,7 @@ export function ReqCremoso() {
                     </p>
                   </div>
                   <div className="max-md:w-full max-md:items-center max-md:justify-center">
-                    <Link to={`/produtos/${leiteUhtDesnatado?.id}`}>
+                    <Link to={`/produtos/${queijoProcessadoZeroLact?.id}`}>
                       <button
                         className="relative 
           overflow-hidden

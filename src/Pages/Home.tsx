@@ -159,7 +159,7 @@ export function Home() {
                   alt=""
                 />
                 <div className="max-w-96 text-custom-blue-strong">
-                  <p className="mt-8 max-md:mt-2">
+                  <p className="mt-8 max-md:mt-2 font-extralight ">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Sunt vel praesentium ducimus nam, alias nesciunt cumque illo
                     natus voluptates, quod consequuntur error aliquid deleniti
@@ -199,7 +199,7 @@ border-none mt-8 mm:max-md:w-full max-md:mt-2"
             <AnimatedSection>
               <div className="flex gap-8 mt-8 max-md:flex-col max-md:items-center max-md:m-auto max-md:hidden ">
                 <div className="max-w-96 text-custom-blue-strong">
-                  <p className="mt-8 text-end">
+                  <p className="mt-8 text-end font-extralight">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elite
                     Sunt vel praesentium ducimus nam, alias nesciunt cumque illo
                     natus voluptates, quod consequuntur error aliquid deleniti
@@ -251,7 +251,7 @@ border-none mt-8 mm:max-md:w-full max-md:mt-2"
                   alt=""
                 />
                 <div className="max-w-96 text-custom-blue-strong max-md:max-w-full">
-                  <p className="mt-8 max-md:mt-2">
+                  <p className="mt-8 max-md:mt-2 font-extralight">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Sunt vel praesentium ducimus nam, alias nesciunt cumque illo
                     natus voluptates, quod consequuntur error aliquid deleniti
