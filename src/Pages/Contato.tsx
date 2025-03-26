@@ -28,86 +28,75 @@ export function Contato() {
             </div>
           </div>
           <div className="flex items-center justify-center m-auto">
-            <form
-              className="w-full max-w-7xl bg-custom-blue-strong
-           bg-opacity-10 p-6 rounded-xl shadow-lg max-md:w-11/12"
-            >
-              <div className="w-full mb-4">
-                <label className="block text-white font-roboto font-bold mb-1">
+            <form className="w-full max-w-5xl bg-custom-blue-strong bg-opacity-10 p-8 rounded-2xl shadow-2xl max-md:w-11/12">
+              <div className="w-full mb-6">
+                <label className="block text-white font-roboto font-semibold mb-2">
                   Nome:
                 </label>
                 <input
                   type="text"
-                  className="w-full rounded-lg bg-blue-50 px-3 py-2 outline-none focus:ring-2 focus:ring-blue-300"
+                  className="w-full rounded-xl bg-blue-50 px-4 py-3 outline-none border border-transparent focus:ring-2 focus:ring-blue-400 focus:border-blue-300 transition"
                   placeholder="Digite seu nome"
                 />
               </div>
 
-              <div className="w-full mb-4">
-                <label className="block text-white font-roboto font-bold mb-1">
+              <div className="w-full mb-6">
+                <label className="block text-white font-roboto font-semibold mb-2">
                   Contato:
                 </label>
                 <input
                   type="tel"
-                  className="w-full rounded-lg bg-blue-50 px-3 py-2 outline-none focus:ring-2 focus:ring-blue-300"
+                  className="w-full rounded-xl bg-blue-50 px-4 py-3 outline-none border border-transparent focus:ring-2 focus:ring-blue-400 focus:border-blue-300 transition"
                   placeholder="Digite seu telefone"
                 />
               </div>
 
-              <div className="w-full mb-4">
-                <label className="block text-white font-roboto font-bold mb-1">
+              <div className="w-full mb-6">
+                <label className="block text-white font-roboto font-semibold mb-2">
                   E-mail:
                 </label>
                 <input
                   type="email"
-                  className="w-full rounded-lg bg-blue-50 px-3 py-2 outline-none focus:ring-2 focus:ring-blue-300"
+                  className="w-full rounded-xl bg-blue-50 px-4 py-3 outline-none border border-transparent focus:ring-2 focus:ring-blue-400 focus:border-blue-300 transition"
                   placeholder="Digite seu e-mail"
                 />
               </div>
 
-              <div className="w-full mb-4">
-                <label className="block text-white font-roboto font-bold mb-1">
+              <div className="w-full mb-6">
+                <label className="block text-white font-roboto font-semibold mb-2">
                   Destinatário:
                 </label>
-                <select className="w-full rounded-lg bg-blue-50 px-3 py-2 outline-none focus:ring-2 focus:ring-blue-300">
-                  <option value=""></option>
-                  <option value="">SETOR COMPAS</option>
-                  <option value="">SETOR CONTAS À PAGAR</option>
-                  <option value="">SETOR COMERCIAL</option>
-                  <option value="">SETOR FINANCEIRO</option>
+                <select className="w-full rounded-xl bg-blue-50 px-4 py-3 outline-none border border-transparent focus:ring-2 focus:ring-blue-400 focus:border-blue-300 transition">
+                  <option value="">Selecione uma opção</option>
+                  <option value="compas">SETOR COMPAS</option>
+                  <option value="contas">SETOR CONTAS À PAGAR</option>
+                  <option value="comercial">SETOR COMERCIAL</option>
+                  <option value="financeiro">SETOR FINANCEIRO</option>
                 </select>
               </div>
 
-              <div className="w-full mb-4">
-                <label className="block text-white font-roboto font-bold mb-1">
+              <div className="w-full mb-6">
+                <label className="block text-white font-roboto font-semibold mb-2">
                   Mensagem:
                 </label>
                 <textarea
-                  className="w-full rounded-lg bg-blue-50 px-3 py-2 outline-none h-28 resize-none focus:ring-2 focus:ring-blue-300"
+                  className="w-full rounded-xl bg-blue-50 px-4 py-3 outline-none border border-transparent h-32 resize-none focus:ring-2 focus:ring-blue-400 focus:border-blue-300 transition"
                   placeholder="Digite sua mensagem"
                 ></textarea>
               </div>
 
-              <div className="w-full mb-4">
-                <label className="block text-white font-roboto font-bold mb-1">
+              <div className="w-full mb-6">
+                <label className="block text-white font-roboto font-semibold mb-2">
                   Anexar arquivo:
                 </label>
                 <input
                   type="file"
-                  className="w-full rounded-lg
-                 bg-blue-50 px-3 py-2 
-                 outline-none file:mr-4 
-                 file:py-2 file:px-4 file:rounded-lg 
-                 file:border-0 file:text-white file:font-bold
-                  file:bg-custom-blue-strong file:cursor-pointer
-                  hover:file:bg-blue-700
-                
-                  "
+                  className="w-full rounded-xl bg-blue-50 px-4 py-3 outline-none border border-transparent file:mr-4 file:py-3 file:px-6 file:rounded-xl file:border-0 file:text-white file:font-bold file:bg-custom-blue-strong file:cursor-pointer hover:file:bg-blue-700 transition"
                 />
               </div>
 
               <div className="w-full flex justify-center">
-                <button className="bg-custom-blue-strong hover:bg-blue-700 transition-all py-3 px-6 rounded-lg text-white font-bold w-full shadow-md">
+                <button className="bg-custom-blue-strong hover:bg-blue-700 transition-all py-4 px-8 rounded-xl text-white font-bold text-lg w-full shadow-lg">
                   Enviar
                 </button>
               </div>

@@ -84,6 +84,7 @@ export function Bebidas() {
                 alt="leite uht natville"
               />
             </AnimatedSection>
+
             <div className="flex-col items-center justify-center ">
               <AnimatedNegative>
                 <h1
@@ -116,7 +117,7 @@ export function Bebidas() {
         {/*inicio leites */}
         <div
           className="h-auto w-screen flex-col items-center
-             justify-center m-auto z-0 "
+             justify-center m-auto z-0  "
         >
           <div
             className="max-w-7xl
@@ -152,15 +153,13 @@ export function Bebidas() {
                   </h1>
                   <div>
                     <p className="text-custom-blue-strong text-justify mt-8">
-                      Um leite UHT integral saudável e rico em cálcio é aquele
-                      que mantém boa parte dos nutrientes naturais do leite
-                      fresco, como proteínas, vitaminas (especialmente a
-                      vitamina D, que auxilia na absorção do cálcio) e, claro, o
-                      próprio cálcio, essencial para ossos e dentes fortes. Esse
-                      tipo de leite é submetido a um processo de
-                      ultra-pasteurização (UHT), onde é aquecido a altas
-                      temperaturas por poucos segundos, eliminando bactérias
-                      prejudiciais sem alterar muito seu perfil nutricional.
+                      A combinação perfeita do leite com o sabor vibrante e
+                      adocicado do morango! Uma bebida cremosa e leve, ideal
+                      para quem busca um toque frutado e refrescante no dia a
+                      dia. <br />
+                      <br />✅ Sabor suave e cremoso. <br /> ✅ Fonte de cálcio
+                      e proteínas. <br /> ✅ Ideal para lanches rápidos e
+                      nutritivos.
                     </p>
                   </div>
                   <div className="max-md:w-full max-md:items-center max-md:justify-center">
@@ -225,15 +224,15 @@ export function Bebidas() {
                   </h1>
                   <div>
                     <p className="text-custom-blue-strong text-justify mt-8">
-                      Um leite UHT integral saudável e rico em cálcio é aquele
-                      que mantém boa parte dos nutrientes naturais do leite
-                      fresco, como proteínas, vitaminas (especialmente a
-                      vitamina D, que auxilia na absorção do cálcio) e, claro, o
-                      próprio cálcio, essencial para ossos e dentes fortes. Esse
-                      tipo de leite é submetido a um processo de
-                      ultra-pasteurização (UHT), onde é aquecido a altas
-                      temperaturas por poucos segundos, eliminando bactérias
-                      prejudiciais sem alterar muito seu perfil nutricional.
+                      O sabor marcante da ameixa combinado com a cremosidade do
+                      leite resulta em uma bebida deliciosa e cheia de
+                      benefícios. Além de saborosa, a ameixa é conhecida por
+                      auxiliar no bom funcionamento do intestino!
+                      <br />
+                      <br />
+                      ✅ Sabor encorpado e equilibrado. <br />
+                      ✅ Ajuda na digestão e no bem-estar intestinal. <br />✅
+                      Rica em nutrientes essenciais.
                     </p>
                   </div>
                   <div className="max-md:w-full max-md:items-center max-md:justify-center">
@@ -294,15 +293,15 @@ export function Bebidas() {
                   </h1>
                   <div>
                     <p className="text-custom-blue-strong text-justify mt-8">
-                      Um leite UHT integral saudável e rico em cálcio é aquele
-                      que mantém boa parte dos nutrientes naturais do leite
-                      fresco, como proteínas, vitaminas (especialmente a
-                      vitamina D, que auxilia na absorção do cálcio) e, claro, o
-                      próprio cálcio, essencial para ossos e dentes fortes. Esse
-                      tipo de leite é submetido a um processo de
-                      ultra-pasteurização (UHT), onde é aquecido a altas
-                      temperaturas por poucos segundos, eliminando bactérias
-                      prejudiciais sem alterar muito seu perfil nutricional.
+                      Se você ama o sabor suave e marcante do coco, essa bebida
+                      é para você! Combinando a leveza do leite com a
+                      cremosidade e o aroma irresistível do coco, essa opção é
+                      perfeita para quem busca algo diferente e delicioso.
+                      <br />
+                      <br />
+                      ✅ Sabor tropical e levemente adocicado. <br />
+                      ✅ Cremosa e nutritiva. <br />✅ Uma experiência
+                      refrescante a cada gole.
                     </p>
                   </div>
                   <div className="max-md:w-full max-md:items-center max-md:justify-center">
@@ -366,15 +365,13 @@ export function Bebidas() {
                   </h1>
                   <div>
                     <p className="text-custom-blue-strong text-justify mt-8">
-                      Um leite UHT integral saudável e rico em cálcio é aquele
-                      que mantém boa parte dos nutrientes naturais do leite
-                      fresco, como proteínas, vitaminas (especialmente a
-                      vitamina D, que auxilia na absorção do cálcio) e, claro, o
-                      próprio cálcio, essencial para ossos e dentes fortes. Esse
-                      tipo de leite é submetido a um processo de
-                      ultra-pasteurização (UHT), onde é aquecido a altas
-                      temperaturas por poucos segundos, eliminando bactérias
-                      prejudiciais sem alterar muito seu perfil nutricional.
+                      O irresistível sabor tropical da graviola em uma bebida
+                      láctea equilibrada e cheia de benefícios. Uma escolha
+                      deliciosa para quem gosta de sabores autênticos e
+                      refrescantes! <br />
+                      <br /> ✅ Toque tropical com sabor único. <br /> ✅
+                      Textura cremosa e leve. <br /> ✅ Rica em cálcio para
+                      fortalecer os ossos.
                     </p>
                   </div>
                   <div className="max-md:w-full max-md:items-center max-md:justify-center">

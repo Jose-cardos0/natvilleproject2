@@ -150,15 +150,16 @@ export function LeitesEmPo() {
                   </h1>
                   <div>
                     <p className="text-custom-blue-strong text-justify mt-8">
-                      Um leite UHT integral saudável e rico em cálcio é aquele
-                      que mantém boa parte dos nutrientes naturais do leite
-                      fresco, como proteínas, vitaminas (especialmente a
-                      vitamina D, que auxilia na absorção do cálcio) e, claro, o
-                      próprio cálcio, essencial para ossos e dentes fortes. Esse
-                      tipo de leite é submetido a um processo de
-                      ultra-pasteurização (UHT), onde é aquecido a altas
-                      temperaturas por poucos segundos, eliminando bactérias
-                      prejudiciais sem alterar muito seu perfil nutricional.
+                      Nosso Leite em Pó Integral é feito com leite puro,
+                      preservando todos os nutrientes essenciais, como cálcio,
+                      proteínas e vitaminas. Com um sabor inconfundível e
+                      textura cremosa, ele é perfeito para o dia a dia, desde o
+                      café da manhã até o preparo de receitas deliciosas.
+                      <br />
+                      <br />
+                      ✅ Sabor e cremosidade incomparáveis. <br />
+                      ✅ Rico em cálcio e proteínas. <br />✅ Perfeito para
+                      café, achocolatados, receitas e muito mais.
                     </p>
                   </div>
                   <div className="max-md:w-full max-md:items-center max-md:justify-center">
@@ -223,15 +224,16 @@ export function LeitesEmPo() {
                   </h1>
                   <div>
                     <p className="text-custom-blue-strong text-justify mt-8">
-                      Um leite UHT integral saudável e rico em cálcio é aquele
-                      que mantém boa parte dos nutrientes naturais do leite
-                      fresco, como proteínas, vitaminas (especialmente a
-                      vitamina D, que auxilia na absorção do cálcio) e, claro, o
-                      próprio cálcio, essencial para ossos e dentes fortes. Esse
-                      tipo de leite é submetido a um processo de
-                      ultra-pasteurização (UHT), onde é aquecido a altas
-                      temperaturas por poucos segundos, eliminando bactérias
-                      prejudiciais sem alterar muito seu perfil nutricional.
+                      Se você busca uma opção mais leve, mas com todos os
+                      benefícios do leite, o Leite em Pó Desnatado Instantâneo é
+                      a escolha ideal! Com menos gordura, ele preserva cálcio,
+                      proteínas e vitaminas essenciais, garantindo uma
+                      alimentação equilibrada sem abrir mão do sabor.
+                      <br />
+                      <br />
+                      ✅ Menos gordura, mais leveza! <br />
+                      ✅ Dissolução instantânea para mais praticidade. <br />✅
+                      Ideal para dietas equilibradas e receitas mais leves.
                     </p>
                   </div>
                   <div className="max-md:w-full max-md:items-center max-md:justify-center">
@@ -292,15 +294,16 @@ export function LeitesEmPo() {
                   </h1>
                   <div>
                     <p className="text-custom-blue-strong text-justify mt-8">
-                      Um leite UHT integral saudável e rico em cálcio é aquele
-                      que mantém boa parte dos nutrientes naturais do leite
-                      fresco, como proteínas, vitaminas (especialmente a
-                      vitamina D, que auxilia na absorção do cálcio) e, claro, o
-                      próprio cálcio, essencial para ossos e dentes fortes. Esse
-                      tipo de leite é submetido a um processo de
-                      ultra-pasteurização (UHT), onde é aquecido a altas
-                      temperaturas por poucos segundos, eliminando bactérias
-                      prejudiciais sem alterar muito seu perfil nutricional.
+                      Agora, quem tem intolerância à lactose pode aproveitar
+                      todo o sabor e os nutrientes do leite com o nosso Leite em
+                      Pó Zero Lactose Instantâneo! Feito especialmente para quem
+                      busca uma alternativa saudável e acessível, sem abrir mão
+                      da qualidade.
+                      <br />
+                      <br />
+                      ✅ Zero lactose, mas com muito sabor! <br />
+                      ✅ Rico em cálcio e proteínas essenciais. <br />✅
+                      Dissolve rapidamente, perfeito para o dia a dia.
                     </p>
                   </div>
                   <div className="max-md:w-full max-md:items-center max-md:justify-center">
@@ -361,15 +364,20 @@ export function LeitesEmPo() {
                   </h1>
                   <div>
                     <p className="text-custom-blue-strong text-justify mt-8">
-                      Um leite UHT integral saudável e rico em cálcio é aquele
-                      que mantém boa parte dos nutrientes naturais do leite
-                      fresco, como proteínas, vitaminas (especialmente a
-                      vitamina D, que auxilia na absorção do cálcio) e, claro, o
-                      próprio cálcio, essencial para ossos e dentes fortes. Esse
-                      tipo de leite é submetido a um processo de
-                      ultra-pasteurização (UHT), onde é aquecido a altas
-                      temperaturas por poucos segundos, eliminando bactérias
-                      prejudiciais sem alterar muito seu perfil nutricional.
+                      O Leite em Pó Integral 25kg é a escolha ideal para
+                      indústrias que necessitam de qualidade superior, alto
+                      rendimento e pureza em suas formulações. Produzido a
+                      partir de leite fresco selecionado, ele mantém todas as
+                      propriedades naturais, garantindo um produto rico em
+                      cálcio, proteínas e vitaminas essenciais.
+                      <br />
+                      <br />
+                      ✅ Matéria-prima de alta qualidade para produtos
+                      alimentícios. <br />
+                      ✅ Excelente solubilidade e cremosidade. <br />
+                      ✅ Ideal para panificação, laticínios, confeitaria,
+                      sorvetes e muito mais. <br />✅ Padrão industrial com
+                      consistência e confiabilidade.
                     </p>
                   </div>
                   <div className="max-md:w-full max-md:items-center max-md:justify-center">

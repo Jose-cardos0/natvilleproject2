@@ -134,15 +134,14 @@ export function Queijos() {
                 </h1>
                 <div>
                   <p className="text-custom-blue-strong text-justify mt-8">
-                    Um queijo natville integral saudável e rico em cálcio é
-                    aquele que mantém boa parte dos nutrientes naturais do leite
-                    fresco, como proteínas, vitaminas (especialmente a vitamina
-                    D, que auxilia na absorção do cálcio) e, claro, o próprio
-                    cálcio, essencial para ossos e dentes fortes. Esse tipo de
-                    leite é submetido a um processo de ultra-pasteurização
-                    (UHT), onde é aquecido a altas temperaturas por poucos
-                    segundos, eliminando bactérias prejudiciais sem alterar
-                    muito seu perfil nutricional.
+                    O clássico que não pode faltar na sua mesa! O Queijo
+                    Muçarela é conhecido por sua textura macia, sabor suave e
+                    derretimento incrível, sendo a escolha perfeita para pizzas,
+                    sanduíches, lasanhas e muito mais. Um queijo versátil que
+                    transforma qualquer receita em uma explosão de sabor! <br />
+                    <br /> ✅ Derrete na medida certa. <br /> ✅ Perfeito para
+                    pizzas, lanches e receitas gratinadas. <br /> ✅ Rico em
+                    proteínas e cálcio para sua saúde
                   </p>
                 </div>
                 <div className="max-md:w-full max-md:items-center max-md:justify-center">
@@ -193,15 +192,14 @@ export function Queijos() {
                 </h1>
                 <div>
                   <p className="text-custom-blue-strong text-justify mt-8">
-                    Um queijo natville integral saudável e rico em cálcio é
-                    aquele que mantém boa parte dos nutrientes naturais do leite
-                    fresco, como proteínas, vitaminas (especialmente a vitamina
-                    D, que auxilia na absorção do cálcio) e, claro, o próprio
-                    cálcio, essencial para ossos e dentes fortes. Esse tipo de
-                    leite é submetido a um processo de ultra-pasteurização
-                    (UHT), onde é aquecido a altas temperaturas por poucos
-                    segundos, eliminando bactérias prejudiciais sem alterar
-                    muito seu perfil nutricional.
+                    Com sua coloração levemente dourada e textura macia, o
+                    Queijo Prato é perfeito para quem busca um sabor equilibrado
+                    e irresistível. Ele se destaca nos sanduíches, acompanhando
+                    bem pães artesanais e derretendo de forma cremosa em
+                    hambúrgueres e lanches quentes. <br />
+                    <br /> ✅ Sabor levemente adocicado e cremosidade única.{" "}
+                    <br /> ✅ Derrete facilmente, ideal para lanches e
+                    hambúrgueres. <br /> ✅ Rico em cálcio e proteínas.
                   </p>
                 </div>
                 <div className="max-md:w-full max-md:items-center max-md:justify-center">
@@ -252,15 +250,14 @@ export function Queijos() {
                 </h1>
                 <div>
                   <p className="text-custom-blue-strong text-justify mt-8">
-                    Um queijo natville integral saudável e rico em cálcio é
-                    aquele que mantém boa parte dos nutrientes naturais do leite
-                    fresco, como proteínas, vitaminas (especialmente a vitamina
-                    D, que auxilia na absorção do cálcio) e, claro, o próprio
-                    cálcio, essencial para ossos e dentes fortes. Esse tipo de
-                    leite é submetido a um processo de ultra-pasteurização
-                    (UHT), onde é aquecido a altas temperaturas por poucos
-                    segundos, eliminando bactérias prejudiciais sem alterar
-                    muito seu perfil nutricional.
+                    Se tem um queijo que combina com churrasco e momentos
+                    especiais, é o Queijo Coalho! Com sua textura firme e sabor
+                    levemente salgado, ele pode ser assado na brasa, grelhado na
+                    frigideira ou consumido puro, trazendo um gostinho de
+                    tradição e autenticidade para sua mesa. <br />
+                    <br /> ✅ Dourado por fora, macio por dentro! <br /> ✅
+                    Perfeito para churrascos e receitas típicas. <br /> ✅ Sabor
+                    autêntico do Nordeste.
                   </p>
                 </div>
                 <div className="max-md:w-full max-md:items-center max-md:justify-center">

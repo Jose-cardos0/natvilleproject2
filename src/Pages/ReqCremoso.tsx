@@ -154,15 +154,16 @@ export function ReqCremoso() {
                   </h1>
                   <div>
                     <p className="text-custom-blue-strong text-justify mt-8">
-                      Um leite UHT integral saudável e rico em cálcio é aquele
-                      que mantém boa parte dos nutrientes naturais do leite
-                      fresco, como proteínas, vitaminas (especialmente a
-                      vitamina D, que auxilia na absorção do cálcio) e, claro, o
-                      próprio cálcio, essencial para ossos e dentes fortes. Esse
-                      tipo de leite é submetido a um processo de
-                      ultra-pasteurização (UHT), onde é aquecido a altas
-                      temperaturas por poucos segundos, eliminando bactérias
-                      prejudiciais sem alterar muito seu perfil nutricional.
+                      Se você busca um queijo suave, cremoso e versátil, o
+                      Queijo Processado Tradicional é a escolha perfeita! Com
+                      textura leve e sabor equilibrado, ele é ideal para o café
+                      da manhã, lanches e até mesmo para deixar suas receitas
+                      ainda mais saborosas.
+                      <br />
+                      <br />
+                      ✅ Textura macia e cremosa. <br />
+                      ✅ Sabor equilibrado para qualquer ocasião. <br />✅
+                      Perfeito para pães, torradas e sanduíches.
                     </p>
                   </div>
                   <div className="max-md:w-full max-md:items-center max-md:justify-center">
@@ -227,15 +228,16 @@ export function ReqCremoso() {
                   </h1>
                   <div>
                     <p className="text-custom-blue-strong text-justify mt-8">
-                      Um leite UHT integral saudável e rico em cálcio é aquele
-                      que mantém boa parte dos nutrientes naturais do leite
-                      fresco, como proteínas, vitaminas (especialmente a
-                      vitamina D, que auxilia na absorção do cálcio) e, claro, o
-                      próprio cálcio, essencial para ossos e dentes fortes. Esse
-                      tipo de leite é submetido a um processo de
-                      ultra-pasteurização (UHT), onde é aquecido a altas
-                      temperaturas por poucos segundos, eliminando bactérias
-                      prejudiciais sem alterar muito seu perfil nutricional.
+                      O toque especial da cebola e da salsa transforma esse
+                      queijo processado em uma opção cheia de personalidade!
+                      Ideal para quem gosta de um sabor mais intenso e
+                      diferenciado, perfeito para aperitivos e receitas
+                      especiais.
+                      <br />
+                      <br />
+                      ✅ Combinação irresistível de temperos. <br />
+                      ✅ Sabor marcante e delicioso. <br />✅ Ótimo para
+                      petiscos, recheios e canapés.
                     </p>
                   </div>
                   <div className="max-md:w-full max-md:items-center max-md:justify-center">
@@ -296,15 +298,15 @@ export function ReqCremoso() {
                   </h1>
                   <div>
                     <p className="text-custom-blue-strong text-justify mt-8">
-                      Um leite UHT integral saudável e rico em cálcio é aquele
-                      que mantém boa parte dos nutrientes naturais do leite
-                      fresco, como proteínas, vitaminas (especialmente a
-                      vitamina D, que auxilia na absorção do cálcio) e, claro, o
-                      próprio cálcio, essencial para ossos e dentes fortes. Esse
-                      tipo de leite é submetido a um processo de
-                      ultra-pasteurização (UHT), onde é aquecido a altas
-                      temperaturas por poucos segundos, eliminando bactérias
-                      prejudiciais sem alterar muito seu perfil nutricional.
+                      Com sua cor vibrante e sabor inconfundível, o Queijo
+                      Processado Cheddar é perfeito para quem ama um toque mais
+                      intenso e cremoso. Derrete na medida certa, sendo ideal
+                      para hambúrgueres, batatas, nachos e muito mais!
+                      <br />
+                      <br />
+                      ✅ Sabor marcante e cremosidade incrível. <br />
+                      ✅ Perfeito para lanches, hambúrgueres e molhos. <br />✅
+                      Experimente quente para um derretimento irresistível!
                     </p>
                   </div>
                   <div className="max-md:w-full max-md:items-center max-md:justify-center">
@@ -369,15 +371,16 @@ export function ReqCremoso() {
                   </h1>
                   <div>
                     <p className="text-custom-blue-strong text-justify mt-8">
-                      Um leite UHT integral saudável e rico em cálcio é aquele
-                      que mantém boa parte dos nutrientes naturais do leite
-                      fresco, como proteínas, vitaminas (especialmente a
-                      vitamina D, que auxilia na absorção do cálcio) e, claro, o
-                      próprio cálcio, essencial para ossos e dentes fortes. Esse
-                      tipo de leite é submetido a um processo de
-                      ultra-pasteurização (UHT), onde é aquecido a altas
-                      temperaturas por poucos segundos, eliminando bactérias
-                      prejudiciais sem alterar muito seu perfil nutricional.
+                      Se você quer um queijo cremoso, mas com menos gordura, o
+                      Queijo Processado Light é a melhor opção! Com a mesma
+                      cremosidade e sabor, mas com menos calorias, ele é
+                      perfeito para quem busca uma alimentação mais equilibrada
+                      sem abrir mão do prazer.
+                      <br />
+                      <br />
+                      ✅ Menos gordura, mesma cremosidade! <br />
+                      ✅ Opção ideal para dietas equilibradas. <br />✅ Sabor
+                      delicioso com menos calorias.
                     </p>
                   </div>
                   <div className="max-md:w-full max-md:items-center max-md:justify-center">
@@ -442,15 +445,15 @@ export function ReqCremoso() {
                   </h1>
                   <div>
                     <p className="text-custom-blue-strong text-justify mt-8">
-                      Um leite UHT integral saudável e rico em cálcio é aquele
-                      que mantém boa parte dos nutrientes naturais do leite
-                      fresco, como proteínas, vitaminas (especialmente a
-                      vitamina D, que auxilia na absorção do cálcio) e, claro, o
-                      próprio cálcio, essencial para ossos e dentes fortes. Esse
-                      tipo de leite é submetido a um processo de
-                      ultra-pasteurização (UHT), onde é aquecido a altas
-                      temperaturas por poucos segundos, eliminando bactérias
-                      prejudiciais sem alterar muito seu perfil nutricional.
+                      Agora, quem tem intolerância à lactose pode aproveitar
+                      todo o sabor e cremosidade do nosso Queijo Processado Zero
+                      Lactose! Feito especialmente para quem busca uma
+                      alimentação inclusiva sem abrir mão do sabor.
+                      <br />
+                      <br />
+                      ✅ Zero lactose, mas com muito sabor! <br />
+                      ✅ Perfeito para intolerantes à lactose. <br />✅ Cremoso
+                      e nutritivo como o tradicional.
                     </p>
                   </div>
                   <div className="max-md:w-full max-md:items-center max-md:justify-center">

@@ -11,6 +11,7 @@ import leitesUht from "../assets/Produtos/Leites/leitesUht.webp";
 import leiteUhtEx from "../assets/Produtos/Leites/leiteUhtExemplo.webp";
 import leiteUhtExDes from "../assets/Produtos/Leites/leiteUhtDesn.webp";
 import leiteUhtExZero from "../assets/Produtos/Leites/leiteUhtZero.webp";
+import leiteSemi from "../assets/Produtos/Leites/semidesnatado.webp";
 import logoF from "../assets/Footer/logoFooter.svg";
 
 //icons
@@ -34,9 +35,9 @@ interface Produto {
 export function LeitesUht() {
   const [leiteUht, setLeiteUht] = useState<Produto[]>([]);
 
-  useLayoutEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  // useLayoutEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
 
   useEffect(() => {
     async function getData() {
@@ -75,7 +76,7 @@ export function LeitesUht() {
           >
             <AnimatedSection>
               <img
-                className=" drop-shadow-md max-md:w-72
+                className=" drop-shadow-md max-md:w-72 max-w-2xl
                 cursor-pointer hover:scale-105 transition duration-700"
                 src={leitesUht}
                 alt="leite uht natville"
@@ -149,15 +150,15 @@ export function LeitesUht() {
                   </h1>
                   <div>
                     <p className="text-custom-blue-strong text-justify mt-8">
-                      Um leite UHT integral saudável e rico em cálcio é aquele
-                      que mantém boa parte dos nutrientes naturais do leite
-                      fresco, como proteínas, vitaminas (especialmente a
-                      vitamina D, que auxilia na absorção do cálcio) e, claro, o
-                      próprio cálcio, essencial para ossos e dentes fortes. Esse
-                      tipo de leite é submetido a um processo de
-                      ultra-pasteurização (UHT), onde é aquecido a altas
-                      temperaturas por poucos segundos, eliminando bactérias
-                      prejudiciais sem alterar muito seu perfil nutricional.
+                      Se você busca um leite encorpado, cheio de sabor e rico em
+                      nutrientes, o Leite UHT Integral é a escolha certa! Com um
+                      equilíbrio perfeito entre proteínas, cálcio e vitaminas
+                      essenciais, ele fortalece os ossos e dá energia para o seu
+                      dia. Perfeito para consumir puro, com café, achocolatado
+                      ou em receitas deliciosas. <br /> <br />
+                      ✅ Fonte natural de cálcio e vitamina D <br />
+                      ✅ Textura cremosa e sabor marcante <br />✅ Ideal para
+                      toda a família!
                     </p>
                   </div>
                   <div className="max-md:w-full max-md:items-center max-md:justify-center">
@@ -222,15 +223,14 @@ export function LeitesUht() {
                   </h1>
                   <div>
                     <p className="text-custom-blue-strong text-justify mt-8">
-                      Um leite UHT integral saudável e rico em cálcio é aquele
-                      que mantém boa parte dos nutrientes naturais do leite
-                      fresco, como proteínas, vitaminas (especialmente a
-                      vitamina D, que auxilia na absorção do cálcio) e, claro, o
-                      próprio cálcio, essencial para ossos e dentes fortes. Esse
-                      tipo de leite é submetido a um processo de
-                      ultra-pasteurização (UHT), onde é aquecido a altas
-                      temperaturas por poucos segundos, eliminando bactérias
-                      prejudiciais sem alterar muito seu perfil nutricional.
+                      Quer manter uma alimentação equilibrada, mas sem abrir mão
+                      dos nutrientes essenciais? O Leite UHT Desnatado tem baixo
+                      teor de gordura e é repleto de proteínas e cálcio para
+                      cuidar da sua saúde. A opção perfeita para quem busca
+                      leveza, sem perder os benefícios do leite! <br /> <br />{" "}
+                      ✅ Menos gordura, mais saúde! <br />✅ Rico em cálcio e
+                      proteínas <br /> ✅ Perfeito para dietas e estilo de vida
+                      saudável
                     </p>
                   </div>
                   <div className="max-md:w-full max-md:items-center max-md:justify-center">
@@ -291,15 +291,15 @@ export function LeitesUht() {
                   </h1>
                   <div>
                     <p className="text-custom-blue-strong text-justify mt-8">
-                      Um leite UHT integral saudável e rico em cálcio é aquele
-                      que mantém boa parte dos nutrientes naturais do leite
-                      fresco, como proteínas, vitaminas (especialmente a
-                      vitamina D, que auxilia na absorção do cálcio) e, claro, o
-                      próprio cálcio, essencial para ossos e dentes fortes. Esse
-                      tipo de leite é submetido a um processo de
-                      ultra-pasteurização (UHT), onde é aquecido a altas
-                      temperaturas por poucos segundos, eliminando bactérias
-                      prejudiciais sem alterar muito seu perfil nutricional.
+                      Para quem tem intolerância à lactose ou busca uma digestão
+                      mais leve, o Leite UHT Zero Lactose mantém todo o sabor e
+                      os nutrientes do leite tradicional, mas com lactase
+                      adicionada, facilitando a digestão e evitando
+                      desconfortos. Agora você pode saborear sem preocupações!{" "}
+                      <br /> <br />
+                      ✅ 100% sabor, 0% lactose! <br /> ✅ Fácil digestão, sem
+                      abrir mão do cálcio e das proteínas. <br /> ✅ Perfeito
+                      para quem busca bem-estar e saúde digestiva.
                     </p>
                   </div>
                   <div className="max-md:w-full max-md:items-center max-md:justify-center">
@@ -331,6 +331,75 @@ export function LeitesUht() {
                 </div>
               </AnimatedY>
             </div>
+            {/*SEMIDESNATADO */}
+            <div
+              className="flex items-center justify-center
+              gap-8  max-md:flex-col my-32
+               max-md:mx-8  max-md:mt-32"
+            >
+              <AnimatedNegative>
+                <div>
+                  <motion.img
+                    whileHover={{
+                      scale: 1.1,
+                      rotate: 3,
+                    }}
+                    transition={{ duration: 0.5 }}
+                    className="max-w-7xl object-center drop-shadow-md
+                   max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
+                    src={leiteSemi}
+                    alt="leite uht semidesnatado"
+                  />
+                </div>
+              </AnimatedNegative>
+              <AnimatedY>
+                <div className="flex-col items-center justify-center">
+                  <h1 className="font-mochari text-8xl text-custom-blue-strong max-md:text-7xl">
+                    leite uht <br />
+                    semidesnatado
+                  </h1>
+                  <div>
+                    <p className="text-custom-blue-strong text-justify mt-8">
+                      Se você busca um meio-termo entre sabor e leveza, o Leite
+                      UHT Semidesnatado é a melhor escolha! Com menos gordura
+                      que o integral e mais cremosidade que o desnatado, ele
+                      traz o melhor dos dois mundos, mantendo todos os
+                      benefícios do leite. <br /> <br /> ✅ O equilíbrio
+                      perfeito entre sabor e leveza. <br /> ✅ Mantém proteínas
+                      e cálcio essenciais. <br /> ✅ Ótimo para o dia a dia da
+                      sua família
+                    </p>
+                  </div>
+                  <div className="max-md:w-full max-md:items-center max-md:justify-center">
+                    <Link to={`/produtos/${leiteUhtZero?.id}`}>
+                      <button
+                        className="relative 
+          overflow-hidden
+           flex-shrink-0
+    bg-custom-blue-strong
+    text-white py-3 
+    px-14 rounded-md shadow-sm
+    shadow-black font-light 
+     border-none mt-8 max-md:w-full cursor-pointer"
+                      >
+                        <span className="relative z-10 flex items-center justify-center">
+                          TABELA NUTRICIONAL +
+                        </span>
+                        <span
+                          className="absolute inset-0
+            bg-gradient-to-r from-white
+             to-black
+           transform translate-x-full
+            transition-transform
+            duration-300 ease-in-out z-0 opacity-20"
+                        ></span>
+                      </button>
+                    </Link>
+                  </div>
+                </div>
+              </AnimatedY>
+            </div>
+            {/*fim semindesnatado */}
           </div>
 
           {/*footer inicio */}

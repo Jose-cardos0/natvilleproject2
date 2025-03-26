@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 
 //icons
 import { ImMenu2 } from "react-icons/im";
+//logo
+import videoLogo from "../assets/Home/logoanimate.webm";
 
 //animacoes
 import { AnimatedSection } from "../Tools/Animates/AnimatedSections";
@@ -42,6 +44,20 @@ export function Header() {
     return () => window.removeEventListener("resize", handleSize);
   });
 
+  // useEffect(() => {
+  //   const handleClickOutside = () => {
+  //     if (isOpen) {
+  //       setIsOpen(false);
+  //     }
+  //   };
+
+  //   window.addEventListener("click", handleClickOutside);
+
+  //   return () => {
+  //     window.removeEventListener("click", handleClickOutside);
+  //   };
+  // }, [isOpen]);
+
   return (
     <header
       onMouseEnter={handleMouseEnter}
@@ -72,8 +88,18 @@ export function Header() {
             </button>
 
             <Link to={"/"}>
-              <div className="cursor-pointer relative">
+              {/* <div className="cursor-pointer relative">
                 <img className="drop-shadow-lg" src={logo} alt="natville" />
+              </div> */}
+              <div className="flex w-full justify-center m-auto">
+                <video
+                  src={videoLogo}
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className=" relative z-10 max-md:w-32"
+                ></video>
               </div>
             </Link>
           </div>
@@ -223,7 +249,10 @@ export function Header() {
       ) : (
         <section className="max-w-7xl flex items-center justify-center ">
           <Link to={"/"}>
-            <div className="mr-8 cursor-pointer">
+            <div
+              onClick={() => setIsOpen(false)}
+              className="mr-8 cursor-pointer"
+            >
               <img className="drop-shadow-lg" src={logo} alt="natville" />
             </div>
           </Link>
@@ -231,6 +260,7 @@ export function Header() {
           <div className="w-full flex items-center justify-center gap-3">
             <Link to={"/quemsomos"}>
               <div
+                onClick={() => setIsOpen(false)}
                 className=" uppercase py-1 px-4
                cursor-pointer font-light hover:text-custom-blue"
               >
@@ -250,6 +280,7 @@ export function Header() {
             </div>
             {isOpen === true ? (
               <div
+                id="absolute-div"
                 className="absolute top-full mr-56
                   bg-custom-white shadow-lg 
                   flex items-center justify-center bg-opacity-90 rounded-b-xl"
@@ -334,19 +365,28 @@ export function Header() {
             )}
 
             <Link to={"/noticias"}>
-              <div className="font-roboto uppercase py-1 px-4 cursor-pointer font-light hover:text-custom-blue ">
+              <div
+                onClick={() => setIsOpen(false)}
+                className="font-roboto uppercase py-1 px-4 cursor-pointer font-light hover:text-custom-blue "
+              >
                 notícias
               </div>
             </Link>
 
             <Link to={"/contato"}>
-              <div className="font-roboto uppercase py-1 px-4 cursor-pointer  hover:text-custom-blue font-light">
+              <div
+                onClick={() => setIsOpen(false)}
+                className="font-roboto uppercase py-1 px-4 cursor-pointer  hover:text-custom-blue font-light"
+              >
                 contato
               </div>
             </Link>
 
             <a href="https://natville.vagas.solides.com.br/" target="_blanck">
-              <div className="font-roboto uppercase py-1 px-4 cursor-pointer hover:text-custom-blue font-light">
+              <div
+                onClick={() => setIsOpen(false)}
+                className="font-roboto uppercase py-1 px-4 cursor-pointer hover:text-custom-blue font-light"
+              >
                 trabalhe conosco
               </div>
             </a>

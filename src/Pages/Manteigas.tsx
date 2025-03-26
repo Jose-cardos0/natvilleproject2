@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import bg1 from "../assets/QuemSomos/bgProdutos.svg";
 
 //itens
-import manteigas from "../assets/Produtos/Manteigas/manteigaFront.webp";
+import manteigas from "../assets/Produtos/Manteigas/manteiga.webp";
 import menteigaMaior from "../assets/Produtos/Manteigas/500topo.webp";
 import manteigaMenor from "../assets/Produtos/Manteigas/200topo.webp";
 import manteiga5kg from "../assets/Produtos/Manteigas/manteiga5kg.webp";
@@ -76,7 +76,7 @@ export function Manteigas() {
               <img
                 className=" drop-shadow-md max-md:w-72
                 cursor-pointer max-w-1xl
-               hover:scale-105 transition duration-700 -rotate-6"
+               hover:scale-105 transition duration-700 "
                 src={manteigas}
                 alt="leite uht natville"
               />
@@ -149,15 +149,18 @@ export function Manteigas() {
                   </h1>
                   <div>
                     <p className="text-custom-blue-strong text-justify mt-8">
-                      Um leite UHT integral saudável e rico em cálcio é aquele
-                      que mantém boa parte dos nutrientes naturais do leite
-                      fresco, como proteínas, vitaminas (especialmente a
-                      vitamina D, que auxilia na absorção do cálcio) e, claro, o
-                      próprio cálcio, essencial para ossos e dentes fortes. Esse
-                      tipo de leite é submetido a um processo de
-                      ultra-pasteurização (UHT), onde é aquecido a altas
-                      temperaturas por poucos segundos, eliminando bactérias
-                      prejudiciais sem alterar muito seu perfil nutricional.
+                      Seja no café da manhã, no preparo de receitas ou para dar
+                      aquele toque especial aos seus pratos, a Manteiga de
+                      Primeira Qualidade com Sal traz o equilíbrio perfeito
+                      entre cremosidade, sabor autêntico e frescor incomparável.
+                      Feita a partir de leite puro e selecionado, essa manteiga
+                      tem um toque de sal na medida certa, realçando o sabor dos
+                      alimentos e garantindo uma experiência única a cada
+                      mordida. <br />
+                      <br /> ✅ Textura cremosa e fácil de espalhar. <br /> ✅
+                      Sabor rico e autêntico, com toque de sal na medida. <br />{" "}
+                      ✅ Ideal para pães, torradas, receitas e finalizações
+                      gourmet. <br /> ✅ Fonte natural de vitaminas A e D.
                     </p>
                   </div>
                   <div className="max-md:w-full max-md:items-center max-md:justify-center">
@@ -218,15 +221,18 @@ export function Manteigas() {
                   </h1>
                   <div>
                     <p className="text-custom-blue-strong text-justify mt-8">
-                      Um leite UHT integral saudável e rico em cálcio é aquele
-                      que mantém boa parte dos nutrientes naturais do leite
-                      fresco, como proteínas, vitaminas (especialmente a
-                      vitamina D, que auxilia na absorção do cálcio) e, claro, o
-                      próprio cálcio, essencial para ossos e dentes fortes. Esse
-                      tipo de leite é submetido a um processo de
-                      ultra-pasteurização (UHT), onde é aquecido a altas
-                      temperaturas por poucos segundos, eliminando bactérias
-                      prejudiciais sem alterar muito seu perfil nutricional.
+                      Seja no café da manhã, no preparo de receitas ou para dar
+                      aquele toque especial aos seus pratos, a Manteiga de
+                      Primeira Qualidade com Sal traz o equilíbrio perfeito
+                      entre cremosidade, sabor autêntico e frescor incomparável.
+                      Feita a partir de leite puro e selecionado, essa manteiga
+                      tem um toque de sal na medida certa, realçando o sabor dos
+                      alimentos e garantindo uma experiência única a cada
+                      mordida. <br />
+                      <br /> ✅ Textura cremosa e fácil de espalhar. <br /> ✅
+                      Sabor rico e autêntico, com toque de sal na medida. <br />{" "}
+                      ✅ Ideal para pães, torradas, receitas e finalizações
+                      gourmet. <br /> ✅ Fonte natural de vitaminas A e D.
                     </p>
                   </div>
                   <div className="max-md:w-full max-md:items-center max-md:justify-center">
@@ -287,15 +293,18 @@ export function Manteigas() {
                   </h1>
                   <div>
                     <p className="text-custom-blue-strong text-justify mt-8">
-                      Um leite UHT integral saudável e rico em cálcio é aquele
-                      que mantém boa parte dos nutrientes naturais do leite
-                      fresco, como proteínas, vitaminas (especialmente a
-                      vitamina D, que auxilia na absorção do cálcio) e, claro, o
-                      próprio cálcio, essencial para ossos e dentes fortes. Esse
-                      tipo de leite é submetido a um processo de
-                      ultra-pasteurização (UHT), onde é aquecido a altas
-                      temperaturas por poucos segundos, eliminando bactérias
-                      prejudiciais sem alterar muito seu perfil nutricional.
+                      Seja no café da manhã, no preparo de receitas ou para dar
+                      aquele toque especial aos seus pratos, a Manteiga de
+                      Primeira Qualidade com Sal traz o equilíbrio perfeito
+                      entre cremosidade, sabor autêntico e frescor incomparável.
+                      Feita a partir de leite puro e selecionado, essa manteiga
+                      tem um toque de sal na medida certa, realçando o sabor dos
+                      alimentos e garantindo uma experiência única a cada
+                      mordida. <br />
+                      <br /> ✅ Textura cremosa e fácil de espalhar. <br /> ✅
+                      Sabor rico e autêntico, com toque de sal na medida. <br />{" "}
+                      ✅ Ideal para pães, torradas, receitas e finalizações
+                      gourmet. <br /> ✅ Fonte natural de vitaminas A e D.
                     </p>
                   </div>
                   <div className="max-md:w-full max-md:items-center max-md:justify-center">
@@ -356,15 +365,18 @@ export function Manteigas() {
                   </h1>
                   <div>
                     <p className="text-custom-blue-strong text-justify mt-8">
-                      Um leite UHT integral saudável e rico em cálcio é aquele
-                      que mantém boa parte dos nutrientes naturais do leite
-                      fresco, como proteínas, vitaminas (especialmente a
-                      vitamina D, que auxilia na absorção do cálcio) e, claro, o
-                      próprio cálcio, essencial para ossos e dentes fortes. Esse
-                      tipo de leite é submetido a um processo de
-                      ultra-pasteurização (UHT), onde é aquecido a altas
-                      temperaturas por poucos segundos, eliminando bactérias
-                      prejudiciais sem alterar muito seu perfil nutricional.
+                      Seja no café da manhã, no preparo de receitas ou para dar
+                      aquele toque especial aos seus pratos, a Manteiga de
+                      Primeira Qualidade com Sal traz o equilíbrio perfeito
+                      entre cremosidade, sabor autêntico e frescor incomparável.
+                      Feita a partir de leite puro e selecionado, essa manteiga
+                      tem um toque de sal na medida certa, realçando o sabor dos
+                      alimentos e garantindo uma experiência única a cada
+                      mordida. <br />
+                      <br /> ✅ Textura cremosa e fácil de espalhar. <br /> ✅
+                      Sabor rico e autêntico, com toque de sal na medida. <br />{" "}
+                      ✅ Ideal para pães, torradas, receitas e finalizações
+                      gourmet. <br /> ✅ Fonte natural de vitaminas A e D.
                     </p>
                   </div>
                   <div className="max-md:w-full max-md:items-center max-md:justify-center">

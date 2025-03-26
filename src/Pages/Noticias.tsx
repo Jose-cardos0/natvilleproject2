@@ -1,10 +1,13 @@
 import { SliderNoticias } from "../Tools/SliderNoticias/SliderNoticias";
-import logo from "../assets/QuemSomos/logoQuemSomos.png";
+// import logo from "../assets/QuemSomos/logoQuemSomos.png";
 import noticiafoto from "../Tools/SliderNoticias/Noticias1.jpg";
+import janeafoto from "../Tools/SliderNoticias/historiaJanea.png";
+import fabalagoas from "../Tools/SliderNoticias/fabalagoas.png";
+import empregos from "../Tools/SliderNoticias/chagas.png";
 
 //animacoes
 import { AnimatedNegative } from "../Tools/Animates/AnimatedNegative";
-import { AnimatedSection } from "../Tools/Animates/AnimatedSections";
+// import { AnimatedSection } from "../Tools/Animates/AnimatedSections";
 import { AnimatedY } from "../Tools/Animates/AnimatedY";
 
 //icons
@@ -15,6 +18,7 @@ import { FaInstagram } from "react-icons/fa6";
 import { AiOutlineLinkedin } from "react-icons/ai";
 import { FiPhoneForwarded } from "react-icons/fi";
 import logoF from "../assets/Footer/logoFooter.svg";
+// import videoLogo from "../assets/Home/logoanimate.webm";
 
 export function Noticias() {
   return (
@@ -37,7 +41,8 @@ export function Noticias() {
               </button>
             </AnimatedNegative>
           </div>
-          <AnimatedSection>
+          {/* <AnimatedSection>
+
             <div className="w-full flex items-center justify-center my-8">
               <img
                 className="drop-shadow-xl max-md:max-w-72 w-96"
@@ -45,10 +50,10 @@ export function Noticias() {
                 alt="natville"
               />
             </div>
-          </AnimatedSection>
+          </AnimatedSection> */}
         </div>
         <AnimatedY>
-          <div className="w-full mt-20">
+          <div className="w-full mt-20 max-md:-mt-20">
             <SliderNoticias />
           </div>
         </AnimatedY>
@@ -63,143 +68,93 @@ export function Noticias() {
           </AnimatedNegative>
         </div>
         {/*INICIO GRID */}
-        <div className="grid grid-cols-3 items-center justify-center m-auto gap-8 pt-8 mm:max-md:grid-cols-1 mm:max-md:px-8">
+        <div
+          className="grid grid-cols-3 items-center 
+        justify-center m-auto gap-8 pt-8 mm:max-md:grid-cols-1
+         mm:max-md:px-8 max-md:-mt-16"
+        >
           <AnimatedY>
-            <div
-              className=" rounded-md
-           relative cursor-pointer "
-            >
-              <div className="overflow-hidden rounded-md">
-                <img
-                  className="w-full h-full transition-transform duration-300 transform hover:scale-110"
-                  src={noticiafoto}
-                  alt=""
-                />
+            <div className="relative  rounded-md overflow-hidden cursor-pointer group">
+              <img
+                className="w-full h-full transition-transform duration-300 transform group-hover:scale-110"
+                src={janeafoto}
+                alt="Inspiração"
+              />
+
+              {/* Texto inferior com fundo gradiente para melhor legibilidade */}
+              <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-black/70 to-transparent flex items-end p-4">
+                <h1 className="text-white text-lg font-light leading-tight">
+                  Inspirando <br /> nova geração
+                </h1>
               </div>
-              <div
-                className="absolute bg-custom-white drop-shadow-lg
-             rounded-b-md w-full h-20 bottom-0 p-2 "
-              >
-                <h1 className="font-thin">Noticia informatica aqui</h1>
-              </div>
-              <div className="absolute top-48 right-2 mm:max-md:top-36">
-                <button
-                  className="relative 
-          overflow-hidden
-           flex-shrink-0
-    bg-custom-blue-strong
-    text-white py-3 
-    px-14 rounded-md shadow-sm
-    shadow-black font-light 
-     border-none mm:max-md:w-full"
-                >
+
+              {/* Botão aprimorado */}
+              <div className="absolute -bottom-2 right-4 -translate-y-1/2 mm:max-md:top-40">
+                <button className="relative bg-custom-blue-strong text-white py-3 px-10 rounded-md shadow-md font-light overflow-hidden transition-all duration-300 hover:shadow-lg hover:bg-opacity-90">
                   <span className="relative z-10 flex items-center justify-center">
                     VEJA MAIS &rsaquo;
                   </span>
-                  <span
-                    className="absolute inset-0
-            bg-gradient-to-r from-white
-             to-black
-           transform translate-x-full
-            transition-transform
-            duration-300 ease-in-out z-0 opacity-20"
-                  ></span>
+                  <span className="absolute inset-0 bg-white/20 transform translate-x-full transition-all duration-300 group-hover:translate-x-0"></span>
                 </button>
               </div>
             </div>
           </AnimatedY>
           {/*SEGUNCO CARD */}
           <AnimatedY>
-            <div
-              className=" rounded-md
-           relative cursor-pointer "
-            >
-              <div className="overflow-hidden rounded-md">
-                <img
-                  className="w-full h-full transition-transform duration-300 transform hover:scale-110"
-                  src={noticiafoto}
-                  alt=""
-                />
+            <div className="relative  rounded-md overflow-hidden cursor-pointer group">
+              <img
+                className="w-full h-full transition-transform duration-300 transform group-hover:scale-110"
+                src={fabalagoas}
+                alt="Inspiração"
+              />
+
+              {/* Texto inferior com fundo gradiente para melhor legibilidade */}
+              <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-black/70 to-transparent flex items-end p-4">
+                <h1 className="text-white text-lg font-light leading-tight">
+                  Nova fábria <br /> em Batalha/AL
+                </h1>
               </div>
-              <div
-                className="absolute bg-custom-white drop-shadow-lg
-             rounded-b-md w-full h-20 bottom-0 p-2 "
-              >
-                <h1 className="font-thin">Noticia informatica aqui</h1>
-              </div>
-              <div className="absolute top-48 right-2 mm:max-md:top-36">
-                <button
-                  className="relative 
-          overflow-hidden
-           flex-shrink-0
-    bg-custom-blue-strong
-    text-white py-3 
-    px-14 rounded-md shadow-sm
-    shadow-black font-light 
-     border-none mm:max-md:w-full"
-                >
+
+              {/* Botão aprimorado */}
+              <div className="absolute -bottom-2 right-4 -translate-y-1/2 mm:max-md:top-40">
+                <button className="relative bg-custom-blue-strong text-white py-3 px-10 rounded-md shadow-md font-light overflow-hidden transition-all duration-300 hover:shadow-lg hover:bg-opacity-90">
                   <span className="relative z-10 flex items-center justify-center">
                     VEJA MAIS &rsaquo;
                   </span>
-                  <span
-                    className="absolute inset-0
-            bg-gradient-to-r from-white
-             to-black
-           transform translate-x-full
-            transition-transform
-            duration-300 ease-in-out z-0 opacity-20"
-                  ></span>
+                  <span className="absolute inset-0 bg-white/20 transform translate-x-full transition-all duration-300 group-hover:translate-x-0"></span>
                 </button>
               </div>
             </div>
           </AnimatedY>
           {/*TERCEIRO CARD */}
           <AnimatedY>
-            <div
-              className=" rounded-md
-           relative cursor-pointer "
-            >
-              <div className="overflow-hidden rounded-md">
-                <img
-                  className="w-full h-full transition-transform duration-300 transform hover:scale-110"
-                  src={noticiafoto}
-                  alt=""
-                />
+            <div className="relative  rounded-md overflow-hidden cursor-pointer group">
+              <img
+                className="w-full h-full transition-transform duration-300 transform group-hover:scale-110"
+                src={empregos}
+                alt="Inspiração"
+              />
+
+              {/* Texto inferior com fundo gradiente para melhor legibilidade */}
+              <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-black/70 to-transparent flex items-end p-4">
+                <h1 className="text-white text-lg font-light leading-tight">
+                  150 novos <br /> empregos diretos
+                </h1>
               </div>
-              <div
-                className="absolute bg-custom-white drop-shadow-lg
-             rounded-b-md w-full h-20 bottom-0 p-2 "
-              >
-                <h1 className="font-thin">Noticia informatica aqui</h1>
-              </div>
-              <div className="absolute top-48 right-2 mm:max-md:top-36">
-                <button
-                  className="relative 
-          overflow-hidden
-           flex-shrink-0
-    bg-custom-blue-strong
-    text-white py-3 
-    px-14 rounded-md shadow-sm
-    shadow-black font-light 
-     border-none mm:max-md:w-full"
-                >
+
+              {/* Botão aprimorado */}
+              <div className="absolute -bottom-2 right-4 -translate-y-1/2 mm:max-md:top-40">
+                <button className="relative bg-custom-blue-strong text-white py-3 px-10 rounded-md shadow-md font-light overflow-hidden transition-all duration-300 hover:shadow-lg hover:bg-opacity-90">
                   <span className="relative z-10 flex items-center justify-center">
                     VEJA MAIS &rsaquo;
                   </span>
-                  <span
-                    className="absolute inset-0
-            bg-gradient-to-r from-white
-             to-black
-           transform translate-x-full
-            transition-transform
-            duration-300 ease-in-out z-0 opacity-20"
-                  ></span>
+                  <span className="absolute inset-0 bg-white/20 transform translate-x-full transition-all duration-300 group-hover:translate-x-0"></span>
                 </button>
               </div>
             </div>
           </AnimatedY>
           {/*QUARTO CARD */}
-          <AnimatedY>
+          {/* <AnimatedY>
             <div
               className=" rounded-md
            relative cursor-pointer "
@@ -242,9 +197,9 @@ export function Noticias() {
                 </button>
               </div>
             </div>
-          </AnimatedY>
+          </AnimatedY> */}
           {/*QUINTO CARD */}
-          <AnimatedY>
+          {/* <AnimatedY>
             <div
               className=" rounded-md
            relative cursor-pointer "
@@ -287,9 +242,9 @@ export function Noticias() {
                 </button>
               </div>
             </div>
-          </AnimatedY>
+          </AnimatedY> */}
           {/*SEXTO CARD */}
-          <AnimatedY>
+          {/* <AnimatedY>
             <div
               className=" rounded-md
            relative cursor-pointer "
@@ -332,7 +287,7 @@ export function Noticias() {
                 </button>
               </div>
             </div>
-          </AnimatedY>
+          </AnimatedY> */}
           {/*SEGUNCO CARD */}
         </div>
         {/*footer inicio */}

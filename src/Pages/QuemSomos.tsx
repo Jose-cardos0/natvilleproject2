@@ -88,7 +88,7 @@ export function QuemSomos() {
                 </h1>
                 <p
                   className="lowercase font-roboto text-end 
-                max-md:mx-8 max-md:text-justify font-light  "
+                max-md:mx-8 max-md:text-justify font bg-white bg-opacity-50 p-4 rounded-lg shadow mt-2 "
                 >
                   SOMOS O CONVITE PARA UMA JORNADA. ESSE CAMINHO PARTE DO NOSSO
                   DESEJO DE TRANSFORMAR O MUNDO EM UM LUGAR MELHOR DE SE VIVER.

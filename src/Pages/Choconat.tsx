@@ -101,7 +101,7 @@ export function Choconat() {
         {/*inicio leites */}
         <div
           className="h-auto w-screen flex-col items-center
-             justify-center m-auto z-0"
+             justify-center m-auto z-0 max-md:-mt-40"
         >
           <div
             className="max-w-7xl
@@ -136,15 +136,20 @@ export function Choconat() {
                   </h1>
                   <div>
                     <p className="text-white text-justify mt-8">
-                      Um leite UHT integral saudável e rico em cálcio é aquele
-                      que mantém boa parte dos nutrientes naturais do leite
-                      fresco, como proteínas, vitaminas (especialmente a
-                      vitamina D, que auxilia na absorção do cálcio) e, claro, o
-                      próprio cálcio, essencial para ossos e dentes fortes. Esse
-                      tipo de leite é submetido a um processo de
-                      ultra-pasteurização (UHT), onde é aquecido a altas
-                      temperaturas por poucos segundos, eliminando bactérias
-                      prejudiciais sem alterar muito seu perfil nutricional.
+                      Que tal um chocolate delicioso e nutritivo para qualquer
+                      momento do dia? Nossa Bebida Láctea UHT Sabor Chocolate
+                      combina o melhor do leite com um toque irresistível de
+                      cacau, trazendo uma explosão de sabor e energia para você
+                      e sua família! Perfeita para o café da manhã, lanches ou
+                      até como um reforço pós-treino, essa bebida é nutritiva,
+                      cremosa e prática, ideal para quem busca uma opção gostosa
+                      e revigorante a qualquer hora. <br /> <br /> ✅ Sabor
+                      intenso de chocolate com a cremosidade do leite. <br /> ✅
+                      Fonte de cálcio, proteínas e vitaminas essenciais. <br />{" "}
+                      ✅ Praticidade UHT: pronto para beber a qualquer hora, sem
+                      necessidade de refrigeração antes de abrir. <br /> ✅
+                      Perfeito para crianças e adultos que amam um toque doce no
+                      dia!
                     </p>
                   </div>
                   <div className="max-md:w-full max-md:items-center max-md:justify-center">
@@ -207,15 +212,17 @@ export function Choconat() {
                   </h1>
                   <div>
                     <p className="text-white text-justify mt-8">
-                      Um leite UHT integral saudável e rico em cálcio é aquele
-                      que mantém boa parte dos nutrientes naturais do leite
-                      fresco, como proteínas, vitaminas (especialmente a
-                      vitamina D, que auxilia na absorção do cálcio) e, claro, o
-                      próprio cálcio, essencial para ossos e dentes fortes. Esse
-                      tipo de leite é submetido a um processo de
-                      ultra-pasteurização (UHT), onde é aquecido a altas
-                      temperaturas por poucos segundos, eliminando bactérias
-                      prejudiciais sem alterar muito seu perfil nutricional.
+                      A Bebida Láctea UHT Sabor Chocolate é uma opção deliciosa
+                      e nutritiva para quem busca sabor e energia no dia a dia.
+                      Feita com leite submetido ao processo de
+                      ultra-pasteurização (UHT), ela mantém boa parte dos
+                      nutrientes essenciais, como proteínas e cálcio,
+                      contribuindo para ossos e dentes fortes. Além disso, é
+                      enriquecida com vitaminas, incluindo a vitamina D, que
+                      auxilia na absorção do cálcio. Com um sabor irresistível
+                      de chocolate, é perfeita para qualquer momento, seja no
+                      café da manhã, no lanche ou após a prática de atividades
+                      físicas.
                     </p>
                   </div>
                   <div className="max-md:w-full max-md:items-center max-md:justify-center">
@@ -252,7 +259,7 @@ export function Choconat() {
           {/*footer inicio */}
           <footer
             className="w-full h-auto mb-5
-            flex items-center justify-center m-auto"
+            flex items-center justify-center m-auto max-md:-mt-40"
           >
             <div
               className="w-8/12 

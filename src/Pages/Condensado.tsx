@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import bg1 from "../assets/QuemSomos/bgProdutos.svg";
 
 //itens
-import leitesUht from "../assets/Produtos/leiteCondensado/bgCondensado.png";
+import leitesUht from "../assets/Produtos/leiteCondensado/bgCondensado.webp";
 
 import condensado from "../assets/Produtos/leiteCondensado/condensadoLado.png";
 
@@ -121,7 +121,7 @@ export function Condensados() {
             <div
               className="flex items-center justify-center
               gap-8  max-md:flex-col
-               max-md:mx-8 max-md:-mt-30"
+               max-md:mx-8 max-md:-mt-36"
             >
               <AnimatedNegative>
                 <div>
@@ -140,21 +140,27 @@ export function Condensados() {
               </AnimatedNegative>
               <AnimatedY>
                 <div className="flex-col items-center justify-center">
-                  <h1 className="font-mochari text-8xl text-custom-blue-strong max-md:text-7xl">
+                  <h1
+                    className="font-mochari text-8xl text-custom-blue-strong
+                   max-md:text-6xl"
+                  >
                     leite condensado <br />
                     semidesntado
                   </h1>
                   <div>
                     <p className="text-custom-blue-strong text-justify mt-8">
-                      Um leite UHT integral saudável e rico em cálcio é aquele
-                      que mantém boa parte dos nutrientes naturais do leite
-                      fresco, como proteínas, vitaminas (especialmente a
-                      vitamina D, que auxilia na absorção do cálcio) e, claro, o
-                      próprio cálcio, essencial para ossos e dentes fortes. Esse
-                      tipo de leite é submetido a um processo de
-                      ultra-pasteurização (UHT), onde é aquecido a altas
-                      temperaturas por poucos segundos, eliminando bactérias
-                      prejudiciais sem alterar muito seu perfil nutricional.
+                      Quem resiste ao sabor doce e cremoso do leite condensado?
+                      Agora você pode aproveitar essa delícia com menos gordura,
+                      mas sem abrir mão da textura e do sabor que tornam suas
+                      receitas ainda mais especiais! Nosso Leite Condensado
+                      Semidesnatado mantém a mesma qualidade e cremosidade do
+                      tradicional, mas com uma composição mais leve, ideal para
+                      quem busca um equilíbrio entre sabor e nutrição.
+                      <br />
+                      <br />
+                      ✅ Menos gordura, mesma doçura e cremosidade! <br />✅
+                      Perfeito para sobremesas, cafés, doces e recheios. <br />
+                      ✅ Ideal para quem quer um toque mais leve na alimentação.
                     </p>
                   </div>
                   <div className="max-md:w-full max-md:items-center max-md:justify-center">

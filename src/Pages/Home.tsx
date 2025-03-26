@@ -159,11 +159,13 @@ export function Home() {
                   alt=""
                 />
                 <div className="max-w-96 text-custom-blue-strong">
-                  <p className="mt-8 max-md:mt-2 font-extralight ">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Sunt vel praesentium ducimus nam, alias nesciunt cumque illo
-                    natus voluptates, quod consequuntur error aliquid deleniti
-                    facilis quas! Quibusdam iste maiores esse?
+                  <p className="mt-8 max-md:mt-2  ">
+                    A Natville, empresa com 25 anos de atuação no mercado de
+                    laticínios, está construindo uma nova fábrica de queijos em
+                    Batalha, Alagoas. Com investimento de aproximadamente R$ 500
+                    milhões, a unidade beneficiará cerca de 300 mil litros de
+                    leite por dia quando estiver em pleno funcionamento,
+                    previsto para daqui a dois anos.
                   </p>
                   <a
                     href="https://www.instagram.com/natville.br/"
@@ -251,11 +253,15 @@ border-none mt-8 mm:max-md:w-full max-md:mt-2"
                   alt=""
                 />
                 <div className="max-w-96 text-custom-blue-strong max-md:max-w-full">
-                  <p className="mt-8 max-md:mt-2 font-extralight">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Sunt vel praesentium ducimus nam, alias nesciunt cumque illo
-                    natus voluptates, quod consequuntur error aliquid deleniti
-                    facilis quas! Quibusdam iste maiores esse?
+                  <p className="mt-8 max-md:mt-2 ">
+                    O leite UHT mantém a maioria dos nutrientes do leite in
+                    natura, sendo uma excelente fonte de cálcio, proteínas e
+                    vitaminas. O cálcio é essencial para a saúde dos ossos e
+                    dentes, enquanto as proteínas desempenham um papel
+                    fundamental na formação dos músculos, pele e outros tecidos
+                    do corpo. Além disso, esse leite contém vitaminas A, D e
+                    B12, que contribuem para a imunidade, a saúde ocular e a
+                    produção de células vermelhas do sangue.
                   </p>
 
                   <a
