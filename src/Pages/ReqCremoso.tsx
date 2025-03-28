@@ -7,13 +7,13 @@ import bg1 from "../assets/QuemSomos/bgProdutos.svg";
 
 //itens
 
-import reqCremoso from "../assets/Produtos/ReqCremoso/bgReqCremoso.webp";
+import reqCremoso from "../assets/Produtos/ReqCremoso/bgcremoso.png";
 
-import reqTrad from "../assets/Produtos/ReqCremoso/reqTradicional.webp";
-import reqCebola from "../assets/Produtos/ReqCremoso/REQUEIJÃO_C&S_TOPO_SM.webp";
-import reqCheddar from "../assets/Produtos/ReqCremoso/REQUEIJÃO_CHEDDAR_TOPO_SM.webp";
-import reqZero from "../assets/Produtos/ReqCremoso/REQUEIJÃO_LACTOSE_TOPO_SM.webp";
-import reqReduzido from "../assets/Produtos/ReqCremoso/REQUEIJÃO_REDUZIDO_TOPO_SM.webp";
+import reqTrad from "../assets/Produtos/ReqCremoso/tradicional.webp";
+import reqCebola from "../assets/Produtos/ReqCremoso/cebolaesalsa2.webp";
+import reqCheddar from "../assets/Produtos/ReqCremoso/cheddar2.webp";
+import reqZero from "../assets/Produtos/ReqCremoso/zerolact2.webp";
+import reqReduzido from "../assets/Produtos/ReqCremoso/light2.webp";
 import logoF from "../assets/Footer/logoFooter.svg";
 
 //icons
@@ -76,11 +76,11 @@ export function ReqCremoso() {
         >
           <div
             className="max-w-7xl 
-        flex items-center justify-center gap-8 max-md:flex-col "
+        flex items-center justify-center m-auto max-md:flex-col "
           >
             <AnimatedSection>
               <img
-                className=" drop-shadow-md max-md:w-72
+                className=" drop-shadow-md max-md:w-72 w-3/4
                 cursor-pointer hover:scale-105 transition duration-700"
                 src={reqCremoso}
                 alt="leite uht natville"
@@ -139,7 +139,7 @@ export function ReqCremoso() {
                       rotate: 3,
                     }}
                     transition={{ duration: 0.5 }}
-                    className="max-w-1xl object-center drop-shadow-md
+                    className="max-w-1xl object-center drop-shadow-md w-width-bebida
                    max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
                     src={reqTrad}
                     alt="leite uht integral"
@@ -209,7 +209,7 @@ export function ReqCremoso() {
                       rotate: 3,
                     }}
                     transition={{ duration: 0.5 }}
-                    className=" object-center drop-shadow-md
+                    className=" object-center drop-shadow-md w-width-bebida
                    max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
                     src={reqCebola}
                     alt="leite uht integral"
@@ -283,7 +283,7 @@ export function ReqCremoso() {
                       rotate: 3,
                     }}
                     transition={{ duration: 0.5 }}
-                    className=" object-center drop-shadow-md
+                    className=" object-center drop-shadow-md w-width-bebida
                    max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
                     src={reqCheddar}
                     alt="leite uht integral"
@@ -352,7 +352,7 @@ export function ReqCremoso() {
                       rotate: 3,
                     }}
                     transition={{ duration: 0.5 }}
-                    className=" object-center drop-shadow-md
+                    className=" object-center drop-shadow-md w-width-bebida
                    max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
                     src={reqReduzido}
                     alt="leite uht integral"
@@ -426,7 +426,7 @@ export function ReqCremoso() {
                       rotate: 3,
                     }}
                     transition={{ duration: 0.5 }}
-                    className=" object-center drop-shadow-md
+                    className=" object-center drop-shadow-md w-width-bebida2
                    max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
                     src={reqZero}
                     alt="leite uht integral"

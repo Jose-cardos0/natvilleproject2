@@ -30,6 +30,8 @@ export default {
       },
       width: {
         "width-mobile": "30rem",
+        "width-bebida": "500px",
+        "width-bebida2": "400px",
       },
     },
     screens: {

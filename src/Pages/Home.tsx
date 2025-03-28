@@ -152,46 +152,42 @@ export function Home() {
             </AnimatedSection>
 
             <AnimatedY>
-              <div className="flex gap-8 overflow-hidden max-md:flex-col max-md:items-center max-md:m-auto max-md:gap-0">
-                <img
-                  className="rounded-md max-w-72 max-md:max-w-full drop-shadow-xl shadow-black"
-                  src={noticia}
-                  alt=""
-                />
-                <div className="max-w-96 text-custom-blue-strong">
-                  <p className="mt-8 max-md:mt-2  ">
-                    A Natville, empresa com 25 anos de atuação no mercado de
-                    laticínios, está construindo uma nova fábrica de queijos em
-                    Batalha, Alagoas. Com investimento de aproximadamente R$ 500
-                    milhões, a unidade beneficiará cerca de 300 mil litros de
-                    leite por dia quando estiver em pleno funcionamento,
-                    previsto para daqui a dois anos.
+              <div className="relative flex items-center gap-6 p-6 rounded-2xl bg-white/60 backdrop-blur-lg shadow-xl max-md:flex-col max-md:gap-4 max-md:w-full max-w-2xl border border-gray-200 hover:shadow-2xl transition-all duration-300 group">
+                {/* Imagem estilizada */}
+                <div
+                  className="relative w-96  max-md:w-full
+                 overflow-hidden rounded-xl shadow-lg"
+                >
+                  <img
+                    className="w-full h-full object-cover 
+                    transition-transform duration-300 hover:scale-105"
+                    src={noticia}
+                    alt="Imagem da notícia"
+                  />
+                </div>
+
+                {/* Conteúdo */}
+                <div className="flex flex-col justify-between max-w-sm text-gray-800">
+                  <p className="text-lg font-thin leading-snug">
+                    A{" "}
+                    <span className="text-custom-blue-strong font-bold">
+                      Natville
+                    </span>
+                    , empresa com 25 anos no mercado de laticínios, está
+                    construindo uma nova fábrica de queijos em{" "}
+                    <span className="font-bold">Batalha, Alagoas</span>.
                   </p>
+
+                  {/* Botão oculto por padrão e aparece no hover */}
                   <a
                     href="https://www.instagram.com/natville.br/"
-                    target="_blanck"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    <button
-                      className="relative 
-    overflow-hidden
-     flex-shrink-0
-bg-custom-blue-strong
-text-white py-2
-px-8 rounded-md shadow-sm
-shadow-black font-light 
-border-none mt-8 mm:max-md:w-full max-md:mt-2"
-                    >
+                    <button className="relative mt-6 w-full py-3 px-6 rounded-lg bg-gradient-to-r from-blue-600 to-blue-800 text-white font-thin text-lg tracking-wide shadow-md transition-all duration-300 ease-in-out opacity-0 group-hover:opacity-100 group-hover:translate-y-0 translate-y-2">
                       <span className="relative z-10 flex items-center justify-center">
-                        ver mais &rsaquo;
+                        Ver mais &rsaquo;
                       </span>
-                      <span
-                        className="absolute inset-0
-      bg-gradient-to-r from-white
-       to-black
-     transform translate-x-full
-      transition-transform
-      duration-300 ease-in-out z-0 opacity-20"
-                      ></span>
                     </button>
                   </a>
                 </div>
@@ -199,96 +195,83 @@ border-none mt-8 mm:max-md:w-full max-md:mt-2"
             </AnimatedY>
 
             <AnimatedSection>
-              <div className="flex gap-8 mt-8 max-md:flex-col max-md:items-center max-md:m-auto max-md:hidden ">
-                <div className="max-w-96 text-custom-blue-strong">
-                  <p className="mt-8 text-end font-extralight">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elite
-                    Sunt vel praesentium ducimus nam, alias nesciunt cumque illo
-                    natus voluptates, quod consequuntur error aliquid deleniti
-                    facilis quas! Quibusdam iste maiores esse?
+              <div className="relative mt-8 flex items-center gap-6 p-6 rounded-2xl bg-white/60 backdrop-blur-lg shadow-xl max-md:flex-col max-md:gap-4 max-md:w-full max-w-2xl border border-gray-200 hover:shadow-2xl transition-all duration-300 group">
+                {/* Conteúdo */}
+                <div className="flex  flex-col justify-between max-w-sm text-gray-800">
+                  <p className="text-lg font-thin leading-snug">
+                    A{" "}
+                    <span className="text-custom-blue-strong font-bold">
+                      Natville
+                    </span>
+                    , está de cara nova. Nossa linha de achocolatados com um
+                    novo integrante, o{" "}
+                    <span className="font-bold">Choconat de 1L</span>.
                   </p>
-                  <div className="w-full flex justify-end">
-                    <a
-                      href="https://www.instagram.com/natville.br/"
-                      target="_blanck"
-                    >
-                      <button
-                        className="relative 
-    overflow-hidden
-     flex-shrink-0
-bg-custom-blue-strong
-text-white py-2
-px-8 rounded-md shadow-sm
-shadow-black font-light 
-border-none mt-8 mm:max-md:w-full max-md:mt-2"
-                      >
-                        <span className="relative z-10 flex items-center justify-center">
-                          ver mais &rsaquo;
-                        </span>
-                        <span
-                          className="absolute inset-0
-      bg-gradient-to-r from-white
-       to-black
-     transform translate-x-full
-      transition-transform
-      duration-300 ease-in-out z-0 opacity-20"
-                        ></span>
-                      </button>
-                    </a>
-                  </div>
+
+                  {/* Botão oculto por padrão e aparece no hover */}
+                  <a
+                    href="https://www.instagram.com/natville.br/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="relative mt-6 w-full py-3 px-6 rounded-lg bg-gradient-to-r from-blue-600 to-blue-800 text-white font-thin text-lg tracking-wide shadow-md transition-all duration-300 ease-in-out opacity-0 group-hover:opacity-100 group-hover:translate-y-0 translate-y-2">
+                      <span className="relative z-10 flex items-center justify-center">
+                        Ver mais &rsaquo;
+                      </span>
+                    </button>
+                  </a>
                 </div>
-                <img
-                  className="rounded-md max-w-72 drop-shadow-xl shadow-black"
-                  src={noticia2}
-                  alt=""
-                />
+                {/* Imagem estilizada */}
+                <div
+                  className="relative w-96  max-md:w-full
+                 overflow-hidden rounded-xl shadow-lg"
+                >
+                  <img
+                    className="w-full h-full object-cover 
+                    transition-transform duration-300 hover:scale-105"
+                    src={noticia2}
+                    alt="Imagem da notícia"
+                  />
+                </div>
               </div>
             </AnimatedSection>
 
             <AnimatedY>
-              <div className="flex gap-8 mt-8 overflow-hidden max-md:flex-col max-md:items-center max-md:m-auto max-md:mt-20 max-md:gap-0">
-                <img
-                  className="rounded-md max-w-72 max-md:max-w-full drop-shadow-xl shadow-black "
-                  src={noticia3}
-                  alt=""
-                />
-                <div className="max-w-96 text-custom-blue-strong max-md:max-w-full">
-                  <p className="mt-8 max-md:mt-2 ">
-                    O leite UHT mantém a maioria dos nutrientes do leite in
-                    natura, sendo uma excelente fonte de cálcio, proteínas e
-                    vitaminas. O cálcio é essencial para a saúde dos ossos e
-                    dentes, enquanto as proteínas desempenham um papel
-                    fundamental na formação dos músculos, pele e outros tecidos
-                    do corpo. Além disso, esse leite contém vitaminas A, D e
-                    B12, que contribuem para a imunidade, a saúde ocular e a
-                    produção de células vermelhas do sangue.
+              <div className="relative mt-8 flex items-center gap-6 p-6 rounded-2xl bg-white/60 backdrop-blur-lg shadow-xl max-md:flex-col max-md:gap-4 max-md:w-full max-w-2xl border border-gray-200 hover:shadow-2xl transition-all duration-300 group">
+                {/* Imagem estilizada */}
+                <div
+                  className="relative w-96  max-md:w-full
+                 overflow-hidden rounded-xl shadow-lg"
+                >
+                  <img
+                    className="w-full h-full object-cover 
+                    transition-transform duration-300 hover:scale-105"
+                    src={noticia3}
+                    alt="Imagem da notícia"
+                  />
+                </div>
+
+                {/* Conteúdo */}
+                <div className="flex flex-col justify-between max-w-sm text-gray-800">
+                  <p className="text-lg font-thin leading-snug">
+                    Nossa{" "}
+                    <span className="text-custom-blue-strong font-bold">
+                      linha de leites uht
+                    </span>
+                    , também ganhou um novo produto, o{" "}
+                    <span className="font-bold">Leite Uht Semidesntado</span>.
                   </p>
 
+                  {/* Botão oculto por padrão e aparece no hover */}
                   <a
                     href="https://www.instagram.com/natville.br/"
-                    target="_blanck"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    <button
-                      className="relative 
-    overflow-hidden
-     flex-shrink-0
-bg-custom-blue-strong
-text-white py-2
-px-8 rounded-md shadow-sm
-shadow-black font-light 
-border-none mt-8 mm:max-md:w-full max-md:mt-2"
-                    >
+                    <button className="relative mt-6 w-full py-3 px-6 rounded-lg bg-gradient-to-r from-blue-600 to-blue-800 text-white font-thin text-lg tracking-wide shadow-md transition-all duration-300 ease-in-out opacity-0 group-hover:opacity-100 group-hover:translate-y-0 translate-y-2">
                       <span className="relative z-10 flex items-center justify-center">
-                        ver mais &rsaquo;
+                        Ver mais &rsaquo;
                       </span>
-                      <span
-                        className="absolute inset-0
-      bg-gradient-to-r from-white
-       to-black
-     transform translate-x-full
-      transition-transform
-      duration-300 ease-in-out z-0 opacity-20"
-                      ></span>
                     </button>
                   </a>
                 </div>

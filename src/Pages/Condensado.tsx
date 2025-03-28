@@ -49,7 +49,7 @@ export function Condensados() {
     getData();
   }, []);
 
-  const leiteUhtIntegral = leiteUht.length > 0 ? leiteUht[0] : null;
+  const leiteUhtIntegral = leiteUht.length > 0 ? leiteUht[19] : null;
 
   console.log(leiteUhtIntegral);
 

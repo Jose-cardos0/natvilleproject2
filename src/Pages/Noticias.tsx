@@ -1,6 +1,6 @@
 import { SliderNoticias } from "../Tools/SliderNoticias/SliderNoticias";
 // import logo from "../assets/QuemSomos/logoQuemSomos.png";
-import noticiafoto from "../Tools/SliderNoticias/Noticias1.jpg";
+// import noticiafoto from "../Tools/SliderNoticias/Noticias1.jpg";
 import janeafoto from "../Tools/SliderNoticias/historiaJanea.png";
 import fabalagoas from "../Tools/SliderNoticias/fabalagoas.png";
 import empregos from "../Tools/SliderNoticias/chagas.png";

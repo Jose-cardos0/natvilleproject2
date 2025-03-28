@@ -52,8 +52,9 @@ export function LeitesEmPo() {
   }, []);
 
   const leiteUhtIntegral = leiteUht.length > 0 ? leiteUht[12] : null;
-  const leiteUhtDesnatado = leiteUht.length > 0 ? leiteUht[14] : null;
-  const leiteUhtZero = leiteUht.length > 0 ? leiteUht[14] : null;
+  const leiteUhtDesnatado = leiteUht.length > 0 ? leiteUht[20] : null;
+  const leiteUhtZero = leiteUht.length > 0 ? leiteUht[21] : null;
+  const leiteInte25 = leiteUht.length > 0 ? leiteUht[22] : null;
 
   console.log(leiteUhtIntegral);
 
@@ -381,7 +382,7 @@ export function LeitesEmPo() {
                     </p>
                   </div>
                   <div className="max-md:w-full max-md:items-center max-md:justify-center">
-                    <Link to={`/produtos/${leiteUhtZero?.id}`}>
+                    <Link to={`/produtos/${leiteInte25?.id}`}>
                       <button
                         className="relative 
           overflow-hidden

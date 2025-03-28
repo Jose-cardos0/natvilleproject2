@@ -138,8 +138,9 @@ export function Bebidas() {
                       rotate: 3,
                     }}
                     transition={{ duration: 0.5 }}
-                    className=" object-center drop-shadow-md
-                   max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
+                    className=" object-center drop-shadow-md w-width-bebida2
+                   max-md:w-40 cursor-pointer 
+                   hover:scale-105 transition duration-700"
                     src={bebidaMorango}
                     alt="leite uht integral"
                   />
@@ -205,7 +206,7 @@ export function Bebidas() {
                       rotate: 3,
                     }}
                     transition={{ duration: 0.5 }}
-                    className=" object-center drop-shadow-md
+                    className=" object-center drop-shadow-md  w-width-bebida
                    max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
                     src={bebidaAmeixa}
                     alt="leite uht integral"
@@ -278,7 +279,7 @@ export function Bebidas() {
                       rotate: 3,
                     }}
                     transition={{ duration: 0.5 }}
-                    className=" object-center drop-shadow-md
+                    className=" object-center drop-shadow-md w-width-bebida
                    max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
                     src={BebidaCoco}
                     alt="leite uht integral"
@@ -346,7 +347,7 @@ export function Bebidas() {
                       rotate: 3,
                     }}
                     transition={{ duration: 0.5 }}
-                    className=" object-center drop-shadow-md
+                    className=" object-center drop-shadow-md w-width-bebida2
                    max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
                     src={graviola}
                     alt="leite uht integral"
