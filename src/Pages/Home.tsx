@@ -543,14 +543,14 @@ border-none mt-8 mm:max-md:w-full"
                   />
                   <p
                     className=" text-custom-blue-strong uppercase 
-                  text-lg max-md:text-lg max-md:font-DKLeomn"
+                  text-lg max-md:text-lg font-mochari"
                   >
                     Somos uma família SERTANEJA trabalhadora, guiada pela fé que
                     permeia o nosso coração.
                   </p>
                 </div>
                 <div className="flex w-full items-center gap-5 mt-4">
-                  <p className="font-DKLeomn text-custom-blue-strong uppercase text-lg text-end max-md:text-lg">
+                  <p className="font-mochari text-custom-blue-strong uppercase text-lg text-end max-md:text-lg">
                     Acreditamos na dedicação e responsabilidade em cada etapa do
                     nosso processo.
                   </p>
@@ -567,13 +567,13 @@ border-none mt-8 mm:max-md:w-full"
                     alt="natville"
                     className="max-w-16 max-md:w-20"
                   />
-                  <p className="font-DKLeomn text-custom-blue-strong uppercase text-lgmax-md:text-lg">
+                  <p className="font-mochari text-custom-blue-strong uppercase text-lgmax-md:text-lg">
                     A fé nos guia desde a coleta do leite, ATÉ A CHEGADA DO
                     PRODUTO EM SUA CASA.
                   </p>
                 </div>
                 <div className="flex w-full items-center gap-5 mt-6">
-                  <p className="font-DKLeomn text-custom-blue-strong uppercase text-lg text-end max-md:text-lg">
+                  <p className="font-mochari text-custom-blue-strong uppercase text-lg text-end max-md:text-lg">
                     Investimos em ações sociais com a comunidade, contribuindo
                     para momentos de amor e união.
                   </p>
@@ -589,14 +589,14 @@ border-none mt-8 mm:max-md:w-full"
                     alt="natville"
                     className="max-w-16 max-md:w-14"
                   />
-                  <p className="font-DKLeomn text-custom-blue-strong uppercase text-lg max-md:text-lg">
+                  <p className="font-mochari text-custom-blue-strong uppercase text-lg max-md:text-lg">
                     É como um amor de mãe, cheio de fé no futuro, de crença na
                     importância do que fazemos.
                   </p>
                 </div>
 
                 <div className="flex w-full items-center gap-5 mt-3">
-                  <p className="font-DKLeomn text-custom-blue-strong uppercase text-lg text-end max-md:text-lg">
+                  <p className="font-mochari text-custom-blue-strong uppercase text-lg text-end max-md:text-lg">
                     Nutrimos laços. Celebramos famílias. Como amor de mãe.
                   </p>
                   <img
