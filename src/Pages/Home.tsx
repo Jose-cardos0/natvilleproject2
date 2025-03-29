@@ -542,8 +542,8 @@ border-none mt-8 mm:max-md:w-full"
                     className="max-w-16 max-md:w-14"
                   />
                   <p
-                    className="font-DKLeomn text-custom-blue-strong uppercase 
-                  text-lg max-md:text-lg"
+                    className=" text-custom-blue-strong uppercase 
+                  text-lg max-md:text-lg max-md:font-DKLeomn"
                   >
                     Somos uma família SERTANEJA trabalhadora, guiada pela fé que
                     permeia o nosso coração.

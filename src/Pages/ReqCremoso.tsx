@@ -149,7 +149,7 @@ export function ReqCremoso() {
               <AnimatedY>
                 <div className="flex-col items-center justify-center">
                   <h1 className="font-mochari text-8xl text-custom-blue-strong max-md:text-7xl">
-                    Queijo Prcoessado <br />
+                    Queijo processado <br />
                     tradicional
                   </h1>
                   <div>
@@ -222,7 +222,7 @@ export function ReqCremoso() {
                     className="font-mochari text-8xl max-md:text-7xl
                    text-custom-blue-strong"
                   >
-                    Queijo Prcoessado
+                    Queijo processado
                     <br />
                     Cebola e Salsa
                   </h1>
@@ -293,7 +293,7 @@ export function ReqCremoso() {
               <AnimatedY>
                 <div className="flex-col items-center justify-center">
                   <h1 className="font-mochari text-8xl text-custom-blue-strong max-md:text-7xl">
-                    Queijo Prcoessado <br />
+                    Queijo processado <br />
                     cheddar
                   </h1>
                   <div>
@@ -365,7 +365,7 @@ export function ReqCremoso() {
                     className="font-mochari text-8xl max-md:text-7xl
                    text-custom-blue-strong"
                   >
-                    Queijo Prcoessado
+                    Queijo processado
                     <br />
                     light
                   </h1>
@@ -439,7 +439,7 @@ export function ReqCremoso() {
                     className="font-mochari text-8xl max-md:text-7xl
                    text-custom-blue-strong"
                   >
-                    Queijo Prcoessado
+                    Queijo processado
                     <br />
                     zero lactose
                   </h1>
