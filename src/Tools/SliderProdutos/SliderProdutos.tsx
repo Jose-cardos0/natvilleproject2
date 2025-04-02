@@ -9,6 +9,7 @@ import { SliderUHT } from "./Sliders/SliderUHT";
 import { SliderMilkPowder } from "./Sliders/SliderMilkPowder";
 import { SliderButter } from "./Sliders/SliderButter";
 import { SliderChoconat } from "./Sliders/SliderChoconat";
+import { SliderCremeDeLeite } from "./Sliders/SliderCremeLeite";
 
 export function SliderProdutos() {
   return (
@@ -42,6 +43,9 @@ export function SliderProdutos() {
         </SwiperSlide>
         <SwiperSlide className="px-16 w-full mm:max-md:px-8 ">
           <SliderChoconat />
+        </SwiperSlide>
+        <SwiperSlide className="px-16 w-full mm:max-md:px-8 ">
+          <SliderCremeDeLeite />
         </SwiperSlide>
       </Swiper>
     </div>

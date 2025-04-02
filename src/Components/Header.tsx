@@ -141,7 +141,7 @@ export function Header() {
                               onClick={() => setIsOpen((prev) => !prev)}
                               className="font-roboto  py-2 px-4 cursor-pointer text-gray-600 hover:bg-blue-50 transition duration-300 rounded-lg font-light"
                             >
-                              Linha Leites
+                              Leites UHT
                             </div>
                           </Link>
                           <Link to={"/queijos"}>
@@ -149,7 +149,7 @@ export function Header() {
                               onClick={() => setIsOpen((prev) => !prev)}
                               className="font-roboto  py-2 px-4 cursor-pointer text-gray-600 hover:bg-blue-50 transition duration-300 rounded-lg font-light"
                             >
-                              Linha Queijos
+                              Queijos
                             </div>
                           </Link>
                           <Link to={"/manteigas"}>
@@ -157,7 +157,7 @@ export function Header() {
                               onClick={() => setIsOpen((prev) => !prev)}
                               className="font-roboto  py-2 px-4 cursor-pointer text-gray-600 hover:bg-blue-50 transition duration-300 rounded-lg font-light"
                             >
-                              Linha Manteigas
+                              Manteigas
                             </div>
                           </Link>
                           <Link to={"/choconat"}>
@@ -165,7 +165,7 @@ export function Header() {
                               onClick={() => setIsOpen((prev) => !prev)}
                               className="font-roboto  py-2 px-4 cursor-pointer text-gray-600 hover:bg-blue-50 transition duration-300 rounded-lg font-light"
                             >
-                              Linha Achocolatados
+                              Achocolatados
                             </div>
                           </Link>
                           <Link to={"/bebidas"}>
@@ -173,7 +173,7 @@ export function Header() {
                               onClick={() => setIsOpen((prev) => !prev)}
                               className="font-roboto  py-2 px-4 cursor-pointer text-gray-600 hover:bg-blue-50 transition duration-300 rounded-lg font-light"
                             >
-                              Linha Bebidas
+                              Bebidas
                             </div>
                           </Link>
                           <Link to={"/reqcremoso"}>
@@ -181,7 +181,7 @@ export function Header() {
                               onClick={() => setIsOpen((prev) => !prev)}
                               className="font-roboto  py-2 px-4 cursor-pointer text-gray-600 hover:bg-blue-50 transition duration-300 rounded-lg font-light"
                             >
-                              Linha Cremosos
+                              Cremosos
                             </div>
                           </Link>
                           <Link to={"/condensados"}>
@@ -189,7 +189,7 @@ export function Header() {
                               onClick={() => setIsOpen((prev) => !prev)}
                               className="font-roboto  py-2 px-4 cursor-pointer text-gray-600 hover:bg-blue-50 transition duration-300 rounded-lg font-light"
                             >
-                              Linha Condensado
+                              Condensado
                             </div>
                           </Link>
                           <Link to={"/empo"}>
@@ -197,7 +197,7 @@ export function Header() {
                               onClick={() => setIsOpen((prev) => !prev)}
                               className="font-roboto  py-2 px-4 cursor-pointer text-gray-600 hover:bg-blue-50 transition duration-300 rounded-lg font-light"
                             >
-                              Linha em Pó
+                              Em pó
                             </div>
                           </Link>
                         </div>
@@ -281,7 +281,7 @@ export function Header() {
             {isOpen === true ? (
               <div
                 id="absolute-div"
-                className="absolute top-full mr-56
+                className="absolute top-full mr-72
                   bg-custom-white shadow-lg 
                   flex items-center justify-center bg-opacity-90 rounded-b-xl"
               >
@@ -292,7 +292,7 @@ export function Header() {
                       className="w-full px-5 py-2 cursor-pointer uppercase 
                 font-light hover:bg-custom-bg-leiteIHT hover:text-white"
                     >
-                      Liha de queijos
+                      queijos
                     </div>
                   </Link>
                   <Link to={"/leiteuht"}>
@@ -301,7 +301,7 @@ export function Header() {
                       className="w-full  px-5 py-2 cursor-pointer uppercase 
                    font-light hover:bg-custom-bg-leiteIHT hover:text-white"
                     >
-                      Linha de leites
+                      leites uht
                     </div>
                   </Link>
                   <Link to={"/Bebidas"}>
@@ -310,7 +310,7 @@ export function Header() {
                       className="w-full  px-5 py-2 cursor-pointer uppercase 
             font-light  hover:bg-custom-bg-leiteIHT  hover:text-white"
                     >
-                      Linha de bebidas lácteas
+                      bebidas lácteas
                     </div>
                   </Link>
                   <Link to={"/manteigas"}>
@@ -319,7 +319,7 @@ export function Header() {
                       className="w-full  px-5 py-2 cursor-pointer uppercase
                    font-light  hover:bg-custom-bg-leiteIHT hover:text-white"
                     >
-                      Linha de Manteigas
+                      Manteigas
                     </div>
                   </Link>
                   <Link to={"/choconat"}>
@@ -328,7 +328,7 @@ export function Header() {
                       className="w-full  px-5 py-2 cursor-pointer uppercase 
                  font-light  hover:bg-custom-bg-leiteIHT hover:text-white"
                     >
-                      Linha Achocolatado
+                      Achocolatado
                     </div>
                   </Link>
                   <Link to={"/reqcremoso"}>
@@ -337,7 +337,7 @@ export function Header() {
                       className="w-full  px-5 py-2 cursor-pointer uppercase 
                  font-light  hover:bg-custom-bg-leiteIHT hover:text-white"
                     >
-                      Linha Cremosos
+                      Cremosos
                     </div>
                   </Link>
                   <Link to={"/condensados"}>
@@ -346,7 +346,7 @@ export function Header() {
                       className="w-full  px-5 py-2 cursor-pointer uppercase 
                  font-light  hover:bg-custom-bg-leiteIHT hover:text-white"
                     >
-                      Linha Condensado
+                      Condensado
                     </div>
                   </Link>
                   <Link to={"/empo"}>
@@ -355,7 +355,7 @@ export function Header() {
                       className="w-full  px-5 py-2 cursor-pointer uppercase 
                  font-light  hover:bg-custom-bg-leiteIHT hover:text-white"
                     >
-                      Linha em Pó
+                      Em Pó
                     </div>
                   </Link>
                 </div>

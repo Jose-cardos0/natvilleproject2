@@ -190,12 +190,14 @@ export function ProdutoDetail() {
                   hover:scale-150
                 "
                     >
-                      <GoDesktopDownload color="indigo" />
+                      <a href={`${produtosDetail.imagem}`}>
+                        <GoDesktopDownload color="indigo" />
+                      </a>
                     </div>
                     <img
                       src={images[currentImageIndex]}
                       alt=""
-                      className="w-full px-9 max-w-full"
+                      className="w-60 px-9 max-w-full object-contain"
                     />
                     <button
                       onClick={prevImage}

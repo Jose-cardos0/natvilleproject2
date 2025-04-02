@@ -75,7 +75,7 @@ export function Choconat() {
           >
             <AnimatedSection>
               <img
-                className=" max-md:w-96 -mt-28
+                className=" max-md:w-96 -mt-28 max-w-4xl
                max-md:-mt-32 cursor-pointer hover:scale-105 
                transition duration-700"
                 src={achocolatados}
@@ -287,22 +287,27 @@ export function Choconat() {
                   <div className="flex items-center justify-center gap-2">
                     <AiOutlineYoutube
                       size={25}
+                      color="#fff"
                       className="cursor-pointer hover:scale-105 transition duration-300"
                     />
                     <CiFacebook
                       size={25}
+                      color="#fff"
                       className="cursor-pointer hover:scale-105 transition duration-300"
                     />
                     <FaWhatsapp
                       size={25}
+                      color="#fff"
                       className="cursor-pointer hover:scale-105 transition duration-300"
                     />
                     <FaInstagram
                       size={25}
+                      color="#fff"
                       className="cursor-pointer hover:scale-105 transition duration-300"
                     />
                     <AiOutlineLinkedin
                       size={25}
+                      color="#fff"
                       className="cursor-pointer hover:scale-105 transition duration-300"
                     />
                   </div>
