@@ -22,9 +22,7 @@ export function SliderCremeDeLeite() {
    text-9xl text-custom-blue-strong
     text-end mm:max-md:text-6xl mm:max-md:text-center mm:max-md:w-full"
           >
-            CREME DE
-            <br />
-            LEITE LEVE
+            CREME DE LEITE LEVE
           </h1>
         </div>
         <div className="py-8 mm:max-md:py-3">

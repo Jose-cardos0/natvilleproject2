@@ -528,11 +528,14 @@ border-none mt-8 mm:max-md:w-full"
                   quem somos
                 </h2>
                 <div className="w-full flex justify-center">
-                  <img
-                    src={logoF}
-                    alt="natville"
-                    className="w-full max-md:w-60"
-                  />
+                  <video
+                    src={videoLogo}
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    className="mb-6 relative z-10 max-md:w-72"
+                  ></video>
                 </div>
 
                 <div className="flex w-full items-center gap-5 mt-8">

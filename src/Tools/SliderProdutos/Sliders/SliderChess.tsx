@@ -22,9 +22,7 @@ export function SliderChess() {
    text-9xl text-custom-blue-strong
     text-end mm:max-md:text-6xl mm:max-md:text-center mm:max-md:w-full"
           >
-            LINHA
-            <br />
-            DE QUEIJOS
+            QUEIJOS
           </h1>
         </div>
         <div className="py-8 mm:max-md:py-3">

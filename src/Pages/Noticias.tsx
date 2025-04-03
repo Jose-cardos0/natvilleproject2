@@ -154,6 +154,86 @@ export function Noticias() {
             </div>
           </AnimatedY>
           {/*QUARTO CARD */}
+          <AnimatedY>
+            <div className="relative  rounded-md overflow-hidden cursor-pointer group">
+              <img
+                className="w-full h-full transition-transform duration-300 transform group-hover:scale-110"
+                src={janeafoto}
+                alt="Inspiração"
+              />
+
+              {/* Texto inferior com fundo gradiente para melhor legibilidade */}
+              <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-black/70 to-transparent flex items-end p-4">
+                <h1 className="text-white text-lg font-light leading-tight">
+                  Inspirando <br /> nova geração
+                </h1>
+              </div>
+
+              {/* Botão aprimorado */}
+              <div className="absolute -bottom-2 right-4 -translate-y-1/2 mm:max-md:top-40">
+                <button className="relative bg-custom-blue-strong text-white py-3 px-10 rounded-md shadow-md font-light overflow-hidden transition-all duration-300 hover:shadow-lg hover:bg-opacity-90">
+                  <span className="relative z-10 flex items-center justify-center">
+                    VEJA MAIS &rsaquo;
+                  </span>
+                  <span className="absolute inset-0 bg-white/20 transform translate-x-full transition-all duration-300 group-hover:translate-x-0"></span>
+                </button>
+              </div>
+            </div>
+          </AnimatedY>
+          {/*QUINTO CARD */}
+          <AnimatedY>
+            <div className="relative  rounded-md overflow-hidden cursor-pointer group">
+              <img
+                className="w-full h-full transition-transform duration-300 transform group-hover:scale-110"
+                src={janeafoto}
+                alt="Inspiração"
+              />
+
+              {/* Texto inferior com fundo gradiente para melhor legibilidade */}
+              <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-black/70 to-transparent flex items-end p-4">
+                <h1 className="text-white text-lg font-light leading-tight">
+                  Inspirando <br /> nova geração
+                </h1>
+              </div>
+
+              {/* Botão aprimorado */}
+              <div className="absolute -bottom-2 right-4 -translate-y-1/2 mm:max-md:top-40">
+                <button className="relative bg-custom-blue-strong text-white py-3 px-10 rounded-md shadow-md font-light overflow-hidden transition-all duration-300 hover:shadow-lg hover:bg-opacity-90">
+                  <span className="relative z-10 flex items-center justify-center">
+                    VEJA MAIS &rsaquo;
+                  </span>
+                  <span className="absolute inset-0 bg-white/20 transform translate-x-full transition-all duration-300 group-hover:translate-x-0"></span>
+                </button>
+              </div>
+            </div>
+          </AnimatedY>
+          {/*SEXTO CARD */}
+          <AnimatedY>
+            <div className="relative  rounded-md overflow-hidden cursor-pointer group">
+              <img
+                className="w-full h-full transition-transform duration-300 transform group-hover:scale-110"
+                src={janeafoto}
+                alt="Inspiração"
+              />
+
+              {/* Texto inferior com fundo gradiente para melhor legibilidade */}
+              <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-black/70 to-transparent flex items-end p-4">
+                <h1 className="text-white text-lg font-light leading-tight">
+                  Inspirando <br /> nova geração
+                </h1>
+              </div>
+
+              {/* Botão aprimorado */}
+              <div className="absolute -bottom-2 right-4 -translate-y-1/2 mm:max-md:top-40">
+                <button className="relative bg-custom-blue-strong text-white py-3 px-10 rounded-md shadow-md font-light overflow-hidden transition-all duration-300 hover:shadow-lg hover:bg-opacity-90">
+                  <span className="relative z-10 flex items-center justify-center">
+                    VEJA MAIS &rsaquo;
+                  </span>
+                  <span className="absolute inset-0 bg-white/20 transform translate-x-full transition-all duration-300 group-hover:translate-x-0"></span>
+                </button>
+              </div>
+            </div>
+          </AnimatedY>
           {/* <AnimatedY>
             <div
               className=" rounded-md

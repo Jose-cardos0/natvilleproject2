@@ -22,8 +22,6 @@ export function SliderUHT() {
    text-9xl text-custom-blue-strong
     text-end mm:max-md:text-6xl mm:max-md:text-center mm:max-md:w-full"
           >
-            LINHA
-            <br />
             LEITES UHT
           </h1>
         </div>

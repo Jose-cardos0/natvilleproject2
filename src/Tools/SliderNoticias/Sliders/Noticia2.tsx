@@ -1,4 +1,4 @@
-import noticias1 from "../destaque.png";
+import noticias1 from "../Noticias1.jpg";
 
 export function Noticia2() {
   return (
