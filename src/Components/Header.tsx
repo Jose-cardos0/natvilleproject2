@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 //icons
 import { ImMenu2 } from "react-icons/im";
 //logo
-import videoLogo from "../assets/Home/logoanimate.webm";
+import videoLogo from "../assets/Home/logoanimate11.webm";
 
 //animacoes
 import { AnimatedSection } from "../Tools/Animates/AnimatedSections";

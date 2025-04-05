@@ -26,7 +26,7 @@ import noticia2 from "../assets/Home/noticias/noticia2.png";
 import noticia3 from "../assets/Home/noticias/noticia3.png";
 
 import leiteZero from "../assets/Home/FamiliaZero.webp";
-import videoLogo from "../assets/Home/logoanimate.webm";
+import videoLogo from "../assets/Home/logoanimate11.webm";
 
 //produtos
 // import mussGrid from "../assets/Home/grid/mussarela.svg";
