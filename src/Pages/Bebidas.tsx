@@ -69,8 +69,10 @@ export function Bebidas() {
       <section className="flex-col items-center justify-center bg-custom-white">
         <div
           style={{ backgroundImage: `url(${bg1})` }}
-          className="h-screen w-screen flex items-center 
-          justify-center m-auto -mt-8 bg-cover bg-center bg-fixed z-10"
+          className="h-screen w-screen flex 
+          items-center 
+          justify-center m-auto -mt-8
+           bg-contain bg-no-repeat bg-center bg-fixed z-10"
         >
           <div
             className="max-w-7xl 

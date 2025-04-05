@@ -65,9 +65,10 @@ export function Choconat() {
       <section className="flex-col items-center justify-center bg-gradient-to-tl from-custom-choco via-amber-700 to-custom-choco ">
         <div
           style={{ backgroundImage: `url(${bg1})` }}
-          className="h-screen w-screen flex items-center
-         justify-center m-auto bg-cover bg-center
-          bg-no-repeat z-10"
+          className="h-screen w-screen flex 
+          items-center 
+          justify-center m-auto -mt-8
+           bg-contain bg-no-repeat bg-center bg-fixed z-10"
         >
           <div
             className="max-w-7xl 
