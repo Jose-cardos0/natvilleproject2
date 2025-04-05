@@ -26,12 +26,12 @@ export function SliderUHT() {
           </h1>
         </div>
         <div className="py-8 mm:max-md:py-3">
-          <p className="font-roboto text-custom-blue-strong text-end mm:max-md:text-justify">
+          {/* <p className="font-roboto text-custom-blue-strong text-end mm:max-md:text-justify">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ea,
             itaque adipisci laudantium dolorum obcaecati illum officiis
             consequuntur aliquid? Magni aspernatur veritatis, officiis enim
             veniam nisi quaerat sapiente vitae qui! Porro repudiandae deserunt
-          </p>
+          </p> */}
         </div>
         <div className="w-full flex items-end justify-end max-md:justify-center">
           <Link to={"/leiteuht"}>
