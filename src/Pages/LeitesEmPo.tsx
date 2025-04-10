@@ -437,7 +437,7 @@ export function LeitesEmPo() {
               </AnimatedNegative>
               <AnimatedY>
                 <div className="flex-col items-center justify-center">
-                  <h1 className="font-mochari text-8xl text-custom-blue-strong max-md:text-7xl">
+                  <h1 className="font-mochari text-8xl text-custom-blue-strong max-md:text-5xl">
                     Soro de leite em pó <br />
                     parcialmente desmineralizado 40%
                   </h1>
