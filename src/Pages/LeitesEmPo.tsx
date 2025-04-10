@@ -8,9 +8,9 @@ import bg1 from "../assets/QuemSomos/bgProdutos.svg";
 //itens
 import leitesUht from "../assets/Produtos/LeiteEmPo/bgLeites.webp";
 
-import leiteUhtEx from "../assets/Produtos/LeiteEmPo/INTEGRAL_4_11zon.webp";
-import leiteUhtExDes from "../assets/Produtos/LeiteEmPo/DESNATADO_3_11zon.webp";
-import leiteUhtExZero from "../assets/Produtos/LeiteEmPo/ZERO-LACTOSE_2_11zon.webp";
+import leiteUhtEx from "../assets/Produtos/LeiteEmPo/INTEGRAL200.webp";
+import leiteUhtExDes from "../assets/Produtos/LeiteEmPo/DESNATADO200.webp";
+import leiteUhtExZero from "../assets/Produtos/LeiteEmPo/ZERO202gg.webp";
 import leiteEmPo25 from "../assets/Produtos/LeiteEmPo/LeiteEmPo25.webp";
 import sorodeleite from "../assets/Produtos/LeiteEmPo/soromockup.webp";
 import logoF from "../assets/Footer/logoFooter.svg";
