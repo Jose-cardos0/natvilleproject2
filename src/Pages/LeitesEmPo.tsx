@@ -12,6 +12,7 @@ import leiteUhtEx from "../assets/Produtos/LeiteEmPo/INTEGRAL_4_11zon.webp";
 import leiteUhtExDes from "../assets/Produtos/LeiteEmPo/DESNATADO_3_11zon.webp";
 import leiteUhtExZero from "../assets/Produtos/LeiteEmPo/ZERO-LACTOSE_2_11zon.webp";
 import leiteEmPo25 from "../assets/Produtos/LeiteEmPo/LeiteEmPo25.webp";
+import sorodeleite from "../assets/Produtos/LeiteEmPo/soromockup.webp";
 import logoF from "../assets/Footer/logoFooter.svg";
 
 //icons
@@ -55,6 +56,7 @@ export function LeitesEmPo() {
   const leiteUhtDesnatado = leiteUht.length > 0 ? leiteUht[20] : null;
   const leiteUhtZero = leiteUht.length > 0 ? leiteUht[21] : null;
   const leiteInte25 = leiteUht.length > 0 ? leiteUht[22] : null;
+  const soroEmPo = leiteUht.length > 0 ? leiteUht[23] : null;
 
   console.log(leiteUhtIntegral);
 
@@ -385,6 +387,80 @@ export function LeitesEmPo() {
                   </div>
                   <div className="max-md:w-full max-md:items-center max-md:justify-center">
                     <Link to={`/produtos/${leiteInte25?.id}`}>
+                      <button
+                        className="relative 
+          overflow-hidden
+           flex-shrink-0
+    bg-custom-blue-strong
+    text-white py-3 
+    px-14 rounded-md shadow-sm
+    shadow-black font-light 
+     border-none mt-8 max-md:w-full cursor-pointer"
+                      >
+                        <span className="relative z-10 flex items-center justify-center">
+                          TABELA NUTRICIONAL +
+                        </span>
+                        <span
+                          className="absolute inset-0
+            bg-gradient-to-r from-white
+             to-black
+           transform translate-x-full
+            transition-transform
+            duration-300 ease-in-out z-0 opacity-20"
+                        ></span>
+                      </button>
+                    </Link>
+                  </div>
+                </div>
+              </AnimatedY>
+            </div>
+            {/*SACO DE SORO 25KG */}
+            <div
+              className="flex items-center justify-center mt-28
+              gap-8  max-md:flex-col
+               max-md:mx-8  max-md:mt-32"
+            >
+              <AnimatedNegative>
+                <div>
+                  <motion.img
+                    whileHover={{
+                      scale: 1.1,
+                      rotate: 3,
+                    }}
+                    transition={{ duration: 0.5 }}
+                    className="max-w-80 object-center drop-shadow-md
+                   max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
+                    src={sorodeleite}
+                    alt="leite uht integral"
+                  />
+                </div>
+              </AnimatedNegative>
+              <AnimatedY>
+                <div className="flex-col items-center justify-center">
+                  <h1 className="font-mochari text-8xl text-custom-blue-strong max-md:text-7xl">
+                    Soro de leite em pó <br />
+                    parcialmente desmineralizado 40%
+                  </h1>
+                  <div>
+                    <p className="text-custom-blue-strong text-justify mt-8">
+                      O soro de leite em pó parcialmente desmineraizado é a
+                      escolha ideal para indústrias que necessitam de qualidade
+                      superior, alto rendimento e pureza em suas formulações.
+                      Produzido a partir de leite fresco selecionado, ele mantém
+                      todas as propriedades naturais, garantindo um produto rico
+                      em cálcio, proteínas e vitaminas essenciais.
+                      <br />
+                      <br />
+                      ✅ Matéria-prima de alta qualidade para produtos
+                      alimentícios. <br />
+                      ✅ Excelente solubilidade e cremosidade. <br />
+                      ✅ Ideal para panificação, laticínios, confeitaria,
+                      sorvetes e muito mais. <br />✅ Padrão industrial com
+                      consistência e confiabilidade.
+                    </p>
+                  </div>
+                  <div className="max-md:w-full max-md:items-center max-md:justify-center">
+                    <Link to={`/produtos/${soroEmPo?.id}`}>
                       <button
                         className="relative 
           overflow-hidden

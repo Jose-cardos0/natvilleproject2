@@ -1,4 +1,5 @@
 import logo from "../assets/QuemSomos/logoQuemSomos.png";
+// import videoLogo from "../assets/Home/logoanimate11.webm";
 import natville from "../assets/QuemSomos/natville.svg";
 import capela from "../assets/QuemSomos/capela.svg";
 import bg from "../assets/QuemSomos/bgProdutos.svg";
@@ -62,6 +63,15 @@ export function QuemSomos() {
                   src={logo}
                   alt="natville"
                 />
+                {/* <video
+                  src={videoLogo}
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className="w-8/12 mb-6 relative
+                   z-10 max-md:max-w-72"
+                ></video> */}
                 <img
                   className="mm:max-md:w-36 mm:max-md:block hidden"
                   src={valores}

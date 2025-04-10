@@ -68,7 +68,7 @@ export function Choconat() {
           className="h-screen w-screen flex 
           items-center 
           justify-center m-auto -mt-8
-           bg-contain bg-no-repeat bg-center bg-fixed z-10"
+           bg-contain bg-no-repeat bg-start bg-fixed z-10"
         >
           <div
             className="max-w-7xl 
