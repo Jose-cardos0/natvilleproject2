@@ -8,6 +8,7 @@
   box-sizing: border-box;
 }
 
+@import url("https://fonts.cdnfonts.com/css/dk-lemon-yellow-sun");
 @import url("https://db.onlinewebfonts.com/c/f3edd9d7f2d3ce0f858aaeb2444eb457?family=DK+Lemon+Yellow+Sun");
 
 button:hover span:last-child {
@@ -76,3 +77,20 @@ button:hover span:last-child {
   clip-path: path("M0 0C224.707 180.698 360.028 187.273 621 0H0Z");
   transition: all 0.3s ease-in-out;
 } */
+
+.swiper-pagination-bullet {
+  width: 20px !important;
+  height: 5px !important;
+  background-color: rgb(231, 231, 231) !important;
+  opacity: 2 !important;
+  border-radius: 5% !important;
+  margin: 0 10px !important;
+  transition: all 0.3s ease !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #0300b1 !important;
+  width: 25px !important;
+  height: 5px !important;
+  transform: scale(1.5);
+}

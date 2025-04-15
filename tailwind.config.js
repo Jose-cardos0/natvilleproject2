@@ -13,6 +13,7 @@ export default {
       roboto: ["Roboto", "sans-serif"],
       mochari: ["Mocha Mattari W01 Regular", "sans-serif"],
       DKLeomn: ["DK Lemon Yellow Sun", "sans-serif"],
+      SantHelena: ["SantEliaScript-BoldDMO", "Mocha Mattari W01 Regular"],
     },
     extend: {
       colors: {

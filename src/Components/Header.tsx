@@ -64,7 +64,7 @@ export function Header() {
       onMouseLeave={handleMouseLeave}
       onMouseMove={handleMouseMove}
       style={{ position: "relative" }}
-      className="w-full h-24
+      className="w-full h-16
      bg-custom-white flex items-center justify-center
       drop-shadow-xl shadow-black fixed z-20   "
     >
@@ -74,7 +74,7 @@ export function Header() {
           className="absolute bg-custom-white p-10 rounded-full w-36 h-36"
           style={{
             position: "absolute",
-            top: "-40%",
+            top: "-100%",
             left: mouseX - 70, // Ajusta a posição horizontal com base na posição do mouse
             zIndex: -1,
           }}

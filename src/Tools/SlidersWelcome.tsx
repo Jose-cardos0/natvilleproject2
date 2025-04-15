@@ -5,8 +5,16 @@ import { Autoplay, Navigation, Pagination, Scrollbar } from "swiper/modules";
 import { useState, useEffect } from "react";
 
 //import imgs
-import leitesPropaganda from "./SlidersImgWelcome/leitesPropaganda.svg";
-import logo from "./SlidersImgWelcome/logoHeader.svg";
+
+// import logo from "./SlidersImgWelcome/logoHeader.svg";
+
+import videoLogo from "../assets/Home/logoanimate11.webm";
+// import { AnimatedSection } from "../Tools/Animates/AnimatedSections";
+
+// import sliders produtos
+import { SliderCondensado } from "./SlidersImgWelcome/SliderCondensado";
+import { SliderLeites } from "./SlidersImgWelcome/SliderLeites";
+import { SliderCremedeLeite } from "./SlidersImgWelcome/SliderCremedeLeite";
 
 //import imgs mobile
 import logoMOb from "./SlidersImgWelcome/Mobile/logoMob.png";
@@ -31,7 +39,7 @@ export function SlidersWelcome() {
   return (
     <div
       className="flex items-center justify-center  overflow-hidden
-    mm:max-md:px-0 mm:max-md:py-16 mm:max-md:h-auto "
+    mm:max-md:px-0 mm:max-md:py-16 mm:max-md:h-auto z-50 "
     >
       {isMobile ? (
         <Swiper
@@ -67,8 +75,13 @@ export function SlidersWelcome() {
         <Swiper
           modules={[Pagination, Navigation, Scrollbar, Autoplay]}
           slidesPerView={1}
-          navigation={isMobile ? false : true}
-          pagination={isMobile ? { clickable: true } : { clickable: false }}
+          navigation={isMobile ? false : false}
+          pagination={{
+            clickable: true,
+            renderBullet: function (index, className) {
+              return '<span class="' + className + ' custom-bullet"></span>';
+            },
+          }}
           className="mySwiper mm:max-md:w-width-mobile"
           autoplay={{
             delay: 3000,
@@ -76,20 +89,38 @@ export function SlidersWelcome() {
           }}
         >
           <SwiperSlide className="px-16 max-w-7xl mm:max-md:pb-10">
-            <img
-              className="w-full 
-          drop-shadow-lg max-w-4xl m-auto"
-              src={logo}
-              alt="natville"
-            />
+            <div className="flex mt-20 w-full justify-center m-auto">
+              <video
+                src={videoLogo}
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="mt-96 relative z-10 max-md:w-11/12"
+              ></video>
+            </div>
           </SwiperSlide>
-          <SwiperSlide className="px-16 max-w-7xl ">
-            <img
-              className="w-full drop-shadow-lg"
-              src={leitesPropaganda}
-              alt=""
-            />
+          {/*SLIDER 1 */}
+          <SwiperSlide className="mt-80 ">
+            <div className=" ">
+              <SliderCondensado />
+            </div>
           </SwiperSlide>
+          {/*FIM SLIDER 1 */}
+          {/*SLIDER 2 */}
+          <SwiperSlide className="mt-80 ">
+            <div className="">
+              <SliderLeites />
+            </div>
+          </SwiperSlide>
+          {/*FIM SLIDER 2 */}
+          {/*SLIDER 3 */}
+          <SwiperSlide className="mt-96 ">
+            <div className="">
+              <SliderCremedeLeite />
+            </div>
+          </SwiperSlide>
+          {/*FIM SLIDER 3 */}
         </Swiper>
       )}
     </div>

@@ -2,7 +2,7 @@ import { useLayoutEffect } from "react";
 
 import camp from "../assets/Home/camp.webp";
 
-import { SliderProdutos } from "../Tools/SliderProdutos/SliderProdutos";
+// import { SliderProdutos } from "../Tools/SliderProdutos/SliderProdutos";
 
 import logoF from "../assets/Footer/logoFooter.svg";
 
@@ -13,9 +13,10 @@ import { FaWhatsapp } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { AiOutlineLinkedin } from "react-icons/ai";
 import { FiPhoneForwarded } from "react-icons/fi";
+import { TiArrowRight } from "react-icons/ti";
 
 //slider
-// import { SlidersWelcome } from "../Tools/SlidersWelcome";
+import { SlidersWelcome } from "../Tools/SlidersWelcome";
 // import { SliderNoticias } from "../Tools/SliderNoticias/SliderNoticias";
 
 //imgs
@@ -50,25 +51,32 @@ import { AnimatedSection } from "../Tools/Animates/AnimatedSections";
 import { AnimatedY } from "../Tools/Animates/AnimatedY";
 import { Link } from "react-router-dom";
 
+//img produtos
+import mussarela from "../assets/Produtos/Queijos/mussarela.png";
+import prato from "../assets/Produtos/Queijos/prato.png";
+import coalho from "../assets/Produtos/Queijos/coalho.png";
+import manteiga from "../assets/Produtos/Manteigas/200frente.webp";
+import choconat from "../assets/Produtos/LeiteEmPo/INTEGRAL200.webp";
+
 export function Home() {
-  useLayoutEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  // useLayoutEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
 
   return (
     <main
       className="w-full flex-col items-center 
-       justify-center m-auto bg-cover  bg-custom-white"
+       justify-center m-auto bg-cover bg-custom-white"
     >
       {/*1 PAINEL - QUEM SOMOS*/}
-      <section className="w-full bg-custom-blue max-md:h-height-full-96px relative z-10 ">
+      <section className="w-full -mt-44  bg-custom-blue max-md:h-height-full-96px relative z-10 ">
         <div
-          className="max-w-7xl flex flex-col items-center
+          className="max-w-7xl flex items-center
       justify-center m-auto  h-height-full-96px   "
         >
           {/* <img src={logoHome} alt="" className="max-w-3xl" /> */}
           {/* <span className="light-sweep text-7xl font-bold">Palavra Azul</span> */}
-          <AnimatedY>
+          {/* <AnimatedY>
             <div className="flex w-full justify-center m-auto">
               <video
                 src={videoLogo}
@@ -76,29 +84,33 @@ export function Home() {
                 muted
                 loop
                 playsInline
-                className="w-8/12 mb-6 relative z-10 max-md:w-11/12"
+                className="w-8/12 mt-48 relative z-10 max-md:w-11/12"
               ></video>
             </div>
-          </AnimatedY>
+          </AnimatedY> */}
+          <SlidersWelcome />
         </div>
-        <div className="-mt-40 relative z-10  max-md:items-end max-md:flex max-md:-mt-20 ">
+        <div
+          className="-mt-20 relative z-10  
+        max-md:items-end max-md:flex max-md:-mt-20  "
+        >
           <AnimatedY>
             <img className="z-10" src={camp} alt="natville" />
           </AnimatedY>
         </div>
       </section>
       {/*SVG1 */}
-      <section className=" -mt-44 max-md:-mt-10 max-md:mb-1 relative z-0 ">
+      <section className="-mt-48 max-md:-mt-10 max-md:mb-1 relative z-0 ">
         <svg
-          className="drop-shadow-md rotate-180"
+          className=" rotate-180"
           width="100%"
           height="100%"
-          viewBox="0 0 1920 321"
+          viewBox="0 0 1830 321"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M0 39.7647L16.385 36.1419C210.847 -6.85543 411.925 -10.697 607.888 24.8414L1021.05 99.7683C1190.42 130.484 1363.81 131.818 1533.64 103.711L1920 39.7647V146.186H0V39.7647Z"
+            d="M 0 39.7647 C 220 24 393 16 592 28 C 1198 68 1252 78 1510 61 L 1914 15 V 144 H 0 V 39.7647 Z"
             fill="#55BECD"
           />
         </svg>
@@ -110,21 +122,189 @@ export function Home() {
         bg-custom-white max-md:mt-0 "
       >
         <AnimatedSection>
-          <div
-            className="max-w-7xl h-screen
-         flex items-center justify-center m-auto"
-          >
-            <SliderProdutos />
+          <div className="max-w-7xl flex items-center py-60 justify-center m-auto">
+            {/* <SliderProdutos /> */}
+
+            <div className="bg-custom-white min-h-screen p-8 grid grid-cols-3 max-md:grid-cols-1 gap-6">
+              {/* Card 1 */}
+              <div
+                className="rounded-3xl overflow-hidden shadow-lg
+               bg-gradient-to-br from-custom-blue via-custom-blue to-custom-blue-strong
+                text-custom-white transition transform hover:scale-105 duration-300"
+              >
+                <div className="overflow-hidden">
+                  <img
+                    src={mussarela}
+                    alt="Queijo Minas"
+                    className="w-full h-52 object-contain p-6 transition-transform
+                     duration-500 hover:scale-110"
+                  />
+                </div>
+                <div className="p-6">
+                  <h2 className="text-2xl font-bold mb-1">Queijo Mussarela</h2>
+                  <p className="opacity-80 mb-4">
+                    Fresco, macio e saboroso, ideal para o café da manhã.
+                  </p>
+                  <div className="flex items-center justify-between">
+                    <button
+                      className="bg-custom-white text-custom-blue-strong 
+                    rounded-full px-4 py-2 font-semibold hover:bg-custom-blue
+                     hover:text-custom-white transition flex items-center justify-center"
+                    >
+                      Saiba mais <TiArrowRight size={32} />
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              {/* Card 2 */}
+              <div className="rounded-3xl overflow-hidden shadow-lg bg-custom-white text-custom-blue-strong border border-custom-blue-strong transition transform hover:scale-105 duration-300">
+                <div className="overflow-hidden">
+                  <img
+                    src={prato}
+                    alt="Iogurte Natural"
+                    className="w-full h-52 p-8 transition-transform duration-500 hover:scale-110"
+                  />
+                </div>
+                <div className="p-6">
+                  <h2 className="text-2xl font-bold mb-1">Queijo Prato</h2>
+                  <p className="opacity-80 mb-4">
+                    Perfeito para suas receitas de sanduíches. Saboroso, macio e
+                    cremoso.
+                  </p>
+                  <div className="flex items-center justify-between">
+                    <button className="bg-custom-blue-strong flex items-center justify-center text-custom-white rounded-full px-4 py-2 font-semibold hover:bg-custom-blue transition">
+                      Saiba mais <TiArrowRight size={32} />
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              {/* Card 3 */}
+              <div
+                className="rounded-3xl overflow-hidden shadow-lg bg-gradient-to-br
+               from-custom-blue-strong via-custom-blue to-custom-blue text-custom-white transition transform hover:scale-105 duration-300"
+              >
+                <div className="overflow-hidden">
+                  <img
+                    src={coalho}
+                    alt="Manteiga Artesanal"
+                    className="w-full h-52 p-8 transition-transform duration-500 hover:scale-110"
+                  />
+                </div>
+                <div className="p-6">
+                  <h2 className="text-2xl font-bold mb-1">Queijo de Coalho</h2>
+                  <p className="opacity-80 mb-4">
+                    Maravilhoso para espetinhos em churrascos de família.
+                  </p>
+                  <div className="flex items-center justify-between">
+                    <button
+                      className="bg-custom-white text-custom-blue-strong 
+                    rounded-full px-4 py-2 font-semibold hover:bg-custom-blue
+                     hover:text-custom-white transition flex items-center justify-center"
+                    >
+                      Saiba mais <TiArrowRight size={32} />
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              {/* Card 4 */}
+              <div
+                className="rounded-3xl overflow-hidden shadow-lg bg-gradient-to-br 
+               from-custom-blue via-custom-blue to-custom-blue-strong text-custom-white transition transform hover:scale-105 duration-300"
+              >
+                <div className="overflow-hidden ">
+                  <img
+                    src={choconat}
+                    alt="Leite integral em pó natville"
+                    className="w-full h-60 object-contain  transition-transform duration-500 hover:scale-110"
+                  />
+                </div>
+                <div className="p-6 ">
+                  <h2 className="text-2xl font-bold mb-1">
+                    Leite Integral em pó
+                  </h2>
+                  <p className="opacity-80 mb-4 ">
+                    Puro, fresco e nutritivo, o sabor real do cacau. Sinta a
+                    alegria de tomar um choconat!
+                  </p>
+                  <div className="flex items-center justify-between">
+                    <button
+                      className="bg-custom-white text-custom-blue-strong 
+                    rounded-full px-4 py-2 font-semibold hover:bg-custom-blue
+                     hover:text-custom-white transition flex items-center justify-center"
+                    >
+                      Saiba mais <TiArrowRight size={32} />
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              {/* Card 5 */}
+              <div className="rounded-3xl overflow-hidden shadow-lg bg-custom-white text-custom-blue-strong border border-custom-blue-strong transition transform hover:scale-105 duration-300">
+                <div className="overflow-hidden">
+                  <img
+                    src={manteiga}
+                    alt="Requeijão Cremoso"
+                    className="w-full h-52 p-8 object-contain transition-transform duration-500 hover:scale-110"
+                  />
+                </div>
+                <div className="p-6">
+                  <h2 className="text-2xl font-bold mb-1">
+                    Manteiga de Primeira Qualidade
+                  </h2>
+                  <p className="opacity-80 mb-4">
+                    Delicioso, com textura leve e cremosa, perfeito para pães.
+                  </p>
+                  <div className="flex items-center justify-between">
+                    <button className="bg-custom-blue-strong flex items-center justify-center text-custom-white rounded-full px-4 py-2 font-semibold hover:bg-custom-blue transition">
+                      Saiba mais <TiArrowRight size={32} />
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              {/* Card 6 */}
+              <div
+                className="rounded-3xl overflow-hidden shadow-lg bg-gradient-to-br
+               from-custom-blue-strong via-custom-blue to-custom-blue text-custom-white transition transform hover:scale-105 duration-300"
+              >
+                <div className="overflow-hidden">
+                  <img
+                    src="https://via.placeholder.com/400x250.png?text=Doce+de+Leite"
+                    alt="Doce de Leite"
+                    className="w-full h-52 object-cover transition-transform duration-500 hover:scale-110"
+                  />
+                </div>
+                <div className="p-6">
+                  <h2 className="text-2xl font-bold mb-1">Doce de Leite</h2>
+                  <p className="opacity-80 mb-4">
+                    Tradicional, cremoso e irresistível. Feito com leite fresco.
+                  </p>
+                  <div className="flex items-center justify-between">
+                    <span className="text-xl font-semibold">R$ 12,90</span>
+                    <button
+                      className="bg-custom-white text-custom-blue-strong 
+                    rounded-full px-4 py-2 font-semibold hover:bg-custom-blue
+                     hover:text-custom-white transition flex items-center justify-center"
+                    >
+                      Saiba mais <TiArrowRight size={32} />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </AnimatedSection>
       </section>
       {/*SVG2 */}
       <section className="-mt-32 max-md:-mt-0">
         <svg
-          className="rotate-180 "
+          className="rotate-180  "
           width="100%"
           height="100%"
-          viewBox="0 0 1863 321"
+          viewBox="0 0 1920 321"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
