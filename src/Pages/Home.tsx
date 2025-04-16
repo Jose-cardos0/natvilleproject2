@@ -57,6 +57,7 @@ import prato from "../assets/Produtos/Queijos/prato.png";
 import coalho from "../assets/Produtos/Queijos/coalho.png";
 import manteiga from "../assets/Produtos/Manteigas/200frente.webp";
 import choconat from "../assets/Produtos/LeiteEmPo/INTEGRAL200.webp";
+import cremeDeLeite from "../Tools/SlidersImgWelcome/creme de leite frontal_11zon.webp";
 
 export function Home() {
   // useLayoutEffect(() => {
@@ -122,7 +123,7 @@ export function Home() {
         bg-custom-white max-md:mt-0 "
       >
         <AnimatedSection>
-          <div className="max-w-7xl flex items-center py-60 justify-center m-auto">
+          <div className="max-w-7xl flex items-center pt-60 pb-10 justify-center m-auto">
             {/* <SliderProdutos /> */}
 
             <div className="bg-custom-white min-h-screen p-8 grid grid-cols-3 max-md:grid-cols-1 gap-6">
@@ -272,18 +273,17 @@ export function Home() {
               >
                 <div className="overflow-hidden">
                   <img
-                    src="https://via.placeholder.com/400x250.png?text=Doce+de+Leite"
-                    alt="Doce de Leite"
-                    className="w-full h-52 object-cover transition-transform duration-500 hover:scale-110"
+                    src={cremeDeLeite}
+                    alt="creme de Leite"
+                    className="w-full h-52 mt-8 object-contain py-4 transition-transform duration-500 hover:scale-110"
                   />
                 </div>
                 <div className="p-6">
-                  <h2 className="text-2xl font-bold mb-1">Doce de Leite</h2>
+                  <h2 className="text-2xl font-bold mb-1">Creme de Leite</h2>
                   <p className="opacity-80 mb-4">
                     Tradicional, cremoso e irresistível. Feito com leite fresco.
                   </p>
                   <div className="flex items-center justify-between">
-                    <span className="text-xl font-semibold">R$ 12,90</span>
                     <button
                       className="bg-custom-white text-custom-blue-strong 
                     rounded-full px-4 py-2 font-semibold hover:bg-custom-blue
@@ -295,6 +295,11 @@ export function Home() {
                 </div>
               </div>
             </div>
+          </div>
+          <div className="pb-32 flex items-center justify-center m-auto ">
+            <button className="bg-custom-blue-strong flex items-center justify-center text-custom-white rounded-full px-4 py-2 font-semibold hover:bg-custom-blue transition">
+              Ver mais produtos <TiArrowRight size={32} />
+            </button>
           </div>
         </AnimatedSection>
       </section>
