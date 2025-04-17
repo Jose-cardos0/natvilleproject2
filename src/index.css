@@ -94,3 +94,7 @@ button:hover span:last-child {
   height: 5px !important;
   transform: scale(1.5);
 }
+
+html {
+  scroll-behavior: smooth;
+}

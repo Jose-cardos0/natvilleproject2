@@ -9,7 +9,7 @@ export function SliderCremedeLeite() {
     >
       <div className="w-full">
         <img
-          className="drop-shadow-md max-w-sx
+          className="drop-shadow-md max-w-80
              object-cover "
           src={cremeDeLeite}
           alt="creme de leite natville"

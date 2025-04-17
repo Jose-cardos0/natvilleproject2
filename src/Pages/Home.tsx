@@ -1,4 +1,4 @@
-import { useLayoutEffect } from "react";
+import { useLayoutEffect, useState } from "react";
 
 import camp from "../assets/Home/camp.webp";
 
@@ -52,21 +52,30 @@ import { AnimatedY } from "../Tools/Animates/AnimatedY";
 import { Link } from "react-router-dom";
 
 //img produtos
+import requeijao from "../assets/Produtos/ReqCremoso/reqTradicional.webp";
+import bebidaLact from "../assets/Produtos/Bebidas/morsngo2.webp";
+
 import mussarela from "../assets/Produtos/Queijos/mussarela.png";
 import prato from "../assets/Produtos/Queijos/prato.png";
 import coalho from "../assets/Produtos/Queijos/coalho.png";
 import manteiga from "../assets/Produtos/Manteigas/200frente.webp";
 import choconat from "../assets/Produtos/LeiteEmPo/INTEGRAL200.webp";
 import cremeDeLeite from "../Tools/SlidersImgWelcome/creme de leite frontal_11zon.webp";
+import leiteUhtIntegral from "../assets/Produtos/Leites/leiteUhtExemplo.webp";
 
 export function Home() {
   // useLayoutEffect(() => {
   //   window.scrollTo(0, 0);
   // }, []);
 
+  const [divHidden, setdivHidden] = useState(false);
+
+  function sectionProdutosHidden() {
+    setdivHidden((prev) => !prev);
+  }
   return (
     <main
-      className="w-full flex-col items-center 
+      className="w-full flex-col items-center relative
        justify-center m-auto bg-cover bg-custom-white"
     >
       {/*1 PAINEL - QUEM SOMOS*/}
@@ -103,7 +112,7 @@ export function Home() {
       {/*SVG1 */}
       <section className="-mt-48 max-md:-mt-10 max-md:mb-1 relative z-0 ">
         <svg
-          className=" rotate-180"
+          className=" rotate-180 "
           width="100%"
           height="100%"
           viewBox="0 0 1830 321"
@@ -123,7 +132,10 @@ export function Home() {
         bg-custom-white max-md:mt-0 "
       >
         <AnimatedSection>
-          <div className="max-w-7xl flex items-center pt-60 pb-10 justify-center m-auto">
+          <div
+            id="divProdutosGrid"
+            className="max-w-7xl flex items-center pt-60 pb-10 justify-center m-auto"
+          >
             {/* <SliderProdutos /> */}
 
             <div className="bg-custom-white min-h-screen p-8 grid grid-cols-3 max-md:grid-cols-1 gap-6">
@@ -223,9 +235,7 @@ export function Home() {
                   />
                 </div>
                 <div className="p-6 ">
-                  <h2 className="text-2xl font-bold mb-1">
-                    Leite Integral em pó
-                  </h2>
+                  <h2 className="text-2xl font-bold mb-1">Leite em pó</h2>
                   <p className="opacity-80 mb-4 ">
                     Puro, fresco e nutritivo, o sabor real do cacau. Sinta a
                     alegria de tomar um choconat!
@@ -265,7 +275,6 @@ export function Home() {
                   </div>
                 </div>
               </div>
-
               {/* Card 6 */}
               <div
                 className="rounded-3xl overflow-hidden shadow-lg bg-gradient-to-br
@@ -296,11 +305,215 @@ export function Home() {
               </div>
             </div>
           </div>
-          <div className="pb-32 flex items-center justify-center m-auto ">
-            <button className="bg-custom-blue-strong flex items-center justify-center text-custom-white rounded-full px-4 py-2 font-semibold hover:bg-custom-blue transition">
-              Ver mais produtos <TiArrowRight size={32} />
-            </button>
-          </div>
+          {/*SECTION HIDDEN PRODUTOS */}
+          {divHidden && (
+            <div className="max-w-7xl flex items-center pb-5 justify-center m-auto -mt-20 ">
+              <div
+                className="bg-custom-white min-h-screen
+               p-8 grid grid-cols-3 max-md:grid-cols-1 gap-6"
+              >
+                {/* Card 7 */}
+                <div
+                  className="rounded-3xl overflow-hidden shadow-lg
+                         bg-gradient-to-br from-custom-blue via-custom-blue to-custom-blue-strong
+                          text-custom-white transition transform hover:scale-105 duration-300"
+                >
+                  <div className="overflow-hidden">
+                    <img
+                      src={condensado}
+                      alt="Queijo Minas"
+                      className="w-full h-52 object-contain p-2 mt-4 -mb-4 transition-transform
+                               duration-500 hover:scale-110"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <h2 className="text-2xl font-bold mb-1">
+                      Leite Condensado Semidesnatado
+                    </h2>
+                    <p className="opacity-80 mb-4">
+                      Saboroso e cremoso, ideal para suas receitas mais
+                      gostosas!
+                    </p>
+                    <div className="flex items-center justify-between">
+                      <button
+                        className="bg-custom-white text-custom-blue-strong 
+                              rounded-full px-4 py-2 font-semibold hover:bg-custom-blue
+                               hover:text-custom-white transition flex items-center justify-center"
+                      >
+                        Saiba mais <TiArrowRight size={32} />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Card 8 */}
+                <div className="rounded-3xl overflow-hidden shadow-lg bg-custom-white text-custom-blue-strong border border-custom-blue-strong transition transform hover:scale-105 duration-300">
+                  <div className="overflow-hidden">
+                    <img
+                      src={bebidaLact}
+                      alt="Iogurte Natural"
+                      className="w-full h-52
+                       p-2 mt-7 object-contain transition-transform duration-500 hover:scale-110"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <h2 className="text-2xl font-bold mb-1">Bebida láctea</h2>
+                    <p className="opacity-80 mb-4">
+                      No momento que reunimos a garotada, sempre é bom um sabor
+                      doce da fruta.
+                    </p>
+                    <div className="flex items-center justify-between">
+                      <button className="bg-custom-blue-strong flex items-center justify-center text-custom-white rounded-full px-4 py-2 font-semibold hover:bg-custom-blue transition">
+                        Saiba mais <TiArrowRight size={32} />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Card 9 */}
+                <div
+                  className="rounded-3xl overflow-hidden shadow-lg bg-gradient-to-br
+                         from-custom-blue-strong via-custom-blue to-custom-blue text-custom-white transition transform hover:scale-105 duration-300"
+                >
+                  <div className="overflow-hidden">
+                    <img
+                      src={requeijao}
+                      alt="Manteiga Artesanal"
+                      className="w-full h-52 p-2 object-contain -mb-1 mt-8 transition-transform duration-500 hover:scale-110"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <h2 className="text-2xl font-bold mb-1">
+                      Queijo Processado
+                    </h2>
+                    <p className="opacity-80 mb-4">
+                      Perfeito para combinar com qualquer outro alimento no café
+                      da manhã.
+                    </p>
+                    <div className="flex items-center justify-between">
+                      <button
+                        className="bg-custom-white text-custom-blue-strong 
+                              rounded-full px-4 py-2 font-semibold hover:bg-custom-blue
+                               hover:text-custom-white transition flex items-center justify-center"
+                      >
+                        Saiba mais <TiArrowRight size={32} />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Card 10 */}
+                <div
+                  className="rounded-3xl overflow-hidden shadow-lg bg-gradient-to-br 
+                         from-custom-blue via-custom-blue to-custom-blue-strong text-custom-white transition transform hover:scale-105 duration-300"
+                >
+                  <div className="overflow-hidden ">
+                    <img
+                      src={leiteUhtIntegral}
+                      alt="Leite integral em pó natville"
+                      className="w-full h-60 mt-4 object-contain  transition-transform duration-500 hover:scale-110"
+                    />
+                  </div>
+                  <div className="p-6 ">
+                    <h2 className="text-2xl font-bold mb-1">Leite UHT</h2>
+                    <p className="opacity-80 mb-4 ">
+                      Puro, fresco e nutritivo, o sabor real do campo. Sinta o
+                      sabor do campo.
+                    </p>
+                    <div className="flex items-center justify-between">
+                      <button
+                        className="bg-custom-white text-custom-blue-strong 
+                              rounded-full px-4 py-2 font-semibold hover:bg-custom-blue
+                               hover:text-custom-white transition flex items-center justify-center"
+                      >
+                        Saiba mais <TiArrowRight size={32} />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Card 11 */}
+                {/* <div className="rounded-3xl overflow-hidden shadow-lg bg-custom-white text-custom-blue-strong border border-custom-blue-strong transition transform hover:scale-105 duration-300">
+                  <div className="overflow-hidden">
+                    <img
+                      src={manteiga}
+                      alt="Requeijão Cremoso"
+                      className="w-full h-52 p-8 object-contain transition-transform duration-500 hover:scale-110"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <h2 className="text-2xl font-bold mb-1">
+                      Manteiga de Primeira Qualidade
+                    </h2>
+                    <p className="opacity-80 mb-4">
+                      Delicioso, com textura leve e cremosa, perfeito para pães.
+                    </p>
+                    <div className="flex items-center justify-between">
+                      <button className="bg-custom-blue-strong flex items-center justify-center text-custom-white rounded-full px-4 py-2 font-semibold hover:bg-custom-blue transition">
+                        Saiba mais <TiArrowRight size={32} />
+                      </button>
+                    </div>
+                  </div>
+                </div> */}
+                {/* Card 12 */}
+                {/* <div
+                  className="rounded-3xl overflow-hidden shadow-lg bg-gradient-to-br
+                         from-custom-blue-strong via-custom-blue to-custom-blue text-custom-white transition transform hover:scale-105 duration-300"
+                >
+                  <div className="overflow-hidden">
+                    <img
+                      src={cremeDeLeite}
+                      alt="creme de Leite"
+                      className="w-full h-52 mt-8 object-contain py-4 transition-transform duration-500 hover:scale-110"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <h2 className="text-2xl font-bold mb-1">Creme de Leite</h2>
+                    <p className="opacity-80 mb-4">
+                      Tradicional, cremoso e irresistível. Feito com leite
+                      fresco.
+                    </p>
+                    <div className="flex items-center justify-between">
+                      <button
+                        className="bg-custom-white text-custom-blue-strong 
+                              rounded-full px-4 py-2 font-semibold hover:bg-custom-blue
+                               hover:text-custom-white transition flex items-center justify-center"
+                      >
+                        Saiba mais <TiArrowRight size={32} />
+                      </button>
+                    </div>
+                  </div>
+                </div> */}
+              </div>
+            </div>
+          )}
+
+          {divHidden ? (
+            <div
+              id="div-conditional"
+              className="pb-32 max-w-7xl flex items-end justify-end m-auto "
+            >
+              <a href="#divProdutosGrid">
+                <button
+                  onClick={sectionProdutosHidden}
+                  className="bg-custom-blue-strong mr-8 flex items-center justify-center text-custom-white rounded-full px-4 py-2 font-semibold hover:bg-custom-blue transition"
+                >
+                  Ver menos produtos{" "}
+                  <TiArrowRight size={32} className="-rotate-90" />
+                </button>
+              </a>
+            </div>
+          ) : (
+            <div className="pb-32 max-w-7xl flex items-end justify-end m-auto ">
+              <button
+                onClick={sectionProdutosHidden}
+                className="bg-custom-blue-strong mr-8 flex items-center justify-center text-custom-white rounded-full px-4 py-2 font-semibold hover:bg-custom-blue transition"
+              >
+                Ver mais produtos{" "}
+                <TiArrowRight size={32} className="rotate-90" />
+              </button>
+            </div>
+          )}
         </AnimatedSection>
       </section>
       {/*SVG2 */}
@@ -335,7 +548,6 @@ export function Home() {
                 <img src={logo} alt="" />
               </div>
             </AnimatedSection>
-
             <AnimatedY>
               <div className="relative flex items-center gap-6 p-6 rounded-2xl bg-white/60 backdrop-blur-lg shadow-xl max-md:flex-col max-md:gap-4 max-md:w-full max-w-2xl border border-gray-200 hover:shadow-2xl transition-all duration-300 group">
                 {/* Imagem estilizada */}
@@ -350,7 +562,6 @@ export function Home() {
                     alt="Imagem da notícia"
                   />
                 </div>
-
                 {/* Conteúdo */}
                 <div className="flex flex-col justify-between max-w-sm text-gray-800">
                   <p className="text-lg font-thin leading-snug">
@@ -362,7 +573,6 @@ export function Home() {
                     construindo uma nova fábrica de queijos em{" "}
                     <span className="font-bold">Batalha, Alagoas</span>.
                   </p>
-
                   {/* Botão oculto por padrão e aparece no hover */}
                   <a
                     href="https://www.instagram.com/natville.br/"
@@ -378,7 +588,6 @@ export function Home() {
                 </div>
               </div>
             </AnimatedY>
-
             <AnimatedSection>
               <div className="relative mt-8 flex items-center gap-6 p-6 rounded-2xl bg-white/60 backdrop-blur-lg shadow-xl max-md:flex-col max-md:gap-4 max-md:w-full max-w-2xl border border-gray-200 hover:shadow-2xl transition-all duration-300 group">
                 {/* Conteúdo */}
@@ -420,7 +629,6 @@ export function Home() {
                 </div>
               </div>
             </AnimatedSection>
-
             <AnimatedY>
               <div className="relative mt-8 flex items-center gap-6 p-6 rounded-2xl bg-white/60 backdrop-blur-lg shadow-xl max-md:flex-col max-md:gap-4 max-md:w-full max-w-2xl border border-gray-200 hover:shadow-2xl transition-all duration-300 group">
                 {/* Imagem estilizada */}
@@ -476,7 +684,6 @@ export function Home() {
         </div>
       </section>
       {/*SVG3 */}
-
       <section className="-mt-44 max-md:-mt-10 ">
         <svg
           className="drop-shadow-md rotate-180"

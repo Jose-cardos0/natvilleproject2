@@ -9,7 +9,7 @@ export function SliderCondensado() {
     >
       <div className="w-full">
         <img
-          className="drop-shadow-md  max-w-xs
+          className="drop-shadow-md  max-w-64 ml-20
           object-cover"
           src={condensado}
           alt="leite condensado natville"
