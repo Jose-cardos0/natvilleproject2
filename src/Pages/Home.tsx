@@ -705,7 +705,7 @@ export function Home() {
             className="w-full flex items-center justify-center
            m-auto mt-40 max-md:flex-col max-md:mt-48"
           >
-            <div className="relative">
+            {/* <div className="relative">
               <img
                 src={splashCondensado}
                 alt="leite condensado natville"
@@ -753,7 +753,170 @@ export function Home() {
                   </button>
                 </Link>
               </div>
-            </div>
+            </div> */}
+            <section
+              className="w-full grid grid-cols-2 max-md:grid-cols-1 items-center
+             justify-center -mt-42  relative z-10 max-md:-mt-2   "
+            >
+              <div className="py-32 flex items-start justify-start   ">
+                <img
+                  className="w-96 absolute -top-0 -rotate-30"
+                  src="https://i.ibb.co/PsQR35sf/logofeita.png"
+                  alt=""
+                />
+                <div className="grid grid-cols-1 m-auto max-w-96  ">
+                  <div className="flex w-full items-center gap-5 mt-8">
+                    <img
+                      src={Facasal}
+                      alt="natville"
+                      className="max-w-16 max-md:w-14"
+                    />
+                    <p
+                      className=" text-custom-blue-strong uppercase 
+                  text-lg max-md:text-lg font-mochari"
+                    >
+                      Somos uma família SERTANEJA trabalhadora, guiada pela fé
+                      que permeia o nosso coração.
+                    </p>
+                  </div>
+                  <div className="flex w-full items-center gap-5 mt-4">
+                    <p className="font-mochari text-custom-blue-strong uppercase text-lg text-end max-md:text-lg">
+                      Acreditamos na dedicação e responsabilidade em cada etapa
+                      do nosso processo.
+                    </p>
+                    <img
+                      src={Fatarefa}
+                      alt="natville"
+                      className="max-w-10 max-md:w-10"
+                    />
+                  </div>
+
+                  <div className="flex w-full items-center gap-5 mt-4">
+                    <img
+                      src={Fafe}
+                      alt="natville"
+                      className="max-w-16 max-md:w-20"
+                    />
+                    <p className="font-mochari text-custom-blue-strong uppercase text-lgmax-md:text-lg">
+                      A fé nos guia desde a coleta do leite, ATÉ A CHEGADA DO
+                      PRODUTO EM SUA CASA.
+                    </p>
+                  </div>
+                  <div className="flex w-full items-center gap-5 mt-6">
+                    <p className="font-mochari text-custom-blue-strong uppercase text-lg text-end max-md:text-lg">
+                      Investimos em ações sociais com a comunidade, contribuindo
+                      para momentos de amor e união.
+                    </p>
+                    <img
+                      src={Facasa}
+                      alt="natville"
+                      className="max-w-16 max-md:w-24"
+                    />
+                  </div>
+                  <div className="flex w-full items-center gap-5 mt-3">
+                    <img
+                      src={Facoracao}
+                      alt="natville"
+                      className="max-w-16 max-md:w-14"
+                    />
+                    <p className="font-mochari text-custom-blue-strong uppercase text-lg max-md:text-lg">
+                      É como um amor de mãe, cheio de fé no futuro, de crença na
+                      importância do que fazemos.
+                    </p>
+                  </div>
+
+                  <div className="flex w-full items-center gap-5 mt-3">
+                    <p className="font-mochari text-custom-blue-strong uppercase text-lg text-end max-md:text-lg">
+                      Nutrimos laços. Celebramos famílias. Como amor de mãe.
+                    </p>
+                    <img
+                      src={Fafamilia}
+                      alt="natville"
+                      className="max-w-24 max-md:w-24"
+                    />
+                  </div>
+                </div>
+              </div>
+              {/*GROD CARDS */}
+              <div className="container gap-2">
+                <div
+                  data-text="1996"
+                  style={{ "--r": "-15" }}
+                  className="glass cursor-pointer
+                   hover:scale-105 duration-300 
+                  transform  "
+                >
+                  <img
+                    src="https://i.ibb.co/hJkdzsjG/1996.webp"
+                    alt="1996"
+                    className="w-full p-3 luz "
+                  />
+                </div>
+
+                <div
+                  data-text="2018"
+                  style={{ "--r": "5" }}
+                  className="glass cursor-pointer hover:scale-105 
+                  duration-300  transform "
+                >
+                  <img
+                    src="    https://i.ibb.co/tP8XVyv1/natvillelogos-11zon.webp"
+                    alt="2012"
+                    className="w-full p-3 "
+                  />
+                </div>
+
+                <div
+                  data-text="2024"
+                  style={{ "--r": "25" }}
+                  className="glass 
+                  cursor-pointer hover:scale-105
+                   duration-300
+                   transform luz "
+                >
+                  <img
+                    src="
+                    https://i.ibb.co/DPCKjMYN/2024.webp"
+                    alt="2024"
+                    className="w-full p-3 "
+                  />
+                </div>
+              </div>
+
+              {/* <div className="w-full flex-col items-center justify-center m-auto py-24 max-mm:flex-col max-md:flex-col max-md:px-8"> */}
+              {/* <AnimatedY>
+              <div className="max-w-96  max-md:pl-0">
+                <h2 className="font-mochari text-4xl text-custom-blue-strong max-md:text-center">
+                  o pilar espiritual <br /> e o pilar material
+                </h2>
+                <p className="text-custom-blue-strong font-roboto mt-8 max-md:text-center max-md:mb-8">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed
+                  nisi, voluptatum, maiores impedit dolore beatae adipisci iste
+                  delectus voluptatibus recusandae a dolorum culpa quidem, nobis
+                  facilis error dolores molestias. Sit! Recusandae, beatae
+                  aspernatur, dicta magnam dolores repellendus porro ipsam
+                  explicabo atque dolorem enim ex repellat officia quo corporis,
+                  neque numquam adipisci blanditiis quidem dolorum velit. Quidem
+                  est consequuntur laboriosam culpa.
+                </p>
+              </div>
+            </AnimatedY> */}
+              {/* <AnimatedNegative>
+              <div className="overflow-hidden max-w-7xl">
+                <img src={condensadoValores} alt="" className="" />
+              </div>
+            </AnimatedNegative> */}
+              {/* <AnimatedY>
+                  <div>
+                    <img
+                      src={caranova}
+                      alt=""
+                      className="max-w-2xl max-md:w-72 drop-shadow-md"
+                    />
+                  </div>
+                </AnimatedY> */}
+              {/* </div> */}
+            </section>
           </div>
         </AnimatedY>
         {/* <AnimatedY>

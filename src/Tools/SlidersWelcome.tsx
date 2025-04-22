@@ -83,10 +83,10 @@ export function SlidersWelcome() {
             },
           }}
           className="mySwiper mm:max-md:w-width-mobile"
-          // autoplay={{
-          //   delay: 3000,
-          //   disableOnInteraction: false,
-          // }}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+          }}
         >
           <SwiperSlide className="px-16 max-w-7xl mm:max-md:pb-10">
             <div className="flex mt-20 w-full justify-center m-auto">
