@@ -180,14 +180,6 @@ export function Queijos() {
               gap-8 bg-custom-white my-32 max-md:flex-col
                max-md:mx-8 max-md:my-32"
             >
-              <div>
-                <img
-                  className="max-w-2xl object-center drop-shadow-md
-                   max-md:w-72 cursor-pointer hover:scale-105 transition duration-700"
-                  src={pratoEx}
-                  alt="queijo natville integral"
-                />
-              </div>
               <div className="flex-col items-center justify-center">
                 <h1 className="font-mochari text-8xl text-custom-blue-strong max-md:text-7xl">
                   queijo prato
@@ -230,6 +222,14 @@ export function Queijos() {
                     </button>
                   </Link>
                 </div>
+              </div>
+              <div>
+                <img
+                  className="max-w-2xl object-center drop-shadow-md
+                   max-md:w-72 cursor-pointer hover:scale-105 transition duration-700"
+                  src={pratoEx}
+                  alt="queijo natville integral"
+                />
               </div>
             </div>
             {/*zero lactose */}

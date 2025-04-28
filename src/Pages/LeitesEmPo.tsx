@@ -122,7 +122,7 @@ export function LeitesEmPo() {
              justify-center m-auto z-0 "
         >
           <div
-            className="max-w-7xl
+            className="max-w-6xl
         flex-col items-center
         justify-center m-auto mt-20 "
           >
@@ -202,23 +202,8 @@ export function LeitesEmPo() {
               gap-8  my-32 max-md:flex-col
                max-md:mx-8 max-md:my-32"
             >
-              <AnimatedNegative>
-                <div>
-                  <motion.img
-                    whileHover={{
-                      scale: 1.1,
-                      rotate: 3,
-                    }}
-                    transition={{ duration: 0.5 }}
-                    className="max-w-48 object-center drop-shadow-md
-                   max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
-                    src={leiteUhtExDes}
-                    alt="leite uht integral"
-                  />
-                </div>
-              </AnimatedNegative>
               <AnimatedY>
-                <div className="flex-col items-center justify-center ">
+                <div className="flex-col items-center justify-center text-end ">
                   <h1
                     className="font-mochari text-8xl max-md:text-7xl
                    text-custom-blue-strong"
@@ -228,7 +213,7 @@ export function LeitesEmPo() {
                     desnatado instantâneo
                   </h1>
                   <div>
-                    <p className="text-custom-blue-strong text-justify mt-8">
+                    <p className="text-custom-blue-strong text-end mt-8 ">
                       Se você busca uma opção mais leve, mas com todos os
                       benefícios do leite, o Leite em Pó Desnatado Instantâneo é
                       a escolha ideal! Com menos gordura, ele preserva cálcio,
@@ -269,6 +254,21 @@ export function LeitesEmPo() {
                   </div>
                 </div>
               </AnimatedY>
+              <AnimatedNegative>
+                <div>
+                  <motion.img
+                    whileHover={{
+                      scale: 1.1,
+                      rotate: 3,
+                    }}
+                    transition={{ duration: 0.5 }}
+                    className="max-w-48 object-center drop-shadow-md
+                   max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
+                    src={leiteUhtExDes}
+                    alt="leite uht integral"
+                  />
+                </div>
+              </AnimatedNegative>
             </div>
             {/*zero lactose */}
             <div
@@ -346,29 +346,17 @@ export function LeitesEmPo() {
               gap-8  max-md:flex-col
                max-md:mx-8  max-md:mt-32"
             >
-              <AnimatedNegative>
-                <div>
-                  <motion.img
-                    whileHover={{
-                      scale: 1.1,
-                      rotate: 3,
-                    }}
-                    transition={{ duration: 0.5 }}
-                    className="max-w-80 object-center drop-shadow-md
-                   max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
-                    src={leiteEmPo25}
-                    alt="leite uht integral"
-                  />
-                </div>
-              </AnimatedNegative>
               <AnimatedY>
-                <div className="flex-col items-center justify-center">
-                  <h1 className="font-mochari text-8xl text-custom-blue-strong max-md:text-7xl">
+                <div className="flex-col items-center justify-center text-end">
+                  <h1
+                    className="font-mochari text-8xl
+                   text-custom-blue-strong max-md:text-7xl "
+                  >
                     leite em pó <br />
                     integral 25 kg
                   </h1>
                   <div>
-                    <p className="text-custom-blue-strong text-justify mt-8">
+                    <p className="text-custom-blue-strong text-end mt-8">
                       O Leite em Pó Integral 25kg é a escolha ideal para
                       indústrias que necessitam de qualidade superior, alto
                       rendimento e pureza em suas formulações. Produzido a
@@ -413,6 +401,21 @@ export function LeitesEmPo() {
                   </div>
                 </div>
               </AnimatedY>
+              <AnimatedNegative>
+                <div>
+                  <motion.img
+                    whileHover={{
+                      scale: 1.1,
+                      rotate: 3,
+                    }}
+                    transition={{ duration: 0.5 }}
+                    className="max-w-80 object-center drop-shadow-md
+                   max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
+                    src={leiteEmPo25}
+                    alt="leite uht integral"
+                  />
+                </div>
+              </AnimatedNegative>
             </div>
             {/*SACO DE SORO 25KG */}
             <div

@@ -120,7 +120,7 @@ export function LeitesUht() {
              justify-center m-auto z-0 "
         >
           <div
-            className="max-w-7xl
+            className="max-w-5xl
         flex-col items-center
         justify-center m-auto mt-20 "
           >
@@ -199,21 +199,6 @@ export function LeitesUht() {
               gap-8  my-32 max-md:flex-col
                max-md:mx-8 max-md:my-32"
             >
-              <AnimatedNegative>
-                <div>
-                  <motion.img
-                    whileHover={{
-                      scale: 1.1,
-                      rotate: 3,
-                    }}
-                    transition={{ duration: 0.5 }}
-                    className="max-w-7xl object-center drop-shadow-md
-                   max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
-                    src={leiteUhtExDes}
-                    alt="leite uht integral"
-                  />
-                </div>
-              </AnimatedNegative>
               <AnimatedY>
                 <div className="flex-col items-center justify-center ">
                   <h1
@@ -264,6 +249,21 @@ export function LeitesUht() {
                   </div>
                 </div>
               </AnimatedY>
+              <AnimatedNegative>
+                <div>
+                  <motion.img
+                    whileHover={{
+                      scale: 1.1,
+                      rotate: 3,
+                    }}
+                    transition={{ duration: 0.5 }}
+                    className="max-w-7xl object-center drop-shadow-md
+                   max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
+                    src={leiteUhtExDes}
+                    alt="leite uht integral"
+                  />
+                </div>
+              </AnimatedNegative>
             </div>
             {/*zero lactose */}
             <div
@@ -340,21 +340,6 @@ export function LeitesUht() {
               gap-8  max-md:flex-col my-32
                max-md:mx-8  max-md:mt-32"
             >
-              <AnimatedNegative>
-                <div>
-                  <motion.img
-                    whileHover={{
-                      scale: 1.1,
-                      rotate: 3,
-                    }}
-                    transition={{ duration: 0.5 }}
-                    className="max-w-7xl object-center drop-shadow-md
-                   max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
-                    src={leiteSemi}
-                    alt="leite uht semidesnatado"
-                  />
-                </div>
-              </AnimatedNegative>
               <AnimatedY>
                 <div className="flex-col items-center justify-center">
                   <h1 className="font-mochari text-8xl text-custom-blue-strong max-md:text-7xl">
@@ -401,6 +386,21 @@ export function LeitesUht() {
                   </div>
                 </div>
               </AnimatedY>
+              <AnimatedNegative>
+                <div>
+                  <motion.img
+                    whileHover={{
+                      scale: 1.1,
+                      rotate: 3,
+                    }}
+                    transition={{ duration: 0.5 }}
+                    className="max-w-7xl object-center drop-shadow-md
+                   max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
+                    src={leiteSemi}
+                    alt="leite uht semidesnatado"
+                  />
+                </div>
+              </AnimatedNegative>
             </div>
             {/*fim semindesnatado */}
           </div>

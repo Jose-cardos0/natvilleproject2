@@ -200,21 +200,6 @@ export function Manteigas() {
               gap-8 bg-custom-white my-32 max-md:flex-col
                max-md:mx-8 max-md:my-32"
             >
-              <AnimatedNegative>
-                <div>
-                  <motion.img
-                    whileHover={{
-                      scale: 1.1,
-                      rotate: 3,
-                    }}
-                    transition={{ duration: 0.5 }}
-                    className="max-w-7xl object-center drop-shadow-md w-96
-                   max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
-                    src={manteigaMenor}
-                    alt="leite uht integral"
-                  />
-                </div>
-              </AnimatedNegative>
               <AnimatedY>
                 <div className="flex-col items-center justify-center">
                   <h1 className="font-mochari text-5xl text-custom-blue-strong">
@@ -265,6 +250,21 @@ export function Manteigas() {
                   </div>
                 </div>
               </AnimatedY>
+              <AnimatedNegative>
+                <div>
+                  <motion.img
+                    whileHover={{
+                      scale: 1.1,
+                      rotate: 3,
+                    }}
+                    transition={{ duration: 0.5 }}
+                    className="max-w-7xl object-center drop-shadow-md w-96
+                   max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
+                    src={manteigaMenor}
+                    alt="leite uht integral"
+                  />
+                </div>
+              </AnimatedNegative>
             </div>
             {/* inicio manteiga 5kg */}
             <div
@@ -344,21 +344,6 @@ export function Manteigas() {
               gap-8 bg-custom-white my-32 max-md:flex-col
                max-md:mx-8 max-md:my-32"
             >
-              <AnimatedNegative>
-                <div>
-                  <motion.img
-                    whileHover={{
-                      scale: 1.1,
-                      rotate: 3,
-                    }}
-                    transition={{ duration: 0.5 }}
-                    className="max-w-7xl object-center drop-shadow-md w-96
-                   max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
-                    src={manteiga20kg}
-                    alt="leite uht integral"
-                  />
-                </div>
-              </AnimatedNegative>
               <AnimatedY>
                 <div className="flex-col items-center justify-center">
                   <h1 className="font-mochari text-5xl text-custom-blue-strong">
@@ -409,6 +394,21 @@ export function Manteigas() {
                   </div>
                 </div>
               </AnimatedY>
+              <AnimatedNegative>
+                <div>
+                  <motion.img
+                    whileHover={{
+                      scale: 1.1,
+                      rotate: 3,
+                    }}
+                    transition={{ duration: 0.5 }}
+                    className="max-w-7xl object-center drop-shadow-md w-96
+                   max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
+                    src={manteiga20kg}
+                    alt="leite uht integral"
+                  />
+                </div>
+              </AnimatedNegative>
             </div>
           </div>
 

@@ -7,7 +7,7 @@ import empregos from "../Tools/SliderNoticias/chagas.png";
 
 //animacoes
 import { AnimatedNegative } from "../Tools/Animates/AnimatedNegative";
-// import { AnimatedSection } from "../Tools/Animates/AnimatedSections";
+import { AnimatedSection } from "../Tools/Animates/AnimatedSections";
 import { AnimatedY } from "../Tools/Animates/AnimatedY";
 
 //icons
@@ -234,6 +234,7 @@ export function Noticias() {
               </div>
             </div>
           </AnimatedY>
+
           {/* <AnimatedY>
             <div
               className=" rounded-md
@@ -370,9 +371,21 @@ export function Noticias() {
           </AnimatedY> */}
           {/*SEGUNCO CARD */}
         </div>
+        <div className="max-w-7xl mt-8 max-md:mx-8 ">
+          <div className="w-full  ">
+            <AnimatedSection>
+              <iframe
+                className="h-screen"
+                src="http://127.0.0.1:5500/teste.html"
+                width="100%"
+                scrolling="no"
+              ></iframe>{" "}
+            </AnimatedSection>{" "}
+          </div>
+        </div>
         {/*footer inicio */}
         <footer
-          className="w-full h-auto mb-5
+          className="w-full h-auto mb-5 
             flex items-center justify-center m-auto"
         >
           <div

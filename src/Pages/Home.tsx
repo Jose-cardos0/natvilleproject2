@@ -27,18 +27,18 @@ import noticia2 from "../assets/Home/noticias/noticia2.png";
 import noticia3 from "../assets/Home/noticias/noticia3.png";
 
 import leiteZero from "../assets/Home/FamiliaZero.webp";
-import videoLogo from "../assets/Home/logoanimate11.webm";
+// import videoLogo from "../assets/Home/logoanimate11.webm";
 
 //produtos
 // import mussGrid from "../assets/Home/grid/mussarela.svg";
 // import manteigaGrid from "../assets/Home/grid/manteiga.svg";
 // import pratoGrid from "../assets/Home/grid/prato.svg";
 import condensado from "../assets/Home/grid/condensado.webp";
-import splashCondensado from "../assets/Home/grid/splashCondensado.webp";
+// import splashCondensado from "../assets/Home/grid/splashCondensado.webp";
 
 //valores
 // import valoresMensagem from "../assets/Home/valores/valores.svg";
-import caranova from "../assets/Home/valores/caranova.webp";
+// import caranova from "../assets/Home/valores/caranova.webp";
 import Fafe from "../assets/Home/valores/fe.png";
 import Facasa from "../assets/Home/valores/casa.png";
 import Facasal from "../assets/Home/valores/casal.png";
@@ -49,7 +49,7 @@ import Fafamilia from "../assets/Home/valores/familia.png";
 //animacoes
 import { AnimatedSection } from "../Tools/Animates/AnimatedSections";
 import { AnimatedY } from "../Tools/Animates/AnimatedY";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 //img produtos
 import requeijao from "../assets/Produtos/ReqCremoso/reqTradicional.webp";
@@ -62,6 +62,8 @@ import manteiga from "../assets/Produtos/Manteigas/200frente.webp";
 import choconat from "../assets/Produtos/LeiteEmPo/INTEGRAL200.webp";
 import cremeDeLeite from "../Tools/SlidersImgWelcome/creme de leite frontal_11zon.webp";
 import leiteUhtIntegral from "../assets/Produtos/Leites/leiteUhtExemplo.webp";
+
+<script async src="//www.instagram.com/embed.js"></script>;
 
 export function Home() {
   // useLayoutEffect(() => {
@@ -683,6 +685,7 @@ export function Home() {
           </AnimatedY>
         </div>
       </section>
+
       {/*SVG3 */}
       <section className="-mt-44 max-md:-mt-10 ">
         <svg
@@ -1072,13 +1075,97 @@ border-none mt-8 mm:max-md:w-full"
         </svg>
       </section>
       <section
-        className="bg-custom-blue w-full mb-20 pb-16 max-md:mb-0 
+        className="bg-custom-blue w-full mb-20 max-md:mb-0 
       relative z-10"
       >
-        <section className="max-w-7xl flex items-center justify-center -mt-32 m-auto relative z-10 max-md:-mt-2 ">
-          <div className="w-full flex items-center justify-center m-auto gap-8 max-mm:flex-col max-md:flex-col max-md:px-8">
+        <section
+          className="max-w-7xl flex flex-col items-center
+         justify-center -mt-16 m-auto relative z-10 max-md:-mt-2 "
+        >
+          {/*inicio instagram */}
+          <div
+            className=" absolute w-full top-0 bg-gray-200  opacity-10
+           rounded-lg h-44  z-0"
+          ></div>
+          <div
+            className="w-full items-start justify-start
+          flex flex-col md:flex-row gap-6 mb-8 relative p-4"
+          >
+            {/* Foto de Perfil */}
+            <div className="flex justify-center md:justify-start">
+              <div className="w-32 h-32 rounded-full shadow">
+                <img
+                  src="https://i.ibb.co/MD6k1SSy/473815219-1117083739630606-8619087118558099733-n.jpg"
+                  alt="Natville Logo"
+                  className="rounded-full object-cover w-full h-full bg-white"
+                />
+              </div>
+            </div>
+
+            {/* Informações */}
+            <div className="flex-1 flex flex-col gap-4">
+              {/* Nome e Botões */}
+              <div className="flex items-center gap-4">
+                <h1 className="text-2xl font-semibold text-white">
+                  natville.br
+                </h1>
+                <a href="https://www.instagram.com/natville.br/">
+                  <button
+                    className="bg-blue-600
+                  text-white text-sm font-semibold px-4 py-1 rounded hover:scale-105 transition duration-300"
+                  >
+                    Seguir
+                  </button>
+                </a>
+                <a href="https://www.instagram.com/direct/t/110203630545982">
+                  <button
+                    className="bg-gray-400 hover:scale-105 transition duration-300
+                 text-white text-sm font-semibold px-4 py-1 rounded"
+                  >
+                    Enviar mensagem
+                  </button>
+                </a>
+                <button className="text-white text-2xl font-bold">⋯</button>
+              </div>
+
+              {/* Estatísticas */}
+              <div className="flex gap-6">
+                <div className="flex gap-2">
+                  <span className="font-semibold text-white">531</span>{" "}
+                  <p className="text-white font-thin">publicações</p>
+                </div>
+                <div className="text-white">
+                  <span className="font-semibold text-white">30,5 mil</span>{" "}
+                  <span className="font-thin">seguidores</span>
+                </div>
+                <div className="text-white">
+                  <span className="font-semibold text-white">16</span>{" "}
+                  <span className="font-thin">seguindo</span>
+                </div>
+              </div>
+
+              {/* Descrição */}
+              <div className="flex flex-col text-sm text-white">
+                <p className="font-semibold">Natville</p>
+                <p>
+                  <span className="font-semibold ">Desde 1996</span>
+                </p>
+                <p className="text-white font-semibold">
+                  Da nossa família para a sua!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="w-full">
             <AnimatedSection>
-              <div className="w-72 max-md:w-full flex-col items-center justify-center m-auto">
+              <iframe
+                className="h-screen"
+                src="http://127.0.0.1:5500/teste.html"
+                width="100%"
+                scrolling="no"
+              ></iframe>
+
+              {/* <div className="w-72 max-md:w-full flex-col items-center justify-center m-auto">
                 <h2 className="font-mochari text-white text-2xl mb-2 max-md:text-lg max-md:text-center">
                   quem somos
                 </h2>
@@ -1163,8 +1250,9 @@ border-none mt-8 mm:max-md:w-full"
                     className="max-w-24 max-md:w-24"
                   />
                 </div>
-              </div>
+              </div> */}
             </AnimatedSection>
+
             {/* <AnimatedY>
               <div className="max-w-96  max-md:pl-0">
                 <h2 className="font-mochari text-4xl text-custom-blue-strong max-md:text-center">
@@ -1187,7 +1275,7 @@ border-none mt-8 mm:max-md:w-full"
                 <img src={condensadoValores} alt="" className="" />
               </div>
             </AnimatedNegative> */}
-            <AnimatedY>
+            {/* <AnimatedY>
               <div>
                 <img
                   src={caranova}
@@ -1195,9 +1283,17 @@ border-none mt-8 mm:max-md:w-full"
                   className="max-w-2xl max-md:w-72 drop-shadow-md"
                 />
               </div>
-            </AnimatedY>
+            </AnimatedY> */}
           </div>
         </section>
+        <div
+          className="-mt-52 relative z-0  
+        max-md:items-end max-md:flex max-md:-mt-20  "
+        >
+          <AnimatedY>
+            <img className="z-10 " src={camp} alt="natville" />
+          </AnimatedY>
+        </div>
       </section>
       <section className=" -mt-64 max-md:-mt-10 relative z-0  ">
         <svg

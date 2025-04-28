@@ -123,7 +123,7 @@ export function ReqCremoso() {
              justify-center m-auto z-0 "
         >
           <div
-            className="max-w-7xl
+            className="max-w-5xl
         flex-col items-center
         justify-center m-auto mt-20 "
           >
@@ -203,33 +203,18 @@ export function ReqCremoso() {
               gap-8  my-32 max-md:flex-col
                max-md:mx-8 max-md:my-32"
             >
-              <AnimatedNegative>
-                <div>
-                  <motion.img
-                    whileHover={{
-                      scale: 1.1,
-                      rotate: 3,
-                    }}
-                    transition={{ duration: 0.5 }}
-                    className=" object-center drop-shadow-md w-width-bebida
-                   max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
-                    src={reqCebola}
-                    alt="leite uht integral"
-                  />
-                </div>
-              </AnimatedNegative>
               <AnimatedY>
-                <div className="flex-col items-center justify-center ">
+                <div className="flex-col items-center justify-center text-end ">
                   <h1
                     className="font-mochari text-8xl max-md:text-7xl
-                   text-custom-blue-strong"
+                   text-custom-blue-strong "
                   >
                     Queijo processado
                     <br />
                     Cebola e Salsa
                   </h1>
                   <div>
-                    <p className="text-custom-blue-strong text-justify mt-8">
+                    <p className="text-custom-blue-strong text-end mt-8">
                       O toque especial da cebola e da salsa transforma esse
                       queijo processado em uma opção cheia de personalidade!
                       Ideal para quem gosta de um sabor mais intenso e
@@ -270,6 +255,21 @@ export function ReqCremoso() {
                   </div>
                 </div>
               </AnimatedY>
+              <AnimatedNegative>
+                <div>
+                  <motion.img
+                    whileHover={{
+                      scale: 1.1,
+                      rotate: 3,
+                    }}
+                    transition={{ duration: 0.5 }}
+                    className=" object-center drop-shadow-md w-width-bebida
+                   max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
+                    src={reqCebola}
+                    alt="leite uht integral"
+                  />
+                </div>
+              </AnimatedNegative>
             </div>
             {/*zero lactose */}
             <div
@@ -346,33 +346,18 @@ export function ReqCremoso() {
               gap-8  my-32 max-md:flex-col
                max-md:mx-8 max-md:my-32"
             >
-              <AnimatedNegative>
-                <div>
-                  <motion.img
-                    whileHover={{
-                      scale: 1.1,
-                      rotate: 3,
-                    }}
-                    transition={{ duration: 0.5 }}
-                    className=" object-center drop-shadow-md w-width-bebida
-                   max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
-                    src={reqReduzido}
-                    alt="leite uht integral"
-                  />
-                </div>
-              </AnimatedNegative>
               <AnimatedY>
-                <div className="flex-col items-center justify-center ">
+                <div className="flex-col items-center justify-center text-end ">
                   <h1
                     className="font-mochari text-8xl max-md:text-7xl
-                   text-custom-blue-strong"
+                   text-custom-blue-strong text-end"
                   >
                     Queijo processado
                     <br />
                     light
                   </h1>
                   <div>
-                    <p className="text-custom-blue-strong text-justify mt-8">
+                    <p className="text-custom-blue-strong text-end mt-8">
                       Se você quer um queijo cremoso, mas com menos gordura, o
                       Queijo Processado Light é a melhor opção! Com a mesma
                       cremosidade e sabor, mas com menos calorias, ele é
@@ -413,6 +398,21 @@ export function ReqCremoso() {
                   </div>
                 </div>
               </AnimatedY>
+              <AnimatedNegative>
+                <div>
+                  <motion.img
+                    whileHover={{
+                      scale: 1.1,
+                      rotate: 3,
+                    }}
+                    transition={{ duration: 0.5 }}
+                    className=" object-center drop-shadow-md w-width-bebida
+                   max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
+                    src={reqReduzido}
+                    alt="leite uht integral"
+                  />
+                </div>
+              </AnimatedNegative>
             </div>
             {/*REQ REDUZIDO */}
             <div

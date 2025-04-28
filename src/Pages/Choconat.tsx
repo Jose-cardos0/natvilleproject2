@@ -188,21 +188,6 @@ export function Choconat() {
               gap-8   my-32 max-md:flex-col
                max-md:mx-8 max-md:my-32"
             >
-              <AnimatedNegative>
-                <div>
-                  <motion.img
-                    whileHover={{
-                      scale: 1.1,
-                      rotate: 3,
-                    }}
-                    transition={{ duration: 0.5 }}
-                    className=" object-center drop-shadow-md max-w-72
-                   max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
-                    src={chocolat200ml}
-                    alt="leite uht integral"
-                  />
-                </div>
-              </AnimatedNegative>
               <AnimatedY>
                 <div className="flex-col items-center justify-center ">
                   <h1
@@ -254,6 +239,21 @@ export function Choconat() {
                   </div>
                 </div>
               </AnimatedY>
+              <AnimatedNegative>
+                <div>
+                  <motion.img
+                    whileHover={{
+                      scale: 1.1,
+                      rotate: 3,
+                    }}
+                    transition={{ duration: 0.5 }}
+                    className=" object-center drop-shadow-md max-w-72
+                   max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
+                    src={chocolat200ml}
+                    alt="leite uht integral"
+                  />
+                </div>
+              </AnimatedNegative>
             </div>
           </div>
 

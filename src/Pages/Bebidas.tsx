@@ -122,7 +122,7 @@ export function Bebidas() {
              justify-center m-auto z-0  "
         >
           <div
-            className="max-w-7xl
+            className="max-w-5xl
         flex-col items-center
         justify-center m-auto mt-20 "
           >
@@ -200,21 +200,6 @@ export function Bebidas() {
               gap-8  my-32 max-md:flex-col
                max-md:mx-8 max-md:my-32"
             >
-              <AnimatedNegative>
-                <div>
-                  <motion.img
-                    whileHover={{
-                      scale: 1.1,
-                      rotate: 3,
-                    }}
-                    transition={{ duration: 0.5 }}
-                    className=" object-center drop-shadow-md  w-width-bebida
-                   max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
-                    src={bebidaAmeixa}
-                    alt="leite uht integral"
-                  />
-                </div>
-              </AnimatedNegative>
               <AnimatedY>
                 <div className="flex-col items-center justify-center ">
                   <h1
@@ -266,6 +251,21 @@ export function Bebidas() {
                   </div>
                 </div>
               </AnimatedY>
+              <AnimatedNegative>
+                <div>
+                  <motion.img
+                    whileHover={{
+                      scale: 1.1,
+                      rotate: 3,
+                    }}
+                    transition={{ duration: 0.5 }}
+                    className=" object-center drop-shadow-md  w-width-bebida
+                   max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
+                    src={bebidaAmeixa}
+                    alt="leite uht integral"
+                  />
+                </div>
+              </AnimatedNegative>
             </div>
             {/*zero lactose */}
             <div
@@ -341,21 +341,6 @@ export function Bebidas() {
               gap-8  my-32 max-md:flex-col
                max-md:mx-8 max-md:my-32"
             >
-              <AnimatedNegative>
-                <div>
-                  <motion.img
-                    whileHover={{
-                      scale: 1.1,
-                      rotate: 3,
-                    }}
-                    transition={{ duration: 0.5 }}
-                    className=" object-center drop-shadow-md w-width-bebida2
-                   max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
-                    src={graviola}
-                    alt="leite uht integral"
-                  />
-                </div>
-              </AnimatedNegative>
               <AnimatedY>
                 <div className="flex-col items-center justify-center ">
                   <h1
@@ -405,6 +390,21 @@ export function Bebidas() {
                   </div>
                 </div>
               </AnimatedY>
+              <AnimatedNegative>
+                <div>
+                  <motion.img
+                    whileHover={{
+                      scale: 1.1,
+                      rotate: 3,
+                    }}
+                    transition={{ duration: 0.5 }}
+                    className=" object-center drop-shadow-md w-width-bebida2
+                   max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
+                    src={graviola}
+                    alt="leite uht integral"
+                  />
+                </div>
+              </AnimatedNegative>
             </div>
             {/*bandeja */}
             <div
