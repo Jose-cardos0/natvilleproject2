@@ -87,18 +87,22 @@ export function QuemSomos() {
         justify-center m-auto
          bg-no-repeat bg-contain drop-shadow-2xl z-10 max-md:bg-center max-md:bg-cover  "
         >
-          <div className="max-w-4xl">
+          <div className="max-w-4xl -mt-16 max-md:-mt-16">
             <div
               className="items-end justify-end
              text-custom-blue-strong -mt-80"
             >
               <AnimatedY>
-                <h1 className="uppercase font-mochari text-6xl text-end max-md:text-center max-md:mt-20">
+                <h1
+                  className="uppercase font-mochari text-6xl 
+                text-end max-md:text-center"
+                >
                   nosso propósito
                 </h1>
                 <p
                   className="lowercase font-roboto text-end 
-                max-md:mx-8 max-md:text-justify font bg-white bg-opacity-50 p-4 rounded-lg shadow mt-2 "
+                max-md:mx-8 max-md:text-justify 
+                 bg-opacity-90 p-4 rounded-lg shadow mt-2  "
                 >
                   SOMOS O CONVITE PARA UMA JORNADA. ESSE CAMINHO PARTE DO NOSSO
                   DESEJO DE TRANSFORMAR O MUNDO EM UM LUGAR MELHOR DE SE VIVER.
@@ -241,62 +245,66 @@ export function QuemSomos() {
                   alt="natville"
                 />
               </div>
-              <div className="flex-col items-center justify-center ">
-                <p
-                  className="text-custom-blue-strong
+              <a href="https://qrco.de/bfx729" target="_blacnk">
+                <div className="flex-col items-center justify-center ">
+                  <p
+                    className="text-custom-blue-strong
                    text-center font-mochari text-4xl"
-                >
-                  Acompanhe nossas
-                </p>
-                <div className="flex items-center justify-center gap-2">
-                  <AiOutlineYoutube
-                    size={25}
-                    className="cursor-pointer hover:scale-105 transition duration-300"
-                  />
-                  <CiFacebook
-                    size={25}
-                    className="cursor-pointer hover:scale-105 transition duration-300"
-                  />
-                  <FaWhatsapp
-                    size={25}
-                    className="cursor-pointer hover:scale-105 transition duration-300"
-                  />
-                  <FaInstagram
-                    size={25}
-                    className="cursor-pointer hover:scale-105 transition duration-300"
-                  />
-                  <AiOutlineLinkedin
-                    size={25}
-                    className="cursor-pointer hover:scale-105 transition duration-300"
-                  />
-                </div>
-                <p
-                  className="text-custom-blue-strong 
-                  text-center font-mochari text-4xl"
-                >
-                  redes sociais
-                </p>
-              </div>
-              <div
-                className="font-mochari text-custom-blue-strong
-                 flex-col items-center justify-center "
-              >
-                <p className="text-end text-4xl max-md:text-center">
-                  fale conosco
-                </p>
-                <div className="flex items-center justify-between gap-3 max-md:justify-center">
-                  <div>
-                    <FiPhoneForwarded size={37} />
-                  </div>
-                  <div
-                    className="flex-col text-2xl 
-                    items-center justify-center "
                   >
-                    <p>0800 7213245</p>
-                    <p className="text-xl -mt-3">natville.com.br</p>
+                    Acompanhe nossas
+                  </p>
+                  <div className="flex items-center justify-center gap-2">
+                    <AiOutlineYoutube
+                      size={25}
+                      className="cursor-pointer hover:scale-105 transition duration-300"
+                    />
+                    <CiFacebook
+                      size={25}
+                      className="cursor-pointer hover:scale-105 transition duration-300"
+                    />
+                    <FaWhatsapp
+                      size={25}
+                      className="cursor-pointer hover:scale-105 transition duration-300"
+                    />
+                    <FaInstagram
+                      size={25}
+                      className="cursor-pointer hover:scale-105 transition duration-300"
+                    />
+                    <AiOutlineLinkedin
+                      size={25}
+                      className="cursor-pointer hover:scale-105 transition duration-300"
+                    />
+                  </div>
+                  <p
+                    className="text-custom-blue-strong 
+                  text-center font-mochari text-4xl"
+                  >
+                    redes sociais
+                  </p>
+                </div>
+              </a>
+              <a href="https://qrco.de/bfx729" target="_blacnk">
+                <div
+                  className="font-mochari text-custom-blue-strong
+                 flex-col items-center justify-center "
+                >
+                  <p className="text-end text-4xl max-md:text-center">
+                    fale conosco
+                  </p>
+                  <div className="flex items-center justify-between gap-3 max-md:justify-center">
+                    <div>
+                      <FiPhoneForwarded size={37} />
+                    </div>
+                    <div
+                      className="flex-col text-2xl 
+                    items-center justify-center "
+                    >
+                      <p>0800 7213245</p>
+                      <p className="text-xl -mt-3">natville.com.br</p>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
             <div className="w-full flex-col">
               <div className="border border-gray-300 mt-5"></div>

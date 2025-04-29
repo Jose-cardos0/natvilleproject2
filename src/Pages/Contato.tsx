@@ -1,6 +1,6 @@
 import camp from "../assets/Home/camp.webp";
 import naty from "../assets/Contato/naty.webp";
-import qrCode from "../assets/Contato/qrCodeWhats.svg";
+import qrCode from "../assets/Contato/qrCodeWhats.webp";
 
 import { AiOutlineYoutube } from "react-icons/ai";
 import { CiFacebook } from "react-icons/ci";
@@ -16,7 +16,7 @@ export function Contato() {
       <div className="bg-custom-blue flex-col flex items-center justify-center m-auto max-md:pb-20 ">
         <div className="max-w-7xl my-14 relative z-10">
           <div className="w-full items-center justify-center flex m-auto">
-            <a href="https://w.app/vkpthd" target="_blanck">
+            <a href="https://qrco.de/bfx729" target="_blanck">
               <img
                 className="max-w-96 hover:scale-105 transition duration-300 max-md:w-44 "
                 src={qrCode}
@@ -68,10 +68,10 @@ export function Contato() {
                 </label>
                 <select className="w-full rounded-xl bg-blue-50 px-4 py-3 outline-none border border-transparent focus:ring-2 focus:ring-blue-400 focus:border-blue-300 transition">
                   <option value="">Selecione uma opção</option>
-                  <option value="compas">SETOR COMPAS</option>
-                  <option value="contas">SETOR CONTAS À PAGAR</option>
-                  <option value="comercial">SETOR COMERCIAL</option>
-                  <option value="financeiro">SETOR FINANCEIRO</option>
+                  <option value="pd@natville.com.br">SETOR P&D</option>
+                  <option value="atendimento@natville.com.br">
+                    SETOR ATENDIMENTO AO CLIENTE
+                  </option>
                 </select>
               </div>
 
@@ -91,6 +91,7 @@ export function Contato() {
                 </label>
                 <input
                   type="file"
+                  multiple
                   className="w-full rounded-xl bg-blue-50 px-4 py-3 outline-none border border-transparent file:mr-4 file:py-3 file:px-6 file:rounded-xl file:border-0 file:text-white file:font-bold file:bg-custom-blue-strong file:cursor-pointer hover:file:bg-blue-700 transition"
                 />
               </div>
@@ -143,62 +144,66 @@ export function Contato() {
                 alt="natville"
               />
             </div>
-            <div className="flex-col items-center justify-center ">
-              <p
-                className="text-custom-blue-strong
+            <a href="https://qrco.de/bfx729" target="_blacnk">
+              <div className="flex-col items-center justify-center ">
+                <p
+                  className="text-custom-blue-strong
                    text-center font-mochari text-4xl"
-              >
-                Acompanhe nossas
-              </p>
-              <div className="flex items-center justify-center gap-2">
-                <AiOutlineYoutube
-                  size={25}
-                  className="cursor-pointer hover:scale-105 transition duration-300"
-                />
-                <CiFacebook
-                  size={25}
-                  className="cursor-pointer hover:scale-105 transition duration-300"
-                />
-                <FaWhatsapp
-                  size={25}
-                  className="cursor-pointer hover:scale-105 transition duration-300"
-                />
-                <FaInstagram
-                  size={25}
-                  className="cursor-pointer hover:scale-105 transition duration-300"
-                />
-                <AiOutlineLinkedin
-                  size={25}
-                  className="cursor-pointer hover:scale-105 transition duration-300"
-                />
-              </div>
-              <p
-                className="text-custom-blue-strong 
-                  text-center font-mochari text-4xl"
-              >
-                redes sociais
-              </p>
-            </div>
-            <div
-              className="font-mochari text-custom-blue-strong
-                 flex-col items-center justify-center "
-            >
-              <p className="text-end text-4xl max-md:text-center">
-                fale conosco
-              </p>
-              <div className="flex items-center justify-between gap-3 max-md:justify-center">
-                <div>
-                  <FiPhoneForwarded size={37} />
-                </div>
-                <div
-                  className="flex-col text-2xl 
-                    items-center justify-center "
                 >
-                  <p>0800 7213245</p>
-                  <p className="text-xl -mt-3">natville.com.br</p>
+                  Acompanhe nossas
+                </p>
+                <div className="flex items-center justify-center gap-2">
+                  <AiOutlineYoutube
+                    size={25}
+                    className="cursor-pointer hover:scale-105 transition duration-300"
+                  />
+                  <CiFacebook
+                    size={25}
+                    className="cursor-pointer hover:scale-105 transition duration-300"
+                  />
+                  <FaWhatsapp
+                    size={25}
+                    className="cursor-pointer hover:scale-105 transition duration-300"
+                  />
+                  <FaInstagram
+                    size={25}
+                    className="cursor-pointer hover:scale-105 transition duration-300"
+                  />
+                  <AiOutlineLinkedin
+                    size={25}
+                    className="cursor-pointer hover:scale-105 transition duration-300"
+                  />
+                </div>
+                <p
+                  className="text-custom-blue-strong 
+                  text-center font-mochari text-4xl"
+                >
+                  redes sociais
+                </p>
+              </div>
+            </a>
+            <a href="https://qrco.de/bfx729" target="_blacnk">
+              <div
+                className="font-mochari text-custom-blue-strong
+                 flex-col items-center justify-center "
+              >
+                <p className="text-end text-4xl max-md:text-center">
+                  fale conosco
+                </p>
+                <div className="flex items-center justify-between gap-3 max-md:justify-center">
+                  <div>
+                    <FiPhoneForwarded size={37} />
+                  </div>
+                  <div
+                    className="flex-col text-2xl 
+                    items-center justify-center "
+                  >
+                    <p>0800 7213245</p>
+                    <p className="text-xl -mt-3">natville.com.br</p>
+                  </div>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
           <div className="w-full flex-col">
             <div className="border border-gray-300 mt-5"></div>

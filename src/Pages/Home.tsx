@@ -49,7 +49,7 @@ import Fafamilia from "../assets/Home/valores/familia.png";
 //animacoes
 import { AnimatedSection } from "../Tools/Animates/AnimatedSections";
 import { AnimatedY } from "../Tools/Animates/AnimatedY";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 //img produtos
 import requeijao from "../assets/Produtos/ReqCremoso/reqTradicional.webp";
@@ -68,9 +68,9 @@ import videoComercial from "../assets/video/video corridigo.mp4";
 <script async src="//www.instagram.com/embed.js"></script>;
 
 export function Home() {
-  // useLayoutEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const [divHidden, setdivHidden] = useState(false);
 
@@ -164,13 +164,15 @@ export function Home() {
                     Fresco, macio e saboroso, ideal para o café da manhã.
                   </p>
                   <div className="flex items-center justify-between">
-                    <button
-                      className="bg-custom-white text-custom-blue-strong 
+                    <Link to="/queijos">
+                      <button
+                        className="bg-custom-white text-custom-blue-strong 
                     rounded-full px-4 py-2 font-semibold hover:bg-custom-blue
                      hover:text-custom-white transition flex items-center justify-center"
-                    >
-                      Saiba mais <TiArrowRight size={32} />
-                    </button>
+                      >
+                        Saiba mais <TiArrowRight size={32} />
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -191,9 +193,11 @@ export function Home() {
                     cremoso.
                   </p>
                   <div className="flex items-center justify-between">
-                    <button className="bg-custom-blue-strong flex items-center justify-center text-custom-white rounded-full px-4 py-2 font-semibold hover:bg-custom-blue transition">
-                      Saiba mais <TiArrowRight size={32} />
-                    </button>
+                    <Link to="/queijos">
+                      <button className="bg-custom-blue-strong flex items-center justify-center text-custom-white rounded-full px-4 py-2 font-semibold hover:bg-custom-blue transition">
+                        Saiba mais <TiArrowRight size={32} />
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -216,13 +220,15 @@ export function Home() {
                     Maravilhoso para espetinhos em churrascos de família.
                   </p>
                   <div className="flex items-center justify-between">
-                    <button
-                      className="bg-custom-white text-custom-blue-strong 
+                    <Link to="/queijos">
+                      <button
+                        className="bg-custom-white text-custom-blue-strong 
                     rounded-full px-4 py-2 font-semibold hover:bg-custom-blue
                      hover:text-custom-white transition flex items-center justify-center"
-                    >
-                      Saiba mais <TiArrowRight size={32} />
-                    </button>
+                      >
+                        Saiba mais <TiArrowRight size={32} />
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -246,13 +252,15 @@ export function Home() {
                     alegria de tomar um choconat!
                   </p>
                   <div className="flex items-center justify-between">
-                    <button
-                      className="bg-custom-white text-custom-blue-strong 
+                    <Link to="/empo">
+                      <button
+                        className="bg-custom-white text-custom-blue-strong 
                     rounded-full px-4 py-2 font-semibold hover:bg-custom-blue
                      hover:text-custom-white transition flex items-center justify-center"
-                    >
-                      Saiba mais <TiArrowRight size={32} />
-                    </button>
+                      >
+                        Saiba mais <TiArrowRight size={32} />
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -274,9 +282,11 @@ export function Home() {
                     Delicioso, com textura leve e cremosa, perfeito para pães.
                   </p>
                   <div className="flex items-center justify-between">
-                    <button className="bg-custom-blue-strong flex items-center justify-center text-custom-white rounded-full px-4 py-2 font-semibold hover:bg-custom-blue transition">
-                      Saiba mais <TiArrowRight size={32} />
-                    </button>
+                    <Link to="/manteigas">
+                      <button className="bg-custom-blue-strong flex items-center justify-center text-custom-white rounded-full px-4 py-2 font-semibold hover:bg-custom-blue transition">
+                        Saiba mais <TiArrowRight size={32} />
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -298,13 +308,15 @@ export function Home() {
                     Tradicional, cremoso e irresistível. Feito com leite fresco.
                   </p>
                   <div className="flex items-center justify-between">
-                    <button
-                      className="bg-custom-white text-custom-blue-strong 
+                    <Link to="/reqcremoso">
+                      <button
+                        className="bg-custom-white text-custom-blue-strong 
                     rounded-full px-4 py-2 font-semibold hover:bg-custom-blue
                      hover:text-custom-white transition flex items-center justify-center"
-                    >
-                      Saiba mais <TiArrowRight size={32} />
-                    </button>
+                      >
+                        Saiba mais <TiArrowRight size={32} />
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -340,13 +352,15 @@ export function Home() {
                       gostosas!
                     </p>
                     <div className="flex items-center justify-between">
-                      <button
-                        className="bg-custom-white text-custom-blue-strong 
+                      <Link to="/condensados">
+                        <button
+                          className="bg-custom-white text-custom-blue-strong 
                               rounded-full px-4 py-2 font-semibold hover:bg-custom-blue
                                hover:text-custom-white transition flex items-center justify-center"
-                      >
-                        Saiba mais <TiArrowRight size={32} />
-                      </button>
+                        >
+                          Saiba mais <TiArrowRight size={32} />
+                        </button>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -368,9 +382,11 @@ export function Home() {
                       doce da fruta.
                     </p>
                     <div className="flex items-center justify-between">
-                      <button className="bg-custom-blue-strong flex items-center justify-center text-custom-white rounded-full px-4 py-2 font-semibold hover:bg-custom-blue transition">
-                        Saiba mais <TiArrowRight size={32} />
-                      </button>
+                      <Link to="/bebidas">
+                        <button className="bg-custom-blue-strong flex items-center justify-center text-custom-white rounded-full px-4 py-2 font-semibold hover:bg-custom-blue transition">
+                          Saiba mais <TiArrowRight size={32} />
+                        </button>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -396,13 +412,15 @@ export function Home() {
                       da manhã.
                     </p>
                     <div className="flex items-center justify-between">
-                      <button
-                        className="bg-custom-white text-custom-blue-strong 
+                      <Link to="/reqcremoso">
+                        <button
+                          className="bg-custom-white text-custom-blue-strong 
                               rounded-full px-4 py-2 font-semibold hover:bg-custom-blue
                                hover:text-custom-white transition flex items-center justify-center"
-                      >
-                        Saiba mais <TiArrowRight size={32} />
-                      </button>
+                        >
+                          Saiba mais <TiArrowRight size={32} />
+                        </button>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -426,13 +444,15 @@ export function Home() {
                       sabor do campo.
                     </p>
                     <div className="flex items-center justify-between">
-                      <button
-                        className="bg-custom-white text-custom-blue-strong 
+                      <Link to="/leiteuht">
+                        <button
+                          className="bg-custom-white text-custom-blue-strong 
                               rounded-full px-4 py-2 font-semibold hover:bg-custom-blue
                                hover:text-custom-white transition flex items-center justify-center"
-                      >
-                        Saiba mais <TiArrowRight size={32} />
-                      </button>
+                        >
+                          Saiba mais <TiArrowRight size={32} />
+                        </button>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -1265,62 +1285,66 @@ border-none mt-8 mm:max-md:w-full"
                 alt="natville"
               />
             </div>
-            <div className="flex-col items-center justify-center ">
-              <p
-                className="text-custom-blue-strong
+            <a href="https://qrco.de/bfx729" target="_blacnk">
+              <div className="flex-col items-center justify-center ">
+                <p
+                  className="text-custom-blue-strong
                    text-center font-mochari text-4xl"
-              >
-                Acompanhe nossas
-              </p>
-              <div className="flex items-center justify-center gap-2">
-                <AiOutlineYoutube
-                  size={25}
-                  className="cursor-pointer hover:scale-105 transition duration-300"
-                />
-                <CiFacebook
-                  size={25}
-                  className="cursor-pointer hover:scale-105 transition duration-300"
-                />
-                <FaWhatsapp
-                  size={25}
-                  className="cursor-pointer hover:scale-105 transition duration-300"
-                />
-                <FaInstagram
-                  size={25}
-                  className="cursor-pointer hover:scale-105 transition duration-300"
-                />
-                <AiOutlineLinkedin
-                  size={25}
-                  className="cursor-pointer hover:scale-105 transition duration-300"
-                />
-              </div>
-              <p
-                className="text-custom-blue-strong 
-                  text-center font-mochari text-4xl"
-              >
-                redes sociais
-              </p>
-            </div>
-            <div
-              className="font-mochari text-custom-blue-strong
-                 flex-col items-center justify-center "
-            >
-              <p className="text-end text-4xl max-md:text-center">
-                fale conosco
-              </p>
-              <div className="flex items-center justify-between gap-3 max-md:justify-center">
-                <div>
-                  <FiPhoneForwarded size={37} />
-                </div>
-                <div
-                  className="flex-col text-2xl 
-                    items-center justify-center "
                 >
-                  <p>0800 7213245</p>
-                  <p className="text-xl -mt-3">natville.com.br</p>
+                  Acompanhe nossas
+                </p>
+                <div className="flex items-center justify-center gap-2">
+                  <AiOutlineYoutube
+                    size={25}
+                    className="cursor-pointer hover:scale-105 transition duration-300"
+                  />
+                  <CiFacebook
+                    size={25}
+                    className="cursor-pointer hover:scale-105 transition duration-300"
+                  />
+                  <FaWhatsapp
+                    size={25}
+                    className="cursor-pointer hover:scale-105 transition duration-300"
+                  />
+                  <FaInstagram
+                    size={25}
+                    className="cursor-pointer hover:scale-105 transition duration-300"
+                  />
+                  <AiOutlineLinkedin
+                    size={25}
+                    className="cursor-pointer hover:scale-105 transition duration-300"
+                  />
+                </div>
+                <p
+                  className="text-custom-blue-strong 
+                  text-center font-mochari text-4xl"
+                >
+                  redes sociais
+                </p>
+              </div>
+            </a>
+            <a href="https://qrco.de/bfx729" target="_blacnk">
+              <div
+                className="font-mochari text-custom-blue-strong
+                 flex-col items-center justify-center "
+              >
+                <p className="text-end text-4xl max-md:text-center">
+                  fale conosco
+                </p>
+                <div className="flex items-center justify-between gap-3 max-md:justify-center">
+                  <div>
+                    <FiPhoneForwarded size={37} />
+                  </div>
+                  <div
+                    className="flex-col text-2xl 
+                    items-center justify-center "
+                  >
+                    <p>0800 7213245</p>
+                    <p className="text-xl -mt-3">natville.com.br</p>
+                  </div>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
           <div className="w-full flex-col">
             <div className="border border-gray-300 mt-5"></div>

@@ -5,7 +5,8 @@ import logo from "../assets/Header/logo.png";
 import { Link } from "react-router-dom";
 
 //icons
-import { ImMenu2 } from "react-icons/im";
+import { IoMenuOutline } from "react-icons/io5";
+import { RxCross2 } from "react-icons/rx";
 //logo
 import videoLogo from "../assets/Home/logoanimate11.webm";
 
@@ -68,23 +69,30 @@ export function Header() {
      bg-custom-white flex items-center justify-center
       drop-shadow-xl shadow-black fixed z-20   "
     >
-      {isVisibleQuemSomos && (
-        <div
-          id="moving-shape"
-          className="absolute bg-custom-white p-10 rounded-full w-36 h-36"
-          style={{
-            position: "absolute",
-            top: "-100%",
-            left: mouseX - 70, // Ajusta a posição horizontal com base na posição do mouse
-            zIndex: -1,
-          }}
-        ></div>
-      )}
+      {isVisibleQuemSomos &&
+        (isMobile ? (
+          ""
+        ) : (
+          <div
+            id="moving-shape"
+            className="absolute bg-custom-white p-10 rounded-full w-36 h-36"
+            style={{
+              position: "absolute",
+              top: "-100%",
+              left: mouseX - 70, // Ajusta a posição horizontal com base na posição do mouse
+              zIndex: -1,
+            }}
+          ></div>
+        ))}
       {isMobile ? (
         <section className="w-full flex items-center justify-between mx-8">
           <div className="w-full flex items-center justify-between ">
             <button onClick={() => setIsOpen((prev) => !prev)}>
-              <ImMenu2 size={40} color="#003FA5" />
+              {isOpen ? (
+                <RxCross2 size={30} color="#003FA5" />
+              ) : (
+                <IoMenuOutline size={40} color="#003FA5" />
+              )}
             </button>
 
             <Link to={"/"}>
@@ -106,7 +114,7 @@ export function Header() {
 
           {isOpen ? (
             <div
-              className="absolute top-24 left-0 
+              className="absolute top-16 left-0 
               w-2/3 h-screen bg-custom-white 
               bg-opacity-95 flex flex-col justify-center
               items-center drop-shadow-lg  transition-all 
@@ -247,7 +255,10 @@ export function Header() {
           )}
         </section>
       ) : (
-        <section className="max-w-7xl flex items-center justify-center ">
+        <section
+          className="max-w-7xl flex
+         items-center justify-center "
+        >
           <Link to={"/"}>
             <div
               onClick={() => setIsOpen(false)}
@@ -257,7 +268,10 @@ export function Header() {
             </div>
           </Link>
 
-          <div className="w-full flex items-center justify-center gap-3">
+          <div
+            className="w-full flex items-center 
+          justify-center gap-3"
+          >
             <Link to={"/quemsomos"}>
               <div
                 onClick={() => setIsOpen(false)}
