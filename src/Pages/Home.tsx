@@ -68,9 +68,9 @@ import videoComercial from "../assets/video/video corridigo.mp4";
 <script async src="//www.instagram.com/embed.js"></script>;
 
 export function Home() {
-  useLayoutEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  // useLayoutEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
 
   const [divHidden, setdivHidden] = useState(false);
 
@@ -114,7 +114,7 @@ export function Home() {
         </div>
       </section>
       {/*SVG1 */}
-      <section className="-mt-48 max-md:-mt-10 max-md:mb-1 relative z-0 ">
+      <section className="-mt-48 max-md:-mt-12 max-md:mb-1 relative z-0 ">
         <svg
           className=" rotate-180 "
           width="100%"
@@ -138,7 +138,8 @@ export function Home() {
         <AnimatedSection>
           <div
             id="divProdutosGrid"
-            className="max-w-7xl flex items-center pt-60 pb-10 justify-center m-auto"
+            className="max-w-7xl flex items-center pt-60 
+             pb-10 justify-center m-auto max-md:pt-10"
           >
             {/* <SliderProdutos /> */}
 
@@ -508,7 +509,10 @@ export function Home() {
               </a>
             </div>
           ) : (
-            <div className="pb-32 max-w-7xl flex items-end justify-end m-auto ">
+            <div
+              className="pb-32 max-w-7xl flex items-end
+             justify-end m-auto max-md:pb-8 "
+            >
               <button
                 onClick={sectionProdutosHidden}
                 className="bg-custom-blue-strong mr-8 flex items-center justify-center text-custom-white rounded-full px-4 py-2 font-semibold hover:bg-custom-blue transition"
@@ -765,11 +769,12 @@ export function Home() {
             >
               <div className="py-32 flex items-start justify-start   ">
                 <img
-                  className="w-96 absolute -top-0 -rotate-30"
+                  className="w-96 absolute -top-0 -rotate-30
+                   max-md:w-80 max-md:rotate-12 max-md:left-8"
                   src="https://i.ibb.co/PsQR35sf/logofeita.png"
                   alt=""
                 />
-                <div className="grid grid-cols-1 m-auto max-w-96  ">
+                <div className="grid grid-cols-1 m-auto max-w-96 max-md:px-5  ">
                   <div className="flex w-full items-center gap-5 mt-8">
                     <img
                       src={Facasal}
@@ -843,7 +848,10 @@ export function Home() {
                 </div>
               </div>
               {/*GROD CARDS */}
-              <div className="container gap-2">
+              <div
+                className="container gap-2 max-md:ml-3
+               "
+              >
                 <div
                   data-text="1996"
                   className="glass cursor-pointer
@@ -1074,12 +1082,13 @@ border-none mt-8 mm:max-md:w-full"
         </svg>
       </section> */}
       <section
-        className="bg-custom-blue w-full mb-20 max-md:mb-0 
+        className="bg-custom-white w-full mb-20 max-md:mb-0 
       relative z-10"
       >
         <section
           className="w-full flex flex-col items-center
-         justify-center -mt-24 mb-16 m-auto relative z-10 max-md:-mt-2 "
+         justify-center -mt-24 mb-16 m-auto relative
+          z-10 max-md:mt-8 "
         >
           <div className="w-full">
             {/* <AnimatedSection> */}
@@ -1238,7 +1247,7 @@ border-none mt-8 mm:max-md:w-full"
         </svg>
       </section> */}
       <footer
-        className="w-full h-auto mt-20
+        className="w-full h-auto mt-20 max-md:mt-28
             flex items-center justify-center m-auto "
       >
         <div

@@ -17,10 +17,10 @@ import { SliderLeites } from "./SlidersImgWelcome/SliderLeites";
 import { SliderCremedeLeite } from "./SlidersImgWelcome/SliderCremedeLeite";
 
 //import imgs mobile
-import logoMOb from "./SlidersImgWelcome/Mobile/logoMob.png";
-import leite1 from "./SlidersImgWelcome/Mobile/leiteMob.png";
-import leite2 from "./SlidersImgWelcome/Mobile/leitesMob.png";
-import leite3 from "./SlidersImgWelcome/Mobile/zeroMob.png";
+// import logoMOb from "./SlidersImgWelcome/Mobile/logoMob.png";
+import leite1 from "./SlidersImgWelcome/Mobile/condensado1.png";
+import leite2 from "./SlidersImgWelcome/Mobile/creme de leite.png";
+import leite3 from "./SlidersImgWelcome/Mobile/empo.png";
 
 export function SlidersWelcome() {
   const [isMobile, setIsMobile] = useState<boolean>(false);
@@ -47,28 +47,35 @@ export function SlidersWelcome() {
           slidesPerView={1}
           navigation={isMobile ? false : true}
           pagination={isMobile ? { clickable: true } : { clickable: false }}
-          className="mySwiper mm:max-md:w-width-mobile"
+          className="mySwiper mm:max-md:w-width-mobile mt-20"
           autoplay={{
             delay: 3000,
             disableOnInteraction: false,
           }}
         >
-          <SwiperSlide className="px-16 max-w-7xl mm:max-md:pb-10 flex items-center justify-center m-auto">
-            <img
-              className="w-full  
-          drop-shadow-lg"
-              src={logoMOb}
-              alt=""
-            />
+          <SwiperSlide
+            className="px-16  mm:max-md:pb-10
+           flex items-center justify-center m-auto"
+          >
+            <div className="flex w-full justify-center m-auto">
+              <video
+                src={videoLogo}
+                autoPlay
+                muted
+                loop
+                playsInline
+                className=" relative z-10"
+              ></video>
+            </div>
           </SwiperSlide>
-          <SwiperSlide className="px-16 max-w-7xl ">
-            <img className=" drop-shadow-lg w-80 " src={leite1} alt="" />
+          <SwiperSlide className="  ">
+            <img className="  " src={leite1} alt="" />
           </SwiperSlide>
-          <SwiperSlide className="px-16 max-w-7xl ">
-            <img className=" drop-shadow-lg" src={leite2} alt="" />
+          <SwiperSlide className=" max-w-7xl ">
+            <img className=" " src={leite2} alt="" />
           </SwiperSlide>
-          <SwiperSlide className="px-16 max-w-7xl ">
-            <img className=" drop-shadow-lg w-80" src={leite3} alt="" />
+          <SwiperSlide className=" max-w-7xl ">
+            <img className=" " src={leite3} alt="" />
           </SwiperSlide>
         </Swiper>
       ) : (

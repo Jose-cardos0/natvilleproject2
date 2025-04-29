@@ -127,6 +127,17 @@ html {
   transform: rotate(calc(var(-15) * 1deg));
 }
 
+@media screen and (max-width: 480px) {
+  .container .glass {
+    width: 160px;
+    height: 200px;
+    margin-bottom: 4rem;
+    margin-top: -4rem;
+    left: 1rem;
+    background-color: #ffffff;
+  }
+}
+
 .glass:hover {
   z-index: 50;
 }
