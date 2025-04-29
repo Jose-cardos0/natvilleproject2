@@ -846,10 +846,9 @@ export function Home() {
               <div className="container gap-2">
                 <div
                   data-text="1996"
-                  style={{ "--r": "-15" }}
                   className="glass cursor-pointer
                    hover:scale-105 duration-300 
-                  transform  "
+                  transform -rotate-12 hover:rotate-0 "
                 >
                   <img
                     src="https://i.ibb.co/hJkdzsjG/1996.webp"
@@ -860,7 +859,6 @@ export function Home() {
 
                 <div
                   data-text="2018"
-                  style={{ "--r": "5" }}
                   className="glass cursor-pointer hover:scale-105 
                   duration-300  transform "
                 >
@@ -873,11 +871,10 @@ export function Home() {
 
                 <div
                   data-text="2024"
-                  style={{ "--r": "25" }}
                   className="glass 
                   cursor-pointer hover:scale-105
                    duration-300
-                   transform luz "
+                   transform luz rotate-12 hover:rotate-0 "
                 >
                   <img
                     src="

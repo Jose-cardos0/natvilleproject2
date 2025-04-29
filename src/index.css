@@ -9,7 +9,7 @@
 }
 
 :root {
-  --r: -15;
+  --r: -0;
 }
 
 @import url("https://fonts.cdnfonts.com/css/dk-lemon-yellow-sun");
@@ -124,7 +124,7 @@ html {
   border-radius: 10px;
   margin: 0 -45px;
   backdrop-filter: blur(40px);
-  transform: rotate(calc(var(--r) * 1deg));
+  transform: rotate(calc(var(-15) * 1deg));
 }
 
 .glass:hover {

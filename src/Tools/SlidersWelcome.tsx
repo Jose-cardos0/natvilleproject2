@@ -78,7 +78,7 @@ export function SlidersWelcome() {
           navigation={isMobile ? false : false}
           pagination={{
             clickable: true,
-            renderBullet: function (index, className) {
+            renderBullet: function (className) {
               return '<span class="' + className + ' custom-bullet"></span>';
             },
           }}
