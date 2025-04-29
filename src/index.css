@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  --r: -15;
+}
+
 @import url("https://fonts.cdnfonts.com/css/dk-lemon-yellow-sun");
 @import url("https://db.onlinewebfonts.com/c/f3edd9d7f2d3ce0f858aaeb2444eb457?family=DK+Lemon+Yellow+Sun");
 

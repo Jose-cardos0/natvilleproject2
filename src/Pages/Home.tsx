@@ -63,6 +63,8 @@ import choconat from "../assets/Produtos/LeiteEmPo/INTEGRAL200.webp";
 import cremeDeLeite from "../Tools/SlidersImgWelcome/creme de leite frontal_11zon.webp";
 import leiteUhtIntegral from "../assets/Produtos/Leites/leiteUhtExemplo.webp";
 
+import videoComercial from "../assets/video/video corridigo.mp4";
+
 <script async src="//www.instagram.com/embed.js"></script>;
 
 export function Home() {
@@ -1057,7 +1059,7 @@ border-none mt-8 mm:max-md:w-full"
           </AnimatedSection>
         </div> */}
       </section>
-      <section className=" ">
+      {/* <section className=" ">
         <svg
           className="rotate-180 "
           width="100%"
@@ -1073,99 +1075,27 @@ border-none mt-8 mm:max-md:w-full"
             fill="#55BECD"
           />
         </svg>
-      </section>
+      </section> */}
       <section
         className="bg-custom-blue w-full mb-20 max-md:mb-0 
       relative z-10"
       >
         <section
-          className="max-w-7xl flex flex-col items-center
-         justify-center -mt-16 m-auto relative z-10 max-md:-mt-2 "
+          className="w-full flex flex-col items-center
+         justify-center -mt-24 mb-16 m-auto relative z-10 max-md:-mt-2 "
         >
-          {/*inicio instagram */}
-          <div
-            className=" absolute w-full top-0 bg-gray-200  opacity-10
-           rounded-lg h-44  z-0"
-          ></div>
-          <div
-            className="w-full items-start justify-start
-          flex flex-col md:flex-row gap-6 mb-8 relative p-4"
-          >
-            {/* Foto de Perfil */}
-            <div className="flex justify-center md:justify-start">
-              <div className="w-32 h-32 rounded-full shadow">
-                <img
-                  src="https://i.ibb.co/MD6k1SSy/473815219-1117083739630606-8619087118558099733-n.jpg"
-                  alt="Natville Logo"
-                  className="rounded-full object-cover w-full h-full bg-white"
-                />
-              </div>
-            </div>
-
-            {/* Informações */}
-            <div className="flex-1 flex flex-col gap-4">
-              {/* Nome e Botões */}
-              <div className="flex items-center gap-4">
-                <h1 className="text-2xl font-semibold text-white">
-                  natville.br
-                </h1>
-                <a href="https://www.instagram.com/natville.br/">
-                  <button
-                    className="bg-blue-600
-                  text-white text-sm font-semibold px-4 py-1 rounded hover:scale-105 transition duration-300"
-                  >
-                    Seguir
-                  </button>
-                </a>
-                <a href="https://www.instagram.com/direct/t/110203630545982">
-                  <button
-                    className="bg-gray-400 hover:scale-105 transition duration-300
-                 text-white text-sm font-semibold px-4 py-1 rounded"
-                  >
-                    Enviar mensagem
-                  </button>
-                </a>
-                <button className="text-white text-2xl font-bold">⋯</button>
-              </div>
-
-              {/* Estatísticas */}
-              <div className="flex gap-6">
-                <div className="flex gap-2">
-                  <span className="font-semibold text-white">531</span>{" "}
-                  <p className="text-white font-thin">publicações</p>
-                </div>
-                <div className="text-white">
-                  <span className="font-semibold text-white">30,5 mil</span>{" "}
-                  <span className="font-thin">seguidores</span>
-                </div>
-                <div className="text-white">
-                  <span className="font-semibold text-white">16</span>{" "}
-                  <span className="font-thin">seguindo</span>
-                </div>
-              </div>
-
-              {/* Descrição */}
-              <div className="flex flex-col text-sm text-white">
-                <p className="font-semibold">Natville</p>
-                <p>
-                  <span className="font-semibold ">Desde 1996</span>
-                </p>
-                <p className="text-white font-semibold">
-                  Da nossa família para a sua!
-                </p>
-              </div>
-            </div>
-          </div>
           <div className="w-full">
-            <AnimatedSection>
-              <iframe
-                className="h-screen"
-                src="http://127.0.0.1:5500/teste.html"
-                width="100%"
-                scrolling="no"
-              ></iframe>
+            {/* <AnimatedSection> */}
+            <video
+              src={videoComercial}
+              className="w-full h-auto relative "
+              autoPlay
+              loop
+              muted
+            />
+            {/* <div className="absolute top-0 left-0 w-full h-full z-10 bg-black/50 backdrop-blur-sm" /> */}
 
-              {/* <div className="w-72 max-md:w-full flex-col items-center justify-center m-auto">
+            {/* <div className="w-72 max-md:w-full flex-col items-center justify-center m-auto">
                 <h2 className="font-mochari text-white text-2xl mb-2 max-md:text-lg max-md:text-center">
                   quem somos
                 </h2>
@@ -1251,7 +1181,7 @@ border-none mt-8 mm:max-md:w-full"
                   />
                 </div>
               </div> */}
-            </AnimatedSection>
+            {/* </AnimatedSection> */}
 
             {/* <AnimatedY>
               <div className="max-w-96  max-md:pl-0">
@@ -1286,16 +1216,16 @@ border-none mt-8 mm:max-md:w-full"
             </AnimatedY> */}
           </div>
         </section>
-        <div
+        {/* <div
           className="-mt-52 relative z-0  
         max-md:items-end max-md:flex max-md:-mt-20  "
         >
           <AnimatedY>
             <img className="z-10 " src={camp} alt="natville" />
           </AnimatedY>
-        </div>
+        </div> */}
       </section>
-      <section className=" -mt-64 max-md:-mt-10 relative z-0  ">
+      {/* <section className=" -mt-64 max-md:-mt-10 relative z-0  ">
         <svg
           className="drop-shadow-md rotate-180"
           width="100%"
@@ -1309,7 +1239,7 @@ border-none mt-8 mm:max-md:w-full"
             fill="#55BECD"
           />
         </svg>
-      </section>
+      </section> */}
       <footer
         className="w-full h-auto mt-20
             flex items-center justify-center m-auto "

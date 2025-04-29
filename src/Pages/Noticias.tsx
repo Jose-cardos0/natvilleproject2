@@ -57,16 +57,7 @@ export function Noticias() {
             <SliderNoticias />
           </div>
         </AnimatedY>
-        <div className="w-full flex items-center justify-center py-11">
-          <AnimatedNegative>
-            <button
-              className=" bg-custom-blue-strong font-roboto uppercase py-1
-               px-6 rounded-xl text-custom-white drop-shadow-lg max-md:mb-10 max-md:text-xs"
-            >
-              mais antigas
-            </button>
-          </AnimatedNegative>
-        </div>
+
         {/*INICIO GRID */}
         <div
           className="grid grid-cols-3 items-center 
@@ -372,6 +363,78 @@ export function Noticias() {
           {/*SEGUNCO CARD */}
         </div>
         <div className="max-w-7xl mt-8 max-md:mx-8 ">
+          <AnimatedSection>
+            {/*inicio instagram */}
+            <div
+              className="w-full items-start justify-start
+          flex flex-col md:flex-row gap-6 mb-8 relative p-4"
+            >
+              {/* Foto de Perfil */}
+              <div className="flex justify-center md:justify-start">
+                <div className="w-32 h-32 rounded-full shadow">
+                  <img
+                    src="https://i.ibb.co/MD6k1SSy/473815219-1117083739630606-8619087118558099733-n.jpg"
+                    alt="Natville Logo"
+                    className="rounded-full object-cover w-full h-full shadow"
+                  />
+                </div>
+              </div>
+
+              {/* Informações */}
+              <div className="flex-1 flex flex-col gap-4">
+                {/* Nome e Botões */}
+                <div className="flex items-center gap-4">
+                  <h1 className="text-2xl font-semibold text-black">
+                    natville.br
+                  </h1>
+                  <a href="https://www.instagram.com/natville.br/">
+                    <button
+                      className="bg-blue-600
+                  text-white text-sm font-semibold px-4 py-1 rounded hover:scale-105 transition duration-300"
+                    >
+                      Seguir
+                    </button>
+                  </a>
+                  <a href="https://www.instagram.com/direct/t/110203630545982">
+                    <button
+                      className="bg-gray-400 hover:scale-105 transition duration-300
+                 text-white text-sm font-semibold px-4 py-1 rounded"
+                    >
+                      Enviar mensagem
+                    </button>
+                  </a>
+                  <button className="text-black text-2xl font-bold">⋯</button>
+                </div>
+
+                {/* Estatísticas */}
+                <div className="flex gap-6">
+                  <div className="flex gap-2">
+                    <span className="font-semibold text-black">531</span>{" "}
+                    <p className="text-black font-thin">publicações</p>
+                  </div>
+                  <div className="text-black">
+                    <span className="font-semibold text-black">30,5 mil</span>{" "}
+                    <span className="font-thin">seguidores</span>
+                  </div>
+                  <div className="text-black">
+                    <span className="font-semibold text-black">16</span>{" "}
+                    <span className="font-thin">seguindo</span>
+                  </div>
+                </div>
+
+                {/* Descrição */}
+                <div className="flex flex-col text-sm text-black">
+                  <p className="font-thin">Natville</p>
+                  <p>
+                    <span className="font-thin ">Desde 1996</span>
+                  </p>
+                  <p className="text-black font-thin">
+                    Da nossa família para a sua!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </AnimatedSection>
           <div className="w-full  ">
             <AnimatedSection>
               <iframe
