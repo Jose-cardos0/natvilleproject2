@@ -68,9 +68,9 @@ import videoComercial from "../assets/video/video corridigo.mp4";
 <script async src="//www.instagram.com/embed.js"></script>;
 
 export function Home() {
-  // useLayoutEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const [divHidden, setdivHidden] = useState(false);
 
