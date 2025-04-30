@@ -60,7 +60,7 @@ import prato from "../assets/Produtos/Queijos/prato.png";
 import coalho from "../assets/Produtos/Queijos/coalho.png";
 import manteiga from "../assets/Produtos/Manteigas/200frente.webp";
 import choconat from "../assets/Produtos/LeiteEmPo/INTEGRAL200.webp";
-import cremeDeLeite from "../Tools/SlidersImgWelcome/creme de leite frontal_11zon.webp";
+import cremeDeLeite from "../assets/Produtos/CremeDeLeite/frontalcremedeleite.webp";
 import leiteUhtIntegral from "../assets/Produtos/Leites/leiteUhtExemplo.webp";
 
 import videoComercial from "../assets/video/video corridigo.mp4";
@@ -308,7 +308,7 @@ export function Home() {
                     Tradicional, cremoso e irresistível. Feito com leite fresco.
                   </p>
                   <div className="flex items-center justify-between">
-                    <Link to="/reqcremoso">
+                    <Link to="/cremedeleite">
                       <button
                         className="bg-custom-white text-custom-blue-strong 
                     rounded-full px-4 py-2 font-semibold hover:bg-custom-blue

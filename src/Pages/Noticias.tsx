@@ -20,6 +20,8 @@ import { FiPhoneForwarded } from "react-icons/fi";
 import logoF from "../assets/Footer/logoFooter.svg";
 // import videoLogo from "../assets/Home/logoanimate.webm";
 
+//noticias
+
 export function Noticias() {
   return (
     <main
@@ -439,7 +441,7 @@ export function Noticias() {
             <AnimatedSection>
               <iframe
                 className="h-screen"
-                src="http://127.0.0.1:5500/teste.html"
+                src=""
                 width="100%"
                 scrolling="no"
               ></iframe>{" "}

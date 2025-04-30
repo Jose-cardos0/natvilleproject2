@@ -6,12 +6,10 @@ import { Link } from "react-router-dom";
 import bg1 from "../assets/QuemSomos/bgProdutos.svg";
 
 //itens
-import leitesUht from "../assets/Produtos/Leites/leitesUht.webp";
+import leitesUht from "../assets/Produtos/CremeDeLeite/cremedeleitemockuplateral.webp";
 
-import leiteUhtEx from "../assets/Produtos/Leites/leiteUhtExemplo.webp";
-import leiteUhtExDes from "../assets/Produtos/Leites/leiteUhtDesn.webp";
-import leiteUhtExZero from "../assets/Produtos/Leites/zerolateral_11zon.webp";
-import leiteSemi from "../assets/Produtos/Leites/semilateral_11zon.webp";
+import condensado from "../assets/Produtos/CremeDeLeite/frontalcremedeleite.webp";
+
 import logoF from "../assets/Footer/logoFooter.svg";
 
 //icons
@@ -32,7 +30,7 @@ interface Produto {
   produto: string;
 }
 
-export function LeitesUht() {
+export function CremeDeLeite() {
   const [leiteUht, setLeiteUht] = useState<Produto[]>([]);
 
   useLayoutEffect(() => {
@@ -51,12 +49,9 @@ export function LeitesUht() {
     getData();
   }, []);
 
-  const leiteUhtIntegral = leiteUht.length > 0 ? leiteUht[0] : null;
-  const leiteUhtDesnatado = leiteUht.length > 0 ? leiteUht[1] : null;
-  const leiteUhtZero = leiteUht.length > 0 ? leiteUht[2] : null;
-  const leiteuhtSemi = leiteUht.length > 0 ? leiteUht[24] : null;
+  const cremeDeLeite = leiteUht.length > 0 ? leiteUht[25] : null;
 
-  console.log(leiteUhtIntegral);
+  console.log(cremeDeLeite);
 
   return (
     <main
@@ -70,9 +65,8 @@ export function LeitesUht() {
           style={{ backgroundImage: `url(${bg1})` }}
           className="h-screen w-screen flex 
           items-center 
-          justify-center m-auto
-           -mt-8 bg-contain bg-no-repeat bg-center
-            bg-fixed z-10"
+          justify-center m-auto -mt-8
+           bg-contain bg-no-repeat bg-center bg-fixed z-10"
         >
           <div
             className="max-w-7xl 
@@ -80,7 +74,7 @@ export function LeitesUht() {
           >
             <AnimatedSection>
               <img
-                className=" drop-shadow-md max-md:w-72 max-w-2xl
+                className=" drop-shadow-md max-md:w-72 w-96
                 cursor-pointer hover:scale-105 transition duration-700"
                 src={leitesUht}
                 alt="leite uht natville"
@@ -92,9 +86,8 @@ export function LeitesUht() {
                   className="font-mochari text-9xl
                text-custom-blue-strong text-center max-md:text-7xl max-md:-mt-6"
                 >
-                  linha
-                  <br />
-                  leite uht
+                  Linha <br />
+                  Creme de leite
                 </h1>
               </AnimatedNegative>
               {/* <div
@@ -121,7 +114,7 @@ export function LeitesUht() {
              justify-center m-auto z-0 "
         >
           <div
-            className="max-w-5xl
+            className="max-w-7xl
         flex-col items-center
         justify-center m-auto mt-20 "
           >
@@ -129,7 +122,7 @@ export function LeitesUht() {
             <div
               className="flex items-center justify-center
               gap-8  max-md:flex-col
-               max-md:mx-8 max-md:-mt-30"
+               max-md:mx-8 max-md:-mt-36"
             >
               <AnimatedNegative>
                 <div>
@@ -139,34 +132,38 @@ export function LeitesUht() {
                       rotate: 3,
                     }}
                     transition={{ duration: 0.5 }}
-                    className="max-w-7xl object-center drop-shadow-md
+                    className="max-w-xs object-center drop-shadow-md
                    max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
-                    src={leiteUhtEx}
+                    src={condensado}
                     alt="leite uht integral"
                   />
                 </div>
               </AnimatedNegative>
               <AnimatedY>
                 <div className="flex-col items-center justify-center">
-                  <h1 className="font-mochari text-8xl text-custom-blue-strong max-md:text-7xl">
-                    leite uht <br />
-                    integral
+                  <h1
+                    className="font-mochari text-8xl text-custom-blue-strong
+                   max-md:text-6xl"
+                  >
+                    Creme de leite leve uht
                   </h1>
                   <div>
                     <p className="text-custom-blue-strong text-justify mt-8">
-                      Se você busca um leite encorpado, cheio de sabor e rico em
-                      nutrientes, o Leite UHT Integral é a escolha certa! Com um
-                      equilíbrio perfeito entre proteínas, cálcio e vitaminas
-                      essenciais, ele fortalece os ossos e dá energia para o seu
-                      dia. Perfeito para consumir puro, com café, achocolatado
-                      ou em receitas deliciosas. <br /> <br />
-                      ✅ Fonte natural de cálcio e vitamina D <br />
-                      ✅ Textura cremosa e sabor marcante <br />✅ Ideal para
-                      toda a família!
+                      Quem resiste ao toque suave e encorpado do creme de leite?
+                      Agora você pode dar mais sabor e textura às suas receitas
+                      com nosso Creme de Leite Leve UHT, que possui 15% de
+                      gordura. Uma opção mais leve, mas com toda a cremosidade
+                      que suas preparações merecem!
+                      <br />
+                      <br />
+                      ✅ Textura cremosa com menos gordura! <br />
+                      ✅ Perfeito para molhos, sobremesas, tortas e pratos
+                      especiais. <br />✅ Mais leve, ideal para quem busca
+                      equilíbrio na cozinha sem abrir mão do sabor.
                     </p>
                   </div>
                   <div className="max-md:w-full max-md:items-center max-md:justify-center">
-                    <Link to={`/produtos/${leiteUhtIntegral?.id}`}>
+                    <Link to={`/produtos/${cremeDeLeite?.id}`}>
                       <button
                         className="relative 
           overflow-hidden
@@ -195,11 +192,26 @@ export function LeitesUht() {
               </AnimatedY>
             </div>
             {/*leite desnataod inicio */}
-            <div
+            {/* <div
               className="flex items-center justify-center
               gap-8  my-32 max-md:flex-col
                max-md:mx-8 max-md:my-32"
             >
+              <AnimatedNegative>
+                <div>
+                  <motion.img
+                    whileHover={{
+                      scale: 1.1,
+                      rotate: 3,
+                    }}
+                    transition={{ duration: 0.5 }}
+                    className="max-w-7xl object-center drop-shadow-md
+                   max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
+                    src={leiteUhtExDes}
+                    alt="leite uht integral"
+                  />
+                </div>
+              </AnimatedNegative>
               <AnimatedY>
                 <div className="flex-col items-center justify-center ">
                   <h1
@@ -212,14 +224,15 @@ export function LeitesUht() {
                   </h1>
                   <div>
                     <p className="text-custom-blue-strong text-justify mt-8">
-                      Quer manter uma alimentação equilibrada, mas sem abrir mão
-                      dos nutrientes essenciais? O Leite UHT Desnatado tem baixo
-                      teor de gordura e é repleto de proteínas e cálcio para
-                      cuidar da sua saúde. A opção perfeita para quem busca
-                      leveza, sem perder os benefícios do leite! <br /> <br />{" "}
-                      ✅ Menos gordura, mais saúde! <br />✅ Rico em cálcio e
-                      proteínas <br /> ✅ Perfeito para dietas e estilo de vida
-                      saudável
+                      Um leite UHT integral saudável e rico em cálcio é aquele
+                      que mantém boa parte dos nutrientes naturais do leite
+                      fresco, como proteínas, vitaminas (especialmente a
+                      vitamina D, que auxilia na absorção do cálcio) e, claro, o
+                      próprio cálcio, essencial para ossos e dentes fortes. Esse
+                      tipo de leite é submetido a um processo de
+                      ultra-pasteurização (UHT), onde é aquecido a altas
+                      temperaturas por poucos segundos, eliminando bactérias
+                      prejudiciais sem alterar muito seu perfil nutricional.
                     </p>
                   </div>
                   <div className="max-md:w-full max-md:items-center max-md:justify-center">
@@ -250,24 +263,9 @@ export function LeitesUht() {
                   </div>
                 </div>
               </AnimatedY>
-              <AnimatedNegative>
-                <div>
-                  <motion.img
-                    whileHover={{
-                      scale: 1.1,
-                      rotate: 3,
-                    }}
-                    transition={{ duration: 0.5 }}
-                    className="max-w-7xl object-center drop-shadow-md
-                   max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
-                    src={leiteUhtExDes}
-                    alt="leite uht integral"
-                  />
-                </div>
-              </AnimatedNegative>
-            </div>
+            </div> */}
             {/*zero lactose */}
-            <div
+            {/* <div
               className="flex items-center justify-center
               gap-8  max-md:flex-col
                max-md:mx-8  max-md:mt-32"
@@ -280,7 +278,7 @@ export function LeitesUht() {
                       rotate: 3,
                     }}
                     transition={{ duration: 0.5 }}
-                    className="w-width-leiteUht object-center drop-shadow-md
+                    className="max-w-7xl object-center drop-shadow-md
                    max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
                     src={leiteUhtExZero}
                     alt="leite uht integral"
@@ -295,15 +293,15 @@ export function LeitesUht() {
                   </h1>
                   <div>
                     <p className="text-custom-blue-strong text-justify mt-8">
-                      Para quem tem intolerância à lactose ou busca uma digestão
-                      mais leve, o Leite UHT Zero Lactose mantém todo o sabor e
-                      os nutrientes do leite tradicional, mas com lactase
-                      adicionada, facilitando a digestão e evitando
-                      desconfortos. Agora você pode saborear sem preocupações!{" "}
-                      <br /> <br />
-                      ✅ 100% sabor, 0% lactose! <br /> ✅ Fácil digestão, sem
-                      abrir mão do cálcio e das proteínas. <br /> ✅ Perfeito
-                      para quem busca bem-estar e saúde digestiva.
+                      Um leite UHT integral saudável e rico em cálcio é aquele
+                      que mantém boa parte dos nutrientes naturais do leite
+                      fresco, como proteínas, vitaminas (especialmente a
+                      vitamina D, que auxilia na absorção do cálcio) e, claro, o
+                      próprio cálcio, essencial para ossos e dentes fortes. Esse
+                      tipo de leite é submetido a um processo de
+                      ultra-pasteurização (UHT), onde é aquecido a altas
+                      temperaturas por poucos segundos, eliminando bactérias
+                      prejudiciais sem alterar muito seu perfil nutricional.
                     </p>
                   </div>
                   <div className="max-md:w-full max-md:items-center max-md:justify-center">
@@ -334,76 +332,7 @@ export function LeitesUht() {
                   </div>
                 </div>
               </AnimatedY>
-            </div>
-            {/*SEMIDESNATADO */}
-            <div
-              className="flex items-center justify-center
-              gap-8  max-md:flex-col my-32
-               max-md:mx-8  max-md:mt-32"
-            >
-              <AnimatedY>
-                <div className="flex-col items-center justify-center">
-                  <h1 className="font-mochari text-8xl text-custom-blue-strong max-md:text-7xl">
-                    leite uht <br />
-                    semidesnatado
-                  </h1>
-                  <div>
-                    <p className="text-custom-blue-strong text-justify mt-8">
-                      Se você busca um meio-termo entre sabor e leveza, o Leite
-                      UHT Semidesnatado é a melhor escolha! Com menos gordura
-                      que o integral e mais cremosidade que o desnatado, ele
-                      traz o melhor dos dois mundos, mantendo todos os
-                      benefícios do leite. <br /> <br /> ✅ O equilíbrio
-                      perfeito entre sabor e leveza. <br /> ✅ Mantém proteínas
-                      e cálcio essenciais. <br /> ✅ Ótimo para o dia a dia da
-                      sua família
-                    </p>
-                  </div>
-                  <div className="max-md:w-full max-md:items-center max-md:justify-center">
-                    <Link to={`/produtos/${leiteuhtSemi?.id}`}>
-                      <button
-                        className="relative 
-          overflow-hidden
-           flex-shrink-0
-    bg-custom-blue-strong
-    text-white py-3 
-    px-14 rounded-md shadow-sm
-    shadow-black font-light 
-     border-none mt-8 max-md:w-full cursor-pointer"
-                      >
-                        <span className="relative z-10 flex items-center justify-center">
-                          TABELA NUTRICIONAL +
-                        </span>
-                        <span
-                          className="absolute inset-0
-            bg-gradient-to-r from-white
-             to-black
-           transform translate-x-full
-            transition-transform
-            duration-300 ease-in-out z-0 opacity-20"
-                        ></span>
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </AnimatedY>
-              <AnimatedNegative>
-                <div>
-                  <motion.img
-                    whileHover={{
-                      scale: 1.1,
-                      rotate: 3,
-                    }}
-                    transition={{ duration: 0.5 }}
-                    className="w-width-leiteUht object-center drop-shadow-md
-                   max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
-                    src={leiteSemi}
-                    alt="leite uht semidesnatado"
-                  />
-                </div>
-              </AnimatedNegative>
-            </div>
-            {/*fim semindesnatado */}
+            </div> */}
           </div>
 
           {/*footer inicio */}
@@ -428,66 +357,62 @@ export function LeitesUht() {
                     alt="natville"
                   />
                 </div>
-                <a href="https://qrco.de/bfx729" target="_blacnk">
-                  <div className="flex-col items-center justify-center ">
-                    <p
-                      className="text-custom-blue-strong
+                <div className="flex-col items-center justify-center ">
+                  <p
+                    className="text-custom-blue-strong
                    text-center font-mochari text-4xl"
-                    >
-                      Acompanhe nossas
-                    </p>
-                    <div className="flex items-center justify-center gap-2">
-                      <AiOutlineYoutube
-                        size={25}
-                        className="cursor-pointer hover:scale-105 transition duration-300"
-                      />
-                      <CiFacebook
-                        size={25}
-                        className="cursor-pointer hover:scale-105 transition duration-300"
-                      />
-                      <FaWhatsapp
-                        size={25}
-                        className="cursor-pointer hover:scale-105 transition duration-300"
-                      />
-                      <FaInstagram
-                        size={25}
-                        className="cursor-pointer hover:scale-105 transition duration-300"
-                      />
-                      <AiOutlineLinkedin
-                        size={25}
-                        className="cursor-pointer hover:scale-105 transition duration-300"
-                      />
-                    </div>
-                    <p
-                      className="text-custom-blue-strong
-                  text-center font-mochari text-4xl"
-                    >
-                      redes sociais
-                    </p>
-                  </div>
-                </a>
-                <a href="https://qrco.de/bfx729" target="_blacnk">
-                  <div
-                    className="font-mochari text-custom-blue-strong
-                 flex-col items-center justify-center "
                   >
-                    <p className="text-end text-4xl max-md:text-center">
-                      fale conosco
-                    </p>
-                    <div className="flex items-center justify-between gap-3 max-md:justify-center">
-                      <div>
-                        <FiPhoneForwarded size={37} />
-                      </div>
-                      <div
-                        className="flex-col text-2xl 
+                    Acompanhe nossas
+                  </p>
+                  <div className="flex items-center justify-center gap-2">
+                    <AiOutlineYoutube
+                      size={25}
+                      className="cursor-pointer hover:scale-105 transition duration-300"
+                    />
+                    <CiFacebook
+                      size={25}
+                      className="cursor-pointer hover:scale-105 transition duration-300"
+                    />
+                    <FaWhatsapp
+                      size={25}
+                      className="cursor-pointer hover:scale-105 transition duration-300"
+                    />
+                    <FaInstagram
+                      size={25}
+                      className="cursor-pointer hover:scale-105 transition duration-300"
+                    />
+                    <AiOutlineLinkedin
+                      size={25}
+                      className="cursor-pointer hover:scale-105 transition duration-300"
+                    />
+                  </div>
+                  <p
+                    className="text-custom-blue-strong
+                  text-center font-mochari text-4xl"
+                  >
+                    redes sociais
+                  </p>
+                </div>
+                <div
+                  className="font-mochari text-custom-blue-strong
+                 flex-col items-center justify-center "
+                >
+                  <p className="text-end text-4xl max-md:text-center">
+                    fale conosco
+                  </p>
+                  <div className="flex items-center justify-between gap-3 max-md:justify-center">
+                    <div>
+                      <FiPhoneForwarded size={37} />
+                    </div>
+                    <div
+                      className="flex-col text-2xl 
                     items-center justify-center "
-                      >
-                        <p>0800 7213245</p>
-                        <p className="text-xl -mt-3">natville.com.br</p>
-                      </div>
+                    >
+                      <p>0800 7213245</p>
+                      <p className="text-xl -mt-3">natville.com.br</p>
                     </div>
                   </div>
-                </a>
+                </div>
               </div>
               <div className="w-full flex-col">
                 <div className="border border-gray-300 mt-5"></div>

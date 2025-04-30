@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import cremeDeLeite from "../../../src/Tools/SlidersImgWelcome/creme de leite frontal_11zon.webp";
+import cremeDeLeite from "../../../src/assets/Produtos/CremeDeLeite/frontalcremedeleite.webp";
 
 export function SliderCremedeLeite() {
   return (

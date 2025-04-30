@@ -15,6 +15,7 @@ import { Condensados } from "./Pages/Condensado";
 import { NossosProdutos } from "./Pages/NossosProdutos";
 import { Contato } from "./Pages/Contato";
 import { LeitesEmPo } from "./Pages/LeitesEmPo";
+import { CremeDeLeite } from "./Pages/Cremedeleite";
 
 //header
 import { Layout } from "./Components/Layout";
@@ -78,6 +79,10 @@ export const router = createBrowserRouter([
       {
         path: "/empo",
         element: <LeitesEmPo />,
+      },
+      {
+        path: "/cremedeleite",
+        element: <CremeDeLeite />,
       },
     ],
   },

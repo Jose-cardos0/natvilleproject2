@@ -66,8 +66,8 @@ export function Header() {
       onMouseMove={handleMouseMove}
       style={{ position: "relative" }}
       className="w-full h-16
-     bg-custom-white flex items-center justify-center
-      drop-shadow-xl shadow-black fixed z-20   "
+     bg-custom-white  flex items-center justify-center
+      drop-shadow-xl shadow-black fixed z-20    "
     >
       {isVisibleQuemSomos &&
         (isMobile ? (
@@ -206,6 +206,14 @@ export function Header() {
                               className="font-roboto  py-2 px-4 cursor-pointer text-gray-600 hover:bg-blue-50 transition duration-300 rounded-lg font-light"
                             >
                               Em pó
+                            </div>
+                          </Link>
+                          <Link to={"/cremedeleite"}>
+                            <div
+                              onClick={() => setIsOpen((prev) => !prev)}
+                              className="font-roboto  py-2 px-4 cursor-pointer text-gray-600 hover:bg-blue-50 transition duration-300 rounded-lg font-light"
+                            >
+                              Creme de Leite
                             </div>
                           </Link>
                         </div>
@@ -370,6 +378,15 @@ export function Header() {
                  font-light  hover:bg-custom-bg-leiteIHT hover:text-white"
                     >
                       Em Pó
+                    </div>
+                  </Link>
+                  <Link to={"/cremedeleite"}>
+                    <div
+                      onClick={() => setIsOpen((prev) => !prev)}
+                      className="w-full  px-5 py-2 cursor-pointer uppercase 
+                 font-light  hover:bg-custom-bg-leiteIHT hover:text-white"
+                    >
+                      Creme de Leite
                     </div>
                   </Link>
                 </div>
