@@ -13,15 +13,9 @@ import leiteUhtExDes from "../assets/Produtos/LeiteEmPo/DESNATADO200.webp";
 import leiteUhtExZero from "../assets/Produtos/LeiteEmPo/ZERO202gg.webp";
 import leiteEmPo25 from "../assets/Produtos/LeiteEmPo/LeiteEmPo25.webp";
 import sorodeleite from "../assets/Produtos/LeiteEmPo/soromockup.webp";
-import logoF from "../assets/Footer/logoFooter.svg";
 
-//icons
-import { AiOutlineYoutube } from "react-icons/ai";
-import { CiFacebook } from "react-icons/ci";
-import { FaWhatsapp } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa6";
-import { AiOutlineLinkedin } from "react-icons/ai";
-import { FiPhoneForwarded } from "react-icons/fi";
+//footer
+import { Footer } from "../Components/Footer";
 
 import { AnimatedNegative } from "../Tools/Animates/AnimatedNegative";
 import { AnimatedSection } from "../Tools/Animates/AnimatedSections";
@@ -35,6 +29,20 @@ interface Produto {
 
 export function LeitesEmPo() {
   const [leiteUht, setLeiteUht] = useState<Produto[]>([]);
+
+  const [isMobile, setIsMobile] = useState<boolean>(false);
+
+  useLayoutEffect(() => {
+    function handleSize() {
+      if (innerWidth < 480) {
+        setIsMobile(true);
+      } else setIsMobile(false);
+    }
+
+    handleSize();
+    window.addEventListener("resize", handleSize);
+    return () => window.removeEventListener("resize", handleSize);
+  }, []);
 
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
@@ -197,79 +205,156 @@ export function LeitesEmPo() {
               </AnimatedY>
             </div>
             {/*leite desnataod inicio */}
-            <div
-              className="flex items-center justify-center
-              gap-8  my-32 max-md:flex-col
-               max-md:mx-8 max-md:my-32"
-            >
-              <AnimatedY>
-                <div className="flex-col items-center justify-center text-end ">
-                  <h1
-                    className="font-mochari text-8xl max-md:text-7xl
-                   text-custom-blue-strong"
-                  >
-                    leite em pó
-                    <br />
-                    desnatado instantâneo
-                  </h1>
+            {isMobile ? (
+              <div
+                className="flex items-center justify-center
+               gap-8  my-32 max-md:flex-col
+                max-md:mx-8 max-md:my-32"
+              >
+                <AnimatedNegative>
                   <div>
-                    <p className="text-custom-blue-strong text-end mt-8 ">
-                      Se você busca uma opção mais leve, mas com todos os
-                      benefícios do leite, o Leite em Pó Desnatado Instantâneo é
-                      a escolha ideal! Com menos gordura, ele preserva cálcio,
-                      proteínas e vitaminas essenciais, garantindo uma
-                      alimentação equilibrada sem abrir mão do sabor.
-                      <br />
-                      <br />
-                      ✅ Menos gordura, mais leveza! <br />
-                      ✅ Dissolução instantânea para mais praticidade. <br />✅
-                      Ideal para dietas equilibradas e receitas mais leves.
-                    </p>
+                    <motion.img
+                      whileHover={{
+                        scale: 1.1,
+                        rotate: 3,
+                      }}
+                      transition={{ duration: 0.5 }}
+                      className="max-w-48 object-center drop-shadow-md
+                    max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
+                      src={leiteUhtExDes}
+                      alt="leite uht integral"
+                    />
                   </div>
-                  <div className="max-md:w-full max-md:items-center max-md:justify-center">
-                    <Link to={`/produtos/${leiteUhtDesnatado?.id}`}>
-                      <button
-                        className="relative 
-          overflow-hidden
-           flex-shrink-0
-    bg-custom-blue-strong
-    text-white py-3 
-    px-14 rounded-md shadow-sm
-    shadow-black font-light 
-     border-none mt-8 max-md:w-full cursor-pointer"
-                      >
-                        <span className="relative z-10 flex items-center justify-center">
-                          TABELA NUTRICIONAL +
-                        </span>
-                        <span
-                          className="absolute inset-0
-            bg-gradient-to-r from-white
-             to-black
-           transform translate-x-full
-            transition-transform
-            duration-300 ease-in-out z-0 opacity-20"
-                        ></span>
-                      </button>
-                    </Link>
+                </AnimatedNegative>
+                <AnimatedY>
+                  <div className="flex-col items-center justify-center  ">
+                    <h1
+                      className="font-mochari text-8xl max-md:text-7xl
+                    text-custom-blue-strong"
+                    >
+                      leite em pó
+                      <br />
+                      desnatado instantâneo
+                    </h1>
+                    <div>
+                      <p className="text-custom-blue-strong  mt-8 ">
+                        Se você busca uma opção mais leve, mas com todos os
+                        benefícios do leite, o Leite em Pó Desnatado Instantâneo
+                        é a escolha ideal! Com menos gordura, ele preserva
+                        cálcio, proteínas e vitaminas essenciais, garantindo uma
+                        alimentação equilibrada sem abrir mão do sabor.
+                        <br />
+                        <br />
+                        ✅ Menos gordura, mais leveza! <br />
+                        ✅ Dissolução instantânea para mais praticidade. <br />
+                        ✅ Ideal para dietas equilibradas e receitas mais leves.
+                      </p>
+                    </div>
+                    <div className="max-md:w-full max-md:items-center max-md:justify-center">
+                      <Link to={`/produtos/${leiteUhtDesnatado?.id}`}>
+                        <button
+                          className="relative 
+           overflow-hidden
+            flex-shrink-0
+     bg-custom-blue-strong
+     text-white py-3 
+     px-14 rounded-md shadow-sm
+     shadow-black font-light 
+      border-none mt-8 max-md:w-full cursor-pointer"
+                        >
+                          <span className="relative z-10 flex items-center justify-center">
+                            TABELA NUTRICIONAL +
+                          </span>
+                          <span
+                            className="absolute inset-0
+             bg-gradient-to-r from-white
+              to-black
+            transform translate-x-full
+             transition-transform
+             duration-300 ease-in-out z-0 opacity-20"
+                          ></span>
+                        </button>
+                      </Link>
+                    </div>
                   </div>
-                </div>
-              </AnimatedY>
-              <AnimatedNegative>
-                <div>
-                  <motion.img
-                    whileHover={{
-                      scale: 1.1,
-                      rotate: 3,
-                    }}
-                    transition={{ duration: 0.5 }}
-                    className="max-w-48 object-center drop-shadow-md
-                   max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
-                    src={leiteUhtExDes}
-                    alt="leite uht integral"
-                  />
-                </div>
-              </AnimatedNegative>
-            </div>
+                </AnimatedY>
+              </div>
+            ) : (
+              <div
+                className="flex items-center justify-center
+                       gap-8  my-32 max-md:flex-col
+                        max-md:mx-8 max-md:my-32"
+              >
+                <AnimatedY>
+                  <div className="flex-col items-center justify-center  ">
+                    <h1
+                      className="font-mochari text-8xl max-md:text-7xl
+                            text-custom-blue-strong"
+                    >
+                      leite em pó
+                      <br />
+                      desnatado instantâneo
+                    </h1>
+                    <div>
+                      <p className="text-custom-blue-strong  mt-8 ">
+                        Se você busca uma opção mais leve, mas com todos os
+                        benefícios do leite, o Leite em Pó Desnatado Instantâneo
+                        é a escolha ideal! Com menos gordura, ele preserva
+                        cálcio, proteínas e vitaminas essenciais, garantindo uma
+                        alimentação equilibrada sem abrir mão do sabor.
+                        <br />
+                        <br />
+                        ✅ Menos gordura, mais leveza! <br />
+                        ✅ Dissolução instantânea para mais praticidade. <br />
+                        ✅ Ideal para dietas equilibradas e receitas mais leves.
+                      </p>
+                    </div>
+                    <div className="max-md:w-full max-md:items-center max-md:justify-center">
+                      <Link to={`/produtos/${leiteUhtDesnatado?.id}`}>
+                        <button
+                          className="relative 
+                   overflow-hidden
+                    flex-shrink-0
+             bg-custom-blue-strong
+             text-white py-3 
+             px-14 rounded-md shadow-sm
+             shadow-black font-light 
+              border-none mt-8 max-md:w-full cursor-pointer"
+                        >
+                          <span className="relative z-10 flex items-center justify-center">
+                            TABELA NUTRICIONAL +
+                          </span>
+                          <span
+                            className="absolute inset-0
+                     bg-gradient-to-r from-white
+                      to-black
+                    transform translate-x-full
+                     transition-transform
+                     duration-300 ease-in-out z-0 opacity-20"
+                          ></span>
+                        </button>
+                      </Link>
+                    </div>
+                  </div>
+                </AnimatedY>
+                <AnimatedNegative>
+                  <div>
+                    <motion.img
+                      whileHover={{
+                        scale: 1.1,
+                        rotate: 3,
+                      }}
+                      transition={{ duration: 0.5 }}
+                      className="max-w-48 object-center drop-shadow-md
+                            max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
+                      src={leiteUhtExDes}
+                      alt="leite uht integral"
+                    />
+                  </div>
+                </AnimatedNegative>
+              </div>
+            )}
+
             {/*zero lactose */}
             <div
               className="flex items-center justify-center
@@ -341,42 +426,58 @@ export function LeitesEmPo() {
               </AnimatedY>
             </div>
             {/*SACO DE 25KG */}
-            <div
-              className="flex items-center justify-center mt-28
+            {isMobile ? (
+              <div
+                className="flex items-center justify-center mt-28
               gap-8  max-md:flex-col
                max-md:mx-8  max-md:mt-32"
-            >
-              <AnimatedY>
-                <div className="flex-col items-center justify-center text-end">
-                  <h1
-                    className="font-mochari text-8xl
-                   text-custom-blue-strong max-md:text-7xl "
-                  >
-                    leite em pó <br />
-                    integral 25 kg
-                  </h1>
+              >
+                <AnimatedNegative>
                   <div>
-                    <p className="text-custom-blue-strong text-end mt-8">
-                      O Leite em Pó Integral 25kg é a escolha ideal para
-                      indústrias que necessitam de qualidade superior, alto
-                      rendimento e pureza em suas formulações. Produzido a
-                      partir de leite fresco selecionado, ele mantém todas as
-                      propriedades naturais, garantindo um produto rico em
-                      cálcio, proteínas e vitaminas essenciais.
-                      <br />
-                      <br />
-                      ✅ Matéria-prima de alta qualidade para produtos
-                      alimentícios. <br />
-                      ✅ Excelente solubilidade e cremosidade. <br />
-                      ✅ Ideal para panificação, laticínios, confeitaria,
-                      sorvetes e muito mais. <br />✅ Padrão industrial com
-                      consistência e confiabilidade.
-                    </p>
+                    <motion.img
+                      whileHover={{
+                        scale: 1.1,
+                        rotate: 3,
+                      }}
+                      transition={{ duration: 0.5 }}
+                      className="max-w-80 object-center drop-shadow-md
+                   max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
+                      src={leiteEmPo25}
+                      alt="leite uht integral"
+                    />
                   </div>
-                  <div className="max-md:w-full max-md:items-center max-md:justify-center">
-                    <Link to={`/produtos/${leiteInte25?.id}`}>
-                      <button
-                        className="relative 
+                </AnimatedNegative>
+                <AnimatedY>
+                  <div className="flex-col items-center justify-center">
+                    <h1
+                      className="font-mochari text-8xl
+                   text-custom-blue-strong max-md:text-7xl "
+                    >
+                      leite em pó <br />
+                      integral 25 kg
+                    </h1>
+                    <div>
+                      <p className="text-custom-blue-strong mt-8">
+                        O Leite em Pó Integral 25kg é a escolha ideal para
+                        indústrias que necessitam de qualidade superior, alto
+                        rendimento e pureza em suas formulações. Produzido a
+                        partir de leite fresco selecionado, ele mantém todas as
+                        propriedades naturais, garantindo um produto rico em
+                        cálcio, proteínas e vitaminas essenciais.
+                        <br />
+                        <br />
+                        ✅ Matéria-prima de alta qualidade para produtos
+                        alimentícios. <br />
+                        ✅ Excelente solubilidade e cremosidade. <br />
+                        ✅ Ideal para panificação, laticínios, confeitaria,
+                        sorvetes e muito mais. <br />✅ Padrão industrial com
+                        consistência e confiabilidade.
+                      </p>
+                    </div>
+                    <div className="max-md:w-full max-md:items-center max-md:justify-center">
+                      <Link to={`/produtos/${leiteInte25?.id}`}>
+                        <button
+                          className="relative 
           overflow-hidden
            flex-shrink-0
     bg-custom-blue-strong
@@ -384,39 +485,103 @@ export function LeitesEmPo() {
     px-14 rounded-md shadow-sm
     shadow-black font-light 
      border-none mt-8 max-md:w-full cursor-pointer"
-                      >
-                        <span className="relative z-10 flex items-center justify-center">
-                          TABELA NUTRICIONAL +
-                        </span>
-                        <span
-                          className="absolute inset-0
+                        >
+                          <span className="relative z-10 flex items-center justify-center">
+                            TABELA NUTRICIONAL +
+                          </span>
+                          <span
+                            className="absolute inset-0
             bg-gradient-to-r from-white
              to-black
            transform translate-x-full
             transition-transform
             duration-300 ease-in-out z-0 opacity-20"
-                        ></span>
-                      </button>
-                    </Link>
+                          ></span>
+                        </button>
+                      </Link>
+                    </div>
                   </div>
-                </div>
-              </AnimatedY>
-              <AnimatedNegative>
-                <div>
-                  <motion.img
-                    whileHover={{
-                      scale: 1.1,
-                      rotate: 3,
-                    }}
-                    transition={{ duration: 0.5 }}
-                    className="max-w-80 object-center drop-shadow-md
+                </AnimatedY>
+              </div>
+            ) : (
+              <div
+                className="flex items-center justify-center mt-28
+              gap-8  max-md:flex-col
+               max-md:mx-8  max-md:mt-32"
+              >
+                <AnimatedY>
+                  <div className="flex-col items-center justify-center">
+                    <h1
+                      className="font-mochari text-8xl
+                   text-custom-blue-strong max-md:text-7xl "
+                    >
+                      leite em pó <br />
+                      integral 25 kg
+                    </h1>
+                    <div>
+                      <p className="text-custom-blue-strong mt-8">
+                        O Leite em Pó Integral 25kg é a escolha ideal para
+                        indústrias que necessitam de qualidade superior, alto
+                        rendimento e pureza em suas formulações. Produzido a
+                        partir de leite fresco selecionado, ele mantém todas as
+                        propriedades naturais, garantindo um produto rico em
+                        cálcio, proteínas e vitaminas essenciais.
+                        <br />
+                        <br />
+                        ✅ Matéria-prima de alta qualidade para produtos
+                        alimentícios. <br />
+                        ✅ Excelente solubilidade e cremosidade. <br />
+                        ✅ Ideal para panificação, laticínios, confeitaria,
+                        sorvetes e muito mais. <br />✅ Padrão industrial com
+                        consistência e confiabilidade.
+                      </p>
+                    </div>
+                    <div className="max-md:w-full max-md:items-center max-md:justify-center">
+                      <Link to={`/produtos/${leiteInte25?.id}`}>
+                        <button
+                          className="relative 
+          overflow-hidden
+           flex-shrink-0
+    bg-custom-blue-strong
+    text-white py-3 
+    px-14 rounded-md shadow-sm
+    shadow-black font-light 
+     border-none mt-8 max-md:w-full cursor-pointer"
+                        >
+                          <span className="relative z-10 flex items-center justify-center">
+                            TABELA NUTRICIONAL +
+                          </span>
+                          <span
+                            className="absolute inset-0
+            bg-gradient-to-r from-white
+             to-black
+           transform translate-x-full
+            transition-transform
+            duration-300 ease-in-out z-0 opacity-20"
+                          ></span>
+                        </button>
+                      </Link>
+                    </div>
+                  </div>
+                </AnimatedY>
+                <AnimatedNegative>
+                  <div>
+                    <motion.img
+                      whileHover={{
+                        scale: 1.1,
+                        rotate: 3,
+                      }}
+                      transition={{ duration: 0.5 }}
+                      className="max-w-80 object-center drop-shadow-md
                    max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
-                    src={leiteEmPo25}
-                    alt="leite uht integral"
-                  />
-                </div>
-              </AnimatedNegative>
-            </div>
+                      src={leiteEmPo25}
+                      alt="leite uht integral"
+                    />
+                  </div>
+                </AnimatedNegative>
+              </div>
+            )}
+
             {/*SACO DE SORO 25KG */}
             <div
               className="flex items-center justify-center mt-28
@@ -503,75 +668,7 @@ export function LeitesEmPo() {
                flex-col items-center
             "
             >
-              <div
-                className="w-full flex justify-between mt-28
-               max-md:flex-col  max-md:gap-5"
-              >
-                <div>
-                  <img
-                    className="min-w-56 hover:scale-105
-                     transition duration-700 drop-shadow-lg"
-                    src={logoF}
-                    alt="natville"
-                  />
-                </div>
-                <div className="flex-col items-center justify-center ">
-                  <p
-                    className="text-custom-blue-strong
-                   text-center font-mochari text-4xl"
-                  >
-                    Acompanhe nossas
-                  </p>
-                  <div className="flex items-center justify-center gap-2">
-                    <AiOutlineYoutube
-                      size={25}
-                      className="cursor-pointer hover:scale-105 transition duration-300"
-                    />
-                    <CiFacebook
-                      size={25}
-                      className="cursor-pointer hover:scale-105 transition duration-300"
-                    />
-                    <FaWhatsapp
-                      size={25}
-                      className="cursor-pointer hover:scale-105 transition duration-300"
-                    />
-                    <FaInstagram
-                      size={25}
-                      className="cursor-pointer hover:scale-105 transition duration-300"
-                    />
-                    <AiOutlineLinkedin
-                      size={25}
-                      className="cursor-pointer hover:scale-105 transition duration-300"
-                    />
-                  </div>
-                  <p
-                    className="text-custom-blue-strong
-                  text-center font-mochari text-4xl"
-                  >
-                    redes sociais
-                  </p>
-                </div>
-                <div
-                  className="font-mochari text-custom-blue-strong
-                 flex-col items-center justify-center "
-                >
-                  <p className="text-end text-4xl max-md:text-center">
-                    fale conosco
-                  </p>
-                  <div className="flex items-center justify-between gap-3 max-md:justify-center">
-                    <div>
-                      <FiPhoneForwarded size={37} />
-                    </div>
-                    <div
-                      className="flex-col text-2xl 
-                    items-center justify-center "
-                    >
-                      <p>0800 7213245</p>
-                      <p className="text-xl -mt-3">natville.com.br</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <Footer />
               <div className="w-full flex-col">
                 <div className="border border-gray-300 mt-5"></div>
                 <div className="text-gray-400">

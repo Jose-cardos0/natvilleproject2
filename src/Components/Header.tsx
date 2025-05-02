@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useLayoutEffect } from "react";
 import logo from "../assets/Header/logo.png";
 
 //router
@@ -18,22 +18,22 @@ export function Header() {
   const [isOpenProduct, setIsOpenProduct] = useState<boolean>(false);
   const [isMobile, setIsMobile] = useState<boolean>(false);
 
-  const [isVisibleQuemSomos, setIsVisibleQuemSomos] = useState(false);
-  const [mouseX, setMouseX] = useState(0);
+  const [isVisibleQuemSomos] = useState(false);
+  const [mouseX] = useState(0);
 
-  const handleMouseEnter = () => {
-    setIsVisibleQuemSomos(true);
-  };
+  // const handleMouseEnter = () => {
+  //   setIsVisibleQuemSomos(true);
+  // };
 
-  const handleMouseLeave = () => {
-    setIsVisibleQuemSomos(false);
-  };
+  // const handleMouseLeave = () => {
+  //   setIsVisibleQuemSomos(false);
+  // };
 
-  const handleMouseMove = (event: React.MouseEvent<HTMLElement>) => {
-    setMouseX(event.clientX); // Atualiza a posição X do mouse
-  };
+  // const handleMouseMove = (event: React.MouseEvent<HTMLElement>) => {
+  //   setMouseX(event.clientX);
+  // };
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     function handleSize() {
       if (innerWidth <= 820) {
         setIsMobile(true);
@@ -61,9 +61,6 @@ export function Header() {
 
   return (
     <header
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-      onMouseMove={handleMouseMove}
       style={{ position: "relative" }}
       className="w-full h-16
      bg-custom-white  flex items-center justify-center

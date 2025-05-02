@@ -10,15 +10,7 @@ import leitesUht from "../assets/Produtos/leiteCondensado/bgCondensado.webp";
 
 import condensado from "../assets/Produtos/leiteCondensado/condensadoLado.png";
 
-import logoF from "../assets/Footer/logoFooter.svg";
-
-//icons
-import { AiOutlineYoutube } from "react-icons/ai";
-import { CiFacebook } from "react-icons/ci";
-import { FaWhatsapp } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa6";
-import { AiOutlineLinkedin } from "react-icons/ai";
-import { FiPhoneForwarded } from "react-icons/fi";
+import { Footer } from "../Components/Footer";
 
 import { AnimatedNegative } from "../Tools/Animates/AnimatedNegative";
 import { AnimatedSection } from "../Tools/Animates/AnimatedSections";
@@ -74,7 +66,7 @@ export function Condensados() {
           >
             <AnimatedSection>
               <img
-                className=" drop-shadow-md max-md:w-72
+                className=" drop-shadow-md max-md:w-72 max-w-2xl
                 cursor-pointer hover:scale-105 transition duration-700"
                 src={leitesUht}
                 alt="leite uht natville"
@@ -348,75 +340,7 @@ export function Condensados() {
                flex-col items-center
             "
             >
-              <div
-                className="w-full flex justify-between mt-28
-               max-md:flex-col  max-md:gap-5"
-              >
-                <div>
-                  <img
-                    className="min-w-56 hover:scale-105
-                     transition duration-700 drop-shadow-lg"
-                    src={logoF}
-                    alt="natville"
-                  />
-                </div>
-                <div className="flex-col items-center justify-center ">
-                  <p
-                    className="text-custom-blue-strong
-                   text-center font-mochari text-4xl"
-                  >
-                    Acompanhe nossas
-                  </p>
-                  <div className="flex items-center justify-center gap-2">
-                    <AiOutlineYoutube
-                      size={25}
-                      className="cursor-pointer hover:scale-105 transition duration-300"
-                    />
-                    <CiFacebook
-                      size={25}
-                      className="cursor-pointer hover:scale-105 transition duration-300"
-                    />
-                    <FaWhatsapp
-                      size={25}
-                      className="cursor-pointer hover:scale-105 transition duration-300"
-                    />
-                    <FaInstagram
-                      size={25}
-                      className="cursor-pointer hover:scale-105 transition duration-300"
-                    />
-                    <AiOutlineLinkedin
-                      size={25}
-                      className="cursor-pointer hover:scale-105 transition duration-300"
-                    />
-                  </div>
-                  <p
-                    className="text-custom-blue-strong
-                  text-center font-mochari text-4xl"
-                  >
-                    redes sociais
-                  </p>
-                </div>
-                <div
-                  className="font-mochari text-custom-blue-strong
-                 flex-col items-center justify-center "
-                >
-                  <p className="text-end text-4xl max-md:text-center">
-                    fale conosco
-                  </p>
-                  <div className="flex items-center justify-between gap-3 max-md:justify-center">
-                    <div>
-                      <FiPhoneForwarded size={37} />
-                    </div>
-                    <div
-                      className="flex-col text-2xl 
-                    items-center justify-center "
-                    >
-                      <p>0800 7213245</p>
-                      <p className="text-xl -mt-3">natville.com.br</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <Footer />
               <div className="w-full flex-col">
                 <div className="border border-gray-300 mt-5"></div>
                 <div className="text-gray-400">

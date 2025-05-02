@@ -233,7 +233,7 @@ export function ProdutoDetail() {
                     <div
                       className="absolute z-10
                   cursor-pointer
-                 transition duration-300 left-2 top-2
+                 transition duration-300 left-2 
                   hover:scale-110 drop-shadow-md 
                 "
                     >
@@ -241,19 +241,16 @@ export function ProdutoDetail() {
                         href={`${produtosDetail.imagem}`}
                         target="_blank"
                         className="flex gap-2 items-center
-                         bg-custom-blue px-2 rounded-lg py-0.5
-                          hover:bg-custom-blue-strong duration-700 transition"
+                         px-2 rounded-lg py-1
+                           duration-700 transition"
                       >
-                        <GoDesktopDownload color="white" />
-                        <p className="text-sm font-light text-white">
-                          Download
-                        </p>
+                        <GoDesktopDownload color="blue" />
                       </a>
                     </div>
                     <img
                       src={images[currentImageIndex]}
                       alt=""
-                      className="w-full px-9 max-w-full"
+                      className="w-full px-8 max-w-full"
                     />
                     <button
                       onClick={prevImage}

@@ -34,6 +34,20 @@ interface Produto {
 export function Choconat() {
   const [leiteUht, setLeiteUht] = useState<Produto[]>([]);
 
+  const [isMobile, setIsMobile] = useState<boolean>(false);
+
+  useLayoutEffect(() => {
+    function handleSize() {
+      if (innerWidth < 480) {
+        setIsMobile(true);
+      } else setIsMobile(false);
+    }
+
+    handleSize();
+    window.addEventListener("resize", handleSize);
+    return () => window.removeEventListener("resize", handleSize);
+  }, []);
+
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -182,39 +196,55 @@ export function Choconat() {
                 </div>
               </AnimatedY>
             </div>
-            {/*leite desnataod inicio */}
-            <div
-              className="flex items-center justify-center
+            {/*leite choconat 200ml*/}
+            {isMobile ? (
+              <div
+                className="flex items-center justify-center
               gap-8   my-32 max-md:flex-col
                max-md:mx-8 max-md:my-32"
-            >
-              <AnimatedY>
-                <div className="flex-col items-center justify-center ">
-                  <h1
-                    className="font-mochari text-8xl max-md:text-6xl
-                   text-white"
-                  >
-                    Choconat 200ml
-                  </h1>
+              >
+                <AnimatedNegative>
                   <div>
-                    <p className="text-white text-justify mt-8">
-                      A Bebida Láctea UHT Sabor Chocolate é uma opção deliciosa
-                      e nutritiva para quem busca sabor e energia no dia a dia.
-                      Feita com leite submetido ao processo de
-                      ultra-pasteurização (UHT), ela mantém boa parte dos
-                      nutrientes essenciais, como proteínas e cálcio,
-                      contribuindo para ossos e dentes fortes. Além disso, é
-                      enriquecida com vitaminas, incluindo a vitamina D, que
-                      auxilia na absorção do cálcio. Com um sabor irresistível
-                      de chocolate, é perfeita para qualquer momento, seja no
-                      café da manhã, no lanche ou após a prática de atividades
-                      físicas.
-                    </p>
+                    <motion.img
+                      whileHover={{
+                        scale: 1.1,
+                        rotate: 3,
+                      }}
+                      transition={{ duration: 0.5 }}
+                      className=" object-center drop-shadow-md max-w-72
+                   max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
+                      src={chocolat200ml}
+                      alt="leite uht integral"
+                    />
                   </div>
-                  <div className="max-md:w-full max-md:items-center max-md:justify-center">
-                    <Link to={`/produtos/${leiteUhtDesnatado?.id}`}>
-                      <button
-                        className="relative 
+                </AnimatedNegative>
+                <AnimatedY>
+                  <div className="flex-col items-center justify-center ">
+                    <h1
+                      className="font-mochari text-8xl max-md:text-6xl
+                   text-white"
+                    >
+                      Choconat 200ml
+                    </h1>
+                    <div>
+                      <p className="text-white text-justify mt-8">
+                        A Bebida Láctea UHT Sabor Chocolate é uma opção
+                        deliciosa e nutritiva para quem busca sabor e energia no
+                        dia a dia. Feita com leite submetido ao processo de
+                        ultra-pasteurização (UHT), ela mantém boa parte dos
+                        nutrientes essenciais, como proteínas e cálcio,
+                        contribuindo para ossos e dentes fortes. Além disso, é
+                        enriquecida com vitaminas, incluindo a vitamina D, que
+                        auxilia na absorção do cálcio. Com um sabor irresistível
+                        de chocolate, é perfeita para qualquer momento, seja no
+                        café da manhã, no lanche ou após a prática de atividades
+                        físicas.
+                      </p>
+                    </div>
+                    <div className="max-md:w-full max-md:items-center max-md:justify-center">
+                      <Link to={`/produtos/${leiteUhtDesnatado?.id}`}>
+                        <button
+                          className="relative 
           overflow-hidden
            flex-shrink-0
     bg-white
@@ -222,39 +252,98 @@ export function Choconat() {
     px-14 rounded-md shadow-sm
     shadow-black font-light 
      border-none mt-8 max-md:w-full cursor-pointer"
-                      >
-                        <span className="relative z-10 flex items-center justify-center">
-                          TABELA NUTRICIONAL +
-                        </span>
-                        <span
-                          className="absolute inset-0
+                        >
+                          <span className="relative z-10 flex items-center justify-center">
+                            TABELA NUTRICIONAL +
+                          </span>
+                          <span
+                            className="absolute inset-0
             bg-gradient-to-r from-white
              to-black
            transform translate-x-full
             transition-transform
             duration-300 ease-in-out z-0 opacity-20"
-                        ></span>
-                      </button>
-                    </Link>
+                          ></span>
+                        </button>
+                      </Link>
+                    </div>
                   </div>
-                </div>
-              </AnimatedY>
-              <AnimatedNegative>
-                <div>
-                  <motion.img
-                    whileHover={{
-                      scale: 1.1,
-                      rotate: 3,
-                    }}
-                    transition={{ duration: 0.5 }}
-                    className=" object-center drop-shadow-md max-w-72
+                </AnimatedY>
+              </div>
+            ) : (
+              <div
+                className="flex items-center justify-center
+              gap-8   my-32 max-md:flex-col
+               max-md:mx-8 max-md:my-32"
+              >
+                <AnimatedY>
+                  <div className="flex-col items-center justify-center ">
+                    <h1
+                      className="font-mochari text-8xl max-md:text-6xl
+                   text-white"
+                    >
+                      Choconat 200ml
+                    </h1>
+                    <div>
+                      <p className="text-white text-justify mt-8">
+                        A Bebida Láctea UHT Sabor Chocolate é uma opção
+                        deliciosa e nutritiva para quem busca sabor e energia no
+                        dia a dia. Feita com leite submetido ao processo de
+                        ultra-pasteurização (UHT), ela mantém boa parte dos
+                        nutrientes essenciais, como proteínas e cálcio,
+                        contribuindo para ossos e dentes fortes. Além disso, é
+                        enriquecida com vitaminas, incluindo a vitamina D, que
+                        auxilia na absorção do cálcio. Com um sabor irresistível
+                        de chocolate, é perfeita para qualquer momento, seja no
+                        café da manhã, no lanche ou após a prática de atividades
+                        físicas.
+                      </p>
+                    </div>
+                    <div className="max-md:w-full max-md:items-center max-md:justify-center">
+                      <Link to={`/produtos/${leiteUhtDesnatado?.id}`}>
+                        <button
+                          className="relative 
+          overflow-hidden
+           flex-shrink-0
+    bg-white
+    text-custom-choco py-3 
+    px-14 rounded-md shadow-sm
+    shadow-black font-light 
+     border-none mt-8 max-md:w-full cursor-pointer"
+                        >
+                          <span className="relative z-10 flex items-center justify-center">
+                            TABELA NUTRICIONAL +
+                          </span>
+                          <span
+                            className="absolute inset-0
+            bg-gradient-to-r from-white
+             to-black
+           transform translate-x-full
+            transition-transform
+            duration-300 ease-in-out z-0 opacity-20"
+                          ></span>
+                        </button>
+                      </Link>
+                    </div>
+                  </div>
+                </AnimatedY>
+                <AnimatedNegative>
+                  <div>
+                    <motion.img
+                      whileHover={{
+                        scale: 1.1,
+                        rotate: 3,
+                      }}
+                      transition={{ duration: 0.5 }}
+                      className=" object-center drop-shadow-md max-w-72
                    max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
-                    src={chocolat200ml}
-                    alt="leite uht integral"
-                  />
-                </div>
-              </AnimatedNegative>
-            </div>
+                      src={chocolat200ml}
+                      alt="leite uht integral"
+                    />
+                  </div>
+                </AnimatedNegative>
+              </div>
+            )}
           </div>
 
           {/*footer inicio */}
@@ -271,9 +360,10 @@ export function Choconat() {
                 className="w-full flex justify-between mt-28
                max-md:flex-col  max-md:gap-5"
               >
-                <div>
+                <div className="max-md:flex max-md:justify-center max-md:items-center max-md:m-auto">
                   <img
-                    className="min-w-56 max-w-10 hover:scale-105 transition duration-700 drop-shadow-lg"
+                    className="min-w-56 max-w-10
+                     hover:scale-105 transition duration-700 drop-shadow-lg"
                     src={logoF}
                     alt="natville"
                   />

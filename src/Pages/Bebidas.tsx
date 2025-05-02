@@ -12,15 +12,8 @@ import bebidaAmeixa from "../assets/Produtos/Bebidas/ameixa2.webp";
 import BebidaCoco from "../assets/Produtos/Bebidas/coco2.webp";
 import graviola from "../assets/Produtos/Bebidas/graviola2.webp";
 import bandeja from "../assets/Produtos/Bebidas/bandeija.webp";
-import logoF from "../assets/Footer/logoFooter.svg";
 
-//icons
-import { AiOutlineYoutube } from "react-icons/ai";
-import { CiFacebook } from "react-icons/ci";
-import { FaWhatsapp } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa6";
-import { AiOutlineLinkedin } from "react-icons/ai";
-import { FiPhoneForwarded } from "react-icons/fi";
+import { Footer } from "../Components/Footer";
 
 import { AnimatedNegative } from "../Tools/Animates/AnimatedNegative";
 import { AnimatedSection } from "../Tools/Animates/AnimatedSections";
@@ -34,6 +27,20 @@ interface Produto {
 
 export function Bebidas() {
   const [leiteUht, setLeiteUht] = useState<Produto[]>([]);
+
+  const [isMobile, setIsMobile] = useState<boolean>(false);
+
+  useLayoutEffect(() => {
+    function handleSize() {
+      if (innerWidth < 480) {
+        setIsMobile(true);
+      } else setIsMobile(false);
+    }
+
+    handleSize();
+    window.addEventListener("resize", handleSize);
+    return () => window.removeEventListener("resize", handleSize);
+  }, []);
 
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
@@ -76,12 +83,12 @@ export function Bebidas() {
         >
           <div
             className="max-w-7xl 
-        flex items-center justify-center gap-8 max-md:flex-col "
+        flex items-center justify-center max-md:flex-col "
           >
             <AnimatedSection>
               <img
                 className=" drop-shadow-md max-md:w-72
-               max-md:-mt-20 cursor-pointer hover:scale-105 transition duration-700"
+                cursor-pointer hover:scale-105 transition duration-700"
                 src={bebidasBanner}
                 alt="leite uht natville"
               />
@@ -90,7 +97,7 @@ export function Bebidas() {
             <div className="flex-col items-center justify-center ">
               <AnimatedNegative>
                 <h1
-                  className="font-mochari text-9xl max-md:-mt-6 
+                  className="font-mochari text-9xl max-md:-mt-16 
                text-custom-blue-strong text-center max-md:text-7xl"
                 >
                   linha
@@ -194,39 +201,55 @@ export function Bebidas() {
                 </div>
               </AnimatedY>
             </div>
-            {/*leite desnataod inicio */}
-            <div
-              className=" max-w-6xl flex items-center justify-center
+            {/*leite ameixa */}
+            {isMobile ? (
+              <div
+                className=" max-w-6xl flex items-center justify-center
               gap-8  my-32 max-md:flex-col
                max-md:mx-8 max-md:my-32"
-            >
-              <AnimatedY>
-                <div className="flex-col items-center justify-center ">
-                  <h1
-                    className="font-mochari text-8xl max-md:text-7xl
-                   text-custom-blue-strong"
-                  >
-                    bebida sabor
-                    <br />
-                    ameixa
-                  </h1>
+              >
+                <AnimatedNegative>
                   <div>
-                    <p className="text-custom-blue-strong text-justify mt-8">
-                      O sabor marcante da ameixa combinado com a cremosidade do
-                      leite resulta em uma bebida deliciosa e cheia de
-                      benefícios. Além de saborosa, a ameixa é conhecida por
-                      auxiliar no bom funcionamento do intestino!
-                      <br />
-                      <br />
-                      ✅ Sabor encorpado e equilibrado. <br />
-                      ✅ Ajuda na digestão e no bem-estar intestinal. <br />✅
-                      Rica em nutrientes essenciais.
-                    </p>
+                    <motion.img
+                      whileHover={{
+                        scale: 1.1,
+                        rotate: 3,
+                      }}
+                      transition={{ duration: 0.5 }}
+                      className=" object-center drop-shadow-md  w-width-bebida
+                   max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
+                      src={bebidaAmeixa}
+                      alt="leite uht integral"
+                    />
                   </div>
-                  <div className="max-md:w-full max-md:items-center max-md:justify-center">
-                    <Link to={`/produtos/${ameixa?.id}`}>
-                      <button
-                        className="relative 
+                </AnimatedNegative>
+                <AnimatedY>
+                  <div className="flex-col items-center justify-center ">
+                    <h1
+                      className="font-mochari text-8xl max-md:text-7xl
+                   text-custom-blue-strong"
+                    >
+                      bebida sabor
+                      <br />
+                      ameixa
+                    </h1>
+                    <div>
+                      <p className="text-custom-blue-strong text-justify mt-8">
+                        O sabor marcante da ameixa combinado com a cremosidade
+                        do leite resulta em uma bebida deliciosa e cheia de
+                        benefícios. Além de saborosa, a ameixa é conhecida por
+                        auxiliar no bom funcionamento do intestino!
+                        <br />
+                        <br />
+                        ✅ Sabor encorpado e equilibrado. <br />
+                        ✅ Ajuda na digestão e no bem-estar intestinal. <br />✅
+                        Rica em nutrientes essenciais.
+                      </p>
+                    </div>
+                    <div className="max-md:w-full max-md:items-center max-md:justify-center">
+                      <Link to={`/produtos/${ameixa?.id}`}>
+                        <button
+                          className="relative 
           overflow-hidden
            flex-shrink-0
     bg-custom-blue-strong
@@ -234,39 +257,98 @@ export function Bebidas() {
     px-14 rounded-md shadow-sm
     shadow-black font-light 
      border-none mt-8 max-md:w-full cursor-pointer"
-                      >
-                        <span className="relative z-10 flex items-center justify-center">
-                          TABELA NUTRICIONAL +
-                        </span>
-                        <span
-                          className="absolute inset-0
+                        >
+                          <span className="relative z-10 flex items-center justify-center">
+                            TABELA NUTRICIONAL +
+                          </span>
+                          <span
+                            className="absolute inset-0
             bg-gradient-to-r from-white
              to-black
            transform translate-x-full
             transition-transform
             duration-300 ease-in-out z-0 opacity-20"
-                        ></span>
-                      </button>
-                    </Link>
+                          ></span>
+                        </button>
+                      </Link>
+                    </div>
                   </div>
-                </div>
-              </AnimatedY>
-              <AnimatedNegative>
-                <div>
-                  <motion.img
-                    whileHover={{
-                      scale: 1.1,
-                      rotate: 3,
-                    }}
-                    transition={{ duration: 0.5 }}
-                    className=" object-center drop-shadow-md  w-width-bebida
+                </AnimatedY>
+              </div>
+            ) : (
+              <div
+                className=" max-w-6xl flex items-center justify-center
+              gap-8  my-32 max-md:flex-col
+               max-md:mx-8 max-md:my-32"
+              >
+                <AnimatedY>
+                  <div className="flex-col items-center justify-center ">
+                    <h1
+                      className="font-mochari text-8xl max-md:text-7xl
+                   text-custom-blue-strong"
+                    >
+                      bebida sabor
+                      <br />
+                      ameixa
+                    </h1>
+                    <div>
+                      <p className="text-custom-blue-strong text-justify mt-8">
+                        O sabor marcante da ameixa combinado com a cremosidade
+                        do leite resulta em uma bebida deliciosa e cheia de
+                        benefícios. Além de saborosa, a ameixa é conhecida por
+                        auxiliar no bom funcionamento do intestino!
+                        <br />
+                        <br />
+                        ✅ Sabor encorpado e equilibrado. <br />
+                        ✅ Ajuda na digestão e no bem-estar intestinal. <br />✅
+                        Rica em nutrientes essenciais.
+                      </p>
+                    </div>
+                    <div className="max-md:w-full max-md:items-center max-md:justify-center">
+                      <Link to={`/produtos/${ameixa?.id}`}>
+                        <button
+                          className="relative 
+          overflow-hidden
+           flex-shrink-0
+    bg-custom-blue-strong
+    text-white py-3 
+    px-14 rounded-md shadow-sm
+    shadow-black font-light 
+     border-none mt-8 max-md:w-full cursor-pointer"
+                        >
+                          <span className="relative z-10 flex items-center justify-center">
+                            TABELA NUTRICIONAL +
+                          </span>
+                          <span
+                            className="absolute inset-0
+            bg-gradient-to-r from-white
+             to-black
+           transform translate-x-full
+            transition-transform
+            duration-300 ease-in-out z-0 opacity-20"
+                          ></span>
+                        </button>
+                      </Link>
+                    </div>
+                  </div>
+                </AnimatedY>
+                <AnimatedNegative>
+                  <div>
+                    <motion.img
+                      whileHover={{
+                        scale: 1.1,
+                        rotate: 3,
+                      }}
+                      transition={{ duration: 0.5 }}
+                      className=" object-center drop-shadow-md  w-width-bebida
                    max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
-                    src={bebidaAmeixa}
-                    alt="leite uht integral"
-                  />
-                </div>
-              </AnimatedNegative>
-            </div>
+                      src={bebidaAmeixa}
+                      alt="leite uht integral"
+                    />
+                  </div>
+                </AnimatedNegative>
+              </div>
+            )}
             {/*zero lactose */}
             <div
               className="max-w-6xl flex items-center justify-center
@@ -336,36 +418,109 @@ export function Bebidas() {
                 </div>
               </AnimatedY>
             </div>
-            <div
-              className=" max-w-6xl flex items-center justify-center
+            {/*GRAVIOLA */}
+            {isMobile ? (
+              <div
+                className=" max-w-6xl flex items-center justify-center
+               gap-8  my-32 max-md:flex-col
+                max-md:mx-8 max-md:my-32"
+              >
+                <AnimatedNegative>
+                  <div>
+                    <motion.img
+                      whileHover={{
+                        scale: 1.1,
+                        rotate: 3,
+                      }}
+                      transition={{ duration: 0.5 }}
+                      className=" object-center drop-shadow-md w-width-bebida2
+                    max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
+                      src={graviola}
+                      alt="leite uht integral"
+                    />
+                  </div>
+                </AnimatedNegative>
+                <AnimatedY>
+                  <div className="flex-col items-center justify-center ">
+                    <h1
+                      className="font-mochari text-8xl max-md:text-7xl
+                    text-custom-blue-strong"
+                    >
+                      bebida sabor
+                      <br />
+                      graviola
+                    </h1>
+                    <div>
+                      <p className="text-custom-blue-strong text-justify mt-8">
+                        O irresistível sabor tropical da graviola em uma bebida
+                        láctea equilibrada e cheia de benefícios. Uma escolha
+                        deliciosa para quem gosta de sabores autênticos e
+                        refrescantes! <br />
+                        <br /> ✅ Toque tropical com sabor único. <br /> ✅
+                        Textura cremosa e leve. <br /> ✅ Rica em cálcio para
+                        fortalecer os ossos.
+                      </p>
+                    </div>
+                    <div className="max-md:w-full max-md:items-center max-md:justify-center">
+                      <Link to={`/produtos/${graviolaInfo?.id}`}>
+                        <button
+                          className="relative 
+           overflow-hidden
+            flex-shrink-0
+     bg-custom-blue-strong
+     text-white py-3 
+     px-14 rounded-md shadow-sm
+     shadow-black font-light 
+      border-none mt-8 max-md:w-full cursor-pointer"
+                        >
+                          <span className="relative z-10 flex items-center justify-center">
+                            TABELA NUTRICIONAL +
+                          </span>
+                          <span
+                            className="absolute inset-0
+             bg-gradient-to-r from-white
+              to-black
+            transform translate-x-full
+             transition-transform
+             duration-300 ease-in-out z-0 opacity-20"
+                          ></span>
+                        </button>
+                      </Link>
+                    </div>
+                  </div>
+                </AnimatedY>
+              </div>
+            ) : (
+              <div
+                className=" max-w-6xl flex items-center justify-center
               gap-8  my-32 max-md:flex-col
                max-md:mx-8 max-md:my-32"
-            >
-              <AnimatedY>
-                <div className="flex-col items-center justify-center ">
-                  <h1
-                    className="font-mochari text-8xl max-md:text-7xl
+              >
+                <AnimatedY>
+                  <div className="flex-col items-center justify-center ">
+                    <h1
+                      className="font-mochari text-8xl max-md:text-7xl
                    text-custom-blue-strong"
-                  >
-                    bebida sabor
-                    <br />
-                    graviola
-                  </h1>
-                  <div>
-                    <p className="text-custom-blue-strong text-justify mt-8">
-                      O irresistível sabor tropical da graviola em uma bebida
-                      láctea equilibrada e cheia de benefícios. Uma escolha
-                      deliciosa para quem gosta de sabores autênticos e
-                      refrescantes! <br />
-                      <br /> ✅ Toque tropical com sabor único. <br /> ✅
-                      Textura cremosa e leve. <br /> ✅ Rica em cálcio para
-                      fortalecer os ossos.
-                    </p>
-                  </div>
-                  <div className="max-md:w-full max-md:items-center max-md:justify-center">
-                    <Link to={`/produtos/${graviolaInfo?.id}`}>
-                      <button
-                        className="relative 
+                    >
+                      bebida sabor
+                      <br />
+                      graviola
+                    </h1>
+                    <div>
+                      <p className="text-custom-blue-strong text-justify mt-8">
+                        O irresistível sabor tropical da graviola em uma bebida
+                        láctea equilibrada e cheia de benefícios. Uma escolha
+                        deliciosa para quem gosta de sabores autênticos e
+                        refrescantes! <br />
+                        <br /> ✅ Toque tropical com sabor único. <br /> ✅
+                        Textura cremosa e leve. <br /> ✅ Rica em cálcio para
+                        fortalecer os ossos.
+                      </p>
+                    </div>
+                    <div className="max-md:w-full max-md:items-center max-md:justify-center">
+                      <Link to={`/produtos/${graviolaInfo?.id}`}>
+                        <button
+                          className="relative 
           overflow-hidden
            flex-shrink-0
     bg-custom-blue-strong
@@ -373,39 +528,40 @@ export function Bebidas() {
     px-14 rounded-md shadow-sm
     shadow-black font-light 
      border-none mt-8 max-md:w-full cursor-pointer"
-                      >
-                        <span className="relative z-10 flex items-center justify-center">
-                          TABELA NUTRICIONAL +
-                        </span>
-                        <span
-                          className="absolute inset-0
+                        >
+                          <span className="relative z-10 flex items-center justify-center">
+                            TABELA NUTRICIONAL +
+                          </span>
+                          <span
+                            className="absolute inset-0
             bg-gradient-to-r from-white
              to-black
            transform translate-x-full
             transition-transform
             duration-300 ease-in-out z-0 opacity-20"
-                        ></span>
-                      </button>
-                    </Link>
+                          ></span>
+                        </button>
+                      </Link>
+                    </div>
                   </div>
-                </div>
-              </AnimatedY>
-              <AnimatedNegative>
-                <div>
-                  <motion.img
-                    whileHover={{
-                      scale: 1.1,
-                      rotate: 3,
-                    }}
-                    transition={{ duration: 0.5 }}
-                    className=" object-center drop-shadow-md w-width-bebida2
+                </AnimatedY>
+                <AnimatedNegative>
+                  <div>
+                    <motion.img
+                      whileHover={{
+                        scale: 1.1,
+                        rotate: 3,
+                      }}
+                      transition={{ duration: 0.5 }}
+                      className=" object-center drop-shadow-md w-width-bebida2
                    max-md:w-40 cursor-pointer hover:scale-105 transition duration-700"
-                    src={graviola}
-                    alt="leite uht integral"
-                  />
-                </div>
-              </AnimatedNegative>
-            </div>
+                      src={graviola}
+                      alt="leite uht integral"
+                    />
+                  </div>
+                </AnimatedNegative>
+              </div>
+            )}
             {/*bandeja */}
             <div
               className=" max-w-6xl flex items-center justify-center
@@ -484,82 +640,15 @@ export function Bebidas() {
           {/*footer inicio */}
           <footer
             className="w-full h-auto mb-5
-            flex items-center justify-center m-auto"
+            flex items-center justify-center m-auto max-md:-mt-28"
           >
             <div
               className="w-8/12 
                flex-col items-center
             "
             >
-              <div
-                className="w-full flex justify-between mt-28
-               max-md:flex-col  max-md:gap-5"
-              >
-                <div>
-                  <img
-                    className="min-w-56 hover:scale-105
-                     transition duration-700 drop-shadow-lg"
-                    src={logoF}
-                    alt="natville"
-                  />
-                </div>
-                <div className="flex-col items-center justify-center ">
-                  <p
-                    className="text-custom-blue-strong
-                   text-center font-mochari text-4xl"
-                  >
-                    Acompanhe nossas
-                  </p>
-                  <div className="flex items-center justify-center gap-2">
-                    <AiOutlineYoutube
-                      size={25}
-                      className="cursor-pointer hover:scale-105 transition duration-300"
-                    />
-                    <CiFacebook
-                      size={25}
-                      className="cursor-pointer hover:scale-105 transition duration-300"
-                    />
-                    <FaWhatsapp
-                      size={25}
-                      className="cursor-pointer hover:scale-105 transition duration-300"
-                    />
-                    <FaInstagram
-                      size={25}
-                      className="cursor-pointer hover:scale-105 transition duration-300"
-                    />
-                    <AiOutlineLinkedin
-                      size={25}
-                      className="cursor-pointer hover:scale-105 transition duration-300"
-                    />
-                  </div>
-                  <p
-                    className="text-custom-blue-strong
-                  text-center font-mochari text-4xl"
-                  >
-                    redes sociais
-                  </p>
-                </div>
-                <div
-                  className="font-mochari text-custom-blue-strong
-                 flex-col items-center justify-center "
-                >
-                  <p className="text-end text-4xl max-md:text-center">
-                    fale conosco
-                  </p>
-                  <div className="flex items-center justify-between gap-3 max-md:justify-center">
-                    <div>
-                      <FiPhoneForwarded size={37} />
-                    </div>
-                    <div
-                      className="flex-col text-2xl 
-                    items-center justify-center "
-                    >
-                      <p>0800 7213245</p>
-                      <p className="text-xl -mt-3">natville.com.br</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <Footer />
+
               <div className="w-full flex-col">
                 <div className="border border-gray-300 mt-5"></div>
                 <div className="text-gray-400">

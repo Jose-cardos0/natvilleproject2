@@ -40,17 +40,10 @@ export function QuemSomos() {
           justify-center bg-cover m-auto
            bg-no-repeat max-md:bg-center  "
         >
-          <div className=" items-center justify-center flex-col max-w-7xl mm:max-md:-mt-28">
-            <div className="w-full flex items-center justify-center">
-              <AnimatedNegative>
-                <button
-                  className=" bg-custom-blue-strong font-roboto uppercase py-1
-               px-6 rounded-xl text-custom-white drop-shadow-lg max-md:mb-10 max-md:text-xs"
-                >
-                  quem somos?
-                </button>
-              </AnimatedNegative>
-            </div>
+          <div
+            className=" items-center justify-center 
+          flex-col max-w-7xl mm:max-md:-mt-28 -mt-40"
+          >
             <AnimatedSection>
               <div className="flex items-center mm:max-md:flex-col">
                 <img
@@ -59,7 +52,7 @@ export function QuemSomos() {
                   alt=""
                 />
                 <img
-                  className="drop-shadow-xl max-md:max-w-72"
+                  className="drop-shadow-xl max-w-2xl max-md:max-w-72"
                   src={logo}
                   alt="natville"
                 />
@@ -70,7 +63,7 @@ export function QuemSomos() {
                   loop
                   playsInline
                   className="w-8/12 mb-6 relative
-                   z-10 max-md:max-w-72"
+                   z-10 max-md:max-w-72 drop-shadow-2xl "
                 ></video> */}
                 <img
                   className="mm:max-md:w-36 mm:max-md:block hidden"
@@ -100,16 +93,16 @@ export function QuemSomos() {
                   nosso propósito
                 </h1>
                 <p
-                  className="lowercase font-roboto text-end 
+                  className=" font-roboto text-end 
                 max-md:mx-8 max-md:text-justify 
-                 bg-opacity-90 p-4 rounded-lg shadow mt-2  "
+                 bg-opacity-20 p-4 rounded-lg shadow mt-2 bg-white  "
                 >
-                  SOMOS O CONVITE PARA UMA JORNADA. ESSE CAMINHO PARTE DO NOSSO
-                  DESEJO DE TRANSFORMAR O MUNDO EM UM LUGAR MELHOR DE SE VIVER.
-                  SOMOS UMA UNIDA FAMÍLIA DO INTERIOR DE SERGIPE, QUE DEDICA A
-                  VIDA PARA PRODUZIR PRODUTOS DO LEITE COM QUALIDADE.É A FORMA
-                  QUE ENCONTRAMOS DE DAR VAZÃO PARA A VOZ DO BEM E DA FAMÍLIA. É
-                  ESSA MARCA QUE VIEMOS DEIXAR NO MUNDO.
+                  Somos o convite para uma jornada. esse caminho parte do nosso
+                  desejo de transformar o mundo em um lugar melhor de se viver.
+                  somos uma unida família do interior de sergipe, que dedica a
+                  vida para produzir produtos do leite com qualidade.é a forma
+                  que encontramos de dar vazão para a voz do bem e da família. é
+                  essa marca que viemos deixar no mundo.
                 </p>
               </AnimatedY>
             </div>

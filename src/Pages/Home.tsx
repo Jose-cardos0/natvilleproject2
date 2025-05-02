@@ -4,7 +4,8 @@ import camp from "../assets/Home/camp.webp";
 
 // import { SliderProdutos } from "../Tools/SliderProdutos/SliderProdutos";
 
-import logoF from "../assets/Footer/logoFooter.svg";
+// import logoF from "../assets/Footer/logoFooter.svg";
+import videoLogo from "../assets/Home/logoanimate11.webm";
 
 //icons
 import { AiOutlineYoutube } from "react-icons/ai";
@@ -83,10 +84,13 @@ export function Home() {
        justify-center m-auto bg-cover bg-custom-white"
     >
       {/*1 PAINEL - QUEM SOMOS*/}
-      <section className="w-full -mt-44  bg-custom-blue max-md:h-height-full-96px relative z-10 ">
+      <section
+        className="w-full -mt-44 
+       bg-custom-blue max-md:h-height-full-96px relative z-10 "
+      >
         <div
           className="max-w-7xl flex items-center
-      justify-center m-auto  h-height-full-96px   "
+      justify-center m-auto  h-height-full-96px bg-custom-blue  "
         >
           {/* <img src={logoHome} alt="" className="max-w-3xl" /> */}
           {/* <span className="light-sweep text-7xl font-bold">Palavra Azul</span> */}
@@ -106,7 +110,7 @@ export function Home() {
         </div>
         <div
           className="-mt-20 relative z-10  
-        max-md:items-end max-md:flex max-md:-mt-20  "
+        max-md:items-end max-md:flex max-md:-mt-20 bg-custom-blue  "
         >
           <AnimatedY>
             <img className="z-10" src={camp} alt="natville" />
@@ -1279,14 +1283,23 @@ border-none mt-8 mm:max-md:w-full"
                max-md:flex-col  max-md:gap-5"
           >
             <div>
-              <img
-                className="min-w-56 hover:scale-105 transition duration-700 drop-shadow-lg"
+              {/* <img
+                className="min-w-56 hover:scale-105 transition 
+                duration-700 drop-shadow-lg"
                 src={logoF}
                 alt="natville"
-              />
+              /> */}
+              <video
+                src={videoLogo}
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="relative z-10 w-56 drop-shadow-xl max-md:w-96"
+              ></video>
             </div>
             <a href="https://qrco.de/bfx729" target="_blacnk">
-              <div className="flex-col items-center justify-center ">
+              <div className="flex-col items-center justify-center cursor-pointer ">
                 <p
                   className="text-custom-blue-strong
                    text-center font-mochari text-4xl"
