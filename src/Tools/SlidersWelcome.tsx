@@ -103,26 +103,26 @@ export function SlidersWelcome() {
                 muted
                 loop
                 playsInline
-                className="mt-96 relative z-10 max-md:w-11/12"
+                className="mt-96 relative z-10 max-md:max-w-xs"
               ></video>
             </div>
           </SwiperSlide>
           {/*SLIDER 1 */}
-          <SwiperSlide className="mt-80 ">
+          <SwiperSlide className="mt-80 max-md:mt-56 ">
             <div className=" ">
               <SliderCondensado />
             </div>
           </SwiperSlide>
           {/*FIM SLIDER 1 */}
           {/*SLIDER 2 */}
-          <SwiperSlide className="mt-80 ">
+          <SwiperSlide className="mt-80 max-md:mt-40 ">
             <div className="">
               <SliderLeites />
             </div>
           </SwiperSlide>
           {/*FIM SLIDER 2 */}
           {/*SLIDER 3 */}
-          <SwiperSlide className="mt-96 ">
+          <SwiperSlide className="mt-96 max-md:mt-72 ">
             <div className="">
               <SliderCremedeLeite />
             </div>

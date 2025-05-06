@@ -5,12 +5,12 @@ export function SliderCremedeLeite() {
   return (
     <div
       className="max-w-4xl flex items-center justify-center m-auto
-     gap-8 mm:max-md:flex-col mt-16 "
+     gap-8 mm:max-md:flex-col mt-16 max-md:mt-0 "
     >
       <div className="w-full">
         <img
           className="drop-shadow-md max-w-80
-             object-cover "
+             object-cover max-md:w-60 max-md:justify-center max-md:m-auto"
           src={cremeDeLeite}
           alt="creme de leite natville"
         />
@@ -20,7 +20,7 @@ export function SliderCremedeLeite() {
           <img
             src="https://i.ibb.co/qL0vFCSq/Nomecreme-De-Leite.png"
             alt="leite condensado"
-            className="max-w-lg"
+            className="max-w-lg max-md:w-48 max-md:justify-center max-md:m-auto"
           />
         </div>
 
