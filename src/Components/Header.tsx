@@ -96,14 +96,18 @@ export function Header() {
               {/* <div className="cursor-pointer relative">
                 <img className="drop-shadow-lg" src={logo} alt="natville" />
               </div> */}
-              <div className="flex w-full justify-center m-auto">
+              <div
+                className="flex
+               w-full justify-center m-auto"
+              >
                 <video
                   src={videoLogo}
                   autoPlay
                   muted
                   loop
                   playsInline
-                  className=" relative z-10 max-md:w-32"
+                  className=" relative 
+                  z-10 max-md:w-32 max-lg:w-32"
                 ></video>
               </div>
             </Link>

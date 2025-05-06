@@ -35,6 +35,9 @@ export default {
         "width-bebida2": "400px",
         "width-leiteUht": "700px",
       },
+      margin: {
+        marginTopNegativo: "174px",
+      },
     },
     screens: {
       mm: "320px", // 'min-width

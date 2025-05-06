@@ -89,11 +89,11 @@ export function SlidersWelcome() {
               return '<span class="' + className + 'custom-bullet"></span>';
             },
           }}
-          className="mySwiper mm:max-md:w-width-mobile z-50 "
-          autoplay={{
-            delay: 3000,
-            disableOnInteraction: false,
-          }}
+          // className="mySwiper mm:max-md:w-width-mobile z-50 "
+          // autoplay={{
+          //   delay: 3000,
+          //   disableOnInteraction: false,
+          // }}
         >
           <SwiperSlide className="px-28 max-w-7xl z-50">
             <div className="flex mt-20 w-full justify-center m-auto">
@@ -108,7 +108,7 @@ export function SlidersWelcome() {
             </div>
           </SwiperSlide>
           {/*SLIDER 1 */}
-          <SwiperSlide className="mt-80 max-md:mt-56 ">
+          <SwiperSlide className="mt-80 max-md:mt-56">
             <div className=" ">
               <SliderCondensado />
             </div>

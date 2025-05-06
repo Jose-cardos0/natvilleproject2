@@ -10,17 +10,17 @@ export function SliderLeites() {
       <div className="w-full max-md:justify-center max-md:items-center max-md:m-auto max-md:ml-16 max-md:mt-12">
         <img
           className="drop-shadow-md max-w-sx
-             object-cover ml-8 max-md:w-60"
+             object-cover ml-8 max-md:w-60 max-lg:w-72"
           src={leites}
           alt="leite uht semidesnatado"
         />
       </div>
-      <div className="w-full flex-col items-end justify-end">
+      <div className="w-full flex-col items-end justify-end max-lg:pr-20">
         <div className="flex items-end justify-end max-md:items-center max-md:justify-center max-md:mb-2">
           <img
             src="https://i.ibb.co/8nvjjfXY/nome-Leite-UHt3x.png"
             alt="leite condensado"
-            className="max-w-lg max-md:w-48"
+            className="max-w-lg max-md:w-48 max-lg:w-60"
           />
         </div>
 

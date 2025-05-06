@@ -110,7 +110,7 @@ export function Home() {
         </div>
         <div
           className="-mt-20 relative z-10  
-        max-md:items-end max-md:flex max-md:-mt-20 bg-custom-blue  "
+        max-md:items-end max-md:flex max-md:-mt-20  bg-custom-blue  "
         >
           <AnimatedY>
             <img className="z-10" src={camp} alt="natville" />
@@ -118,7 +118,10 @@ export function Home() {
         </div>
       </section>
       {/*SVG1 */}
-      <section className="-mt-48 max-md:-mt-12 max-md:mb-1 relative z-0 ">
+      <section
+        className="-mt-48 max-lg:-mt-20 max-xl:-mt-28
+      max-md:-mt-12 max-md:mb-1 relative z-0 "
+      >
         <svg
           className=" rotate-180 "
           width="100%"
@@ -549,7 +552,7 @@ export function Home() {
         </AnimatedSection>
       </section>
       {/*SVG2 */}
-      <section className="-mt-32 max-md:-mt-0">
+      <section className="-mt-32 mb-3 max-lg:mb-20 max-md:-mt-0 max-xl:mb-24">
         <svg
           className="rotate-180  "
           width="100%"
@@ -567,13 +570,14 @@ export function Home() {
       {/*FIM SVG */}
       <section
         className="relative -mt-32
-       bg-custom-blue pb-20 z-10 max-md:-mt-2 max-md:px-8"
+       bg-custom-blue pb-20 z-10 max-md:-mt-24 max-md:px-8"
       >
         <div
-          className="max-w-7xl flex items-center justify-center
-         m-auto gap-20 max-md:flex-col"
+          className="max-w-7xl 
+          flex items-center justify-center
+         m-auto gap-20 max-md:flex-col max-lg:flex-col max-xl:flex-col"
         >
-          <div className="flex-col w-full">
+          <div className="flex-col w-full max-lg:pl-1 max-xl:m-auto max-xl:pl-20">
             <AnimatedSection>
               <div className="flex-col items-start mb-5 max-md:items-center">
                 <h1 className="font-mochari text-white text-3xl">DE OLHO NA</h1>
@@ -717,7 +721,7 @@ export function Home() {
       </section>
 
       {/*SVG3 */}
-      <section className="-mt-44 max-md:-mt-10 ">
+      <section className="-mt-44 max-lg:-mt-20 max-xl:-mt-24 max-md:-mt-11 ">
         <svg
           className="drop-shadow-md rotate-180"
           width="100%"
@@ -788,17 +792,18 @@ export function Home() {
               </div>
             </div> */}
             <section
-              className="w-full grid grid-cols-2 max-md:grid-cols-1 items-center
-             justify-center -mt-42  relative z-10 max-md:-mt-2   "
+              className="w-full grid grid-cols-2 max-xl:grid-cols-1 max-lg:grid-cols-1
+               max-md:grid-cols-1 items-center
+             justify-center -mt-42 relative z-10 max-md:-mt-2"
             >
-              <div className="py-32 flex items-start justify-start   ">
+              <div className="py-32 flex items-start justify-start">
                 <img
-                  className="w-96 absolute -top-0 -rotate-30
-                   max-md:w-80 max-md:rotate-12 max-md:left-8"
+                  className="w-96 max-lg:w-80 max-lg:ml-0 absolute -top-0 -rotate-30
+                   max-md:w-80 max-md:rotate-12 max-md:left-8 max-xl:w-80 max-xl:ml-24 "
                   src="https://i.ibb.co/PsQR35sf/logofeita.png"
                   alt=""
                 />
-                <div className="grid grid-cols-1 m-auto max-w-96 max-md:px-5  ">
+                <div className="grid grid-cols-1 m-auto max-w-96 max-md:px-5">
                   <div className="flex w-full items-center gap-5 mt-8">
                     <img
                       src={Facasal}
@@ -873,7 +878,9 @@ export function Home() {
               </div>
               {/*GROD CARDS */}
               <div
-                className="container gap-2 max-md:ml-3
+                className="container gap-2 max-md:ml-0 
+                max-xl:max-w-2xl max-xl:mb-72 max-md:mb-5 max-xl:justify-center 
+                max-xl:m-auto
                "
               >
                 <div
@@ -895,7 +902,7 @@ export function Home() {
                   duration-300  transform "
                 >
                   <img
-                    src="    https://i.ibb.co/tP8XVyv1/natvillelogos-11zon.webp"
+                    src="https://i.ibb.co/tP8XVyv1/natvillelogos-11zon.webp"
                     alt="2012"
                     className="w-full p-3 "
                   />
@@ -934,12 +941,12 @@ export function Home() {
                   est consequuntur laboriosam culpa.
                 </p>
               </div>
-            </AnimatedY> */}
+              </AnimatedY> */}
               {/* <AnimatedNegative>
               <div className="overflow-hidden max-w-7xl">
                 <img src={condensadoValores} alt="" className="" />
               </div>
-            </AnimatedNegative> */}
+              </AnimatedNegative> */}
               {/* <AnimatedY>
                   <div>
                     <img

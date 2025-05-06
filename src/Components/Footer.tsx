@@ -10,8 +10,10 @@ import videoLogo from "../assets/Home/logoanimate11.webm";
 export function Footer() {
   return (
     <div
-      className="w-full flex justify-between 
-               max-md:flex-col  max-md:gap-5 mt-48 max-md:mt-40"
+      className="w-full flex justify-between
+       max-lg:flex-col
+               max-md:flex-col  max-md:gap-5 mt-48
+                max-md:mt-40"
     >
       <div>
         {/* <img
