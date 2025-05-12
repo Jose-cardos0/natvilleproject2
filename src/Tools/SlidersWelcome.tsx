@@ -24,18 +24,23 @@ import leite2 from "./SlidersImgWelcome/Mobile/creme de leite_1_11zon.webp";
 import leite3 from "./SlidersImgWelcome/Mobile/empo_2_11zon.webp";
 
 export function SlidersWelcome() {
-  const [isMobile, setIsMobile] = useState<boolean>(false);
+  const [isMobile, setIsMobile] = useState<boolean | null>(null);
   useLayoutEffect(() => {
     function handleSize() {
-      if (innerWidth < 800) {
-        setIsMobile(true);
-      } else setIsMobile(false);
+      setIsMobile(window.innerWidth < 800);
     }
-
     handleSize();
     window.addEventListener("resize", handleSize);
     return () => window.removeEventListener("resize", handleSize);
-  });
+  }, []);
+
+  if (isMobile == null) {
+    return (
+      <p className="flex items-center justify-center m-auto font-thin text-white">
+        Carregando...
+      </p>
+    ); // Não esqueça o return!
+  }
 
   return (
     <div
