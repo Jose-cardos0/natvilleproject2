@@ -9,6 +9,7 @@ import { IoMenuOutline } from "react-icons/io5";
 import { RxCross2 } from "react-icons/rx";
 //logo
 import videoLogo from "../assets/Home/logoanimate11.webm";
+import logoNovo from "../assets/Header/logonova.png";
 
 //animacoes
 import { AnimatedSection } from "../Tools/Animates/AnimatedSections";
@@ -130,7 +131,7 @@ export function Header() {
                         className="font-roboto  py-3 px-5 
                       cursor-pointer 
                    text-gray-800 hover:bg-blue-100 transition 
-                   duration-300 rounded-lg flex items-center font-light"
+                   duration-300 rounded-lg flex items-center font-semibold"
                       >
                         Quem Somos
                       </div>
@@ -138,7 +139,7 @@ export function Header() {
                   </ul>
                   <ul onClick={() => setIsOpenProduct((prev) => !prev)}>
                     <Link to={"#sliderProdutos"}>
-                      <div className="font-roboto  py-3 px-5 cursor-pointer text-gray-800 hover:bg-blue-100 transition duration-300 rounded-lg flex items-center font-light">
+                      <div className="font-roboto  py-3 px-5 cursor-pointer text-gray-800 hover:bg-blue-100 transition duration-300 rounded-lg flex items-center font-semibold">
                         Nossos Produtos
                       </div>
                     </Link>
@@ -148,7 +149,7 @@ export function Header() {
                           <Link to={"/leiteuht"}>
                             <div
                               onClick={() => setIsOpen((prev) => !prev)}
-                              className="font-roboto  py-2 px-4 cursor-pointer text-gray-600 hover:bg-blue-50 transition duration-300 rounded-lg font-light"
+                              className="font-roboto  py-2 px-4 cursor-pointer text-gray-600 hover:bg-blue-50 transition duration-300 rounded-lg font-semibold"
                             >
                               Leites UHT
                             </div>
@@ -156,7 +157,7 @@ export function Header() {
                           <Link to={"/queijos"}>
                             <div
                               onClick={() => setIsOpen((prev) => !prev)}
-                              className="font-roboto  py-2 px-4 cursor-pointer text-gray-600 hover:bg-blue-50 transition duration-300 rounded-lg font-light"
+                              className="font-roboto  py-2 px-4 cursor-pointer text-gray-600 hover:bg-blue-50 transition duration-300 rounded-lg font-semibold"
                             >
                               Queijos
                             </div>
@@ -164,7 +165,7 @@ export function Header() {
                           <Link to={"/manteigas"}>
                             <div
                               onClick={() => setIsOpen((prev) => !prev)}
-                              className="font-roboto  py-2 px-4 cursor-pointer text-gray-600 hover:bg-blue-50 transition duration-300 rounded-lg font-light"
+                              className="font-roboto  py-2 px-4 cursor-pointer text-gray-600 hover:bg-blue-50 transition duration-300 rounded-lg font-semibold"
                             >
                               Manteigas
                             </div>
@@ -172,7 +173,7 @@ export function Header() {
                           <Link to={"/choconat"}>
                             <div
                               onClick={() => setIsOpen((prev) => !prev)}
-                              className="font-roboto  py-2 px-4 cursor-pointer text-gray-600 hover:bg-blue-50 transition duration-300 rounded-lg font-light"
+                              className="font-roboto  py-2 px-4 cursor-pointer text-gray-600 hover:bg-blue-50 transition duration-300 rounded-lg font-semibold"
                             >
                               Achocolatados
                             </div>
@@ -180,7 +181,7 @@ export function Header() {
                           <Link to={"/bebidas"}>
                             <div
                               onClick={() => setIsOpen((prev) => !prev)}
-                              className="font-roboto  py-2 px-4 cursor-pointer text-gray-600 hover:bg-blue-50 transition duration-300 rounded-lg font-light"
+                              className="font-roboto  py-2 px-4 cursor-pointer text-gray-600 hover:bg-blue-50 transition duration-300 rounded-lg font-semibold"
                             >
                               Bebidas
                             </div>
@@ -188,7 +189,7 @@ export function Header() {
                           <Link to={"/reqcremoso"}>
                             <div
                               onClick={() => setIsOpen((prev) => !prev)}
-                              className="font-roboto  py-2 px-4 cursor-pointer text-gray-600 hover:bg-blue-50 transition duration-300 rounded-lg font-light"
+                              className="font-roboto  py-2 px-4 cursor-pointer text-gray-600 hover:bg-blue-50 transition duration-300 rounded-lg font-semibold"
                             >
                               Cremosos
                             </div>
@@ -196,7 +197,7 @@ export function Header() {
                           <Link to={"/condensados"}>
                             <div
                               onClick={() => setIsOpen((prev) => !prev)}
-                              className="font-roboto  py-2 px-4 cursor-pointer text-gray-600 hover:bg-blue-50 transition duration-300 rounded-lg font-light"
+                              className="font-roboto  py-2 px-4 cursor-pointer text-gray-600 hover:bg-blue-50 transition duration-300 rounded-lg font-semibold"
                             >
                               Condensado
                             </div>
@@ -204,7 +205,7 @@ export function Header() {
                           <Link to={"/empo"}>
                             <div
                               onClick={() => setIsOpen((prev) => !prev)}
-                              className="font-roboto  py-2 px-4 cursor-pointer text-gray-600 hover:bg-blue-50 transition duration-300 rounded-lg font-light"
+                              className="font-roboto  py-2 px-4 cursor-pointer text-gray-600 hover:bg-blue-50 transition duration-300 rounded-lg font-semibold"
                             >
                               Em pó
                             </div>
@@ -212,7 +213,7 @@ export function Header() {
                           <Link to={"/cremedeleite"}>
                             <div
                               onClick={() => setIsOpen((prev) => !prev)}
-                              className="font-roboto  py-2 px-4 cursor-pointer text-gray-600 hover:bg-blue-50 transition duration-300 rounded-lg font-light"
+                              className="font-roboto  py-2 px-4 cursor-pointer text-gray-600 hover:bg-blue-50 transition duration-300 rounded-lg font-semibold"
                             >
                               Creme de Leite
                             </div>
@@ -227,7 +228,7 @@ export function Header() {
                     <Link to={"/noticias"}>
                       <div
                         onClick={() => setIsOpen((prev) => !prev)}
-                        className="font-roboto  py-3 px-5 cursor-pointer text-gray-800 hover:bg-blue-100 transition duration-300 rounded-lg flex items-center font-light"
+                        className="font-roboto  py-3 px-5 cursor-pointer text-gray-800 hover:bg-blue-100 transition duration-300 rounded-lg flex items-center font-semibold"
                       >
                         Notícias
                       </div>
@@ -237,7 +238,7 @@ export function Header() {
                     <Link to={"/contato"}>
                       <div
                         onClick={() => setIsOpen((prev) => !prev)}
-                        className="font-roboto  py-3 px-5 cursor-pointer text-gray-800 hover:bg-blue-100 transition duration-300 rounded-lg flex items-center font-light"
+                        className="font-roboto  py-3 px-5 cursor-pointer text-gray-800 hover:bg-blue-100 transition duration-300 rounded-lg flex items-center font-semibold"
                       >
                         Contato
                       </div>
@@ -250,7 +251,7 @@ export function Header() {
                     >
                       <div
                         onClick={() => setIsOpen((prev) => !prev)}
-                        className="font-roboto  py-3 px-5 cursor-pointer text-gray-800 hover:bg-blue-100 transition duration-300 rounded-lg flex items-center font-light"
+                        className="font-roboto  py-3 px-5 cursor-pointer text-gray-800 hover:bg-blue-100 transition duration-300 rounded-lg flex items-center font-semibold"
                       >
                         Trabalhe Conosco
                       </div>
@@ -265,27 +266,20 @@ export function Header() {
         </section>
       ) : (
         <section
-          className="max-w-7xl flex
-         items-center justify-center "
+          className="w-full flex
+         items-center justify-center ml-12 "
         >
-          <Link to={"/"}>
-            <div
-              onClick={() => setIsOpen(false)}
-              className="mr-8 cursor-pointer"
-            >
-              <img className="drop-shadow-lg" src={logo} alt="natville" />
-            </div>
-          </Link>
+          {/*AQUI */}
 
           <div
             className="w-full flex items-center 
-          justify-center gap-3"
+          justify-center m-auto gap-3 -ml-16 font-roboto text-custom-blue-strong  "
           >
             <Link to={"/quemsomos"}>
               <div
                 onClick={() => setIsOpen(false)}
                 className=" uppercase py-1 px-4
-               cursor-pointer font-light hover:text-custom-blue"
+               cursor-pointer font-semibold hover:text-custom-blue"
               >
                 quem somos
               </div>
@@ -294,8 +288,8 @@ export function Header() {
             <div
               className={
                 isOpen === true
-                  ? "relative cursor-pointer font-light bg-custom-blue rounded-md text-white py-1 px-4 uppercase"
-                  : "relative cursor-pointer font-light py-1 px-4 uppercase hover:text-custom-blue"
+                  ? "relative cursor-pointer font-semibold bg-custom-blue rounded-md text-white py-1 px-4 uppercase"
+                  : "relative cursor-pointer font-semibold py-1 px-4 uppercase hover:text-custom-blue"
               }
               onClick={() => setIsOpen((prev) => !prev)}
             >
@@ -313,7 +307,7 @@ export function Header() {
                     <div
                       onClick={() => setIsOpen((prev) => !prev)}
                       className="w-full px-5 py-2 cursor-pointer uppercase 
-                font-light hover:bg-custom-bg-leiteIHT hover:text-white"
+                font-semibold hover:bg-custom-bg-leiteIHT hover:text-white"
                     >
                       queijos
                     </div>
@@ -322,7 +316,7 @@ export function Header() {
                     <div
                       onClick={() => setIsOpen((prev) => !prev)}
                       className="w-full  px-5 py-2 cursor-pointer uppercase 
-                   font-light hover:bg-custom-bg-leiteIHT hover:text-white"
+                   font-semibold hover:bg-custom-bg-leiteIHT hover:text-white"
                     >
                       leites uht
                     </div>
@@ -331,7 +325,7 @@ export function Header() {
                     <div
                       onClick={() => setIsOpen((prev) => !prev)}
                       className="w-full  px-5 py-2 cursor-pointer uppercase 
-            font-light  hover:bg-custom-bg-leiteIHT  hover:text-white"
+            font-semibold  hover:bg-custom-bg-leiteIHT  hover:text-white"
                     >
                       bebidas lácteas
                     </div>
@@ -340,7 +334,7 @@ export function Header() {
                     <div
                       onClick={() => setIsOpen((prev) => !prev)}
                       className="w-full  px-5 py-2 cursor-pointer uppercase
-                   font-light  hover:bg-custom-bg-leiteIHT hover:text-white"
+                   font-semibold  hover:bg-custom-bg-leiteIHT hover:text-white"
                     >
                       Manteigas
                     </div>
@@ -349,7 +343,7 @@ export function Header() {
                     <div
                       onClick={() => setIsOpen((prev) => !prev)}
                       className="w-full  px-5 py-2 cursor-pointer uppercase 
-                 font-light  hover:bg-custom-bg-leiteIHT hover:text-white"
+                 font-semibold  hover:bg-custom-bg-leiteIHT hover:text-white"
                     >
                       Achocolatado
                     </div>
@@ -358,7 +352,7 @@ export function Header() {
                     <div
                       onClick={() => setIsOpen((prev) => !prev)}
                       className="w-full  px-5 py-2 cursor-pointer uppercase 
-                 font-light  hover:bg-custom-bg-leiteIHT hover:text-white"
+                 font-semibold  hover:bg-custom-bg-leiteIHT hover:text-white"
                     >
                       Cremosos
                     </div>
@@ -367,7 +361,7 @@ export function Header() {
                     <div
                       onClick={() => setIsOpen((prev) => !prev)}
                       className="w-full  px-5 py-2 cursor-pointer uppercase 
-                 font-light  hover:bg-custom-bg-leiteIHT hover:text-white"
+                 font-semibold  hover:bg-custom-bg-leiteIHT hover:text-white"
                     >
                       Condensado
                     </div>
@@ -376,7 +370,7 @@ export function Header() {
                     <div
                       onClick={() => setIsOpen((prev) => !prev)}
                       className="w-full  px-5 py-2 cursor-pointer uppercase 
-                 font-light  hover:bg-custom-bg-leiteIHT hover:text-white"
+                 font-semibold  hover:bg-custom-bg-leiteIHT hover:text-white"
                     >
                       Em Pó
                     </div>
@@ -385,7 +379,7 @@ export function Header() {
                     <div
                       onClick={() => setIsOpen((prev) => !prev)}
                       className="w-full  px-5 py-2 cursor-pointer uppercase 
-                 font-light  hover:bg-custom-bg-leiteIHT hover:text-white"
+                 font-semibold  hover:bg-custom-bg-leiteIHT hover:text-white"
                     >
                       Creme de Leite
                     </div>
@@ -399,7 +393,7 @@ export function Header() {
             <Link to={"/noticias"}>
               <div
                 onClick={() => setIsOpen(false)}
-                className="font-roboto uppercase py-1 px-4 cursor-pointer font-light hover:text-custom-blue "
+                className="font-roboto uppercase py-1 px-4 cursor-pointer font-semibold hover:text-custom-blue "
               >
                 notícias
               </div>
@@ -408,7 +402,7 @@ export function Header() {
             <Link to={"/contato"}>
               <div
                 onClick={() => setIsOpen(false)}
-                className="font-roboto uppercase py-1 px-4 cursor-pointer  hover:text-custom-blue font-light"
+                className="font-roboto uppercase py-1 px-4 cursor-pointer  hover:text-custom-blue font-semibold"
               >
                 contato
               </div>
@@ -417,11 +411,23 @@ export function Header() {
             <a href="https://natville.vagas.solides.com.br/" target="_blanck">
               <div
                 onClick={() => setIsOpen(false)}
-                className="font-roboto uppercase py-1 px-4 cursor-pointer hover:text-custom-blue font-light"
+                className="font-roboto uppercase py-1 px-4 cursor-pointer hover:text-custom-blue font-semibold"
               >
                 trabalhe conosco
               </div>
             </a>
+            <Link to={"/"}>
+              <div
+                onClick={() => setIsOpen(false)}
+                className="ml-48 cursor-pointer"
+              >
+                <img
+                  className="drop-shadow-lg max-w-72 mt-8"
+                  src={logoNovo}
+                  alt="natville"
+                />
+              </div>
+            </Link>
           </div>
         </section>
       )}

@@ -1,6 +1,6 @@
 import { useLayoutEffect, useState } from "react";
 
-import camp from "../assets/Home/camp.webp";
+// import camp from "../assets/Home/camp.webp";
 
 // import { SliderProdutos } from "../Tools/SliderProdutos/SliderProdutos";
 
@@ -65,6 +65,8 @@ import cremeDeLeite from "../assets/Produtos/CremeDeLeite/frontalcremedeleite.we
 import leiteUhtIntegral from "../assets/Produtos/Leites/leiteUhtExemplo.webp";
 
 import videoComercial from "../assets/video/video corridigo.mp4";
+import novoBg from "../assets/home.png";
+// import videoNovo from "../assets/videoHome.mp4";
 
 <script async src="//www.instagram.com/embed.js"></script>;
 
@@ -86,11 +88,12 @@ export function Home() {
       {/*1 PAINEL - QUEM SOMOS*/}
       <section
         className="w-full -mt-44 
-       bg-custom-blue max-md:h-height-full-96px relative z-10 "
+        max-md:h-height-full-96px relative z-10 "
       >
         <div
-          className="max-w-7xl flex items-center
-      justify-center m-auto  h-height-full-96px bg-custom-blue  "
+          style={{ backgroundImage: `url(${novoBg})` }}
+          className="w-full flex items-center h-screen
+      justify-center m-auto bg-contain mt-24 max-md:bg-cover"
         >
           {/* <img src={logoHome} alt="" className="max-w-3xl" /> */}
           {/* <span className="light-sweep text-7xl font-bold">Palavra Azul</span> */}
@@ -108,19 +111,19 @@ export function Home() {
           </AnimatedY> */}
           <SlidersWelcome />
         </div>
-        <div
+        {/* <div
           className="-mt-20 relative z-10  
         max-md:items-end max-md:flex max-md:-mt-20  bg-custom-blue  "
         >
           <AnimatedY>
-            <img className="z-10" src={camp} alt="natville" />
+            <img className="z-10 " src={camp} alt="natville" />
           </AnimatedY>
-        </div>
+        </div> */}
       </section>
       {/*SVG1 */}
-      <section
-        className="-mt-48 max-lg:-mt-20 max-xl:-mt-28
-      max-md:-mt-12 max-md:mb-1 relative z-0 "
+      {/* <section
+        className="-mt-60  max-lg:-mt-20 max-xl:-mt-28
+      max-md:-mt-12 max-md:mb-1 relative  "
       >
         <svg
           className=" rotate-180 "
@@ -135,12 +138,12 @@ export function Home() {
             fill="#55BECD"
           />
         </svg>
-      </section>
+      </section> */}
       {/*FIM SVG */}
       {/*1 PAINEL - FIM */}
       <section
         className="w-full -mt-52
-        bg-custom-white max-md:mt-0 "
+        bg-custom-white max-md:mt-16 "
       >
         <AnimatedSection>
           <div

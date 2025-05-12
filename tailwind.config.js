@@ -38,6 +38,9 @@ export default {
       margin: {
         marginTopNegativo: "174px",
       },
+      maxWidth: {
+        "max-w-700px": "470px",
+      },
     },
     screens: {
       mm: "320px", // 'min-width
