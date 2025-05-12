@@ -27,7 +27,7 @@ export function SlidersWelcome() {
   const [isMobile, setIsMobile] = useState<boolean>(false);
   useLayoutEffect(() => {
     function handleSize() {
-      if (innerWidth < 480) {
+      if (innerWidth < 800) {
         setIsMobile(true);
       } else setIsMobile(false);
     }

@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
-import condensado from "../../../src/Tools/SlidersImgWelcome/mockucondensado2x_11zon.webp";
+// import { Link } from "react-router-dom";
+// import condensado from "../../../src/Tools/SlidersImgWelcome/mockucondensado2x_11zon.webp";
 import condensado2 from "../../assets/condensado2.png";
 
 export function SliderCondensado() {

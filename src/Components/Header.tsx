@@ -1,5 +1,5 @@
 import { useState, useLayoutEffect } from "react";
-import logo from "../assets/Header/logo.png";
+// import logo from "../assets/Header/logo.png";
 
 //router
 import { Link } from "react-router-dom";
@@ -9,7 +9,7 @@ import { IoMenuOutline } from "react-icons/io5";
 import { RxCross2 } from "react-icons/rx";
 //logo
 import videoLogo from "../assets/Home/logoanimate11.webm";
-import logoNovo from "../assets/Header/logonova.png";
+// import logoNovo from "../assets/Header/logonova.png";
 
 //animacoes
 import { AnimatedSection } from "../Tools/Animates/AnimatedSections";
@@ -298,9 +298,10 @@ export function Header() {
             {isOpen === true ? (
               <div
                 id="absolute-div"
-                className="absolute top-full mr-72
+                className="absolute top-full mr-96 -ml-96
                   bg-custom-white shadow-lg 
-                  flex items-center justify-center bg-opacity-90 rounded-b-xl"
+                  flex items-center justify-center
+                   bg-opacity-90 rounded-b-xl"
               >
                 <div className=" justify-between flex-col  py-3 ">
                   <Link to={"/queijos"}>
@@ -421,11 +422,20 @@ export function Header() {
                 onClick={() => setIsOpen(false)}
                 className="ml-48 cursor-pointer"
               >
-                <img
+                {/* <img
                   className="drop-shadow-lg max-w-72 mt-8"
                   src={logoNovo}
                   alt="natville"
-                />
+                /> */}
+                <video
+                  src={videoLogo}
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className=" relative max-w-72 mt-9
+                  z-10 max-md:w-32 max-lg:w-32 drop-shadow-2xl shadow-black"
+                ></video>
               </div>
             </Link>
           </div>

@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import leites3 from "../../Tools/3leites.png";
-import leites from "../../../src/Tools/SlidersImgWelcome/leiteSemidesnatado (1)_11zon.webp";
+// import leites from "../../../src/Tools/SlidersImgWelcome/leiteSemidesnatado (1)_11zon.webp";
 
 export function SliderLeites() {
   return (

@@ -64,7 +64,7 @@ import choconat from "../assets/Produtos/LeiteEmPo/INTEGRAL200.webp";
 import cremeDeLeite from "../assets/Produtos/CremeDeLeite/frontalcremedeleite.webp";
 import leiteUhtIntegral from "../assets/Produtos/Leites/leiteUhtExemplo.webp";
 
-import videoComercial from "../assets/video/video corridigo.mp4";
+// import videoComercial from "../assets/video/video corridigo.mp4";
 import novoBg from "../assets/home.png";
 // import videoNovo from "../assets/videoHome.mp4";
 
@@ -1126,13 +1126,13 @@ border-none mt-8 mm:max-md:w-full"
         >
           <div className="w-full">
             {/* <AnimatedSection> */}
-            <video
+            {/* <video
               src={videoComercial}
               className="w-full h-auto relative "
               autoPlay
               loop
               muted
-            />
+            /> */}
             {/* <div className="absolute top-0 left-0 w-full h-full z-10 bg-black/50 backdrop-blur-sm" /> */}
 
             {/* <div className="w-72 max-md:w-full flex-col items-center justify-center m-auto">
