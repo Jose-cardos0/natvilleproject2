@@ -97,7 +97,7 @@ export function SlidersWelcome() {
           }}
           className="mySwiper mm:max-md:w-width-mobile z-50 w-full "
           autoplay={{
-            delay: 10000,
+            delay: 11000,
             disableOnInteraction: false,
           }}
         >
