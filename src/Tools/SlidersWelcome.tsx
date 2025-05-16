@@ -4,24 +4,10 @@ import { Autoplay, Navigation, Pagination, Scrollbar } from "swiper/modules";
 
 import { useState, useLayoutEffect } from "react";
 
-//import imgs
-
-// import logo from "./SlidersImgWelcome/logoHeader.svg";
-
 import videoLogo from "../assets/Home/logoanimate11.webm";
 import videoNovo from "../assets/videoHome.mp4";
-// import { AnimatedSection } from "../Tools/Animates/AnimatedSections";
 
-// import sliders produtos
-import { SliderCondensado } from "./SlidersImgWelcome/SliderCondensado";
-import { SliderLeites } from "./SlidersImgWelcome/SliderLeites";
-// import { SliderCremedeLeite } from "./SlidersImgWelcome/SliderCremedeLeite";
-
-//import imgs mobile
-// import logoMOb from "./SlidersImgWelcome/Mobile/logoMob.png";
-import leite1 from "./SlidersImgWelcome/Mobile/condensado1_4_11zon.webp";
-import leite2 from "./SlidersImgWelcome/Mobile/creme de leite_1_11zon.webp";
-import leite3 from "./SlidersImgWelcome/Mobile/empo_2_11zon.webp";
+import condensado2 from "../assets/condensado2.png";
 
 export function SlidersWelcome() {
   const [isMobile, setIsMobile] = useState<boolean | null>(null);
@@ -44,114 +30,73 @@ export function SlidersWelcome() {
 
   return (
     <div
-      className="flex items-center justify-center  overflow-hidden
-    mm:max-md:px-0 mm:max-md:py-16 mm:max-md:h-auto z-50 relative "
+      className="flex items-center justify-center overflow-hidden
+     mm:max-md:h-auto z-50 relative w-full "
     >
-      {isMobile ? (
-        <Swiper
-          modules={[Pagination, Navigation, Scrollbar, Autoplay]}
-          slidesPerView={1}
-          navigation={isMobile ? false : true}
-          pagination={true}
-          className="mySwiper mm:max-md:w-width-mobile mt-40 "
-          autoplay={{
-            delay: 3000,
-            disableOnInteraction: false,
-          }}
+      <Swiper
+        modules={[Pagination, Navigation, Scrollbar, Autoplay]}
+        slidesPerView={1}
+        navigation={true}
+        pagination={{
+          clickable: true,
+          renderBullet: function (className) {
+            return '<span class="' + className + 'custom-bullet"></span>';
+          },
+        }}
+        className="mySwiper mm:max-md:w-width-mobile z-50 w-screen "
+        // autoplay={{
+        //   delay: 11000,
+        //   disableOnInteraction: false,
+        // }}
+      >
+        <SwiperSlide className="">
+          <video
+            src={videoNovo}
+            className="w-screen h-screen relative "
+            autoPlay
+            loop
+            muted
+          />
+        </SwiperSlide>
+        <SwiperSlide
+          className="flex 
+           items-center justify-center m-auto w-full z-50"
         >
-          <SwiperSlide
-            className="px-16  mm:max-md:pb-10
-           flex items-center justify-center m-auto"
-          >
-            <div className="flex w-full justify-center m-auto">
-              <video
-                src={videoLogo}
-                autoPlay
-                muted
-                loop
-                playsInline
-                className=" relative z-10"
-              ></video>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="  ">
-            <img className="  " src={leite1} alt="" />
-          </SwiperSlide>
-          <SwiperSlide className=" max-w-7xl ">
-            <img className=" " src={leite2} alt="" />
-          </SwiperSlide>
-          <SwiperSlide className=" max-w-7xl ">
-            <img className=" " src={leite3} alt="" />
-          </SwiperSlide>
-        </Swiper>
-      ) : (
-        <Swiper
-          modules={[Pagination, Navigation, Scrollbar, Autoplay]}
-          slidesPerView={1}
-          navigation={true}
-          pagination={{
-            clickable: true,
-            renderBullet: function (className) {
-              return '<span class="' + className + 'custom-bullet"></span>';
-            },
-          }}
-          className="mySwiper mm:max-md:w-width-mobile z-50 w-full "
-          autoplay={{
-            delay: 11000,
-            disableOnInteraction: false,
-          }}
-        >
-          <SwiperSlide>
-            <video
-              src={videoNovo}
-              className="w-full h-auto relative "
-              autoPlay
-              loop
-              muted
-            />
-          </SwiperSlide>
-          <SwiperSlide
-            className="flex ml-80
-           items-center justify-center m-auto max-w-7xl z-50"
-          >
-            <div
-              className="flex mt-20 w-full
+          <div
+            className="flex mt-20 max-w-7xl
              justify-center m-auto "
-            >
-              <video
-                src={videoLogo}
-                autoPlay
-                muted
-                loop
-                playsInline
-                className=" relative z-10 max-md:max-w-xs"
-              ></video>
+          >
+            <video
+              src={videoLogo}
+              autoPlay
+              muted
+              loop
+              playsInline
+              className=" relative z-10 max-md:max-w-xs"
+            ></video>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="w-full ">
+            <div className="max-w-7xl flex items-center justify-center m-auto">
+              <img
+                className="drop-shadow-md  max-w-96 mt-44 ml-72
+          object-cover max-md:w-44 max-lg:w-48 max-md:mt-10 max-md:mr-16"
+                src={condensado2}
+                alt="leite condensado natville"
+              />
+              <div className="flex items-end justify-end">
+                <img
+                  src="https://i.ibb.co/2YqDf4dv/nome-Leitecondensado.png"
+                  alt="leite condensado"
+                  className="max-w-lg max-md:w-48 max-lg:w-72 
+            max-md:items-center max-md:justify-center max-md:m-auto max-md:mb-4"
+                />
+              </div>
             </div>
-          </SwiperSlide>
-          {/*SLIDER 1 */}
-
-          <SwiperSlide className="w-full mt-28 ml-72 max-md:mt-56">
-            <div className="ml-96 flex justify-center m-auto ">
-              <SliderCondensado />
-            </div>
-          </SwiperSlide>
-          {/*FIM SLIDER 1 */}
-          {/*SLIDER 2 */}
-          <SwiperSlide className="mt-20 max-md:mt-40 -ml-56 ">
-            <div className="ml-96 flex items-center justify-center m-auto">
-              <SliderLeites />
-            </div>
-          </SwiperSlide>
-          {/*FIM SLIDER 2 */}
-          {/*SLIDER 3 */}
-          {/* <SwiperSlide className="mt-96 max-md:mt-72 ">
-            <div className="">
-              <SliderCremedeLeite />
-            </div>
-          </SwiperSlide> */}
-          {/*FIM SLIDER 3 */}
-        </Swiper>
-      )}
+          </div>
+        </SwiperSlide>
+      </Swiper>
     </div>
   );
 }

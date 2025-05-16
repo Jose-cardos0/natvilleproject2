@@ -24,10 +24,10 @@ export default {
         "custom-bg-leiteIHT": "#79b6c9",
       },
       minHeight: {
-        "height-full-96px": "calc(100vh - 96px)",
+        "height-full-96px": "calc(100vh - 64px)",
       },
       height: {
-        "height-full-96px": "calc(100vh - 96px)",
+        "height-full-96px": "calc(100vh - 64px)",
       },
       width: {
         "width-mobile": "30rem",
@@ -40,6 +40,7 @@ export default {
       },
       maxWidth: {
         "max-w-700px": "470px",
+        "max-w-leiuht": "21rem",
       },
     },
     screens: {
